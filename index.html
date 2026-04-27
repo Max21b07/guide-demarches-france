@@ -2,84 +2,157 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide Démarches France - Visa Époux Vietnamien</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#1a3a5c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Hướng Dẫn Thủ Tục Pháp - Visa Phuễng Việt Nam | Guide Démarches France</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #1a3a5c;
+            --primary-dark: #122842;
             --secondary: #c41e3a;
             --accent: #d4a574;
+            --accent-light: #e8c9a8;
             --bg: #faf8f5;
+            --bg-card: #ffffff;
             --text: #2d2d2d;
+            --text-light: #666666;
+            --text-lighter: #999999;
             --light: #e8f4f8;
-            --card-shadow: 0 4px 20px rgba(26, 58, 92, 0.08);
-            --card-hover: 0 8px 30px rgba(26, 58, 92, 0.15);
+            --success: #2e7d32;
+            --warning: #e65100;
+            --border: rgba(26, 58, 92, 0.1);
+            --shadow: 0 2px 12px rgba(26, 58, 92, 0.08);
+            --shadow-lg: 0 8px 30px rgba(26, 58, 92, 0.15);
+            --radius: 16px;
+            --radius-sm: 10px;
+            --nav-height: 64px;
+            --safe-area-top: env(safe-area-inset-top, 0px);
+            --safe-area-bottom: env(safe-area-inset-bottom, 0px);
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
         }
 
         html {
             scroll-behavior: smooth;
+            scroll-padding-top: calc(var(--nav-height) + 20px);
         }
 
         body {
-            font-family: 'Source Sans 3', Georgia, sans-serif;
+            font-family: 'Source Sans 3', 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
             background: var(--bg);
             color: var(--text);
-            line-height: 1.7;
-            font-size: 17px;
+            line-height: 1.65;
+            font-size: 16px;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
 
-        h1, h2, h3, h4 {
+        [lang="vi"] body, body:lang(vi) {
+            font-family: 'Be Vietnam Pro', 'Source Sans 3', -apple-system, sans-serif;
+        }
+
+        h1, h2, h3 {
             font-family: 'Playfair Display', Georgia, serif;
             color: var(--primary);
+            line-height: 1.3;
+        }
+
+        /* Language Switcher */
+        .lang-switcher {
+            position: fixed;
+            top: calc(var(--safe-area-top) + 12px);
+            right: 16px;
+            z-index: 1000;
+            display: flex;
+            background: var(--bg-card);
+            border-radius: 30px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .lang-btn {
+            padding: 8px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            border: none;
+            background: transparent;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: all 0.25s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .lang-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        .lang-btn:hover:not(.active) {
+            background: var(--light);
         }
 
         /* Navigation */
         nav {
-            position: sticky;
+            position: fixed;
             top: 0;
-            background: rgba(250, 248, 245, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(26, 58, 92, 0.1);
+            left: 0;
+            right: 0;
+            height: var(--nav-height);
+            background: rgba(250, 248, 245, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
             z-index: 100;
-            padding: 0 20px;
+            padding: 0 16px;
+            padding-top: var(--safe-area-top);
         }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 8px;
-            max-width: 1100px;
+        .nav-inner {
+            max-width: 1000px;
             margin: 0 auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 4px;
             overflow-x: auto;
-            padding: 12px 0;
             scrollbar-width: none;
+            -ms-overflow-style: none;
         }
 
-        nav ul::-webkit-scrollbar {
+        .nav-inner::-webkit-scrollbar {
             display: none;
         }
 
         nav a {
             text-decoration: none;
-            color: var(--primary);
+            color: var(--text);
             font-weight: 500;
-            font-size: 14px;
-            padding: 6px 12px;
+            font-size: 13px;
+            padding: 8px 12px;
             border-radius: 20px;
             white-space: nowrap;
             transition: all 0.2s;
+            flex-shrink: 0;
         }
 
-        nav a:hover, nav a.active {
+        nav a:hover {
+            background: var(--light);
+        }
+
+        nav a.active {
             background: var(--primary);
             color: white;
         }
@@ -87,115 +160,141 @@
         /* Hero */
         .hero {
             text-align: center;
-            padding: 80px 20px 60px;
+            padding: calc(var(--nav-height) + 60px + var(--safe-area-top)) 20px 50px;
             background: linear-gradient(180deg, var(--light) 0%, var(--bg) 100%);
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--secondary);
+            color: white;
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 20px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .hero h1 {
-            font-size: clamp(2rem, 5vw, 3rem);
+            font-size: clamp(1.75rem, 6vw, 2.8rem);
             margin-bottom: 16px;
+            letter-spacing: -0.5px;
         }
 
-        .hero .flags {
-            font-size: 3rem;
-            margin-bottom: 24px;
-            letter-spacing: 8px;
+        .hero-flags {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 6px;
         }
 
-        .hero .subtitle {
-            font-size: 1.2rem;
-            color: #555;
-            max-width: 600px;
-            margin: 0 auto 32px;
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 500px;
+            margin: 0 auto 28px;
+            line-height: 1.6;
         }
 
-        .hero .badge {
-            display: inline-block;
-            background: var(--secondary);
-            color: white;
-            padding: 8px 20px;
-            border-radius: 25px;
-            font-weight: 600;
-            margin-bottom: 16px;
+        .hero-profile {
+            background: var(--bg-card);
+            padding: 16px 24px;
+            border-radius: var(--radius);
+            margin-bottom: 28px;
+            box-shadow: var(--shadow);
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-profile p {
+            font-size: 14px;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        .hero-profile strong {
+            color: var(--primary);
         }
 
         .cta-btn {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             background: var(--primary);
             color: white;
-            padding: 14px 32px;
+            padding: 14px 28px;
             border-radius: 30px;
             text-decoration: none;
             font-weight: 600;
-            transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 15px;
+            transition: all 0.25s;
+            box-shadow: 0 4px 15px rgba(26, 58, 92, 0.25);
         }
 
-        .cta-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(26, 58, 92, 0.3);
+        .cta-btn:active {
+            transform: scale(0.97);
         }
 
         /* Timeline */
         .timeline-section {
-            padding: 60px 20px;
+            padding: 50px 16px;
             background: white;
-            border-top: 1px solid rgba(26, 58, 92, 0.1);
-            border-bottom: 1px solid rgba(26, 58, 92, 0.1);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
         }
 
         .timeline-section h2 {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 28px;
+            font-size: 1.3rem;
         }
 
         .timeline {
-            display: flex;
-            gap: 20px;
-            max-width: 1000px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            max-width: 600px;
             margin: 0 auto;
-            overflow-x: auto;
-            padding-bottom: 10px;
         }
 
         .timeline-phase {
-            flex: 1;
-            min-width: 200px;
             background: var(--light);
-            border-radius: 16px;
-            padding: 24px;
-            position: relative;
+            border-radius: var(--radius);
+            padding: 18px;
+            text-align: center;
         }
 
-        .timeline-phase::before {
-            content: '';
-            position: absolute;
-            top: 24px;
-            right: -20px;
-            width: 0;
-            height: 0;
-            border-left: 20px solid var(--light);
-            border-top: 15px solid transparent;
-            border-bottom: 15px solid transparent;
-        }
-
-        .timeline-phase:last-child::before {
-            display: none;
+        .timeline-phase .phase-icon {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
         }
 
         .timeline-phase h3 {
-            font-size: 1rem;
-            margin-bottom: 12px;
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 10px;
             color: var(--secondary);
         }
 
         .timeline-phase ul {
             list-style: none;
-            font-size: 14px;
+            text-align: left;
+            font-size: 12px;
         }
 
         .timeline-phase li {
-            padding: 4px 0;
-            padding-left: 16px;
+            padding: 3px 0;
+            padding-left: 14px;
             position: relative;
         }
 
@@ -204,65 +303,73 @@
             position: absolute;
             left: 0;
             color: var(--accent);
+            font-weight: bold;
         }
 
         /* Main Content */
         main {
-            max-width: 900px;
+            max-width: 680px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 50px 16px calc(var(--safe-area-bottom) + 40px);
         }
 
         section {
-            margin-bottom: 40px;
+            margin-bottom: 36px;
         }
 
         section h2 {
             display: flex;
             align-items: center;
-            gap: 12px;
-            margin-bottom: 24px;
-            font-size: 1.6rem;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 1.35rem;
             padding-bottom: 12px;
             border-bottom: 2px solid var(--accent);
         }
 
         /* Cards */
         .card {
-            background: white;
-            border-radius: 16px;
-            box-shadow: var(--card-shadow);
-            margin-bottom: 16px;
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 12px;
             overflow: hidden;
-            transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s, transform 0.2s;
         }
 
-        .card:hover {
-            box-shadow: var(--card-hover);
+        .card:active {
+            transform: scale(0.995);
+        }
+
+        .card.open {
+            box-shadow: var(--shadow-lg);
         }
 
         .card-header {
-            padding: 20px 24px;
+            padding: 18px 20px;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 16px;
+            gap: 14px;
+            min-height: 60px;
         }
 
         .card-header h3 {
             font-family: 'Source Sans 3', sans-serif;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 600;
             display: flex;
             align-items: center;
             gap: 10px;
+            flex: 1;
         }
 
         .card-header .chevron {
-            transition: transform 0.3s;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             color: var(--primary);
-            font-size: 1.2rem;
+            font-size: 14px;
+            flex-shrink: 0;
         }
 
         .card.open .chevron {
@@ -272,23 +379,23 @@
         .card-body {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.4s ease-out;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .card.open .card-body {
-            max-height: 2000px;
+            max-height: 3000px;
         }
 
         .card-content {
-            padding: 0 24px 24px;
+            padding: 0 20px 22px;
         }
 
         .card-content h4 {
             font-family: 'Source Sans 3', sans-serif;
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: 600;
             color: var(--primary);
-            margin: 20px 0 10px;
+            margin: 18px 0 10px;
         }
 
         .card-content h4:first-child {
@@ -296,27 +403,38 @@
         }
 
         .card-content ol, .card-content ul {
-            margin-left: 24px;
-            margin-bottom: 16px;
+            margin-left: 20px;
+            margin-bottom: 14px;
         }
 
         .card-content li {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
+            font-size: 15px;
         }
 
         .card-content p {
             margin-bottom: 12px;
+            font-size: 15px;
         }
 
+        .card-content a {
+            color: var(--primary);
+            text-decoration: underline;
+            text-decoration-color: var(--accent);
+            text-underline-offset: 2px;
+        }
+
+        /* Document List */
         .doc-list {
             background: var(--light);
-            padding: 16px 20px;
-            border-radius: 10px;
-            margin: 16px 0;
+            padding: 14px 18px;
+            border-radius: var(--radius-sm);
+            margin: 14px 0;
         }
 
         .doc-list strong {
             color: var(--primary);
+            font-size: 14px;
         }
 
         .doc-list ul {
@@ -326,90 +444,111 @@
         }
 
         .doc-list li {
-            padding: 4px 0;
-            padding-left: 20px;
+            padding: 5px 0;
+            padding-left: 22px;
             position: relative;
+            font-size: 14px;
         }
 
         .doc-list li::before {
             content: '📄';
             position: absolute;
             left: 0;
+            font-size: 12px;
         }
 
+        /* Callout Boxes */
         .pro-tip {
             background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
-            padding: 16px 20px;
-            border-radius: 10px;
-            margin: 16px 0;
-            border-left: 4px solid #4caf50;
+            padding: 14px 18px;
+            border-radius: var(--radius-sm);
+            margin: 14px 0;
+            border-left: 4px solid var(--success);
         }
 
         .pro-tip strong {
-            color: #2e7d32;
+            color: var(--success);
+            font-size: 14px;
         }
 
         .warning {
             background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
-            padding: 16px 20px;
-            border-radius: 10px;
-            margin: 16px 0;
-            border-left: 4px solid #ff9800;
+            padding: 14px 18px;
+            border-radius: var(--radius-sm);
+            margin: 14px 0;
+            border-left: 4px solid var(--warning);
         }
 
         .warning strong {
-            color: #e65100;
+            color: var(--warning);
+            font-size: 14px;
         }
 
         .info-box {
             background: var(--light);
-            padding: 16px 20px;
-            border-radius: 10px;
-            margin: 16px 0;
+            padding: 14px 18px;
+            border-radius: var(--radius-sm);
+            margin: 14px 0;
             border-left: 4px solid var(--primary);
         }
 
         .info-box strong {
             color: var(--primary);
+            font-size: 14px;
         }
 
         /* Checklist */
         .checklist-section {
-            background: white;
-            border-radius: 16px;
-            padding: 32px;
-            box-shadow: var(--card-shadow);
-            margin-bottom: 40px;
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 24px 20px;
+            box-shadow: var(--shadow);
+            margin-bottom: 36px;
         }
 
         .checklist-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 24px;
-            flex-wrap: wrap;
-            gap: 16px;
+            margin-bottom: 20px;
         }
 
         .checklist-header h2 {
             border: none;
             margin: 0;
             padding: 0;
+            font-size: 1.2rem;
+        }
+
+        .checklist-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .progress-container {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .progress-text {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 6px;
         }
 
         .progress-bar {
-            width: 200px;
-            height: 12px;
+            height: 8px;
             background: #e0e0e0;
-            border-radius: 6px;
+            border-radius: 4px;
             overflow: hidden;
         }
 
         .progress-fill {
             height: 100%;
             background: linear-gradient(90deg, var(--primary), var(--accent));
-            transition: width 0.3s;
+            transition: width 0.4s ease-out;
             width: 0%;
+            border-radius: 4px;
         }
 
         .reset-btn {
@@ -420,21 +559,22 @@
             border-radius: 20px;
             cursor: pointer;
             font-weight: 600;
+            font-size: 13px;
             transition: all 0.2s;
         }
 
-        .reset-btn:hover {
+        .reset-btn:active {
             background: var(--secondary);
             color: white;
         }
 
         .checklist-group {
-            margin-bottom: 24px;
+            margin-bottom: 18px;
         }
 
         .checklist-group h3 {
-            font-size: 1rem;
-            margin-bottom: 12px;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
             color: var(--primary);
             display: flex;
             align-items: center;
@@ -445,86 +585,244 @@
             display: flex;
             align-items: flex-start;
             gap: 12px;
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .checklist-item:last-child {
+            border-bottom: none;
         }
 
         .checklist-item input[type="checkbox"] {
-            width: 22px;
-            height: 22px;
+            width: 24px;
+            height: 24px;
             cursor: pointer;
             flex-shrink: 0;
-            margin-top: 2px;
+            accent-color: var(--primary);
+            margin-top: 1px;
         }
 
         .checklist-item label {
             cursor: pointer;
+            font-size: 14px;
+            line-height: 1.5;
         }
 
         .checklist-item.checked label {
             text-decoration: line-through;
-            color: #888;
+            color: var(--text-lighter);
         }
 
         /* Resources */
         .resources-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 16px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
         }
 
         .resource-card {
-            background: white;
-            padding: 24px;
-            border-radius: 12px;
-            box-shadow: var(--card-shadow);
+            background: var(--bg-card);
+            padding: 18px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
             text-decoration: none;
             color: inherit;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: all 0.2s;
         }
 
-        .resource-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--card-hover);
+        .resource-card:active {
+            transform: scale(0.97);
+            box-shadow: var(--shadow-lg);
         }
 
         .resource-card h4 {
             color: var(--primary);
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             display: flex;
             align-items: center;
             gap: 8px;
+            font-size: 14px;
         }
 
         .resource-card p {
-            font-size: 14px;
-            color: #666;
+            font-size: 12px;
+            color: var(--text-light);
+            line-height: 1.4;
         }
 
         /* Footer */
         footer {
-            background: var(--primary);
+            background: var(--primary-dark);
             color: white;
-            padding: 40px 20px;
+            padding: 36px 20px;
             text-align: center;
         }
 
         footer p {
             opacity: 0.8;
-            font-size: 14px;
-            max-width: 600px;
-            margin: 0 auto 16px;
+            font-size: 13px;
+            max-width: 500px;
+            margin: 0 auto 12px;
+            line-height: 1.5;
         }
 
         footer .disclaimer {
-            font-size: 12px;
-            opacity: 0.6;
+            font-size: 11px;
+            opacity: 0.5;
             margin-top: 24px;
         }
 
-        /* Print Styles */
+        footer .flag-footer {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+
+        /* Bilingual content */
+        [data-lang="vi"] {
+            display: none;
+        }
+
+        :root[lang="vi"] [data-lang="fr"] {
+            display: none;
+        }
+
+        :root[lang="vi"] [data-lang="vi"] {
+            display: block;
+        }
+
+        :root[lang="vi"] [data-lang-vi-inline] {
+            display: inline;
+        }
+
+        :root[lang="vi"] [data-lang-vi-block] {
+            display: block;
+        }
+
+        :root[lang="fr"] [data-lang-fr-inline] {
+            display: inline;
+        }
+
+        :root[lang="fr"] [data-lang-fr-block] {
+            display: block;
+        }
+
+        [data-lang-fr] {
+            display: block;
+        }
+
+        [data-lang-vi] {
+            display: none;
+        }
+
+        :root[lang="vi"] [data-lang-fr] {
+            display: none;
+        }
+
+        :root[lang="vi"] [data-lang-vi] {
+            display: block;
+        }
+
+        /* Mobile specific - iPhone 14 Plus (428px) */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.65rem;
+            }
+
+            .hero-flags {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .timeline {
+                grid-template-columns: 1fr;
+            }
+
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .checklist-meta {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .progress-container {
+                width: 100%;
+            }
+
+            .reset-btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            nav {
+                padding: 0 12px;
+                padding-top: var(--safe-area-top);
+            }
+
+            nav a {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+
+            .card-header {
+                padding: 16px 18px;
+            }
+
+            .card-header h3 {
+                font-size: 0.95rem;
+            }
+
+            .card-content {
+                padding: 0 18px 20px;
+            }
+
+            .card-content li,
+            .card-content p {
+                font-size: 14px;
+            }
+
+            .lang-switcher {
+                top: calc(var(--safe-area-top) + 8px);
+                right: 12px;
+            }
+
+            .lang-btn {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+        }
+
+        /* Tablet and up */
+        @media (min-width: 768px) {
+            main {
+                padding: 60px 24px calc(var(--safe-area-bottom) + 50px);
+            }
+
+            .card {
+                margin-bottom: 14px;
+            }
+
+            .timeline {
+                grid-template-columns: repeat(4, 1fr);
+                max-width: 900px;
+            }
+
+            .timeline-phase {
+                padding: 22px;
+            }
+
+            .resources-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* Print */
         @media print {
-            nav, .cta-btn, .card-header, .reset-btn, .progress-bar {
+            .lang-switcher, nav, .cta-btn, .card-header, .reset-btn, .progress-bar {
                 display: none !important;
             }
 
@@ -538,105 +836,111 @@
                 max-height: none !important;
             }
 
-            .hero {
-                padding: 20px;
-            }
-
             body {
-                font-size: 12px;
-            }
-        }
-
-        /* Mobile */
-        @media (max-width: 768px) {
-            nav ul {
-                justify-content: flex-start;
-            }
-
-            .timeline {
-                flex-direction: column;
-            }
-
-            .timeline-phase::before {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-
-            .checklist-header {
-                flex-direction: column;
-                align-items: flex-start;
+                font-size: 11px;
             }
         }
     </style>
 </head>
-<body>
+<body lang="fr">
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang-btn="fr" onclick="setLanguage('fr')">
+            <span>🇫🇷</span> FR
+        </button>
+        <button class="lang-btn" data-lang-btn="vi" onclick="setLanguage('vi')">
+            <span>🇻🇳</span> VN
+        </button>
+    </div>
+
+    <!-- Navigation -->
     <nav>
-        <ul>
-            <li><a href="#visa">Visa</a></li>
-            <li><a href="#ofii">OFII</a></li>
-            <li><a href="#prefecture">Préfecture</a></li>
-            <li><a href="#securite-sociale">Sécurité Sociale</a></li>
-            <li><a href="#impots">Impôts</a></li>
-            <li><a href="#banque">Banque</a></li>
-            <li><a href="#logement">Logement</a></li>
-            <li><a href="#telephone">Téléphone</a></li>
-            <li><a href="#caf">CAF</a></li>
-            <li><a href="#permis">Permis</a></li>
-            <li><a href="#emploi">Emploi</a></li>
-            <li><a href="#sante">Santé</a></li>
-            <li><a href="#checklist">Checklist</a></li>
-        </ul>
+        <div class="nav-inner">
+            <a href="#visa" data-lang-fr="Visa" data-lang-vi="Visa">Visa</a>
+            <a href="#ofii" data-lang-fr="OFII" data-lang-vi="OFII">OFII</a>
+            <a href="#prefecture" data-lang-fr="Préfecture" data-lang-vi="Sở QL">Préfecture</a>
+            <a href="#securite-sociale" data-lang-fr="Sécurité Sociale" data-lang-vi="BHXH">Sécurité Sociale</a>
+            <a href="#impots" data-lang-fr="Impôts" data-lang-vi="Thuế">Impôts</a>
+            <a href="#banque" data-lang-fr="Banque" data-lang-vi="Ngân hàng">Banque</a>
+            <a href="#logement" data-lang-fr="Logement" data-lang-vi="Nhà ở">Logement</a>
+            <a href="#telephone" data-lang-fr="Téléphone" data-lang-vi="Điện thoại">Téléphone</a>
+            <a href="#caf" data-lang-fr="CAF" data-lang-vi="CAF">CAF</a>
+            <a href="#permis" data-lang-fr="Permis" data-lang-vi="Bằng lái">Permis</a>
+            <a href="#emploi" data-lang-fr="Emploi" data-lang-vi="Việc làm">Emploi</a>
+            <a href="#sante" data-lang-fr="Santé" data-lang-vi="Y tế">Santé</a>
+            <a href="#checklist" data-lang-fr="Checklist" data-lang-vi="Danh sách">Checklist</a>
+        </div>
     </nav>
 
+    <!-- Hero -->
     <header class="hero">
-        <div class="flags">🇻🇳 🇫🇷</div>
-        <span class="badge">Guide Complet 2026</span>
-        <h1>Guide des Démarches en France</h1>
-        <p class="subtitle">
-            Toutes les procédures administratives détaillées pour une citoyenne vietnamienne arrivant en France avec un visa époux
+        <div class="hero-badge">
+            <span>📅</span>
+            <span data-lang-fr="Guide 2026" data-lang-vi="Hướng dẫn 2026">Guide 2026</span>
+        </div>
+        <h1>
+            <span data-lang-fr="Guide des Démarches en France" data-lang-vi="Hướng Dẫn Thủ Tục tại Pháp">Guide des Démarches en France</span>
+        </h1>
+        <div class="hero-flags">🇻🇳 🇫🇷</div>
+        <p class="hero-subtitle">
+            <span data-lang-fr="Toutes les procédures administratives détaillées pour une citoyenne vietnamienne arrivant en France avec un visa époux" data-lang-vi="Tất cả thủ tục hành chính chi tiết cho công dân Việt Nam đến Pháp với visa vợ/chồng">
+                Toutes les procédures administratives détaillées pour une citoyenne vietnamienne arrivant en France avec un visa époux
+            </span>
         </p>
-        <p style="color: #666; font-size: 0.95rem; margin-bottom: 24px;">
-            Profil : Nguyễn Thị Lan, 35 ans, nationalité vietnamienne, visa époux 1 an renouvelable
-        </p>
-        <a href="#visa" class="cta-btn">Commencer les démarches ↓</a>
+        <div class="hero-profile">
+            <p>
+                <strong data-lang-fr="Profil :" data-lang-vi="Hồ sơ:">Profil :</strong>
+                <span data-lang-fr="Nguyễn Thị Lan, 35 ans, nationalité vietnamienne, visa époux 1 an renouvelable" data-lang-vi="Nguyễn Thị Lan, 35 tuổi, quốc tịch Việt Nam, visa vợ/chồng 1 năm có thể gia hạn">
+                    Nguyễn Thị Lan, 35 ans, nationalité vietnamienne, visa époux 1 an renouvelable
+                </span>
+            </p>
+        </div>
+        <a href="#visa" class="cta-btn">
+            <span data-lang-fr="Commencer les démarches" data-lang-vi="Bắt đầu thủ tục">Commencer les démarches</span>
+            <span>↓</span>
+        </a>
     </header>
 
+    <!-- Timeline -->
     <section class="timeline-section">
-        <h2>📅 Chronologie des Démarches</h2>
+        <h2>
+            <span data-lang-fr="📅 Chronologie des Démarches" data-lang-vi="📅 Lịch Trình Thủ Tục">📅 Chronologie des Démarches</span>
+        </h2>
         <div class="timeline">
             <div class="timeline-phase">
-                <h3>🇻🇳 Avant le départ</h3>
+                <div class="phase-icon">🇻🇳</div>
+                <h3 data-lang-fr="Avant le départ" data-lang-vi="Trước khi đến">Avant le départ</h3>
                 <ul>
-                    <li>Obtenir le visa époux</li>
-                    <li>Traduire et légaliser documents</li>
-                    <li>Préparer le dossier OFII</li>
+                    <li data-lang-fr="Obtenir le visa époux" data-lang-vi="Xin visa vợ/chồng">Obtenir le visa époux</li>
+                    <li data-lang-fr="Traduire documents" data-lang-vi="Dịch tài liệu">Traduire documents</li>
+                    <li data-lang-fr="Préparer dossier OFII" data-lang-vi="Chuẩn bị hồ sơ OFII">Préparer dossier OFII</li>
                 </ul>
             </div>
             <div class="timeline-phase">
-                <h3>📆 Semaines 1-4</h3>
+                <div class="phase-icon">📆</div>
+                <h3 data-lang-fr="Semaines 1-4" data-lang-vi="Tuần 1-4">Semaines 1-4</h3>
                 <ul>
-                    <li>Déclarer arrivée OFII</li>
-                    <li>Inscription CPAM</li>
-                    <li>Ouverture compte bancaire</li>
+                    <li data-lang-fr="Déclarer arrivée OFII" data-lang-vi="Khai báo OFII">Déclarer arrivée OFII</li>
+                    <li data-lang-fr="Inscription CPAM" data-lang-vi="Đăng ký CPAM">Inscription CPAM</li>
+                    <li data-lang-fr="Ouvrir compte bancaire" data-lang-vi="Mở tài khoản ngân hàng">Ouvrir compte bancaire</li>
                 </ul>
             </div>
             <div class="timeline-phase">
-                <h3>🗓️ Mois 2-6</h3>
+                <div class="phase-icon">🗓️</div>
+                <h3 data-lang-fr="Mois 2-6" data-lang-vi="Tháng 2-6">Mois 2-6</h3>
                 <ul>
-                    <li>Demande titre de séjour</li>
-                    <li>Inscription Impôts</li>
-                    <li>Recherche logement</li>
+                    <li data-lang-fr="Titre de séjour" data-lang-vi="Giấy phép cư trú">Titre de séjour</li>
+                    <li data-lang-fr="Inscription Impôts" data-lang-vi="Đăng ký thuế">Inscription Impôts</li>
+                    <li data-lang-fr="Recherche logement" data-lang-vi="Tìm nhà ở">Recherche logement</li>
                 </ul>
             </div>
             <div class="timeline-phase">
-                <h3>🏠 Au-delà</h3>
+                <div class="phase-icon">🏠</div>
+                <h3 data-lang-fr="Au-delà" data-lang-vi="Sau đó">Au-delà</h3>
                 <ul>
-                    <li>Renouvellement visa</li>
-                    <li>Échanges permis conduire</li>
-                    <li>Parcours intégration</li>
+                    <li data-lang-fr="Renouveler visa" data-lang-vi="Gia hạn visa">Renouveler visa</li>
+                    <li data-lang-fr="Échanger permis" data-lang-vi="Đổi bằng lái">Échanger permis</li>
+                    <li data-lang-fr="Parcours intégration" data-lang-vi="Hội nhập">Parcours intégration</li>
                 </ul>
             </div>
         </div>
@@ -645,29 +949,30 @@
     <main>
         <!-- SECTION 1: VISA -->
         <section id="visa">
-            <h2>🛂 1. Visa Époux (Long Séjour)</h2>
+            <h2>🛂 <span data-lang-fr="1. Visa Époux (Long Séjour)" data-lang-vi="1. Visa Vợ/Chồng (Dài Hạn)">1. Visa Époux (Long Séjour)</span></h2>
 
             <div class="card open">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📋 Type de visa et conditions</h3>
+                    <h3>📋 <span data-lang-fr="Type de visa et conditions" data-lang-vi="Loại visa và điều kiện">Type de visa et conditions</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <p>Vous arrivez en France avec un <strong>visa long séjour valant titre de séjour (VLS-TS)</strong> pour motif familial. Ce visa est délivré pour une durée de 1 an et est renouvelable.</p>
+                        <p data-lang-fr="Vous arrivez en France avec un visa long séjour valant titre de séjour (VLS-TS) pour motif familial. Ce visa est délivré pour une durée de 1 an et est renouvelable." data-lang-vi="Bạn đến Pháp với visa dài hạn có giá trị như giấy phép cư trú (VLS-TS) với lý do gia đình. Visa này được cấp trong 1 năm và có thể gia hạn.">Vous arrivez en France avec un visa long séjour valant titre de séjour (VLS-TS) pour motif familial. Ce visa est délivré pour une durée de 1 an et est renouvelable.</p>
 
-                        <h4>Caractéristiques importantes :</h4>
+                        <h4 data-lang-fr="Caractéristiques importantes :" data-lang-vi="Đặc điểm quan trọng :">Caractéristiques importantes :</h4>
                         <ul>
-                            <li>Le VLS-TS <strong>dispense d'une demande de titre de séjour</strong> la première année</li>
-                            <li>Vous devezidacteder votre arrivée en France dans les <strong>3 mois</strong> suivant votre arrivée</li>
-                            <li>Ce visa donne le droit de travailler en France sans restriction</li>
+                            <li data-lang-fr="Le VLS-TS dispense d'une demande de titre de séjour la première année" data-lang-vi="VLS-TS miễn xin giấy phép cư trú trong năm đầu tiên">Le VLS-TS dispense d'une demande de titre de séjour la première année</li>
+                            <li data-lang-fr="Vous devez déclarer votre arrivée en France dans les 3 mois suivant votre arrivée" data-lang-vi="Bạn phải khai báo đến Pháp trong vòng 3 tháng sau khi đến">Vous devez déclarer votre arrivée en France dans les 3 mois suivant votre arrivée</li>
+                            <li data-lang-fr="Ce visa donne le droit de travailler en France sans restriction" data-lang-vi="Visa này cho phép làm việc tại Pháp không giới hạn">Ce visa donne le droit de travailler en France sans restriction</li>
                         </ul>
 
-                        <h4>Qui est concerné ?</h4>
-                        <p>Ce visa concerne les personnes mariées avec un ressortissant français ou un étranger en situation régulière en France depuis plus de 18 mois.</p>
+                        <h4 data-lang-fr="Qui est concerné ?" data-lang-vi="Đối tượng nào?">Qui est concerné ?</h4>
+                        <p data-lang-fr="Ce visa concerne les personnes mariées avec un ressortissant français ou un étranger en situation régulière en France depuis plus de 18 mois." data-lang-vi="Visa này dành cho người kết hôn với công dân Pháp hoặc người nước ngoài có giấy tờ hợp lệ tại Pháp hơn 18 tháng.">Ce visa concerne les personnes mariées avec un ressortissant français ou un étranger en situation régulière en France depuis plus de 18 mois.</p>
 
                         <div class="info-box">
-                            <strong>⚠️ Important :</strong> Le mariage doit avoir été célébré et enregistré. Si le mariage a été célébré au Vietnam, il doit être transcrit sur les registres d'état civil français.
+                            <strong data-lang-fr="⚠️ Important :" data-lang-vi="⚠️ Quan trọng :">⚠️ Important :</strong>
+                            <span data-lang-fr="Le mariage doit avoir été célébré et enregistré. Si le mariage a été célébré au Vietnam, il doit être transcrit sur les registres d'état civil français." data-lang-vi="Hôn nhân phải được tổ chức và đăng ký. Nếu hôn nhân được tổ chức tại Việt Nam, phải được ghi vào sổ hộ tịch Pháp.">Le mariage doit avoir été célébré et enregistré. Si le mariage a été célébré au Vietnam, il doit être transcrit sur les registres d'état civil français.</span>
                         </div>
                     </div>
                 </div>
@@ -675,34 +980,34 @@
 
             <div class="card">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📝 Documents nécessaires pour le visa</h3>
+                    <h3>📝 <span data-lang-fr="Documents nécessaires" data-lang-vi="Giấy tờ cần thiết">Documents nécessaires</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
                         <div class="doc-list">
-                            <strong>Documents du demandeur :</strong>
+                            <strong data-lang-fr="Documents du demandeur :" data-lang-vi="Giấy tờ của người xin :">Documents du demandeur :</strong>
                             <ul>
-                                <li> Passeport valide (minimum 1 an)</li>
-                                <li> Formulaire de demande de visa long séjour dûment complété</li>
-                                <li> 2 photos d'identité récentes (fond clair)</li>
-                                <li> Acte de mariage intégral (traduit et légalisé)</li>
-                                <li> Copie de la carte d'identité ou du passeport du conjoint français</li>
-                                <li> Justificatif de domicile en France</li>
-                                <li> Photo d'identité numérique</li>
+                                <li data-lang-fr="Passeport valide (minimum 1 an)" data-lang-vi="Hộ chiếu còn hạn (tối thiểu 1 năm)">Passeport valide (minimum 1 an)</li>
+                                <li data-lang-fr="Formulaire de demande de visa long séjour" data-lang-vi="Đơn xin visa dài hạn">Formulaire de demande de visa long séjour</li>
+                                <li data-lang-fr="2 photos d'identité récentes" data-lang-vi="2 ảnh chân dung gần đây">2 photos d'identité récentes</li>
+                                <li data-lang-fr="Acte de mariage (traduit et légalisé)" data-lang-vi="Giấy đăng ký kết hôn (đã dịch và hợp pháp hóa)">Acte de mariage (traduit et légalisé)</li>
+                                <li data-lang-fr="Copie de la carte d'identité du conjoint français" data-lang-vi="Bản sao CCCD/chứng minh nhân dân của vợ/chồng Pháp">Copie de la carte d'identité du conjoint français</li>
+                                <li data-lang-fr="Justificatif de domicile en France" data-lang-vi="Giấy chứng minh địa chỉ ở Pháp">Justificatif de domicile en France</li>
                             </ul>
                         </div>
 
-                        <h4>Traductions et légalisations :</h4>
-                        <p>Tous les documents vietnamiens doivent être :</p>
+                        <h4 data-lang-fr="Traductions et légalisations :" data-lang-vi="Bản dịch và hợp pháp hóa :">Traductions et légalisations :</h4>
+                        <p data-lang-fr="Tous les documents vietnamiens doivent être traduits en français par un traducteur assermenté et légalisés par le Consulat de France." data-lang-vi="Tất cả giấy tờ Việt Nam phải được dịch sang tiếng Pháp bởi thông dịch viên có tuyên thệ và hợp pháp hóa tại Lãnh sự quán Pháp.">Tous les documents vietnamiens doivent être traduits en français par un traducteur assermenté et légalisés par le Consulat de France.</p>
                         <ol>
-                            <li>Traduits en français par un traducteur assermenté</li>
-                            <li>Légalisés ou apostillés</li>
-                            <li>Les documents vietnamiens nécessite une légalisation par le <strong>Consulat de France à Hô Chi Minh-Ville ou Hanoï</strong></li>
+                            <li data-lang-fr="Traduits par un traducteur assermenté" data-lang-vi="Dịch bởi thông dịch viên có tuyên thệ">Traduits par un traducteur assermenté</li>
+                            <li data-lang-fr="Légalisés ou apostillés" data-lang-vi="Hợp pháp hóa hoặc apostille">Légalisés ou apostillés</li>
+                            <li data-lang-fr="Légalisation au Consulat de France à Hô Chi Minh-Ville ou Hanoï" data-lang-vi="Hợp pháp hóa tại Lãnh sự quán Pháp TP.HCM hoặc Hà Nội">Légalisation au Consulat de France à Hô Chi Minh-Ville ou Hanoï</li>
                         </ol>
 
                         <div class="pro-tip">
-                            <strong>💡 Astuce :</strong> Commencez les démarches de traduction au moins 3 mois avant la date prévue du départ. Les délais peuvent être longs.
+                            <strong data-lang-fr="💡 Astuce :" data-lang-vi="💡 Mẹo :">💡 Astuce :</strong>
+                            <span data-lang-fr="Commencez les démarches de traduction au moins 3 mois avant le départ. Les délais peuvent être longs." data-lang-vi="Bắt đầu dịch thuật ít nhất 3 tháng trước khi đi. Thời gian có thể kéo dài.">Commencez les démarches de traduction au moins 3 mois avant le départ. Les délais peuvent être longs.</span>
                         </div>
                     </div>
                 </div>
@@ -711,23 +1016,23 @@
 
         <!-- SECTION 2: OFII -->
         <section id="ofii">
-            <h2>🏛️ 2. OFII - Déclaration d'Arrivée</h2>
+            <h2>🏛️ <span data-lang-fr="2. OFII - Déclaration d'Arrivée" data-lang-vi="2. OFII - Khai Báo Đến">2. OFII - Déclaration d'Arrivée</span></h2>
 
             <div class="card open">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📋 Qu'est-ce que l'OFII ?</h3>
+                    <h3>📋 <span data-lang-fr="Qu'est-ce que l'OFII ?" data-lang-vi="OFII là gì?">Qu'est-ce que l'OFII ?</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <p>L'<strong>OFII</strong> (Office Français de l'Immigration et de l'Intégration) est l'organisme qui gère l'admission au séjour en France. Vous devez obligatoirement déclarer votre arrivée dans les <strong>3 mois</strong> suivant votre entrée en France.</p>
+                        <p data-lang-fr="L'OFII (Office Français de l'Immigration et de l'Intégration) est l'organisme qui gère l'admission au séjour en France. Vous devez déclarer votre arrivée dans les 3 mois suivant votre entrée." data-lang-vi="OFII (Cơ quan Nhập cư và Hội nhập Pháp) là tổ chức quản lý việc cấp phép cư trú tại Pháp. Bạn phải khai báo đến trong vòng 3 tháng sau khi nhập cảnh.">L'OFII (Office Français de l'Immigration et de l'Intégration) est l'organisme qui gère l'admission au séjour en France. Vous devez déclarer votre arrivée dans les 3 mois suivant votre entrée.</p>
 
-                        <h4>Pourquoi déclarer votre arrivée ?</h4>
+                        <h4 data-lang-fr="Pourquoi déclarer ?" data-lang-vi="Tại sao phải khai báo?">Pourquoi déclarer ?</h4>
                         <ul>
-                            <li>Validation de votre visa VLS-TS</li>
-                            <li>Obtention d'un droit au séjour effectif</li>
-                            <li>Passage du bilan de santé initial</li>
-                            <li>Orientation vers les services d'intégration</li>
+                            <li data-lang-fr="Validation de votre visa VLS-TS" data-lang-vi="Xác nhận visa VLS-TS của bạn">Validation de votre visa VLS-TS</li>
+                            <li data-lang-fr="Obtention d'un droit au séjour effectif" data-lang-vi="Có quyền cư trú hợp lệ">Obtention d'un droit au séjour effectif</li>
+                            <li data-lang-fr="Passage du bilan de santé initial" data-lang-vi="Khám sức khỏe ban đầu">Passage du bilan de santé initial</li>
+                            <li data-lang-fr="Orientation vers les services d'intégration" data-lang-vi="Được hướng dẫn các dịch vụ hội nhập">Orientation vers les services d'intégration</li>
                         </ul>
                     </div>
                 </div>
@@ -735,33 +1040,24 @@
 
             <div class="card">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📝 Démarche en ligne</h3>
+                    <h3>📝 <span data-lang-fr="Démarche en ligne" data-lang-vi="Thủ tục trực tuyến">Démarche en ligne</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <h4>Procédure à suivre :</h4>
+                        <h4 data-lang-fr="Procédure à suivre :" data-lang-vi="Các bước thực hiện:">Procédure à suivre :</h4>
                         <ol>
-                            <li>Accédez au site : <a href="https://administration-francaise.labobox.com" target="_blank">administration-francaise.labobox.com</a></li>
-                            <li>Créez un compte ou connectez-vous avec France Connect</li>
-                            <li>Remplissez le formulaire de déclaration d'arrivée</li>
-                            <li>Joignez les documents requis :
-                                <ul>
-                                    <li>Copie du passeport (pages avec photo et tampon d'entrée)</li>
-                                    <li>Copie du visa</li>
-                                    <li>Justificatif de domicile</li>
-                                    <li>Acte de mariage</li>
-                                </ul>
-                            </li>
-                            <li>Soumettez votre demande</li>
+                            <li data-lang-fr="Accédez au site : administration-francaise.labobox.com" data-lang-vi="Truy cập trang: administration-francaise.labobox.com">Accédez au site : administration-francaise.labobox.com</li>
+                            <li data-lang-fr="Créez un compte ou connectez-vous avec France Connect" data-lang-vi="Tạo tài khoản hoặc đăng nhập bằng France Connect">Créez un compte ou connectez-vous avec France Connect</li>
+                            <li data-lang-fr="Remplissez le formulaire de déclaration d'arrivée" data-lang-vi="Điền đơn khai báo đến">Remplissez le formulaire de déclaration d'arrivée</li>
+                            <li data-lang-fr="Joignez les documents requis" data-lang-vi="Đính kèm giấy tờ yêu cầu">Joignez les documents requis</li>
+                            <li data-lang-fr="Soumettez votre demande" data-lang-vi="Nộp đơn">Soumettez votre demande</li>
                         </ol>
 
                         <div class="info-box">
-                            <strong>📍 Coût :</strong> La taxe OFII s'élève à environ <strong>200€</strong> (tarif 2026). Elle est payable en ligne lors de la demande. Cette taxe est obligatoire pour la validation du visa.
+                            <strong data-lang-fr="💰 Coût :" data-lang-vi="💰 Phí:">💰 Coût :</strong>
+                            <span data-lang-fr="La taxe OFII s'élève à environ 200€ (tarif 2026). Payable en ligne." data-lang-vi="Phí OFII khoảng 200€ (giá 2026). Thanh toán trực tuyến.">La taxe OFII s'élève à environ 200€ (tarif 2026). Payable en ligne.</span>
                         </div>
-
-                        <h4>Après la validation :</h4>
-                        <p>L'OFII enverra un电子邮件 confirmant la validation de votre séjour. Vous recevrez un <strong>visa validé</strong> avec une durée de séjour confirmée.</p>
                     </div>
                 </div>
             </div>
@@ -769,25 +1065,26 @@
 
         <!-- SECTION 3: PRÉFECTURE -->
         <section id="prefecture">
-            <h2>🏢 3. Préfecture - Titre de Séjour</h2>
+            <h2>🏢 <span data-lang-fr="3. Préfecture - Titre de Séjour" data-lang-vi="3. Sở Nội Vụ - Giấy Phép Cư Trú">3. Préfecture - Titre de Séjour</span></h2>
 
             <div class="card open">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📋过一次Title de séjour - Vue d'ensemble</h3>
+                    <h3>📋 <span data-lang-fr="Vue d'ensemble" data-lang-vi="Tổng quan">Vue d'ensemble</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <p>Bien que le VLS-TS dispense d'une demande de titre de séjour la première année, vous devez néanmoins vous <strong>présenter à la préfecture</strong> dans les <strong>3 mois</strong> suivant votre arrivée pour faire valider votre séjour.</p>
+                        <p data-lang-fr="Bien que le VLS-TS dispense d'une demande de titre de séjour la première année, vous devez vous présenter à la préfecture dans les 3 mois pour faire valider votre séjour." data-lang-vi="Mặc dù VLS-TS miễn xin giấy phép cư trú trong năm đầu, bạn phải đến sở nội vụ trong 3 tháng để xác nhận cư trú.">Bien que le VLS-TS dispense d'une demande de titre de séjour la première année, vous devez vous présenter à la préfecture dans les 3 mois pour faire valider votre séjour.</p>
 
-                        <h4>Types de titres possibles :</h4>
+                        <h4 data-lang-fr="Types de titres possibles :" data-lang-vi="Các loại giấy phép có thể:">Types de titres possibles :</h4>
                         <ul>
-                            <li><strong>Carte de séjour temporaire</strong> "Vie privée et familiale" : délivrée pour 1 an, renouvelable</li>
-                            <li><strong>Carte de résident</strong> : possible après 3 ans de mariage si conditions remplies</li>
+                            <li data-lang-fr="Carte de séjour temporaire 'Vie privée et familiale' : 1 an, renouvelable" data-lang-vi="Giấy phép cư trú tạm thời 'Đời sống gia đình': 1 năm, gia hạn được">Carte de séjour temporaire 'Vie privée et familiale' : 1 an, renouvelable</li>
+                            <li data-lang-fr="Carte de résident : possible après 3 ans de mariage" data-lang-vi="Thẻ cư trú: có thể xin sau 3 năm kết hôn">Carte de résident : possible après 3 ans de mariage</li>
                         </ul>
 
-                        <div class="info-box">
-                            <strong>⏰ Délai :</strong> Vous devez prendre rendez-vous dès que possible. Les créneaux sont souvent complets plusieurs semaines à l'avance. Bookez dès votre arrivée !
+                        <div class="warning">
+                            <strong data-lang-fr="⏰ Délai :" data-lang-vi="⏰ Thời hạn:">⏰ Délai :</strong>
+                            <span data-lang-fr="Prenez rendez-vous dès que possible. Les créneaux sont souvent complets plusieurs semaines à l'avance." data-lang-vi="Đặt lịch hẹn ngay khi có thể. Các suất hẹn thường kín nhiều tuần trước.">Prenez rendez-vous dès que possible. Les créneaux sont souvent complets plusieurs semaines à l'avance.</span>
                         </div>
                     </div>
                 </div>
@@ -795,30 +1092,26 @@
 
             <div class="card">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📝 Documents à fournir</h3>
+                    <h3>📝 <span data-lang-fr="Documents à fournir" data-lang-vi="Giấy tờ cần nộp">Documents à fournir</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
                         <div class="doc-list">
-                            <strong>Dossier complet à préparer :</strong>
+                            <strong data-lang-fr="Dossier complet à préparer :" data-lang-vi="Hồ sơ đầy đủ cần chuẩn bị:">Dossier complet à préparer :</strong>
                             <ul>
-                                <li> Passeport原件 + copie des pages essentielles</li>
-                                <li> 3 photos d'identité aux normes françaises</li>
-                                <li> Acte de mariage (intégral) + traduction assermentée</li>
-                                <li> Justificatif de domicile (contrat de bail, facture EDF, etc.)</li>
-                                <li> Justificatif d'identité du conjoint (carte nationale ou passeport)</li>
-                                <li> Certificat de radiation du consulat vietnamien (si applicable)</li>
-                                <li> 2 enveloppes timbrées à votre nom</li>
-                                <li> Timbre fiscal : 225€ (carte de séjour temporaire)</li>
+                                <li data-lang-fr="Passeport + copies des pages essentielles" data-lang-vi="Hộ chiếu + bản sao các trang quan trọng">Passeport + copies des pages essentielles</li>
+                                <li data-lang-fr="3 photos d'identité aux normes françaises" data-lang-vi="3 ảnh chân dung theo tiêu chuẩn Pháp">3 photos d'identité aux normes françaises</li>
+                                <li data-lang-fr="Acte de mariage + traduction assermentée" data-lang-vi="Giấy đăng ký kết hôn + bản dịch có tuyên thệ">Acte de mariage + traduction assermentée</li>
+                                <li data-lang-fr="Justificatif de domicile" data-lang-vi="Giấy chứng minh địa chỉ">Justificatif de domicile</li>
+                                <li data-lang-fr="Justificatif d'identité du conjoint" data-lang-vi="Giấy tờ của vợ/chồng">Justificatif d'identité du conjoint</li>
+                                <li data-lang-fr="Timbre fiscal : 225€" data-lang-vi="Tem thuế: 225€">Timbre fiscal : 225€</li>
                             </ul>
                         </div>
 
-                        <h4>Où s'adresser ?</h4>
-                        <p>La préfecture de votre département de résidence. Renseignez-vous sur le site de la préfecture pour connaître les horaires et modalités de prise de rendez-vous.</p>
-
                         <div class="warning">
-                            <strong>⚠️ Attention :</strong> Les préfectures ont des procédures différentes selon les départements. Vérifiez toujours le site internet de votre préfecture avant de vous déplacer.
+                            <strong data-lang-fr="⚠️ Attention :" data-lang-vi="⚠️ Lưu ý:">⚠️ Attention :</strong>
+                            <span data-lang-fr="Les préfectures ont des procédures différentes selon les départements. Vérifiez le site de votre préfecture." data-lang-vi="Mỗi sở nội vụ có quy trình khác nhau theo từng vùng. Kiểm tra trang web sở nội vụ của bạn.">Les préfectures ont des procédures différentes selon les départements. Vérifiez le site de votre préfecture.</span>
                         </div>
                     </div>
                 </div>
@@ -826,24 +1119,20 @@
 
             <div class="card">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>⏱️ Délais et suivi</h3>
+                    <h3>⏱️ <span data-lang-fr="Délais et suivi" data-lang-vi="Thời gian và theo dõi">Délais et suivi</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <h4>Délais de traitement :</h4>
+                        <h4 data-lang-fr="Délais de traitement :" data-lang-vi="Thời gian xử lý:">Délais de traitement :</h4>
                         <ul>
-                            <li>Réception de la convocation : 2 à 8 semaines</li>
-                            <li>Traitement du dossier : 2 à 4 mois</li>
-                            <li>Réception de la carte : jusqu'à 6 mois</li>
+                            <li data-lang-fr="Réception de la convocation : 2 à 8 semaines" data-lang-vi="Nhận lịch hẹn: 2-8 tuần">Réception de la convocation : 2 à 8 semaines</li>
+                            <li data-lang-fr="Traitement du dossier : 2 à 4 mois" data-lang-vi="Xử lý hồ sơ: 2-4 tháng">Traitement du dossier : 2 à 4 mois</li>
+                            <li data-lang-fr="Réception de la carte : jusqu'à 6 mois" data-lang-vi="Nhận thẻ: lên đến 6 tháng">Réception de la carte : jusqu'à 6 mois</li>
                         </ul>
 
-                        <h4>Pendant l'attente :</h4>
-                        <p>Vous recevez un <strong>récépissé de dépôt</strong> qui prouve que vous êtes en procédure régulière. Ce document, bersama votre passeport, vous permet de travailler et de voyager dans l'espace Schengen.</p>
-
-                        <div class="pro-tip">
-                            <strong>💡 Astuce :</strong> Conservez tous les récépissés et preuves de dépôt. Si vous devez voyager, contactez la préfecture pour obtenir un laisser-passer si votre récépissé expire.
-                        </div>
+                        <h4 data-lang-fr="Pendant l'attente :" data-lang-vi="Trong khi chờ:">Pendant l'attente :</h4>
+                        <p data-lang-fr="Vous recevez un récépissé de dépôt qui prouve votre situation régulière. Avec votre passeport, il permet de travailler et voyager dans l'espace Schengen." data-lang-vi="Bạn nhận được biên nhận chứng minh tình trạng hợp lệ. Cùng hộ chiếu, nó cho phép làm việc và đi lại trong Schengen.">Vous recevez un récépissé de dépôt qui prouve votre situation régulière. Avec votre passeport, il permet de travailler et voyager dans l'espace Schengen.</p>
                     </div>
                 </div>
             </div>
@@ -851,27 +1140,28 @@
 
         <!-- SECTION 4: SÉCURITÉ SOCIALE -->
         <section id="securite-sociale">
-            <h2>🏥 4. Sécurité Sociale - CPAM</h2>
+            <h2>🏥 <span data-lang-fr="4. Sécurité Sociale - CPAM" data-lang-vi="4. Bảo Hiểm Xã Hội - CPAM">4. Sécurité Sociale - CPAM</span></h2>
 
             <div class="card open">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📋 Inscription à la Sécurité Sociale</h3>
+                    <h3>📋 <span data-lang-fr="Inscription à la Sécurité Sociale" data-lang-vi="Đăng ký Bảo Hiểm Xã Hội">Inscription à la Sécurité Sociale</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <p>L'inscription à la <strong>CPAM</strong> (Caisse Primaire d'Assurance Maladie) vous permet d'obtenir un numéro de Sécurité Sociale et d'être remboursé de vos frais de santé.</p>
+                        <p data-lang-fr="L'inscription à la CPAM (Caisse Primaire d'Assurance Maladie) vous permet d'obtenir un numéro de Sécurité Sociale et d'être remboursé de vos frais de santé." data-lang-vi="Đăng ký CPAM (Cơ quan Bảo Hiểm Y Tế) cho phép bạn có số BHXH và được hoàn trả chi phí y tế.">L'inscription à la CPAM (Caisse Primaire d'Assurance Maladie) vous permet d'obtenir un numéro de Sécurité Sociale et d'être remboursé de vos frais de santé.</p>
 
-                        <h4>Pourquoi c'est essentiel ?</h4>
+                        <h4 data-lang-fr="Pourquoi c'est essentiel ?" data-lang-vi="Tại sao quan trọng?">Pourquoi c'est essentiel ?</h4>
                         <ul>
-                            <li>Obtention du <strong>numéro de Sécurité Sociale</strong> (15 chiffres)</li>
-                            <li>Prise en charge de 70% minimum des frais médicaux</li>
-                            <li>Accès au <strong>parcours de santé</strong> complet</li>
-                            <li>Nécessaire pour la complémentaire santé (mutuelle)</li>
+                            <li data-lang-fr="Obtention du numéro de Sécurité Sociale (15 chiffres)" data-lang-vi="Có số BHXH (15 chữ số)">Obtention du numéro de Sécurité Sociale (15 chiffres)</li>
+                            <li data-lang-fr="Prise en charge de 70% minimum des frais médicaux" data-lang-vi="Chi trả tối thiểu 70% chi phí y tế">Prise en charge de 70% minimum des frais médicaux</li>
+                            <li data-lang-fr="Accès au parcours de santé complet" data-lang-vi="Được chăm sóc y tế đầy đủ">Accès au parcours de santé complet</li>
+                            <li data-lang-fr="Nécessaire pour la complémentaire santé (mutuelle)" data-lang-vi="Cần thiết để mua bảo hiểm bổ sung">Nécessaire pour la complémentaire santé (mutuelle)</li>
                         </ul>
 
                         <div class="info-box">
-                            <strong>📍 Gratuit :</strong> L'inscription à la Sécurité Sociale est entièrement gratuite. Méfiez-vous des sites qui réclament de l'argent pour ce service.
+                            <strong data-lang-fr="💡 Gratuit :" data-lang-vi="💡 Miễn phí:">💡 Gratuit :</strong>
+                            <span data-lang-fr="L'inscription à la Sécurité Sociale est entièrement gratuite." data-lang-vi="Đăng ký BHXH hoàn toàn miễn phí.">L'inscription à la Sécurité Sociale est entièrement gratuite.</span>
                         </div>
                     </div>
                 </div>
@@ -879,61 +1169,36 @@
 
             <div class="card">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📝 Procédure d'inscription</h3>
+                    <h3>📝 <span data-lang-fr="Procédure d'inscription" data-lang-vi="Quy trình đăng ký">Procédure d'inscription</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <h4>En ligne (recommandé) :</h4>
+                        <h4 data-lang-fr="En ligne (recommandé) :" data-lang-vi="Trực tuyến (khuyến nghị):">En ligne (recommandé) :</h4>
                         <ol>
-                            <li>Créez un compte sur <a href="https://www.ameli.fr" target="_blank">www.ameli.fr</a></li>
-                            <li>Cliquez sur "Mes démarches" → "Faire une demande d'assurance maladie"</li>
-                            <li>Remplissez le formulaire avec vos informations personnelles</li>
-                            <li>Joignez les documents :
-                                <ul>
-                                    <li>Copie du passeport</li>
-                                    <li>Copie du visa/titre de séjour</li>
-                                    <li>Acte de mariage traduit</li>
-                                    <li>Justificatif de domicile en France</li>
-                                    <li>RIB français</li>
-                                </ul>
-                            </li>
-                            <li>Soumettez votre demande</li>
+                            <li data-lang-fr="Créez un compte sur ameli.fr" data-lang-vi="Tạo tài khoản trên ameli.fr">Créez un compte sur ameli.fr</li>
+                            <li data-lang-fr="Cliquez sur 'Mes démarches' → 'Faire une demande d'assurance maladie'" data-lang-vi="Nhấn 'Thủ tục của tôi' → 'Yêu cầu bảo hiểm y tế'">Cliquez sur 'Mes démarches' → 'Faire une demande d'assurance maladie'</li>
+                            <li data-lang-fr="Remplissez le formulaire et joignez les documents" data-lang-vi="Điền đơn và đính kèm giấy tờ">Remplissez le formulaire et joignez les documents</li>
+                            <li data-lang-fr="Soumettez votre demande" data-lang-vi="Nộp đơn">Soumettez votre demande</li>
                         </ol>
 
-                        <h4>Par courrier :</h4>
-                        <p>Adressez votre dossier à la CPAM de votre département avec le formulaire S1106 (disponible sur ameli.fr).</p>
+                        <h4 data-lang-fr="Documents nécessaires :" data-lang-vi="Giấy tờ cần thiết:">Documents nécessaires :</h4>
+                        <div class="doc-list">
+                            <ul>
+                                <li data-lang-fr="Copie du passeport" data-lang-vi="Bản sao hộ chiếu">Copie du passeport</li>
+                                <li data-lang-fr="Copie du visa/titre de séjour" data-lang-vi="Bản sao visa/giấy phép cư trú">Copie du visa/titre de séjour</li>
+                                <li data-lang-fr="Acte de mariage traduit" data-lang-vi="Giấy đăng ký kết hôn đã dịch">Acte de mariage traduit</li>
+                                <li data-lang-fr="Justificatif de domicile" data-lang-vi="Giấy chứng minh địa chỉ">Justificatif de domicile</li>
+                                <li data-lang-fr="RIB français" data-lang-vi="Số tài khoản ngân hàng Pháp">RIB français</li>
+                            </ul>
+                        </div>
 
                         <div class="pro-tip">
-                            <strong>💡 Astuce :</strong> Utilisez France Connect pour vous connecter à Ameli. Si votre conjoint français a un compte, vous pouvez plus facilement valider votre identité.
+                            <strong data-lang-fr="💡 Astuce :" data-lang-vi="💡 Mẹo:">💡 Astuce :</strong>
+                            <span data-lang-fr="Utilisez France Connect pour vous connecter à Ameli plus facilement." data-lang-vi="Dùng France Connect để đăng nhập Ameli dễ dàng hơn.">Utilisez France Connect pour vous connecter à Ameli plus facilement.</span>
                         </div>
 
-                        <h4>Délai d'attribution :</h4>
-                        <p>Le numéro de Sécurité Sociale provisoire est généralement attribué sous <strong>2 à 4 semaines</strong>. La carte Vitale arrive sous 3 à 6 semaines supplémentaires.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" onclick="toggleCard(this)">
-                    <h3>🪪 Obtention de la Carte Vitale</h3>
-                    <span class="chevron">▼</span>
-                </div>
-                <div class="card-body">
-                    <div class="card-content">
-                        <p>La <strong>Carte Vitale</strong> est indispensable pour être remboursé automatiquement de vos frais de santé.</p>
-
-                        <h4>Pour recevoir votre carte :</h4>
-                        <ol>
-                            <li>Votre dossier doit être complètement validé par la CPAM</li>
-                            <li>Vous recevrez un formulaire de demande de carte Vitale</li>
-                            <li>Retournez-le avec une photo d'identité</li>
-                            <li>La carte arrive par courrier sous 2 à 3 semaines</li>
-                        </ol>
-
-                        <div class="info-box">
-                            <strong>⚠️ Important :</strong> Mettez à jour votre carte Vitale chaque année et à chaque changement de situation. Vous pouvez le faire dans les pharmacies équipées.
-                        </div>
+                        <p data-lang-fr="Le numéro de Sécurité Sociale provisoire est attribué sous 2 à 4 semaines. La carte Vitale arrive sous 3 à 6 semaines supplémentaires." data-lang-vi="Số BHXH tạm thời được cấp trong 2-4 tuần. Thẻ Vitale đến sau 3-6 tuần nữa.">Le numéro de Sécurité Sociale provisoire est attribué sous 2 à 4 semaines. La carte Vitale arrive sous 3 à 6 semaines supplémentaires.</p>
                     </div>
                 </div>
             </div>
@@ -941,27 +1206,27 @@
 
         <!-- SECTION 5: IMPÔTS -->
         <section id="impots">
-            <h2>💰 5. Impôts - Inscription au Fisc</h2>
+            <h2>💰 <span data-lang-fr="5. Impôts - Numéro Fiscal" data-lang-vi="5. Thuế - Số Thuế">5. Impôts - Numéro Fiscal</span></h2>
 
             <div class="card open">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📋 Numéro Fiscal et Déclaration</h3>
+                    <h3>📋 <span data-lang-fr="Numéro Fiscal et Déclaration" data-lang-vi="Số Thuế và Khai Báo">Numéro Fiscal et Déclaration</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <p>En France, tout résident fiscal doit s'immatriculer auprès des services fiscaux et déclarer ses revenus chaque année. Le <strong>numéro fiscal</strong> est attribué automatiquement lors de votre première déclaration.</p>
+                        <p data-lang-fr="Tout résident fiscal doit s'immatriculer auprès des services fiscaux et déclarer ses revenus chaque année. Le numéro fiscal est attribué automatiquement lors de votre première déclaration." data-lang-vi="Mọi cư dân thuế phải đăng ký với cơ quan thuế và khai báo thu nhập hàng năm. Số thuế được cấp tự động khi khai báo lần đầu.">Tout résident fiscal doit s'immatriculer auprès des services fiscaux et déclarer ses revenus chaque année. Le numéro fiscal est attribué automatiquement lors de votre première déclaration.</p>
 
-                        <h4>Qui est résident fiscal ?</h4>
-                        <p>Vous devenez résident fiscal français si :</p>
+                        <h4 data-lang-fr="Qui est résident fiscal ?" data-lang-vi="Ai là cư dân thuế?">Qui est résident fiscal ?</h4>
                         <ul>
-                            <li>Votre foyer fiscal est en France</li>
-                            <li>Vous passez plus de 183 jours en France par an</li>
-                            <li>Votre activité principale est en France</li>
+                            <li data-lang-fr="Votre foyer fiscal est en France" data-lang-vi="Gia đình bạn ở Pháp">Votre foyer fiscal est en France</li>
+                            <li data-lang-fr="Vous passez plus de 183 jours en France par an" data-lang-vi="Bạn ở Pháp hơn 183 ngày/năm">Vous passez plus de 183 jours en France par an</li>
+                            <li data-lang-fr="Votre activité principale est en France" data-lang-vi="Công việc chính của bạn ở Pháp">Votre activité principale est en France</li>
                         </ul>
 
                         <div class="info-box">
-                            <strong>📍 Numéro fiscal vs SPI :</strong> Le numéro fiscal (13 chiffres) est différent du numéro de Sécurité Sociale. Vous le trouverez sur vos avis d'imposition.
+                            <strong data-lang-fr="📍 Info :" data-lang-vi="📍 Thông tin:">📍 Info :</strong>
+                            <span data-lang-fr="Le numéro fiscal (13 chiffres) est différent du numéro de Sécurité Sociale." data-lang-vi="Số thuế (13 chữ số) khác với số BHXH.">Le numéro fiscal (13 chiffres) est différent du numéro de Sécurité Sociale.</span>
                         </div>
                     </div>
                 </div>
@@ -969,57 +1234,24 @@
 
             <div class="card">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📝 Première Déclaration de Revenus</h3>
+                    <h3>📝 <span data-lang-fr="Première Déclaration" data-lang-vi="Khai Báo Lần Đầu">Première Déclaration</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <h4>Quand déclarer ?</h4>
-                        <p>La campagne de déclaration a lieu généralement entre <strong>avril et juin</strong> chaque année. Si vous arrivez en cours d'année, vous déclarerez vos revenus perçus depuis votre arrivée.</p>
+                        <h4 data-lang-fr="Quand déclarer ?" data-lang-vi="Khi nào khai báo?">Quand déclarer ?</h4>
+                        <p data-lang-fr="La campagne de déclaration a lieu entre avril et juin chaque année. Si vous arrivez en cours d'année, vous déclarez vos revenus depuis votre arrivée." data-lang-vi="Đợt khai báo diễn ra từ tháng 4 đến tháng 6 hàng năm. Nếu bạn đến giữa năm, khai báo thu nhập từ khi đến.">La campagne de déclaration a lieu entre avril et juin chaque année. Si vous arrivez en cours d'année, vous déclarez vos revenus depuis votre arrivée.</p>
 
-                        <h4>Procédure :</h4>
+                        <h4 data-lang-fr="Procédure :" data-lang-vi="Quy trình:">Procédure :</h4>
                         <ol>
-                            <li>Créez un compte sur <a href="https://www.impots.gouv.fr" target="_blank">www.impots.gouv.fr</a></li>
-                            <li>Accédez à votre espace Particulier</li>
-                            <li>Si c'est votre première année, remplissez le formulaire de déclaration initiale</li>
-                            <li>Déclarez vos revenus (salaires, allocations, etc.)</li>
-                            <li>Attention : vous serez imposé jointly avec votre époux(se) si vous êtes mariés</li>
+                            <li data-lang-fr="Créez un compte sur impots.gouv.fr" data-lang-vi="Tạo tài khoản trên impots.gouv.fr">Créez un compte sur impots.gouv.fr</li>
+                            <li data-lang-fr="Déclarez vos revenus (salaires, allocations...)" data-lang-vi="Khai báo thu nhập (lương, trợ cấp...)">Déclarez vos revenus (salaires, allocations...)</li>
+                            <li data-lang-fr="Si mariés, vous serez imposés conjointement" data-lang-vi="Nếu đã kết hôn, bạn sẽ đóng thuế chung">Si mariés, vous serez imposés conjointement</li>
                         </ol>
 
-                        <div class="doc-list">
-                            <strong>Documents à préparer :</strong>
-                            <ul>
-                                <li>Justificatifs de revenus perçus depuis votre arrivée</li>
-                                <li>Numéro fiscal de votre époux(se) si existant</li>
-                                <li>RIB français</li>
-                            </ul>
-                        </div>
-
-                        <div class="pro-tip">
-                            <strong>💡 Astuce :</strong> Si vous n'avez pas de revenus en France la première année, votre déclaration sera quand même nécessaire pour officialiser votre statut de résident fiscal.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" onclick="toggleCard(this)">
-                    <h3>🏠 Prélèvement à la Source</h3>
-                    <span class="chevron">▼</span>
-                </div>
-                <div class="card-body">
-                    <div class="card-content">
-                        <p>Depuis 2019, l'impôt sur le revenu est prélevé directement à la source. Vous verrez une retenue sur votre salaire ou un acompte sur vos allocations.</p>
-
-                        <h4>Comment ça marche ?</h4>
-                        <ul>
-                            <li>Votre taux d'imposition est calculé berdasarkan déclaration de revenus</li>
-                            <li>Il est appliqué automatiquement par votre employeur</li>
-                            <li>Vous pouvez ajuster votre taux via votre espace fiscal</li>
-                        </ul>
-
                         <div class="info-box">
-                            <strong>📍 Taux personnalisé :</strong> Par défaut, c'est le taux de votre époux(se) qui s'applique si vous êtes imposés jointly. Vous pouvez demander un taux individualisé.
+                            <strong data-lang-fr="🏠 Prélèvement à la source :" data-lang-vi="🏠 Khấu trừ tại nguồn:">🏠 Prélèvement à la source :</strong>
+                            <span data-lang-fr="L'impôt est prélevé directement sur votre salaire. Vous pouvez ajuster votre taux via votre espace fiscal." data-lang-vi="Thuế được khấu trừ trực tiếp từ lương. Bạn có thể điều chỉnh tỷ lệ qua tài khoản thuế.">L'impôt est prélevé directement sur votre salaire. Vous pouvez ajuster votre taux via votre espace fiscal.</span>
                         </div>
                     </div>
                 </div>
@@ -1028,73 +1260,55 @@
 
         <!-- SECTION 6: BANQUE -->
         <section id="banque">
-            <h2>🏦 6. Banque - Ouverture de Compte</h2>
+            <h2>🏦 <span data-lang-fr="6. Banque - Ouverture de Compte" data-lang-vi="6. Ngân Hàng - Mở Tài Khoản">6. Banque - Ouverture de Compte</span></h2>
 
             <div class="card open">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📋 Pourquoi ouvrir un compte en France ?</h3>
+                    <h3>📋 <span data-lang-fr="Pourquoi ouvrir un compte en France ?" data-lang-vi="Tại sao mở tài khoản ở Pháp?">Pourquoi ouvrir un compte en France ?</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <p>Un compte bancaire français est <strong>indispensable</strong> pour la plupart des démarches administratives : recevoir votre salaire, payer vos factures, domicilier vos prélèvements, etc.</p>
+                        <p data-lang-fr="Un compte bancaire français est indispensable pour : recevoir votre salaire, payer vos factures, domicilier vos prélèvements, etc." data-lang-vi="Tài khoản ngân hàng Pháp là cần thiết để: nhận lương, thanh toán hóa đơn, đăng ký thanh toán tự động, v.v.">Un compte bancaire français est indispensable pour : recevoir votre salaire, payer vos factures, domicilier vos prélèvements, etc.</p>
 
-                        <h4>Avantages :</h4>
+                        <h4 data-lang-fr="Avantages :" data-lang-vi="Lợi ích:">Avantages :</h4>
                         <ul>
-                            <li>Obtention d'un <strong>RIB français</strong> (Relevé d'Identité Bancaire)</li>
-                            <li>Accès aux services de paiement français (CB, virements)</li>
-                            <li>Possibilité d'obtenir une <strong>carte bancaire</strong></li>
-                            <li>Facilite les démarches administratives (loyer, EDF, etc.)</li>
+                            <li data-lang-fr="Obtention d'un RIB français" data-lang-vi="Có số tài khoản Pháp (RIB)">Obtention d'un RIB français</li>
+                            <li data-lang-fr="Accès aux services de paiement français (CB, virements)" data-lang-vi="Dịch vụ thanh toán Pháp (thẻ, chuyển khoản)">Accès aux services de paiement français (CB, virements)</li>
+                            <li data-lang-fr="Possibilité d'obtenir une carte bancaire" data-lang-vi="Có thể có thẻ ngân hàng">Possibilité d'obtenir une carte bancaire</li>
+                            <li data-lang-fr="Facilite les démarches administratives" data-lang-vi="Giúp thủ tục hành chính dễ dàng hơn">Facilite les démarches administratives</li>
                         </ul>
-
-                        <div class="info-box">
-                            <strong>⚠️ Attention :</strong> Votre compte vietnamien ne peut pas être utilisé pour la plupart des opérations en France. Vous aurez besoin d'un compte français.
-                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📝 Documents nécessaires</h3>
+                    <h3>📝 <span data-lang-fr="Documents nécessaires" data-lang-vi="Giấy tờ cần thiết">Documents nécessaires</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
                         <div class="doc-list">
-                            <strong>Pour ouvrir un compte, préparez :</strong>
+                            <strong data-lang-fr="Pour ouvrir un compte :" data-lang-vi="Để mở tài khoản:">Pour ouvrir un compte :</strong>
                             <ul>
-                                <li> Passeport valide</li>
-                                <li> Visa ou titre de séjour</li>
-                                <li> Justificatif de domicile (facture, contrat de bail)</li>
-                                <li> Acte de mariage (pour compte joint avec époux)</li>
-                                <li> Eventuellement : attestation d'hébergement + pièce d'identité de l'hébergeant</li>
+                                <li data-lang-fr="Passeport valide" data-lang-vi="Hộ chiếu còn hạn">Passeport valide</li>
+                                <li data-lang-fr="Visa ou titre de séjour" data-lang-vi="Visa hoặc giấy phép cư trú">Visa ou titre de séjour</li>
+                                <li data-lang-fr="Justificatif de domicile" data-lang-vi="Giấy chứng minh địa chỉ">Justificatif de domicile</li>
+                                <li data-lang-fr="Acte de mariage (pour compte joint)" data-lang-vi="Giấy đăng ký kết hôn (cho tài khoản chung)">Acte de mariage (pour compte joint)</li>
                             </ul>
                         </div>
 
-                        <h4>Banques recommandées pour les nouveaux arrivants :</h4>
+                        <h4 data-lang-fr="Banques recommandées :" data-lang-vi="Ngân hàng được khuyến nghị:">Banques recommandées :</h4>
                         <ul>
-                            <li><strong>Banques en ligne</strong> (Boursorama, Fortuneo, Hello Bank!) : souvent plus accessibles, moins de pièces demandées</li>
-                            <li><strong>Banques traditionnelles</strong> (BNP, Crédit Agricole, LCL) : service en personne, mais parfois plus exigeantes</li>
+                            <li data-lang-fr="Banques en ligne (Boursorama, Fortuneo, Hello Bank!) : plus accessibles" data-lang-vi="Ngân hàng trực tuyến (Boursorama, Fortuneo, Hello Bank!): dễ tiếp cận hơn">Banques en ligne (Boursorama, Fortuneo, Hello Bank!) : plus accessibles</li>
+                            <li data-lang-fr="Banques traditionnelles (BNP, Crédit Agricole) : service en personne" data-lang-vi="Ngân hàng truyền thống (BNP, Crédit Agricole): phục vụ trực tiếp">Banques traditionnelles (BNP, Crédit Agricole) : service en personne</li>
                         </ul>
 
                         <div class="pro-tip">
-                            <strong>💡 Astuce :</strong> Les banques en ligne sont généralement plus souples avec les documents acceptés pour les nouveaux arrivants. Elles permettent aussi d'ouvrir un compte plus rapidement.
+                            <strong data-lang-fr="💡 Astuce :" data-lang-vi="💡 Mẹo:">💡 Astuce :</strong>
+                            <span data-lang-fr="Les banques en ligne sont plus souples avec les documents pour les nouveaux arrivants." data-lang-vi="Ngân hàng trực tuyến linh hoạt hơn với giấy tờ cho người mới đến.">Les banques en ligne sont plus souples avec les documents pour les nouveaux arrivants.</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" onclick="toggleCard(this)">
-                    <h3>💳 Carte d'Identité Nationale (CNI) - À terme</h3>
-                    <span class="chevron">▼</span>
-                </div>
-                <div class="card-body">
-                    <div class="card-content">
-                        <p>Une fois que vous aurez votre <strong>carte de séjour</strong> (après validation de la préfecture), vous pourrez demander une Carte Nationale d'Identité française si vous le souhaitez.</p>
-
-                        <p><strong>Note :</strong> Ce n'est pas obligatoire, mais cela peut faciliter certaines démarches bancaires et administratives.</p>
                     </div>
                 </div>
             </div>
@@ -1102,30 +1316,22 @@
 
         <!-- SECTION 7: LOGEMENT -->
         <section id="logement">
-            <h2>🏠 7. Logement</h2>
+            <h2>🏠 <span data-lang-fr="7. Logement" data-lang-vi="7. Nhà Ở">7. Logement</span></h2>
 
             <div class="card open">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📋 Trouver un Logement</h3>
+                    <h3>📋 <span data-lang-fr="Trouver un Logement" data-lang-vi="Tìm Nhà Ở">Trouver un Logement</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <p>Trouver un logement en France peut être difficile pour les nouveaux arrivants. Voici les étapes et les ressources pour vous aider.</p>
+                        <p data-lang-fr="Trouver un logement en France peut être difficile pour les nouveaux arrivants. Voici les ressources pour vous aider." data-lang-vi="Tìm nhà ở tại Pháp có thể khó cho người mới đến. Dưới đây là các nguồn giúp bạn.">Trouver un logement en France peut être difficile pour les nouveaux arrivants. Voici les ressources pour vous aider.</p>
 
-                        <h4>Types de logement :</h4>
+                        <h4 data-lang-fr="Plateformes de recherche :" data-lang-vi="Nền tảng tìm kiếm:">Plateformes de recherche :</h4>
                         <ul>
-                            <li><strong>Location vide</strong> : non meublée, généralement moins chère</li>
-                            <li><strong>Location meublée</strong> : avec équipements, plus chère mais pratique pour débuter</li>
-                            <li><strong>Sous-location</strong> : possible sous conditions</li>
-                        </ul>
-
-                        <h4>Plateformes de recherche :</h4>
-                        <ul>
-                            <li><a href="https://www.leboncoin.fr" target="_blank">Leboncoin</a> - Site d'annonces le plus populaire</li>
-                            <li><a href="https://www.seloger.com" target="_blank">SeLoger</a> - Principalement pour achats et grandes agences</li>
-                            <li><a href="https://www.avendrealouer.fr" target="_blank">A vendre à louer</a> - Autre plateforme courante</li>
-                            <li><a href="https://www.facebook.com/groups/" target="_blank">Groupes Facebook</a> - Souvent plus souples</li>
+                            <li><a href="https://www.leboncoin.fr" target="_blank">Leboncoin</a> - <span data-lang-fr="Annonces les plus populaires" data-lang-vi="Quảng cáo phổ biến nhất">Annonces les plus populaires</span></li>
+                            <li><a href="https://www.seloger.com" target="_blank">SeLoger</a> - <span data-lang-fr="Grandes agences" data-lang-vi="Đại lý lớn">Grandes agences</span></li>
+                            <li><a href="https://www.facebook.com/groups/" target="_blank" data-lang-fr="Groupes Facebook" data-lang-vi="Nhóm Facebook">Groupes Facebook</a> - <span data-lang-fr="Souvent plus souples" data-lang-vi="Thường linh hoạt hơn">Souvent plus souples</span></li>
                         </ul>
                     </div>
                 </div>
@@ -1133,54 +1339,28 @@
 
             <div class="card">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📝 Dossier de Location</h3>
+                    <h3>📝 <span data-lang-fr="Dossier de Location" data-lang-vi="Hồ Sơ Thuê Nhà">Dossier de Location</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <p>Le marché locatif français est très compétitif. Préparez un dossier solide.</p>
+                        <p data-lang-fr="Le marché locatif français est très compétitif. Préparez un dossier solide." data-lang-vi="Thị trường cho thuê Pháp rất cạnh tranh. Chuẩn bị hồ sơ đầy đủ.">Le marché locatif français est très compétitif. Préparez un dossier solide.</p>
 
                         <div class="doc-list">
-                            <strong>Documents à préparer :</strong>
+                            <strong data-lang-fr="Documents à préparer :" data-lang-vi="Giấy tờ cần chuẩn bị:">Documents à préparer :</strong>
                             <ul>
-                                <li>Pièce d'identité (passeport)</li>
-                                <li>Visa/titre de séjour</li>
-                                <li>3 dernières fiches de paie (ou attestation de revenus)</li>
-                                <li>Contrat de travail ou attestation d'embauche</li>
-                                <li>Dernier avis d'imposition</li>
-                                <li>Relevés bancaires des 3 derniers mois</li>
-                                <li>Attestation de précédentes locations (si disponible)</li>
-                                <li>Garantie de paiement (caution, Visale, etc.)</li>
+                                <li data-lang-fr="Pièce d'identité (passeport)" data-lang-vi="Giấy tờ (hộ chiếu)">Pièce d'identité (passeport)</li>
+                                <li data-lang-fr="Visa/titre de séjour" data-lang-vi="Visa/giấy phép cư trú">Visa/titre de séjour</li>
+                                <li data-lang-fr="3 dernières fiches de paie" data-lang-vi="3 phiếu lương gần nhất">3 dernières fiches de paie</li>
+                                <li data-lang-fr="Contrat de travail ou attestation d'embauche" data-lang-vi="Hợp đồng lao động hoặc xác nhận tuyển dụng">Contrat de travail ou attestation d'embauche</li>
+                                <li data-lang-fr="Dernier avis d'imposition" data-lang-vi="Thông báo thuế gần nhất">Dernier avis d'imposition</li>
+                                <li data-lang-fr="Garantie de paiement (Visale)" data-lang-vi="Bảo đảm thanh toán (Visale)">Garantie de paiement (Visale)</li>
                             </ul>
                         </div>
 
-                        <div class="warning">
-                            <strong>⚠️ Caution :</strong> La caution standard est de 1 mois de loyer hors charges. Vous pouvez aussi bénéficier de <strong>Visale</strong> (garantie gratuite de l'État) si vous y êtes éligible.
-                        </div>
-
-                        <h4>La garantie Visale :</h4>
-                        <p>C'est une garantie gratuite proposée par l'État qui se porte caution pour vous. Renseignez-vous sur <a href="https://www.visale.fr" target="_blank">visale.fr</a>.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" onclick="toggleCard(this)">
-                    <h3>💡 Conseils Pratiques</h3>
-                    <span class="chevron">▼</span>
-                </div>
-                <div class="card-body">
-                    <div class="card-content">
-                        <div class="pro-tip">
-                            <strong>💡 Astuce 1 :</strong> Prévoyez 3 à 5 mois de budget pour trouver un logement. Les premiers mois en France peuvent nécessiter un logement temporaire.
-                        </div>
-
-                        <div class="pro-tip">
-                            <strong>💡 Astuce 2 :</strong> Si vous logez chez votre époux(se), vous pouvez domicilier vos courriers à cette adresse en attendant de trouver votre propre logement.
-                        </div>
-
-                        <div class="pro-tip">
-                            <strong>💡 Astuce 3 :</strong> Les agences immobilières prennent généralement des frais d'un mois de loyer. Les particuliers sont souvent moins chers.
+                        <div class="info-box">
+                            <strong data-lang-fr="🏠 Visale :" data-lang-vi="🏠 Visale:">🏠 Visale :</strong>
+                            <span data-lang-fr="Garantie gratuite de l'État qui se porte caution pour vous. Renseignez-vous sur visale.fr" data-lang-vi="Bảo đảm miễn phí của nhà nước thay thế bạn. Tìm hiểu trên visale.fr">Garantie gratuite de l'État qui se porte caution pour vous. Renseignez-vous sur visale.fr</span>
                         </div>
                     </div>
                 </div>
@@ -1189,59 +1369,28 @@
 
         <!-- SECTION 8: TÉLÉPHONE -->
         <section id="telephone">
-            <h2>📱 8. Téléphone et Opérateurs</h2>
+            <h2>📱 <span data-lang-fr="8. Téléphone et Opérateurs" data-lang-vi="8. Điện Thoại và Nhà Mạng">8. Téléphone et Opérateurs</span></h2>
 
             <div class="card open">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📋 Choisir un Opérateur</h3>
+                    <h3>📋 <span data-lang-fr="Choisir un Opérateur" data-lang-vi="Chọn Nhà Mạng">Choisir un Opérateur</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <p>Pour obtenir une ligne téléphonique française, vous pouvez soit utiliser votre téléphone vietnamien (si débloqué), soit acheter une carte SIM locale.</p>
+                        <p data-lang-fr="Pour obtenir une ligne française, vous pouvez utiliser votre téléphone vietnamien (si débloqué) ou acheter une carte SIM locale." data-lang-vi="Để có đường điện thoại Pháp, bạn có thể dùng điện thoại Việt Nam (nếu đã mở khóa) hoặc mua SIM Pháp.">Pour obtenir une ligne française, vous pouvez utiliser votre téléphone vietnamien (si débloqué) ou acheter une carte SIM locale.</p>
 
-                        <h4>Opérateurs principaux :</h4>
+                        <h4 data-lang-fr="Opérateurs principaux :" data-lang-vi="Nhà mạng chính:">Opérateurs principaux :</h4>
                         <ul>
-                            <li><strong>Orange</strong> - Le plus grand réseau, bon coverage</li>
-                            <li><strong>SFR</strong> - Deuxième opérateur, bons forfaits</li>
-                            <li><strong>Bouygues Telecom</strong> - Troisième acteur majeur</li>
-                            <li><strong>Free Mobile</strong> - Forfaits pas chers, bon rapport qualité/prix</li>
-                        </ul>
-
-                        <h4>Opérateurs virtuels (MVNO) :</h4>
-                        <ul>
-                            <li><strong>Crédit Mutuel Mobile, CIC Mobile</strong> - Services bancaires liés</li>
-                            <li><strong>Coriolis, Auchan Telecom</strong> - Autres marques</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📝 Documents nécessaires</h3>
-                    <span class="chevron">▼</span>
-                </div>
-                <div class="card-body">
-                    <div class="card-content">
-                        <div class="doc-list">
-                            <strong>Pour acheter une carte SIM :</strong>
-                            <ul>
-                                <li>Passeport ou titre de séjour</li>
-                                <li>Justificatif de domicile en France</li>
-                                <li>RIB français (pour les prélèvements automatiques)</li>
-                            </ul>
-                        </div>
-
-                        <h4>Options disponibles :</h4>
-                        <ul>
-                            <li><strong>Forfait avec engagement</strong> : généralement moins cher, engagement 12-24 mois</li>
-                            <li><strong>Forfait sans engagement</strong> : plus flexible (Free, Prixtel, etc.)</li>
-                            <li><strong>Carte prépayée</strong> : sans engagement, mais plus chère à l'usage</li>
+                            <li data-lang-fr="Orange - Plus grand réseau" data-lang-vi="Orange - Mạng lớn nhất">Orange - Plus grand réseau</li>
+                            <li data-lang-fr="SFR - Deuxième opérateur" data-lang-vi="SFR - Nhà mạng thứ hai">SFR - Deuxième opérateur</li>
+                            <li data-lang-fr="Bouygues Telecom - Troisième acteur" data-lang-vi="Bouygues Telecom - Nhà mạng thứ ba">Bouygues Telecom - Troisième acteur</li>
+                            <li data-lang-fr="Free Mobile - Forfaits pas chers" data-lang-vi="Free Mobile - Gói rẻ">Free Mobile - Forfaits pas chers</li>
                         </ul>
 
                         <div class="info-box">
-                            <strong>📍 Coût moyen :</strong> Comptez entre 10€ et 30€ par mois pour un forfait correct avec appels, SMS/MMS illimités et 10-100 Go de données.
+                            <strong data-lang-fr="💰 Coût moyen :" data-lang-vi="💰 Chi phí trung bình:">💰 Coût moyen :</strong>
+                            <span data-lang-fr="Entre 10€ et 30€ par mois pour un forfait correct." data-lang-vi="Từ 10€ đến 30€/tháng cho gói tốt.">Entre 10€ et 30€ par mois pour un forfait correct.</span>
                         </div>
                     </div>
                 </div>
@@ -1249,24 +1398,19 @@
 
             <div class="card">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>🔐 France Connect</h3>
+                    <h3>🔐 <span data-lang-fr="France Connect" data-lang-vi="France Connect">France Connect</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <p><strong>France Connect</strong> est un système qui vous permet de vous identifier sur les sites administratifs français avec votre compte Ameli ou Impots.</p>
+                        <p data-lang-fr="France Connect vous permet de vous identifier sur les sites administratifs français avec votre compte Ameli ou Impots." data-lang-vi="France Connect cho phép bạn đăng nhập các trang hành chính Pháp bằng tài khoản Ameli hoặc Impots.">France Connect vous permet de vous identifier sur les sites administratifs français avec votre compte Ameli ou Impots.</p>
 
-                        <h4>Pour l'activer :</h4>
+                        <h4 data-lang-fr="Pour l'activer :" data-lang-vi="Để kích hoạt:">Pour l'activer :</h4>
                         <ol>
-                            <li>Créez d'abord vos comptes Ameli et Impots</li>
-                            <li>Allez sur un site qui propose France Connect</li>
-                            <li>Cliquez sur "Se connecter avec France Connect"</li>
-                            <li>Choisissez votre identité : Ameli ou Impots</li>
+                            <li data-lang-fr="Créez vos comptes Ameli et Impots" data-lang-vi="Tạo tài khoản Ameli và Impots">Créez vos comptes Ameli et Impots</li>
+                            <li data-lang-fr="Cliquez sur 'Se connecter avec France Connect'" data-lang-vi="Nhấn 'Đăng nhập với France Connect'">Cliquez sur 'Se connecter avec France Connect'</li>
+                            <li data-lang-fr="Choisissez Ameli ou Impots" data-lang-vi="Chọn Ameli hoặc Impots">Choisissez Ameli ou Impots</li>
                         </ol>
-
-                        <div class="info-box">
-                            <strong>⚠️ Important :</strong> France Connect vous simplifiera énormément les démarches en ligne. C'est fortement recommandé de l'activer dès que possible.
-                        </div>
                     </div>
                 </div>
             </div>
@@ -1274,59 +1418,45 @@
 
         <!-- SECTION 9: CAF -->
         <section id="caf">
-            <h2>🏠 9. CAF -Allocations Familiales</h2>
+            <h2>🏠 <span data-lang-fr="9. CAF - Allocations" data-lang-vi="9. CAF - Trợ Cấp">9. CAF - Allocations</span></h2>
 
             <div class="card open">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📋 Qu'est-ce que la CAF ?</h3>
+                    <h3>📋 <span data-lang-fr="Qu'est-ce que la CAF ?" data-lang-vi="CAF là gì?">Qu'est-ce que la CAF ?</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <p>La <strong>CAF</strong> (Caisse d'Allocations Familiales) est l'organisme qui verse les prestations sociales en France. Elle gère notamment les allocations logement.</p>
+                        <p data-lang-fr="La CAF (Caisse d'Allocations Familiales) verse les prestations sociales. Elle gère notamment les allocations logement." data-lang-vi="CAF (Quỹ Trợ Cấp Gia Đình) chi trả các phúc lợi xã hội, đặc biệt là trợ cấp nhà ở.">La CAF (Caisse d'Allocations Familiales) verse les prestations sociales. Elle gère notamment les allocations logement.</p>
 
-                        <h4>Prestations possibles :</h4>
+                        <h4 data-lang-fr="Prestations possibles :" data-lang-vi="Các khoản trợ cấp có thể:">Prestations possibles :</h4>
                         <ul>
-                            <li><strong>Aide au Logement (APL)</strong> : allocation pour réduire votre loyer</li>
-                            <li><strong>Allocations Familiales</strong> : si vous avez des enfants</li>
-                            <li><strong>Prime d'Activité</strong> : supplement de revenus pour les travailleurs</li>
+                            <li data-lang-fr="Aide au Logement (APL) : allocation pour réduire votre loyer" data-lang-vi="Hỗ trợ nhà ở (APL): trợ cấp giảm tiền thuê">Aide au Logement (APL) : allocation pour réduire votre loyer</li>
+                            <li data-lang-fr="Allocations Familiales : si vous avez des enfants" data-lang-vi="Trợ cấp gia đình: nếu bạn có con">Allocations Familiales : si vous avez des enfants</li>
+                            <li data-lang-fr="Prime d'Activité : supplement de revenus pour les travailleurs" data-lang-vi="Tiền thưởng hoạt động: trợ cấp thu nhập cho người lao động">Prime d'Activité : supplement de revenus pour les travailleurs</li>
                         </ul>
-
-                        <div class="info-box">
-                            <strong>📍 Conditions :</strong> Les allocations sont soumises à conditions de ressources et de séjour régulier en France. Vérifiez votre éligibilité sur le site de la CAF.
-                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📝 Demande d'APL</h3>
+                    <h3>📝 <span data-lang-fr="Demande d'APL" data-lang-vi="Xin APL">Demande d'APL</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <h4>Procédure :</h4>
+                        <h4 data-lang-fr="Procédure :" data-lang-vi="Quy trình:">Procédure :</h4>
                         <ol>
-                            <li>Créez un compte sur <a href="https://www.caf.fr" target="_blank">www.caf.fr</a></li>
-                            <li>Remplissez le formulaire de demande d'aide au logement</li>
-                            <li>Joignez les documents :
-                                <ul>
-                                    <li>Notification de contrat de location</li>
-                                    <li>Justificatifs de revenus</li>
-                                    <li>RIB français</li>
-                                    <li>Numéro de Sécurité Sociale</li>
-                                </ul>
-                            </li>
-                            <li>Soumettez votre demande</li>
+                            <li data-lang-fr="Créez un compte sur caf.fr" data-lang-vi="Tạo tài khoản trên caf.fr">Créez un compte sur caf.fr</li>
+                            <li data-lang-fr="Remplissez le formulaire de demande d'aide au logement" data-lang-vi="Điền đơn xin hỗ trợ nhà ở">Remplissez le formulaire de demande d'aide au logement</li>
+                            <li data-lang-fr="Joignez les documents requis" data-lang-vi="Đính kèm giấy tờ yêu cầu">Joignez les documents requis</li>
                         </ol>
 
                         <div class="warning">
-                            <strong>⚠️ Délai :</strong> Le traitement peut prendre 2 à 4 mois. L'aide est versée à partir du mois suivant votre demande, pas de rétroactivité.
+                            <strong data-lang-fr="⏰ Délai :" data-lang-vi="⏰ Thời gian:">⏰ Délai :</strong>
+                            <span data-lang-fr="Le traitement peut prendre 2 à 4 mois. L'aide est versée à partir du mois suivant votre demande." data-lang-vi="Xử lý có thể mất 2-4 tháng. Trợ cấp được chi từ tháng sau khi nộp đơn.">Le traitement peut prendre 2 à 4 mois. L'aide est versée à partir du mois suivant votre demande.</span>
                         </div>
-
-                        <h4>Montant approximatif :</h4>
-                        <p>Le montant de l'APL dépend de vos revenus, de votre loyer et de votre situation familiale. Il peut aller de 100€ à 400€ par mois environ.</p>
                     </div>
                 </div>
             </div>
@@ -1334,22 +1464,20 @@
 
         <!-- SECTION 10: PERMIS DE CONDUIRE -->
         <section id="permis">
-            <h2>🚗 10. Permis de Conduire</h2>
+            <h2>🚗 <span data-lang-fr="10. Permis de Conduire" data-lang-vi="10. Bằng Lái Xe">10. Permis de Conduire</span></h2>
 
             <div class="card open">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📋 Échange du Permis Vietnamien</h3>
+                    <h3>📋 <span data-lang-fr="Échange du Permis Vietnamien" data-lang-vi="Đổi Bằng Lái Việt Nam">Échange du Permis Vietnamien</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <p>Les permis de conduire vietnamiens <strong>ne sont pas automatiquement échangeables</strong> contre un permis français. La procédure dépend de la date d'obtention de votre permis et de sa catégorie.</p>
-
-                        <h4>Situation en 2026 :</h4>
-                        <p>Depuis 2023, la France a suspendu l'échange des permis vietnamien suite à des cas de fraude. Vérifiez la situation actuelle auprès de votre préfecture ou sur le site de l'<a href="https://www.ants.gouv.fr" target="_blank">ANTS</a>.</p>
+                        <p data-lang-fr="Les permis de conduire vietnamiens ne sont pas automatiquement échangeables contre un permis français." data-lang-vi="Bằng lái xe Việt Nam không tự động được đổi sang bằng Pháp.">Les permis de conduire vietnamiens ne sont pas automatiquement échangeables contre un permis français.</p>
 
                         <div class="warning">
-                            <strong>⚠️ Important :</strong> Un permis vietnamien <strong>NE suffit pas</strong> pour conduire légalement en France au-delà de 3 mois même si vous avez un visa. Vous devez soit passer l'examen français, soit vérifier les accords en vigueur.
+                            <strong data-lang-fr="⚠️ Important :" data-lang-vi="⚠️ Quan trọng:">⚠️ Important :</strong>
+                            <span data-lang-fr="Un permis vietnamien NE suffit pas pour conduire en France au-delà de 3 mois. Vous devez passer l'examen français." data-lang-vi="Bằng Việt Nam KHÔNG đủ để lái xe ở Pháp quá 3 tháng. Bạn phải thi bằng Pháp.">Un permis vietnamien NE suffit pas pour conduire en France au-delà de 3 mois. Vous devez passer l'examen français.</span>
                         </div>
                     </div>
                 </div>
@@ -1357,36 +1485,22 @@
 
             <div class="card">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📝 Obtenir le Permis Français</h3>
+                    <h3>📝 <span data-lang-fr="Obtenir le Permis Français" data-lang-vi="Lấy Bằng Pháp">Obtenir le Permis Français</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <h4>Si vous devez passer le permis français :</h4>
+                        <h4 data-lang-fr="Étapes pour passer le permis :" data-lang-vi="Các bước thi bằng:">Étapes pour passer le permis :</h4>
                         <ol>
-                            <li><strong>Inscription à l'auto-école</strong> : Comptez entre 800€ et 2000€ selon les régions</li>
-                            <li><strong>Code de la route</strong> : Examen théorique,同样 au Vietnam mais en français</li>
-                            <li><strong>Conduite</strong> : Minimum 20 heures obligatoires</li>
-                            <li><strong>Examen pratique</strong> : Avec un inspecteur</li>
+                            <li data-lang-fr="Inscription à l'auto-école : 800€ à 2000€" data-lang-vi="Đăng ký trường lái: 800€ - 2000€">Inscription à l'auto-école : 800€ à 2000€</li>
+                            <li data-lang-fr="Code de la route : examen théorique" data-lang-vi="Luật giao thông: thi lý thuyết">Code de la route : examen théorique</li>
+                            <li data-lang-fr="Conduite : minimum 20 heures" data-lang-vi="Lái xe: tối thiểu 20 giờ">Conduite : minimum 20 heures</li>
+                            <li data-lang-fr="Examen pratique : avec un inspecteur" data-lang-vi="Thi thực hành: với giám khảo">Examen pratique : avec un inspecteur</li>
                         </ol>
 
-                        <h4>Documents nécessaires pour s'inscrire :</h4>
-                        <div class="doc-list">
-                            <ul>
-                                <li>Permis vietnamien original + traduction assermentée</li>
-                                <li>Passeport ou titre de séjour</li>
-                                <li>Justificatif de domicile</li>
-                                <li>Photos d'identité</li>
-                                <li>Numéro de Sécurité Sociale</li>
-                            </ul>
-                        </div>
-
                         <div class="info-box">
-                            <strong>⏰ Durée :</strong> Prévoir entre 2 et 6 mois selon votre disponibilité et la disponibilité des examiners dans votre département.
-                        </div>
-
-                        <div class="pro-tip">
-                            <strong>💡 Astuce :</strong> Si vous avez déjà conduit au Vietnam, vous pouvez demander une equivalence de votre expérience pour réduire le nombre d'heures de conduite obligatoires. Parlez-en à votre auto-école.
+                            <strong data-lang-fr="⏰ Durée :" data-lang-vi="⏰ Thời gian:">⏰ Durée :</strong>
+                            <span data-lang-fr="Prévoir entre 2 et 6 mois selon votre disponibilité." data-lang-vi="Dự kiến 2-6 tháng tùy theo thời gian của bạn.">Prévoir entre 2 et 6 mois selon votre disponibilité.</span>
                         </div>
                     </div>
                 </div>
@@ -1395,84 +1509,43 @@
 
         <!-- SECTION 11: EMPLOI -->
         <section id="emploi">
-            <h2>💼 11. Emploi et Travail</h2>
+            <h2>💼 <span data-lang-fr="11. Emploi et Travail" data-lang-vi="11. Việc Làm">11. Emploi et Travail</span></h2>
 
             <div class="card open">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📋 Droits au Travail</h3>
+                    <h3>📋 <span data-lang-fr="Droits au Travail" data-lang-vi="Quyền Làm Việc">Droits au Travail</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <p>Avec un visa époux/VLS-TS, vous avez le <strong>droit de travailler en France</strong> sans restriction. Vous n'avez pas besoin d'autorisation de travail supplémentaire.</p>
+                        <p data-lang-fr="Avec un visa époux/VLS-TS, vous avez le droit de travailler en France sans restriction." data-lang-vi="Với visa vợ/chồng/VLS-TS, bạn có quyền làm việc tại Pháp không giới hạn.">Avec un visa époux/VLS-TS, vous avez le droit de travailler en France sans restriction.</p>
 
-                        <h4>Ce que vous pouvez faire :</h4>
+                        <h4 data-lang-fr="Ce que vous pouvez faire :" data-lang-vi="Bạn có thể:">Ce que vous pouvez faire :</h4>
                         <ul>
-                            <li>Travailler comme salarié (CDI, CDD, interim)</li>
-                            <li>Créer une entreprise</li>
-                            <li>Exercer une profession libérale</li>
-                            <li>Travailler dans n'importe quel secteur</li>
+                            <li data-lang-fr="Travailler comme salarié (CDI, CDD, interim)" data-lang-vi="Làm công nhân (CDI, CDD, tạm thời)">Travailler comme salarié (CDI, CDD, interim)</li>
+                            <li data-lang-fr="Créer une entreprise" data-lang-vi="Tạo công ty">Créer une entreprise</li>
+                            <li data-lang-fr="Exercer une profession libérale" data-lang-vi="Làm nghề tự do">Exercer une profession libérale</li>
                         </ul>
-
-                        <div class="info-box">
-                            <strong>📍 Changement de statut :</strong> Si vous trouvez un emploi avant d'avoir votre carte de séjour, votre VLS-TS vous couvre déjà pour le travail.
-                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>🔍 Recherche d'Emploi</h3>
+                    <h3>🔍 <span data-lang-fr="Recherche d'Emploi" data-lang-vi="Tìm Việc">Recherche d'Emploi</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <h4>Plateformes d'emploi :</h4>
+                        <h4 data-lang-fr="Plateformes d'emploi :" data-lang-vi="Nền tảng tìm việc:">Plateformes d'emploi :</h4>
                         <ul>
-                            <li><a href="https://www.pole-emploi.fr" target="_blank">Pôle Emploi</a> - Service public de l'emploi</li>
-                            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a> - Réseau professionnel</li>
-                            <li><a href="https://www.indeed.fr" target="_blank">Indeed</a> - Moteur de recherche d'emplois</li>
-                            <li><a href="https://www.apec.fr" target="_blank">APEC</a> - Pour les cadres</li>
+                            <li><a href="https://www.pole-emploi.fr" target="_blank">Pôle Emploi</a> - <span data-lang-fr="Service public de l'emploi" data-lang-vi="Dịch vụ việc làm công">Service public de l'emploi</span></li>
+                            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a> - <span data-lang-fr="Réseau professionnel" data-lang-vi="Mạng lưới nghề nghiệp">Réseau professionnel</span></li>
+                            <li><a href="https://www.indeed.fr" target="_blank">Indeed</a> - <span data-lang-fr="Moteur de recherche d'emplois" data-lang-vi="Công cụ tìm việc">Moteur de recherche d'emplois</span></li>
                         </ul>
 
-                        <h4>Inscription à Pôle Emploi :</h4>
-                        <p>Même si vous n'avez pas encore travaillé en France, vous pouvez vous inscrire pour bénéficier des services de conseil et de formation.</p>
-
-                        <div class="doc-list">
-                            <strong>Documents pour s'inscrire :</strong>
-                            <ul>
-                                <li>Passeport ou titre de séjour</li>
-                                <li>CV et lettres de motivation</li>
-                                <li>Eventuellement : diplômes traduits</li>
-                                <li>RIB français</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📝 Reconnaissance des Diplômes</h3>
-                    <span class="chevron">▼</span>
-                </div>
-                <div class="card-body">
-                    <div class="card-content">
-                        <p>Si vous avez des diplômes vietnamiens, vous pouvez demander leur <strong>reconnaissance en France</strong> via plusieurs procédures :</p>
-
-                        <h4>Pour les diplômes universitaires :</h4>
-                        <ul>
-                            <li><strong>ENIC-NARIC</strong> : Demandez une attestation d'équivalence sur <a href="https://www.ciep.fr/enic-naric" target="_blank">ciep.fr</a></li>
-                            <li>Certains diplômes peuvent donner accès à des concours ou à des formations</li>
-                        </ul>
-
-                        <h4>Pour les professions réglementées :</h4>
-                        <p>Certaines professions (santé, droit, architecture, etc.) nécessitent une autorisation spécifique du ministère concerné. Renseignez-vous auprès de votre préfecture.</p>
-
-                        <div class="pro-tip">
-                            <strong>💡 Astuce :</strong> Même sans reconnaissance officielle, vos diplômes peuvent être valorisés par les employeurs. Mettez-les en avant dans votre CV avec une explication de leur niveau.
-                        </div>
+                        <h4 data-lang-fr="Reconnaissance des Diplômes :" data-lang-vi="Công nhận bằng cấp:">Reconnaissance des Diplômes :</h4>
+                        <p data-lang-fr="Pour faire reconnaître vos diplômes vietnamiens, demandez une attestation d'équivalence sur ciep.fr (ENIC-NARIC)." data-lang-vi="Để công nhận bằng cấp Việt Nam, xin chứng nhận tương đương trên ciep.fr (ENIC-NARIC).">Pour faire reconnaître vos diplômes vietnamiens, demandez une attestation d'équivalence sur ciep.fr (ENIC-NARIC).</p>
                     </div>
                 </div>
             </div>
@@ -1480,30 +1553,24 @@
 
         <!-- SECTION 12: SANTÉ -->
         <section id="sante">
-            <h2>🏥 12. Santé et Mutuelle</h2>
+            <h2>🏥 <span data-lang-fr="12. Santé et Mutuelle" data-lang-vi="12. Y Tế và Bảo Hiểm">12. Santé et Mutuelle</span></h2>
 
             <div class="card open">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📋 Système de Santé Français</h3>
+                    <h3>📋 <span data-lang-fr="Système de Santé Français" data-lang-vi="Hệ Thống Y Tế Pháp">Système de Santé Français</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <p>Le système de santé français repose sur deux niveaux :</p>
+                        <p data-lang-fr="Le système de santé français repose sur deux niveaux :" data-lang-vi="Hệ thống y tế Pháp gồm hai cấp:">Le système de santé français repose sur deux niveaux :</p>
                         <ul>
-                            <li><strong>Assurance Maladie Obligatoire (CPAM)</strong> : rembourse 70% des frais médicaux</li>
-                            <li><strong>Complémentaire santé (mutuelle)</strong> : rembourse le reste (30%)</li>
+                            <li data-lang-fr="Assurance Maladie Obligatoire (CPAM) : rembourse 70%" data-lang-vi="Bảo hiểm bắt buộc (CPAM): hoàn 70%">Assurance Maladie Obligatoire (CPAM) : rembourse 70%</li>
+                            <li data-lang-fr="Complémentaire santé (mutuelle) : rembourse le reste (30%)" data-lang-vi="Bảo hiểm bổ sung (mutuelle): hoàn phần còn lại (30%)">Complémentaire santé (mutuelle) : rembourse le reste (30%)</li>
                         </ul>
 
-                        <h4>Remboursements typiques :</h4>
-                        <ul>
-                            <li>Consultation médecin traitant : 26,50€ → 18,55€ remboursés</li>
-                            <li>Pharmacie : variable selon les médicaments</li>
-                            <li>Hospitalisation : 80% minimum</li>
-                        </ul>
-
-                        <div class="info-box">
-                            <strong>⚠️ Important :</strong> Sans mutuelle, le ticket modérateur (les 30% non remboursés) peut représenter des sommes importantes, surtout pour les hospitalisations.
+                        <div class="warning">
+                            <strong data-lang-fr="⚠️ Important :" data-lang-vi="⚠️ Quan trọng:">⚠️ Important :</strong>
+                            <span data-lang-fr="Sans mutuelle, le ticket modérateur (30%) peut représenter des sommes importantes." data-lang-vi="Không có mutuelle, 30% còn lại có thể là số tiền lớn.">Sans mutuelle, le ticket modérateur (30%) peut représenter des sommes importantes.</span>
                         </div>
                     </div>
                 </div>
@@ -1511,66 +1578,23 @@
 
             <div class="card">
                 <div class="card-header" onclick="toggleCard(this)">
-                    <h3>📝 Choisir une Mutuelle</h3>
+                    <h3>👨‍⚕️ <span data-lang-fr="Trouver un Médecin et Urgences" data-lang-vi="Tìm Bác Sĩ và Cấp Cứu">Trouver un Médecin et Urgences</span></h3>
                     <span class="chevron">▼</span>
                 </div>
                 <div class="card-body">
                     <div class="card-content">
-                        <p>La mutuelle est essentielle pour compléter les remboursements de la Sécurité Sociale.</p>
-
-                        <h4>Types de mutuelles :</h4>
+                        <h4 data-lang-fr="Comment trouver un médecin :" data-lang-vi="Cách tìm bác sĩ:">Comment trouver un médecin :</h4>
                         <ul>
-                            <li><strong>Mutuelles traditionnelles</strong> (Harmonie, MGEN, Axa, etc.)</li>
-                            <li><strong>Complémentaires low-cost</strong> (Alan, Luko, etc.)</li>
-                            <li><strong>Mutuelles d'entreprise</strong> : si votre époux travaille, demandez les tarifs préférentiels</li>
+                            <li data-lang-fr="Demandez à votre entourage" data-lang-vi="Hỏi người quen">Demandez à votre entourage</li>
+                            <li><a href="https://www.doctolib.fr" target="_blank">Doctolib</a> - <span data-lang-fr="Prise de rendez-vous en ligne" data-lang-vi="Đặt lịch khám trực tuyến">Prise de rendez-vous en ligne</span></li>
                         </ul>
 
-                        <div class="doc-list">
-                            <strong>Documents nécessaires :</strong>
-                            <ul>
-                                <li>Numéro de Sécurité Sociale</li>
-                                <li>Carte Vitale</li>
-                                <li>RIB français</li>
-                                <li>Eventuellement : avis d'imposition</li>
-                            </ul>
-                        </div>
-
-                        <h4>Coût moyen :</h4>
-                        <p>Comptez entre 20€ et 100€ par mois par personne selon le niveau de couverture.</p>
-
-                        <div class="pro-tip">
-                            <strong>💡 Astuce :</strong> Certaines mutuelles proposent des tarifs réduits pour les couples ou les familles. Comparez toujours plusieurs devis avant de vous engager.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header" onclick="toggleCard(this)">
-                    <h3>👨‍⚕️ Trouver un Médecin Traitant</h3>
-                    <span class="chevron">▼</span>
-                </div>
-                <div class="card-body">
-                    <div class="card-content">
-                        <p>En France, il est recommandé d'avoir un <strong>médecin traitant</strong> déclaré. Cela permet un meilleur suivi et un meilleur remboursement.</p>
-
-                        <h4>Comment trouver un médecin :</h4>
+                        <h4 data-lang-fr="En cas d'urgence :" data-lang-vi="Khi cần cấp cứu:">En cas d'urgence :</h4>
                         <ul>
-                            <li>Demandez à votre entourage</li>
-                            <li>Utilisez <a href="https://www.doctolib.fr" target="_blank">Doctolib</a> pour prendre rendez-vous en ligne</li>
-                            <li>Consultez l'annuaire de la CPAM</li>
-                        </ul>
-
-                        <div class="info-box">
-                            <strong>📍 Déclaration :</strong> Votre médecin traitant effectuera la déclaration auprès de la CPAM. Vous n'avez généralement rien à faire vous-même.
-                        </div>
-
-                        <h4>En cas d'urgence :</h4>
-                        <ul>
-                            <li><strong>15 (SAMU)</strong> : urgences médicales</li>
-                            <li><strong>18 (Pompiers)</strong> : incendios et urgences</li>
-                            <li><strong>112</strong> : numéro d'urgence européen</li>
-                            <li><strong>116 117</strong> : médecin de garde</li>
+                            <li><strong>15 (SAMU)</strong> - <span data-lang-fr="Urgences médicales" data-lang-vi="Cấp cứu y tế">Urgences médicales</span></li>
+                            <li><strong>18 (Pompiers)</strong> - <span data-lang-fr="Incendies et urgences" data-lang-vi="Cháy và cấp cứu">Incendies et urgences</span></li>
+                            <li><strong>112</strong> - <span data-lang-fr="Numéro d'urgence européen" data-lang-vi="Số cấp cứu châu Âu">Numéro d'urgence européen</span></li>
+                            <li><strong>116 117</strong> - <span data-lang-fr="Médecin de garde" data-lang-vi="Bác sĩ trực">Médecin de garde</span></li>
                         </ul>
                     </div>
                 </div>
@@ -1579,117 +1603,119 @@
 
         <!-- CHECKLIST -->
         <section id="checklist">
-            <h2>✅ 13. Checklist Interactive</h2>
+            <h2>✅ <span data-lang-fr="13. Checklist Interactive" data-lang-vi="13. Danh Sách Kiểm Tra">13. Checklist Interactive</span></h2>
 
             <div class="checklist-section">
                 <div class="checklist-header">
-                    <h2>📋 Mes Démarches</h2>
-                    <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
-                        <span id="progress-text">0% completado</span>
-                        <div class="progress-bar">
-                            <div class="progress-fill" id="progress-fill"></div>
+                    <h2>📋 <span data-lang-fr="Mes Démarches" data-lang-vi="Các Thủ Tục Của Tôi">Mes Démarches</span></h2>
+                    <div class="checklist-meta">
+                        <div class="progress-container">
+                            <p class="progress-text"><span id="progress-text" data-lang-fr="0% complété" data-lang-vi="0% hoàn thành">0% complété</span></p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progress-fill"></div>
+                            </div>
                         </div>
-                        <button class="reset-btn" onclick="resetChecklist()">Réinitialiser</button>
+                        <button class="reset-btn" onclick="resetChecklist()" data-lang-fr="Réinitialiser" data-lang-vi="Đặt lại">Réinitialiser</button>
                     </div>
                 </div>
 
                 <div class="checklist-group">
-                    <h3>🛂 Avant l'arrivée</h3>
+                    <h3>🛂 <span data-lang-fr="Avant l'arrivée" data-lang-vi="Trước khi đến">Avant l'arrivée</span></h3>
                     <div class="checklist-item">
                         <input type="checkbox" id="c1" onchange="updateProgress()">
-                        <label for="c1">Obtenir le visa époux au consulat de France</label>
+                        <label for="c1" data-lang-fr="Obtenir le visa époux au consulat de France" data-lang-vi="Xin visa vợ/chồng tại Lãnh sự quán Pháp">Obtenir le visa époux au consulat de France</label>
                     </div>
                     <div class="checklist-item">
                         <input type="checkbox" id="c2" onchange="updateProgress()">
-                        <label for="c2">Faire traduire et légaliser les documents vietnamiens</label>
+                        <label for="c2" data-lang-fr="Faire traduire et légaliser les documents vietnamiens" data-lang-vi="Dịch và hợp pháp hóa giấy tờ Việt Nam">Faire traduire et légaliser les documents vietnamiens</label>
                     </div>
                     <div class="checklist-item">
                         <input type="checkbox" id="c3" onchange="updateProgress()">
-                        <label for="c3">Préparer le dossier OFII</label>
+                        <label for="c3" data-lang-fr="Préparer le dossier OFII" data-lang-vi="Chuẩn bị hồ sơ OFII">Préparer le dossier OFII</label>
                     </div>
                 </div>
 
                 <div class="checklist-group">
-                    <h3>📆 Premières semaines</h3>
+                    <h3>📆 <span data-lang-fr="Premières semaines" data-lang-vi="Những tuần đầu">Premières semaines</span></h3>
                     <div class="checklist-item">
                         <input type="checkbox" id="c4" onchange="updateProgress()">
-                        <label for="c4">Déclarer mon arrivée à l'OFII (dans les 3 mois)</label>
+                        <label for="c4" data-lang-fr="Déclarer mon arrivée à l'OFII (dans les 3 mois)" data-lang-vi="Khai báo OFII (trong 3 tháng)">Déclarer mon arrivée à l'OFII (dans les 3 mois)</label>
                     </div>
                     <div class="checklist-item">
                         <input type="checkbox" id="c5" onchange="updateProgress()">
-                        <label for="c5">Payer la taxe OFII (~200€)</label>
+                        <label for="c5" data-lang-fr="Payer la taxe OFII (~200€)" data-lang-vi="Đóng phí OFII (~200€)">Payer la taxe OFII (~200€)</label>
                     </div>
                     <div class="checklist-item">
                         <input type="checkbox" id="c6" onchange="updateProgress()">
-                        <label for="c6">Ouvrir un compte bancaire français</label>
+                        <label for="c6" data-lang-fr="Ouvrir un compte bancaire français" data-lang-vi="Mở tài khoản ngân hàng Pháp">Ouvrir un compte bancaire français</label>
                     </div>
                     <div class="checklist-item">
                         <input type="checkbox" id="c7" onchange="updateProgress()">
-                        <label for="c7">Acheter une carte SIM française</label>
+                        <label for="c7" data-lang-fr="Acheter une carte SIM française" data-lang-vi="Mua SIM Pháp">Acheter une carte SIM française</label>
                     </div>
                     <div class="checklist-item">
                         <input type="checkbox" id="c8" onchange="updateProgress()">
-                        <label for="c8">S'inscrire sur Ameli.fr pour la Sécurité Sociale</label>
+                        <label for="c8" data-lang-fr="S'inscrire sur Ameli.fr" data-lang-vi="Đăng ký Ameli.fr">S'inscrire sur Ameli.fr</label>
                     </div>
                 </div>
 
                 <div class="checklist-group">
-                    <h3>🏢 Trimestre 1-2</h3>
+                    <h3>🏢 <span data-lang-fr="Trimestre 1-2" data-lang-vi="Quý 1-2">Trimestre 1-2</span></h3>
                     <div class="checklist-item">
                         <input type="checkbox" id="c9" onchange="updateProgress()">
-                        <label for="c9">Prendre rendez-vous à la préfecture</label>
+                        <label for="c9" data-lang-fr="Prendre rendez-vous à la préfecture" data-lang-vi="Đặt lịch hẹn sở nội vụ">Prendre rendez-vous à la préfecture</label>
                     </div>
                     <div class="checklist-item">
                         <input type="checkbox" id="c10" onchange="updateProgress()">
-                        <label for="c10">Préparer et soumettre le dossier de titre de séjour</label>
+                        <label for="c10" data-lang-fr="Préparer et soumettre le dossier de titre de séjour" data-lang-vi="Chuẩn bị và nộp hồ sơ giấy phép cư trú">Préparer et soumettre le dossier de titre de séjour</label>
                     </div>
                     <div class="checklist-item">
                         <input type="checkbox" id="c11" onchange="updateProgress()">
-                        <label for="c11">Demander son numéro fiscal sur impots.gouv.fr</label>
+                        <label for="c11" data-lang-fr="Créer un compte sur impots.gouv.fr" data-lang-vi="Tạo tài khoản impots.gouv.fr">Créer un compte sur impots.gouv.fr</label>
                     </div>
                     <div class="checklist-item">
                         <input type="checkbox" id="c12" onchange="updateProgress()">
-                        <label for="c12">Créer un compte France Connect</label>
+                        <label for="c12" data-lang-fr="Activer France Connect" data-lang-vi="Kích hoạt France Connect">Activer France Connect</label>
                     </div>
                 </div>
 
                 <div class="checklist-group">
-                    <h3>🏠 Logement et quotidien</h3>
+                    <h3>🏠 <span data-lang-fr="Logement et quotidien" data-lang-vi="Nhà ở và sinh hoạt">Logement et quotidien</span></h3>
                     <div class="checklist-item">
                         <input type="checkbox" id="c13" onchange="updateProgress()">
-                        <label for="c13">Rechercher un logement (si pas déjà fait)</label>
+                        <label for="c13" data-lang-fr="Rechercher un logement" data-lang-vi="Tìm nhà ở">Rechercher un logement</label>
                     </div>
                     <div class="checklist-item">
                         <input type="checkbox" id="c14" onchange="updateProgress()">
-                        <label for="c14">S'inscrire à la CAF pour les aides au logement</label>
+                        <label for="c14" data-lang-fr="S'inscrire à la CAF" data-lang-vi="Đăng ký CAF">S'inscrire à la CAF</label>
                     </div>
                     <div class="checklist-item">
                         <input type="checkbox" id="c15" onchange="updateProgress()">
-                        <label for="c15">Souscrire une mutuelle santé</label>
+                        <label for="c15" data-lang-fr="Souscrire une mutuelle santé" data-lang-vi="Mua bảo hiểm sức khỏe bổ sung">Souscrire une mutuelle santé</label>
                     </div>
                     <div class="checklist-item">
                         <input type="checkbox" id="c16" onchange="updateProgress()">
-                        <label for="c16">Trouver un médecin traitant</label>
+                        <label for="c16" data-lang-fr="Trouver un médecin traitant" data-lang-vi="Tìm bác sĩ gia đình">Trouver un médecin traitant</label>
                     </div>
                 </div>
 
                 <div class="checklist-group">
-                    <h3>🚗 À moyen terme</h3>
+                    <h3>🚗 <span data-lang-fr="À moyen terme" data-lang-vi="Trung hạn">À moyen terme</span></h3>
                     <div class="checklist-item">
                         <input type="checkbox" id="c17" onchange="updateProgress()">
-                        <label for="c17">Se renseigner sur l'échange/validation du permis vietnamien</label>
+                        <label for="c17" data-lang-fr="Se renseigner sur le permis de conduire" data-lang-vi="Tìm hiểu về bằng lái xe">Se renseigner sur le permis de conduire</label>
                     </div>
                     <div class="checklist-item">
                         <input type="checkbox" id="c18" onchange="updateProgress()">
-                        <label for="c18">Déposer une demande d'APL à la CAF</label>
+                        <label for="c18" data-lang-fr="Demander l'APL à la CAF" data-lang-vi="Xin trợ cấp APL từ CAF">Demander l'APL à la CAF</label>
                     </div>
                     <div class="checklist-item">
                         <input type="checkbox" id="c19" onchange="updateProgress()">
-                        <label for="c19">Préparer le renouvellement du visa (3 mois avant expiration)</label>
+                        <label for="c19" data-lang-fr="Préparer le renouvellement du visa (3 mois avant expiration)" data-lang-vi="Chuẩn bị gia hạn visa (3 tháng trước hết hạn)">Préparer le renouvellement du visa (3 mois avant expiration)</label>
                     </div>
                     <div class="checklist-item">
                         <input type="checkbox" id="c20" onchange="updateProgress()">
-                        <label for="c20">Commencer la recherche d'emploi si souhaité</label>
+                        <label for="c20" data-lang-fr="Commencer la recherche d'emploi si souhaité" data-lang-vi="Bắt đầu tìm việc nếu muốn">Commencer la recherche d'emploi si souhaité</label>
                     </div>
                 </div>
             </div>
@@ -1697,53 +1723,63 @@
 
         <!-- RESSOURCES -->
         <section id="ressources">
-            <h2>🔗 14. Ressources Utiles</h2>
+            <h2>🔗 <span data-lang-fr="14. Ressources Utiles" data-lang-vi="14. Nguồn Hữu Ích">14. Ressources Utiles</span></h2>
 
             <div class="resources-grid">
                 <a href="https://www.service-public.fr" target="_blank" class="resource-card">
                     <h4>📋 Service-Public.fr</h4>
-                    <p>Toutes les démarches administratives officielles</p>
+                    <p data-lang-fr="Toutes les démarches administratives officielles" data-lang-vi="Tất cả thủ tục hành chính chính thức">Toutes les démarches administratives officielles</p>
                 </a>
                 <a href="https://www.ameli.fr" target="_blank" class="resource-card">
                     <h4>🏥 Ameli.fr</h4>
-                    <p>Sécurité Sociale - gestion de votre dossier santé</p>
+                    <p data-lang-fr="Sécurité Sociale" data-lang-vi="Bảo hiểm xã hội">Sécurité Sociale</p>
                 </a>
                 <a href="https://www.impots.gouv.fr" target="_blank" class="resource-card">
                     <h4>💰 Impots.gouv.fr</h4>
-                    <p>Services fiscaux et déclarations</p>
+                    <p data-lang-fr="Services fiscaux" data-lang-vi="Dịch vụ thuế">Services fiscaux</p>
                 </a>
                 <a href="https://www.pole-emploi.fr" target="_blank" class="resource-card">
                     <h4>💼 Pôle Emploi</h4>
-                    <p>Recherche d'emploi et accompagnement</p>
+                    <p data-lang-fr="Recherche d'emploi" data-lang-vi="Tìm việc làm">Recherche d'emploi</p>
                 </a>
                 <a href="https://www.caf.fr" target="_blank" class="resource-card">
                     <h4>🏠 CAF</h4>
-                    <p>Allocations familiales et aides au logement</p>
-                </a>
-                <a href="https://www.ants.gouv.fr" target="_blank" class="resource-card">
-                    <h4>🪪 ANTS</h4>
-                    <p>Agence Nationale des Titres Sécurisés</p>
+                    <p data-lang-fr="Allocations familiales" data-lang-vi="Trợ cấp gia đình">Allocations familiales</p>
                 </a>
                 <a href="https://www.doctolib.fr" target="_blank" class="resource-card">
                     <h4>👨‍⚕️ Doctolib</h4>
-                    <p>Prise de rendez-vous médicaux en ligne</p>
-                </a>
-                <a href="https://www.visale.fr" target="_blank" class="resource-card">
-                    <h4>🏠 Visale</h4>
-                    <p>Garantie gratuite pour les locataires</p>
+                    <p data-lang-fr="Rendez-vous médicaux" data-lang-vi="Đặt lịch khám bệnh">Rendez-vous médicaux</p>
                 </a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Ce guide a été créé pour aider les citoyens vietnamiens dans leurs démarches d'installation en France. Les informations sont données à titre indicatif et peuvent évoluer.</p>
-        <p>Dernière mise à jour : Avril 2026</p>
-        <p class="disclaimer">Ce guide ne remplace pas les informations officielles des administrations françaises. Vérifiez toujours les délais et procédures auprès des organismes concernés.</p>
+        <div class="flag-footer">🇻🇳 🇫🇷</div>
+        <p data-lang-fr="Ce guide aide les citoyens vietnamiens dans leurs démarches d'installation en France. Informations données à titre indicatif." data-lang-vi="Hướng dẫn này giúp công dân Việt Nam các thủ tục định cư tại Pháp. Thông tin chỉ mang tính tham khảo.">Ce guide aide les citoyens vietnamiens dans leurs démarches d'installation en France. Informations données à titre indicatif.</p>
+        <p data-lang-fr="Dernière mise à jour : Avril 2026" data-lang-vi="Cập nhật lần cuối: Tháng 4 năm 2026">Dernière mise à jour : Avril 2026</p>
+        <p class="disclaimer" data-lang-fr="Ce guide ne remplace pas les informations officielles. Vérifiez toujours auprès des administrations concernées." data-lang-vi="Hướng dẫn này không thay thế thông tin chính thức. Luôn kiểm tra với cơ quan hữu quan.">Ce guide ne remplace pas les informations officielles. Vérifiez toujours auprès des administrations concernées.</p>
     </footer>
 
     <script>
-        // Card toggle
+        // Language switching
+        function setLanguage(lang) {
+            document.documentElement.setAttribute('lang', lang);
+            document.body.setAttribute('lang', lang);
+
+            // Update language buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.langBtn === lang);
+            });
+
+            // Save preference
+            localStorage.setItem('preferredLang', lang);
+
+            // Update progress text
+            updateProgress();
+        }
+
+        // Card toggle with animation
         function toggleCard(header) {
             const card = header.parentElement;
             card.classList.toggle('open');
@@ -1765,12 +1801,17 @@
             });
 
             const percentage = Math.round((checked.length / checkboxes.length) * 100);
-            document.getElementById('progress-text').textContent = percentage + '% complété';
+            const lang = document.documentElement.getAttribute('lang') || 'fr';
+            const completedText = lang === 'vi' ? 'hoàn thành' : 'complété';
+            document.getElementById('progress-text').textContent = percentage + '% ' + completedText;
             document.getElementById('progress-fill').style.width = percentage + '%';
 
-            localStorage.setItem('checklist', JSON.stringify(
-                Array.from(checkboxes).map(cb => cb.id + ':' + cb.checked)
-            ));
+            // Save checklist state with language
+            const state = {
+                lang: lang,
+                checks: Array.from(checkboxes).map(cb => cb.id + ':' + cb.checked)
+            };
+            localStorage.setItem('checklist', JSON.stringify(state));
         }
 
         function resetChecklist() {
@@ -1783,24 +1824,34 @@
         function loadChecklist() {
             const saved = localStorage.getItem('checklist');
             if (saved) {
-                const states = JSON.parse(saved);
-                states.forEach(state => {
-                    const [id, checked] = state.split(':');
-                    const checkbox = document.getElementById(id);
-                    if (checkbox) checkbox.checked = checked === 'true';
-                });
+                try {
+                    const state = JSON.parse(saved);
+                    state.checks.forEach(item => {
+                        const [id, checked] = item.split(':');
+                        const checkbox = document.getElementById(id);
+                        if (checkbox) checkbox.checked = checked === 'true';
+                    });
+                } catch (e) {
+                    // Fallback for old format
+                    const states = JSON.parse(saved);
+                    states.forEach(state => {
+                        const [id, checked] = state.split(':');
+                        const checkbox = document.getElementById(id);
+                        if (checkbox) checkbox.checked = checked === 'true';
+                    });
+                }
                 updateProgress();
             }
         }
 
-        // Nav active state
+        // Nav active state on scroll
         function updateNav() {
             const sections = document.querySelectorAll('section[id]');
             const navLinks = document.querySelectorAll('nav a');
 
             let current = '';
             sections.forEach(section => {
-                const sectionTop = section.offsetTop - 150;
+                const sectionTop = section.offsetTop - 100;
                 if (window.scrollY >= sectionTop) {
                     current = section.getAttribute('id');
                 }
@@ -1814,9 +1865,18 @@
             });
         }
 
-        // Init
-        loadChecklist();
-        window.addEventListener('scroll', updateNav);
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load preferred language
+            const preferredLang = localStorage.getItem('preferredLang') || 'fr';
+            setLanguage(preferredLang);
+
+            // Load checklist
+            loadChecklist();
+
+            // Scroll listener
+            window.addEventListener('scroll', updateNav, { passive: true });
+        });
     </script>
 </body>
 </html>
