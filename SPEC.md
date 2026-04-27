@@ -1,8 +1,8 @@
-# Guide Démarches France - Spouse Visa Vietnamese Citizen
+# Guide Démarches France - Visa Époux Vietnamien
 
 ## Concept & Vision
 
-A warm, comprehensive, and meticulously detailed guide for Vietnamese citizens arriving in France via a spouse visa (visa époux). The site feels like a trusted friend who has already gone through all these steps — organized, reassuring, and leaving no question unanswered. The design evokes a blend of French elegance with subtle Vietnamese warmth.
+A warm, comprehensive, and meticulously detailed bilingual guide (French/Vietnamese) for Vietnamese citizens arriving in France via a spouse visa (visa époux). The site feels like a trusted friend who has already gone through all these steps — organized, reassuring, and leaving no question unanswered. Designed mobile-first for iPhone 14 Plus (428px) with smooth bilingual switching.
 
 ## Design Language
 
