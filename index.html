@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Démarches France - Visa Époux Vietnamien</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a3a5c;
+            --secondary: #c41e3a;
+            --accent: #d4a574;
+            --bg: #faf8f5;
+            --text: #2d2d2d;
+            --light: #e8f4f8;
+            --card-shadow: 0 4px 20px rgba(26, 58, 92, 0.08);
+            --card-hover: 0 8px 30px rgba(26, 58, 92, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Source Sans 3', Georgia, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            color: var(--primary);
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(250, 248, 245, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(26, 58, 92, 0.1);
+            z-index: 100;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 8px;
+            max-width: 1100px;
+            margin: 0 auto;
+            overflow-x: auto;
+            padding: 12px 0;
+            scrollbar-width: none;
+        }
+
+        nav ul::-webkit-scrollbar {
+            display: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 500;
+            font-size: 14px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+
+        nav a:hover, nav a.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+            background: linear-gradient(180deg, var(--light) 0%, var(--bg) 100%);
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 16px;
+        }
+
+        .hero .flags {
+            font-size: 3rem;
+            margin-bottom: 24px;
+            letter-spacing: 8px;
+        }
+
+        .hero .subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+
+        .hero .badge {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26, 58, 92, 0.3);
+        }
+
+        /* Timeline */
+        .timeline-section {
+            padding: 60px 20px;
+            background: white;
+            border-top: 1px solid rgba(26, 58, 92, 0.1);
+            border-bottom: 1px solid rgba(26, 58, 92, 0.1);
+        }
+
+        .timeline-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .timeline {
+            display: flex;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+
+        .timeline-phase {
+            flex: 1;
+            min-width: 200px;
+            background: var(--light);
+            border-radius: 16px;
+            padding: 24px;
+            position: relative;
+        }
+
+        .timeline-phase::before {
+            content: '';
+            position: absolute;
+            top: 24px;
+            right: -20px;
+            width: 0;
+            height: 0;
+            border-left: 20px solid var(--light);
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+        }
+
+        .timeline-phase:last-child::before {
+            display: none;
+        }
+
+        .timeline-phase h3 {
+            font-size: 1rem;
+            margin-bottom: 12px;
+            color: var(--secondary);
+        }
+
+        .timeline-phase ul {
+            list-style: none;
+            font-size: 14px;
+        }
+
+        .timeline-phase li {
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .timeline-phase li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        /* Main Content */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            font-size: 1.6rem;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: var(--card-hover);
+        }
+
+        .card-header {
+            padding: 20px 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .card-header h3 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card-header .chevron {
+            transition: transform 0.3s;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        .card.open .chevron {
+            transform: rotate(180deg);
+        }
+
+        .card-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+        }
+
+        .card.open .card-body {
+            max-height: 2000px;
+        }
+
+        .card-content {
+            padding: 0 24px 24px;
+        }
+
+        .card-content h4 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 20px 0 10px;
+        }
+
+        .card-content h4:first-child {
+            margin-top: 0;
+        }
+
+        .card-content ol, .card-content ul {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        .card-content li {
+            margin-bottom: 8px;
+        }
+
+        .card-content p {
+            margin-bottom: 12px;
+        }
+
+        .doc-list {
+            background: var(--light);
+            padding: 16px 20px;
+            border-radius: 10px;
+            margin: 16px 0;
+        }
+
+        .doc-list strong {
+            color: var(--primary);
+        }
+
+        .doc-list ul {
+            margin: 8px 0 0;
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .doc-list li {
+            padding: 4px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .doc-list li::before {
+            content: '📄';
+            position: absolute;
+            left: 0;
+        }
+
+        .pro-tip {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            padding: 16px 20px;
+            border-radius: 10px;
+            margin: 16px 0;
+            border-left: 4px solid #4caf50;
+        }
+
+        .pro-tip strong {
+            color: #2e7d32;
+        }
+
+        .warning {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 16px 20px;
+            border-radius: 10px;
+            margin: 16px 0;
+            border-left: 4px solid #ff9800;
+        }
+
+        .warning strong {
+            color: #e65100;
+        }
+
+        .info-box {
+            background: var(--light);
+            padding: 16px 20px;
+            border-radius: 10px;
+            margin: 16px 0;
+            border-left: 4px solid var(--primary);
+        }
+
+        .info-box strong {
+            color: var(--primary);
+        }
+
+        /* Checklist */
+        .checklist-section {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 40px;
+        }
+
+        .checklist-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .checklist-header h2 {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .progress-bar {
+            width: 200px;
+            height: 12px;
+            background: #e0e0e0;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transition: width 0.3s;
+            width: 0%;
+        }
+
+        .reset-btn {
+            background: none;
+            border: 2px solid var(--secondary);
+            color: var(--secondary);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .reset-btn:hover {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .checklist-group {
+            margin-bottom: 24px;
+        }
+
+        .checklist-group h3 {
+            font-size: 1rem;
+            margin-bottom: 12px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .checklist-item input[type="checkbox"] {
+            width: 22px;
+            height: 22px;
+            cursor: pointer;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .checklist-item label {
+            cursor: pointer;
+        }
+
+        .checklist-item.checked label {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        /* Resources */
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .resource-card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--card-hover);
+        }
+
+        .resource-card h4 {
+            color: var(--primary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .resource-card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: 0.8;
+            font-size: 14px;
+            max-width: 600px;
+            margin: 0 auto 16px;
+        }
+
+        footer .disclaimer {
+            font-size: 12px;
+            opacity: 0.6;
+            margin-top: 24px;
+        }
+
+        /* Print Styles */
+        @media print {
+            nav, .cta-btn, .card-header, .reset-btn, .progress-bar {
+                display: none !important;
+            }
+
+            .card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+                break-inside: avoid;
+            }
+
+            .card-body {
+                max-height: none !important;
+            }
+
+            .hero {
+                padding: 20px;
+            }
+
+            body {
+                font-size: 12px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            nav ul {
+                justify-content: flex-start;
+            }
+
+            .timeline {
+                flex-direction: column;
+            }
+
+            .timeline-phase::before {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .checklist-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#visa">Visa</a></li>
+            <li><a href="#ofii">OFII</a></li>
+            <li><a href="#prefecture">Préfecture</a></li>
+            <li><a href="#securite-sociale">Sécurité Sociale</a></li>
+            <li><a href="#impots">Impôts</a></li>
+            <li><a href="#banque">Banque</a></li>
+            <li><a href="#logement">Logement</a></li>
+            <li><a href="#telephone">Téléphone</a></li>
+            <li><a href="#caf">CAF</a></li>
+            <li><a href="#permis">Permis</a></li>
+            <li><a href="#emploi">Emploi</a></li>
+            <li><a href="#sante">Santé</a></li>
+            <li><a href="#checklist">Checklist</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="flags">🇻🇳 🇫🇷</div>
+        <span class="badge">Guide Complet 2026</span>
+        <h1>Guide des Démarches en France</h1>
+        <p class="subtitle">
+            Toutes les procédures administratives détaillées pour une citoyenne vietnamienne arrivant en France avec un visa époux
+        </p>
+        <p style="color: #666; font-size: 0.95rem; margin-bottom: 24px;">
+            Profil : Nguyễn Thị Lan, 35 ans, nationalité vietnamienne, visa époux 1 an renouvelable
+        </p>
+        <a href="#visa" class="cta-btn">Commencer les démarches ↓</a>
+    </header>
+
+    <section class="timeline-section">
+        <h2>📅 Chronologie des Démarches</h2>
+        <div class="timeline">
+            <div class="timeline-phase">
+                <h3>🇻🇳 Avant le départ</h3>
+                <ul>
+                    <li>Obtenir le visa époux</li>
+                    <li>Traduire et légaliser documents</li>
+                    <li>Préparer le dossier OFII</li>
+                </ul>
+            </div>
+            <div class="timeline-phase">
+                <h3>📆 Semaines 1-4</h3>
+                <ul>
+                    <li>Déclarer arrivée OFII</li>
+                    <li>Inscription CPAM</li>
+                    <li>Ouverture compte bancaire</li>
+                </ul>
+            </div>
+            <div class="timeline-phase">
+                <h3>🗓️ Mois 2-6</h3>
+                <ul>
+                    <li>Demande titre de séjour</li>
+                    <li>Inscription Impôts</li>
+                    <li>Recherche logement</li>
+                </ul>
+            </div>
+            <div class="timeline-phase">
+                <h3>🏠 Au-delà</h3>
+                <ul>
+                    <li>Renouvellement visa</li>
+                    <li>Échanges permis conduire</li>
+                    <li>Parcours intégration</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- SECTION 1: VISA -->
+        <section id="visa">
+            <h2>🛂 1. Visa Époux (Long Séjour)</h2>
+
+            <div class="card open">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📋 Type de visa et conditions</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>Vous arrivez en France avec un <strong>visa long séjour valant titre de séjour (VLS-TS)</strong> pour motif familial. Ce visa est délivré pour une durée de 1 an et est renouvelable.</p>
+
+                        <h4>Caractéristiques importantes :</h4>
+                        <ul>
+                            <li>Le VLS-TS <strong>dispense d'une demande de titre de séjour</strong> la première année</li>
+                            <li>Vous devezidacteder votre arrivée en France dans les <strong>3 mois</strong> suivant votre arrivée</li>
+                            <li>Ce visa donne le droit de travailler en France sans restriction</li>
+                        </ul>
+
+                        <h4>Qui est concerné ?</h4>
+                        <p>Ce visa concerne les personnes mariées avec un ressortissant français ou un étranger en situation régulière en France depuis plus de 18 mois.</p>
+
+                        <div class="info-box">
+                            <strong>⚠️ Important :</strong> Le mariage doit avoir été célébré et enregistré. Si le mariage a été célébré au Vietnam, il doit être transcrit sur les registres d'état civil français.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📝 Documents nécessaires pour le visa</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <div class="doc-list">
+                            <strong>Documents du demandeur :</strong>
+                            <ul>
+                                <li> Passeport valide (minimum 1 an)</li>
+                                <li> Formulaire de demande de visa long séjour dûment complété</li>
+                                <li> 2 photos d'identité récentes (fond clair)</li>
+                                <li> Acte de mariage intégral (traduit et légalisé)</li>
+                                <li> Copie de la carte d'identité ou du passeport du conjoint français</li>
+                                <li> Justificatif de domicile en France</li>
+                                <li> Photo d'identité numérique</li>
+                            </ul>
+                        </div>
+
+                        <h4>Traductions et légalisations :</h4>
+                        <p>Tous les documents vietnamiens doivent être :</p>
+                        <ol>
+                            <li>Traduits en français par un traducteur assermenté</li>
+                            <li>Légalisés ou apostillés</li>
+                            <li>Les documents vietnamiens nécessite une légalisation par le <strong>Consulat de France à Hô Chi Minh-Ville ou Hanoï</strong></li>
+                        </ol>
+
+                        <div class="pro-tip">
+                            <strong>💡 Astuce :</strong> Commencez les démarches de traduction au moins 3 mois avant la date prévue du départ. Les délais peuvent être longs.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: OFII -->
+        <section id="ofii">
+            <h2>🏛️ 2. OFII - Déclaration d'Arrivée</h2>
+
+            <div class="card open">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📋 Qu'est-ce que l'OFII ?</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>L'<strong>OFII</strong> (Office Français de l'Immigration et de l'Intégration) est l'organisme qui gère l'admission au séjour en France. Vous devez obligatoirement déclarer votre arrivée dans les <strong>3 mois</strong> suivant votre entrée en France.</p>
+
+                        <h4>Pourquoi déclarer votre arrivée ?</h4>
+                        <ul>
+                            <li>Validation de votre visa VLS-TS</li>
+                            <li>Obtention d'un droit au séjour effectif</li>
+                            <li>Passage du bilan de santé initial</li>
+                            <li>Orientation vers les services d'intégration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📝 Démarche en ligne</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <h4>Procédure à suivre :</h4>
+                        <ol>
+                            <li>Accédez au site : <a href="https://administration-francaise.labobox.com" target="_blank">administration-francaise.labobox.com</a></li>
+                            <li>Créez un compte ou connectez-vous avec France Connect</li>
+                            <li>Remplissez le formulaire de déclaration d'arrivée</li>
+                            <li>Joignez les documents requis :
+                                <ul>
+                                    <li>Copie du passeport (pages avec photo et tampon d'entrée)</li>
+                                    <li>Copie du visa</li>
+                                    <li>Justificatif de domicile</li>
+                                    <li>Acte de mariage</li>
+                                </ul>
+                            </li>
+                            <li>Soumettez votre demande</li>
+                        </ol>
+
+                        <div class="info-box">
+                            <strong>📍 Coût :</strong> La taxe OFII s'élève à environ <strong>200€</strong> (tarif 2026). Elle est payable en ligne lors de la demande. Cette taxe est obligatoire pour la validation du visa.
+                        </div>
+
+                        <h4>Après la validation :</h4>
+                        <p>L'OFII enverra un电子邮件 confirmant la validation de votre séjour. Vous recevrez un <strong>visa validé</strong> avec une durée de séjour confirmée.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: PRÉFECTURE -->
+        <section id="prefecture">
+            <h2>🏢 3. Préfecture - Titre de Séjour</h2>
+
+            <div class="card open">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📋过一次Title de séjour - Vue d'ensemble</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>Bien que le VLS-TS dispense d'une demande de titre de séjour la première année, vous devez néanmoins vous <strong>présenter à la préfecture</strong> dans les <strong>3 mois</strong> suivant votre arrivée pour faire valider votre séjour.</p>
+
+                        <h4>Types de titres possibles :</h4>
+                        <ul>
+                            <li><strong>Carte de séjour temporaire</strong> "Vie privée et familiale" : délivrée pour 1 an, renouvelable</li>
+                            <li><strong>Carte de résident</strong> : possible après 3 ans de mariage si conditions remplies</li>
+                        </ul>
+
+                        <div class="info-box">
+                            <strong>⏰ Délai :</strong> Vous devez prendre rendez-vous dès que possible. Les créneaux sont souvent complets plusieurs semaines à l'avance. Bookez dès votre arrivée !
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📝 Documents à fournir</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <div class="doc-list">
+                            <strong>Dossier complet à préparer :</strong>
+                            <ul>
+                                <li> Passeport原件 + copie des pages essentielles</li>
+                                <li> 3 photos d'identité aux normes françaises</li>
+                                <li> Acte de mariage (intégral) + traduction assermentée</li>
+                                <li> Justificatif de domicile (contrat de bail, facture EDF, etc.)</li>
+                                <li> Justificatif d'identité du conjoint (carte nationale ou passeport)</li>
+                                <li> Certificat de radiation du consulat vietnamien (si applicable)</li>
+                                <li> 2 enveloppes timbrées à votre nom</li>
+                                <li> Timbre fiscal : 225€ (carte de séjour temporaire)</li>
+                            </ul>
+                        </div>
+
+                        <h4>Où s'adresser ?</h4>
+                        <p>La préfecture de votre département de résidence. Renseignez-vous sur le site de la préfecture pour connaître les horaires et modalités de prise de rendez-vous.</p>
+
+                        <div class="warning">
+                            <strong>⚠️ Attention :</strong> Les préfectures ont des procédures différentes selon les départements. Vérifiez toujours le site internet de votre préfecture avant de vous déplacer.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>⏱️ Délais et suivi</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <h4>Délais de traitement :</h4>
+                        <ul>
+                            <li>Réception de la convocation : 2 à 8 semaines</li>
+                            <li>Traitement du dossier : 2 à 4 mois</li>
+                            <li>Réception de la carte : jusqu'à 6 mois</li>
+                        </ul>
+
+                        <h4>Pendant l'attente :</h4>
+                        <p>Vous recevez un <strong>récépissé de dépôt</strong> qui prouve que vous êtes en procédure régulière. Ce document, bersama votre passeport, vous permet de travailler et de voyager dans l'espace Schengen.</p>
+
+                        <div class="pro-tip">
+                            <strong>💡 Astuce :</strong> Conservez tous les récépissés et preuves de dépôt. Si vous devez voyager, contactez la préfecture pour obtenir un laisser-passer si votre récépissé expire.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: SÉCURITÉ SOCIALE -->
+        <section id="securite-sociale">
+            <h2>🏥 4. Sécurité Sociale - CPAM</h2>
+
+            <div class="card open">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📋 Inscription à la Sécurité Sociale</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>L'inscription à la <strong>CPAM</strong> (Caisse Primaire d'Assurance Maladie) vous permet d'obtenir un numéro de Sécurité Sociale et d'être remboursé de vos frais de santé.</p>
+
+                        <h4>Pourquoi c'est essentiel ?</h4>
+                        <ul>
+                            <li>Obtention du <strong>numéro de Sécurité Sociale</strong> (15 chiffres)</li>
+                            <li>Prise en charge de 70% minimum des frais médicaux</li>
+                            <li>Accès au <strong>parcours de santé</strong> complet</li>
+                            <li>Nécessaire pour la complémentaire santé (mutuelle)</li>
+                        </ul>
+
+                        <div class="info-box">
+                            <strong>📍 Gratuit :</strong> L'inscription à la Sécurité Sociale est entièrement gratuite. Méfiez-vous des sites qui réclament de l'argent pour ce service.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📝 Procédure d'inscription</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <h4>En ligne (recommandé) :</h4>
+                        <ol>
+                            <li>Créez un compte sur <a href="https://www.ameli.fr" target="_blank">www.ameli.fr</a></li>
+                            <li>Cliquez sur "Mes démarches" → "Faire une demande d'assurance maladie"</li>
+                            <li>Remplissez le formulaire avec vos informations personnelles</li>
+                            <li>Joignez les documents :
+                                <ul>
+                                    <li>Copie du passeport</li>
+                                    <li>Copie du visa/titre de séjour</li>
+                                    <li>Acte de mariage traduit</li>
+                                    <li>Justificatif de domicile en France</li>
+                                    <li>RIB français</li>
+                                </ul>
+                            </li>
+                            <li>Soumettez votre demande</li>
+                        </ol>
+
+                        <h4>Par courrier :</h4>
+                        <p>Adressez votre dossier à la CPAM de votre département avec le formulaire S1106 (disponible sur ameli.fr).</p>
+
+                        <div class="pro-tip">
+                            <strong>💡 Astuce :</strong> Utilisez France Connect pour vous connecter à Ameli. Si votre conjoint français a un compte, vous pouvez plus facilement valider votre identité.
+                        </div>
+
+                        <h4>Délai d'attribution :</h4>
+                        <p>Le numéro de Sécurité Sociale provisoire est généralement attribué sous <strong>2 à 4 semaines</strong>. La carte Vitale arrive sous 3 à 6 semaines supplémentaires.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>🪪 Obtention de la Carte Vitale</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>La <strong>Carte Vitale</strong> est indispensable pour être remboursé automatiquement de vos frais de santé.</p>
+
+                        <h4>Pour recevoir votre carte :</h4>
+                        <ol>
+                            <li>Votre dossier doit être complètement validé par la CPAM</li>
+                            <li>Vous recevrez un formulaire de demande de carte Vitale</li>
+                            <li>Retournez-le avec une photo d'identité</li>
+                            <li>La carte arrive par courrier sous 2 à 3 semaines</li>
+                        </ol>
+
+                        <div class="info-box">
+                            <strong>⚠️ Important :</strong> Mettez à jour votre carte Vitale chaque année et à chaque changement de situation. Vous pouvez le faire dans les pharmacies équipées.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: IMPÔTS -->
+        <section id="impots">
+            <h2>💰 5. Impôts - Inscription au Fisc</h2>
+
+            <div class="card open">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📋 Numéro Fiscal et Déclaration</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>En France, tout résident fiscal doit s'immatriculer auprès des services fiscaux et déclarer ses revenus chaque année. Le <strong>numéro fiscal</strong> est attribué automatiquement lors de votre première déclaration.</p>
+
+                        <h4>Qui est résident fiscal ?</h4>
+                        <p>Vous devenez résident fiscal français si :</p>
+                        <ul>
+                            <li>Votre foyer fiscal est en France</li>
+                            <li>Vous passez plus de 183 jours en France par an</li>
+                            <li>Votre activité principale est en France</li>
+                        </ul>
+
+                        <div class="info-box">
+                            <strong>📍 Numéro fiscal vs SPI :</strong> Le numéro fiscal (13 chiffres) est différent du numéro de Sécurité Sociale. Vous le trouverez sur vos avis d'imposition.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📝 Première Déclaration de Revenus</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <h4>Quand déclarer ?</h4>
+                        <p>La campagne de déclaration a lieu généralement entre <strong>avril et juin</strong> chaque année. Si vous arrivez en cours d'année, vous déclarerez vos revenus perçus depuis votre arrivée.</p>
+
+                        <h4>Procédure :</h4>
+                        <ol>
+                            <li>Créez un compte sur <a href="https://www.impots.gouv.fr" target="_blank">www.impots.gouv.fr</a></li>
+                            <li>Accédez à votre espace Particulier</li>
+                            <li>Si c'est votre première année, remplissez le formulaire de déclaration initiale</li>
+                            <li>Déclarez vos revenus (salaires, allocations, etc.)</li>
+                            <li>Attention : vous serez imposé jointly avec votre époux(se) si vous êtes mariés</li>
+                        </ol>
+
+                        <div class="doc-list">
+                            <strong>Documents à préparer :</strong>
+                            <ul>
+                                <li>Justificatifs de revenus perçus depuis votre arrivée</li>
+                                <li>Numéro fiscal de votre époux(se) si existant</li>
+                                <li>RIB français</li>
+                            </ul>
+                        </div>
+
+                        <div class="pro-tip">
+                            <strong>💡 Astuce :</strong> Si vous n'avez pas de revenus en France la première année, votre déclaration sera quand même nécessaire pour officialiser votre statut de résident fiscal.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>🏠 Prélèvement à la Source</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>Depuis 2019, l'impôt sur le revenu est prélevé directement à la source. Vous verrez une retenue sur votre salaire ou un acompte sur vos allocations.</p>
+
+                        <h4>Comment ça marche ?</h4>
+                        <ul>
+                            <li>Votre taux d'imposition est calculé berdasarkan déclaration de revenus</li>
+                            <li>Il est appliqué automatiquement par votre employeur</li>
+                            <li>Vous pouvez ajuster votre taux via votre espace fiscal</li>
+                        </ul>
+
+                        <div class="info-box">
+                            <strong>📍 Taux personnalisé :</strong> Par défaut, c'est le taux de votre époux(se) qui s'applique si vous êtes imposés jointly. Vous pouvez demander un taux individualisé.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: BANQUE -->
+        <section id="banque">
+            <h2>🏦 6. Banque - Ouverture de Compte</h2>
+
+            <div class="card open">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📋 Pourquoi ouvrir un compte en France ?</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>Un compte bancaire français est <strong>indispensable</strong> pour la plupart des démarches administratives : recevoir votre salaire, payer vos factures, domicilier vos prélèvements, etc.</p>
+
+                        <h4>Avantages :</h4>
+                        <ul>
+                            <li>Obtention d'un <strong>RIB français</strong> (Relevé d'Identité Bancaire)</li>
+                            <li>Accès aux services de paiement français (CB, virements)</li>
+                            <li>Possibilité d'obtenir une <strong>carte bancaire</strong></li>
+                            <li>Facilite les démarches administratives (loyer, EDF, etc.)</li>
+                        </ul>
+
+                        <div class="info-box">
+                            <strong>⚠️ Attention :</strong> Votre compte vietnamien ne peut pas être utilisé pour la plupart des opérations en France. Vous aurez besoin d'un compte français.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📝 Documents nécessaires</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <div class="doc-list">
+                            <strong>Pour ouvrir un compte, préparez :</strong>
+                            <ul>
+                                <li> Passeport valide</li>
+                                <li> Visa ou titre de séjour</li>
+                                <li> Justificatif de domicile (facture, contrat de bail)</li>
+                                <li> Acte de mariage (pour compte joint avec époux)</li>
+                                <li> Eventuellement : attestation d'hébergement + pièce d'identité de l'hébergeant</li>
+                            </ul>
+                        </div>
+
+                        <h4>Banques recommandées pour les nouveaux arrivants :</h4>
+                        <ul>
+                            <li><strong>Banques en ligne</strong> (Boursorama, Fortuneo, Hello Bank!) : souvent plus accessibles, moins de pièces demandées</li>
+                            <li><strong>Banques traditionnelles</strong> (BNP, Crédit Agricole, LCL) : service en personne, mais parfois plus exigeantes</li>
+                        </ul>
+
+                        <div class="pro-tip">
+                            <strong>💡 Astuce :</strong> Les banques en ligne sont généralement plus souples avec les documents acceptés pour les nouveaux arrivants. Elles permettent aussi d'ouvrir un compte plus rapidement.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>💳 Carte d'Identité Nationale (CNI) - À terme</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>Une fois que vous aurez votre <strong>carte de séjour</strong> (après validation de la préfecture), vous pourrez demander une Carte Nationale d'Identité française si vous le souhaitez.</p>
+
+                        <p><strong>Note :</strong> Ce n'est pas obligatoire, mais cela peut faciliter certaines démarches bancaires et administratives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: LOGEMENT -->
+        <section id="logement">
+            <h2>🏠 7. Logement</h2>
+
+            <div class="card open">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📋 Trouver un Logement</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>Trouver un logement en France peut être difficile pour les nouveaux arrivants. Voici les étapes et les ressources pour vous aider.</p>
+
+                        <h4>Types de logement :</h4>
+                        <ul>
+                            <li><strong>Location vide</strong> : non meublée, généralement moins chère</li>
+                            <li><strong>Location meublée</strong> : avec équipements, plus chère mais pratique pour débuter</li>
+                            <li><strong>Sous-location</strong> : possible sous conditions</li>
+                        </ul>
+
+                        <h4>Plateformes de recherche :</h4>
+                        <ul>
+                            <li><a href="https://www.leboncoin.fr" target="_blank">Leboncoin</a> - Site d'annonces le plus populaire</li>
+                            <li><a href="https://www.seloger.com" target="_blank">SeLoger</a> - Principalement pour achats et grandes agences</li>
+                            <li><a href="https://www.avendrealouer.fr" target="_blank">A vendre à louer</a> - Autre plateforme courante</li>
+                            <li><a href="https://www.facebook.com/groups/" target="_blank">Groupes Facebook</a> - Souvent plus souples</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📝 Dossier de Location</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>Le marché locatif français est très compétitif. Préparez un dossier solide.</p>
+
+                        <div class="doc-list">
+                            <strong>Documents à préparer :</strong>
+                            <ul>
+                                <li>Pièce d'identité (passeport)</li>
+                                <li>Visa/titre de séjour</li>
+                                <li>3 dernières fiches de paie (ou attestation de revenus)</li>
+                                <li>Contrat de travail ou attestation d'embauche</li>
+                                <li>Dernier avis d'imposition</li>
+                                <li>Relevés bancaires des 3 derniers mois</li>
+                                <li>Attestation de précédentes locations (si disponible)</li>
+                                <li>Garantie de paiement (caution, Visale, etc.)</li>
+                            </ul>
+                        </div>
+
+                        <div class="warning">
+                            <strong>⚠️ Caution :</strong> La caution standard est de 1 mois de loyer hors charges. Vous pouvez aussi bénéficier de <strong>Visale</strong> (garantie gratuite de l'État) si vous y êtes éligible.
+                        </div>
+
+                        <h4>La garantie Visale :</h4>
+                        <p>C'est une garantie gratuite proposée par l'État qui se porte caution pour vous. Renseignez-vous sur <a href="https://www.visale.fr" target="_blank">visale.fr</a>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>💡 Conseils Pratiques</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <div class="pro-tip">
+                            <strong>💡 Astuce 1 :</strong> Prévoyez 3 à 5 mois de budget pour trouver un logement. Les premiers mois en France peuvent nécessiter un logement temporaire.
+                        </div>
+
+                        <div class="pro-tip">
+                            <strong>💡 Astuce 2 :</strong> Si vous logez chez votre époux(se), vous pouvez domicilier vos courriers à cette adresse en attendant de trouver votre propre logement.
+                        </div>
+
+                        <div class="pro-tip">
+                            <strong>💡 Astuce 3 :</strong> Les agences immobilières prennent généralement des frais d'un mois de loyer. Les particuliers sont souvent moins chers.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 8: TÉLÉPHONE -->
+        <section id="telephone">
+            <h2>📱 8. Téléphone et Opérateurs</h2>
+
+            <div class="card open">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📋 Choisir un Opérateur</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>Pour obtenir une ligne téléphonique française, vous pouvez soit utiliser votre téléphone vietnamien (si débloqué), soit acheter une carte SIM locale.</p>
+
+                        <h4>Opérateurs principaux :</h4>
+                        <ul>
+                            <li><strong>Orange</strong> - Le plus grand réseau, bon coverage</li>
+                            <li><strong>SFR</strong> - Deuxième opérateur, bons forfaits</li>
+                            <li><strong>Bouygues Telecom</strong> - Troisième acteur majeur</li>
+                            <li><strong>Free Mobile</strong> - Forfaits pas chers, bon rapport qualité/prix</li>
+                        </ul>
+
+                        <h4>Opérateurs virtuels (MVNO) :</h4>
+                        <ul>
+                            <li><strong>Crédit Mutuel Mobile, CIC Mobile</strong> - Services bancaires liés</li>
+                            <li><strong>Coriolis, Auchan Telecom</strong> - Autres marques</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📝 Documents nécessaires</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <div class="doc-list">
+                            <strong>Pour acheter une carte SIM :</strong>
+                            <ul>
+                                <li>Passeport ou titre de séjour</li>
+                                <li>Justificatif de domicile en France</li>
+                                <li>RIB français (pour les prélèvements automatiques)</li>
+                            </ul>
+                        </div>
+
+                        <h4>Options disponibles :</h4>
+                        <ul>
+                            <li><strong>Forfait avec engagement</strong> : généralement moins cher, engagement 12-24 mois</li>
+                            <li><strong>Forfait sans engagement</strong> : plus flexible (Free, Prixtel, etc.)</li>
+                            <li><strong>Carte prépayée</strong> : sans engagement, mais plus chère à l'usage</li>
+                        </ul>
+
+                        <div class="info-box">
+                            <strong>📍 Coût moyen :</strong> Comptez entre 10€ et 30€ par mois pour un forfait correct avec appels, SMS/MMS illimités et 10-100 Go de données.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>🔐 France Connect</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p><strong>France Connect</strong> est un système qui vous permet de vous identifier sur les sites administratifs français avec votre compte Ameli ou Impots.</p>
+
+                        <h4>Pour l'activer :</h4>
+                        <ol>
+                            <li>Créez d'abord vos comptes Ameli et Impots</li>
+                            <li>Allez sur un site qui propose France Connect</li>
+                            <li>Cliquez sur "Se connecter avec France Connect"</li>
+                            <li>Choisissez votre identité : Ameli ou Impots</li>
+                        </ol>
+
+                        <div class="info-box">
+                            <strong>⚠️ Important :</strong> France Connect vous simplifiera énormément les démarches en ligne. C'est fortement recommandé de l'activer dès que possible.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 9: CAF -->
+        <section id="caf">
+            <h2>🏠 9. CAF -Allocations Familiales</h2>
+
+            <div class="card open">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📋 Qu'est-ce que la CAF ?</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>La <strong>CAF</strong> (Caisse d'Allocations Familiales) est l'organisme qui verse les prestations sociales en France. Elle gère notamment les allocations logement.</p>
+
+                        <h4>Prestations possibles :</h4>
+                        <ul>
+                            <li><strong>Aide au Logement (APL)</strong> : allocation pour réduire votre loyer</li>
+                            <li><strong>Allocations Familiales</strong> : si vous avez des enfants</li>
+                            <li><strong>Prime d'Activité</strong> : supplement de revenus pour les travailleurs</li>
+                        </ul>
+
+                        <div class="info-box">
+                            <strong>📍 Conditions :</strong> Les allocations sont soumises à conditions de ressources et de séjour régulier en France. Vérifiez votre éligibilité sur le site de la CAF.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📝 Demande d'APL</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <h4>Procédure :</h4>
+                        <ol>
+                            <li>Créez un compte sur <a href="https://www.caf.fr" target="_blank">www.caf.fr</a></li>
+                            <li>Remplissez le formulaire de demande d'aide au logement</li>
+                            <li>Joignez les documents :
+                                <ul>
+                                    <li>Notification de contrat de location</li>
+                                    <li>Justificatifs de revenus</li>
+                                    <li>RIB français</li>
+                                    <li>Numéro de Sécurité Sociale</li>
+                                </ul>
+                            </li>
+                            <li>Soumettez votre demande</li>
+                        </ol>
+
+                        <div class="warning">
+                            <strong>⚠️ Délai :</strong> Le traitement peut prendre 2 à 4 mois. L'aide est versée à partir du mois suivant votre demande, pas de rétroactivité.
+                        </div>
+
+                        <h4>Montant approximatif :</h4>
+                        <p>Le montant de l'APL dépend de vos revenus, de votre loyer et de votre situation familiale. Il peut aller de 100€ à 400€ par mois environ.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 10: PERMIS DE CONDUIRE -->
+        <section id="permis">
+            <h2>🚗 10. Permis de Conduire</h2>
+
+            <div class="card open">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📋 Échange du Permis Vietnamien</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>Les permis de conduire vietnamiens <strong>ne sont pas automatiquement échangeables</strong> contre un permis français. La procédure dépend de la date d'obtention de votre permis et de sa catégorie.</p>
+
+                        <h4>Situation en 2026 :</h4>
+                        <p>Depuis 2023, la France a suspendu l'échange des permis vietnamien suite à des cas de fraude. Vérifiez la situation actuelle auprès de votre préfecture ou sur le site de l'<a href="https://www.ants.gouv.fr" target="_blank">ANTS</a>.</p>
+
+                        <div class="warning">
+                            <strong>⚠️ Important :</strong> Un permis vietnamien <strong>NE suffit pas</strong> pour conduire légalement en France au-delà de 3 mois même si vous avez un visa. Vous devez soit passer l'examen français, soit vérifier les accords en vigueur.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📝 Obtenir le Permis Français</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <h4>Si vous devez passer le permis français :</h4>
+                        <ol>
+                            <li><strong>Inscription à l'auto-école</strong> : Comptez entre 800€ et 2000€ selon les régions</li>
+                            <li><strong>Code de la route</strong> : Examen théorique,同样 au Vietnam mais en français</li>
+                            <li><strong>Conduite</strong> : Minimum 20 heures obligatoires</li>
+                            <li><strong>Examen pratique</strong> : Avec un inspecteur</li>
+                        </ol>
+
+                        <h4>Documents nécessaires pour s'inscrire :</h4>
+                        <div class="doc-list">
+                            <ul>
+                                <li>Permis vietnamien original + traduction assermentée</li>
+                                <li>Passeport ou titre de séjour</li>
+                                <li>Justificatif de domicile</li>
+                                <li>Photos d'identité</li>
+                                <li>Numéro de Sécurité Sociale</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-box">
+                            <strong>⏰ Durée :</strong> Prévoir entre 2 et 6 mois selon votre disponibilité et la disponibilité des examiners dans votre département.
+                        </div>
+
+                        <div class="pro-tip">
+                            <strong>💡 Astuce :</strong> Si vous avez déjà conduit au Vietnam, vous pouvez demander une equivalence de votre expérience pour réduire le nombre d'heures de conduite obligatoires. Parlez-en à votre auto-école.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 11: EMPLOI -->
+        <section id="emploi">
+            <h2>💼 11. Emploi et Travail</h2>
+
+            <div class="card open">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📋 Droits au Travail</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>Avec un visa époux/VLS-TS, vous avez le <strong>droit de travailler en France</strong> sans restriction. Vous n'avez pas besoin d'autorisation de travail supplémentaire.</p>
+
+                        <h4>Ce que vous pouvez faire :</h4>
+                        <ul>
+                            <li>Travailler comme salarié (CDI, CDD, interim)</li>
+                            <li>Créer une entreprise</li>
+                            <li>Exercer une profession libérale</li>
+                            <li>Travailler dans n'importe quel secteur</li>
+                        </ul>
+
+                        <div class="info-box">
+                            <strong>📍 Changement de statut :</strong> Si vous trouvez un emploi avant d'avoir votre carte de séjour, votre VLS-TS vous couvre déjà pour le travail.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>🔍 Recherche d'Emploi</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <h4>Plateformes d'emploi :</h4>
+                        <ul>
+                            <li><a href="https://www.pole-emploi.fr" target="_blank">Pôle Emploi</a> - Service public de l'emploi</li>
+                            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a> - Réseau professionnel</li>
+                            <li><a href="https://www.indeed.fr" target="_blank">Indeed</a> - Moteur de recherche d'emplois</li>
+                            <li><a href="https://www.apec.fr" target="_blank">APEC</a> - Pour les cadres</li>
+                        </ul>
+
+                        <h4>Inscription à Pôle Emploi :</h4>
+                        <p>Même si vous n'avez pas encore travaillé en France, vous pouvez vous inscrire pour bénéficier des services de conseil et de formation.</p>
+
+                        <div class="doc-list">
+                            <strong>Documents pour s'inscrire :</strong>
+                            <ul>
+                                <li>Passeport ou titre de séjour</li>
+                                <li>CV et lettres de motivation</li>
+                                <li>Eventuellement : diplômes traduits</li>
+                                <li>RIB français</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📝 Reconnaissance des Diplômes</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>Si vous avez des diplômes vietnamiens, vous pouvez demander leur <strong>reconnaissance en France</strong> via plusieurs procédures :</p>
+
+                        <h4>Pour les diplômes universitaires :</h4>
+                        <ul>
+                            <li><strong>ENIC-NARIC</strong> : Demandez une attestation d'équivalence sur <a href="https://www.ciep.fr/enic-naric" target="_blank">ciep.fr</a></li>
+                            <li>Certains diplômes peuvent donner accès à des concours ou à des formations</li>
+                        </ul>
+
+                        <h4>Pour les professions réglementées :</h4>
+                        <p>Certaines professions (santé, droit, architecture, etc.) nécessitent une autorisation spécifique du ministère concerné. Renseignez-vous auprès de votre préfecture.</p>
+
+                        <div class="pro-tip">
+                            <strong>💡 Astuce :</strong> Même sans reconnaissance officielle, vos diplômes peuvent être valorisés par les employeurs. Mettez-les en avant dans votre CV avec une explication de leur niveau.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 12: SANTÉ -->
+        <section id="sante">
+            <h2>🏥 12. Santé et Mutuelle</h2>
+
+            <div class="card open">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📋 Système de Santé Français</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>Le système de santé français repose sur deux niveaux :</p>
+                        <ul>
+                            <li><strong>Assurance Maladie Obligatoire (CPAM)</strong> : rembourse 70% des frais médicaux</li>
+                            <li><strong>Complémentaire santé (mutuelle)</strong> : rembourse le reste (30%)</li>
+                        </ul>
+
+                        <h4>Remboursements typiques :</h4>
+                        <ul>
+                            <li>Consultation médecin traitant : 26,50€ → 18,55€ remboursés</li>
+                            <li>Pharmacie : variable selon les médicaments</li>
+                            <li>Hospitalisation : 80% minimum</li>
+                        </ul>
+
+                        <div class="info-box">
+                            <strong>⚠️ Important :</strong> Sans mutuelle, le ticket modérateur (les 30% non remboursés) peut représenter des sommes importantes, surtout pour les hospitalisations.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>📝 Choisir une Mutuelle</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>La mutuelle est essentielle pour compléter les remboursements de la Sécurité Sociale.</p>
+
+                        <h4>Types de mutuelles :</h4>
+                        <ul>
+                            <li><strong>Mutuelles traditionnelles</strong> (Harmonie, MGEN, Axa, etc.)</li>
+                            <li><strong>Complémentaires low-cost</strong> (Alan, Luko, etc.)</li>
+                            <li><strong>Mutuelles d'entreprise</strong> : si votre époux travaille, demandez les tarifs préférentiels</li>
+                        </ul>
+
+                        <div class="doc-list">
+                            <strong>Documents nécessaires :</strong>
+                            <ul>
+                                <li>Numéro de Sécurité Sociale</li>
+                                <li>Carte Vitale</li>
+                                <li>RIB français</li>
+                                <li>Eventuellement : avis d'imposition</li>
+                            </ul>
+                        </div>
+
+                        <h4>Coût moyen :</h4>
+                        <p>Comptez entre 20€ et 100€ par mois par personne selon le niveau de couverture.</p>
+
+                        <div class="pro-tip">
+                            <strong>💡 Astuce :</strong> Certaines mutuelles proposent des tarifs réduits pour les couples ou les familles. Comparez toujours plusieurs devis avant de vous engager.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <h3>👨‍⚕️ Trouver un Médecin Traitant</h3>
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-content">
+                        <p>En France, il est recommandé d'avoir un <strong>médecin traitant</strong> déclaré. Cela permet un meilleur suivi et un meilleur remboursement.</p>
+
+                        <h4>Comment trouver un médecin :</h4>
+                        <ul>
+                            <li>Demandez à votre entourage</li>
+                            <li>Utilisez <a href="https://www.doctolib.fr" target="_blank">Doctolib</a> pour prendre rendez-vous en ligne</li>
+                            <li>Consultez l'annuaire de la CPAM</li>
+                        </ul>
+
+                        <div class="info-box">
+                            <strong>📍 Déclaration :</strong> Votre médecin traitant effectuera la déclaration auprès de la CPAM. Vous n'avez généralement rien à faire vous-même.
+                        </div>
+
+                        <h4>En cas d'urgence :</h4>
+                        <ul>
+                            <li><strong>15 (SAMU)</strong> : urgences médicales</li>
+                            <li><strong>18 (Pompiers)</strong> : incendios et urgences</li>
+                            <li><strong>112</strong> : numéro d'urgence européen</li>
+                            <li><strong>116 117</strong> : médecin de garde</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHECKLIST -->
+        <section id="checklist">
+            <h2>✅ 13. Checklist Interactive</h2>
+
+            <div class="checklist-section">
+                <div class="checklist-header">
+                    <h2>📋 Mes Démarches</h2>
+                    <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+                        <span id="progress-text">0% completado</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <button class="reset-btn" onclick="resetChecklist()">Réinitialiser</button>
+                    </div>
+                </div>
+
+                <div class="checklist-group">
+                    <h3>🛂 Avant l'arrivée</h3>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c1" onchange="updateProgress()">
+                        <label for="c1">Obtenir le visa époux au consulat de France</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c2" onchange="updateProgress()">
+                        <label for="c2">Faire traduire et légaliser les documents vietnamiens</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c3" onchange="updateProgress()">
+                        <label for="c3">Préparer le dossier OFII</label>
+                    </div>
+                </div>
+
+                <div class="checklist-group">
+                    <h3>📆 Premières semaines</h3>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c4" onchange="updateProgress()">
+                        <label for="c4">Déclarer mon arrivée à l'OFII (dans les 3 mois)</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c5" onchange="updateProgress()">
+                        <label for="c5">Payer la taxe OFII (~200€)</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c6" onchange="updateProgress()">
+                        <label for="c6">Ouvrir un compte bancaire français</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c7" onchange="updateProgress()">
+                        <label for="c7">Acheter une carte SIM française</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c8" onchange="updateProgress()">
+                        <label for="c8">S'inscrire sur Ameli.fr pour la Sécurité Sociale</label>
+                    </div>
+                </div>
+
+                <div class="checklist-group">
+                    <h3>🏢 Trimestre 1-2</h3>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c9" onchange="updateProgress()">
+                        <label for="c9">Prendre rendez-vous à la préfecture</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c10" onchange="updateProgress()">
+                        <label for="c10">Préparer et soumettre le dossier de titre de séjour</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c11" onchange="updateProgress()">
+                        <label for="c11">Demander son numéro fiscal sur impots.gouv.fr</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c12" onchange="updateProgress()">
+                        <label for="c12">Créer un compte France Connect</label>
+                    </div>
+                </div>
+
+                <div class="checklist-group">
+                    <h3>🏠 Logement et quotidien</h3>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c13" onchange="updateProgress()">
+                        <label for="c13">Rechercher un logement (si pas déjà fait)</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c14" onchange="updateProgress()">
+                        <label for="c14">S'inscrire à la CAF pour les aides au logement</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c15" onchange="updateProgress()">
+                        <label for="c15">Souscrire une mutuelle santé</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c16" onchange="updateProgress()">
+                        <label for="c16">Trouver un médecin traitant</label>
+                    </div>
+                </div>
+
+                <div class="checklist-group">
+                    <h3>🚗 À moyen terme</h3>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c17" onchange="updateProgress()">
+                        <label for="c17">Se renseigner sur l'échange/validation du permis vietnamien</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c18" onchange="updateProgress()">
+                        <label for="c18">Déposer une demande d'APL à la CAF</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c19" onchange="updateProgress()">
+                        <label for="c19">Préparer le renouvellement du visa (3 mois avant expiration)</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="c20" onchange="updateProgress()">
+                        <label for="c20">Commencer la recherche d'emploi si souhaité</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESSOURCES -->
+        <section id="ressources">
+            <h2>🔗 14. Ressources Utiles</h2>
+
+            <div class="resources-grid">
+                <a href="https://www.service-public.fr" target="_blank" class="resource-card">
+                    <h4>📋 Service-Public.fr</h4>
+                    <p>Toutes les démarches administratives officielles</p>
+                </a>
+                <a href="https://www.ameli.fr" target="_blank" class="resource-card">
+                    <h4>🏥 Ameli.fr</h4>
+                    <p>Sécurité Sociale - gestion de votre dossier santé</p>
+                </a>
+                <a href="https://www.impots.gouv.fr" target="_blank" class="resource-card">
+                    <h4>💰 Impots.gouv.fr</h4>
+                    <p>Services fiscaux et déclarations</p>
+                </a>
+                <a href="https://www.pole-emploi.fr" target="_blank" class="resource-card">
+                    <h4>💼 Pôle Emploi</h4>
+                    <p>Recherche d'emploi et accompagnement</p>
+                </a>
+                <a href="https://www.caf.fr" target="_blank" class="resource-card">
+                    <h4>🏠 CAF</h4>
+                    <p>Allocations familiales et aides au logement</p>
+                </a>
+                <a href="https://www.ants.gouv.fr" target="_blank" class="resource-card">
+                    <h4>🪪 ANTS</h4>
+                    <p>Agence Nationale des Titres Sécurisés</p>
+                </a>
+                <a href="https://www.doctolib.fr" target="_blank" class="resource-card">
+                    <h4>👨‍⚕️ Doctolib</h4>
+                    <p>Prise de rendez-vous médicaux en ligne</p>
+                </a>
+                <a href="https://www.visale.fr" target="_blank" class="resource-card">
+                    <h4>🏠 Visale</h4>
+                    <p>Garantie gratuite pour les locataires</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ce guide a été créé pour aider les citoyens vietnamiens dans leurs démarches d'installation en France. Les informations sont données à titre indicatif et peuvent évoluer.</p>
+        <p>Dernière mise à jour : Avril 2026</p>
+        <p class="disclaimer">Ce guide ne remplace pas les informations officielles des administrations françaises. Vérifiez toujours les délais et procédures auprès des organismes concernés.</p>
+    </footer>
+
+    <script>
+        // Card toggle
+        function toggleCard(header) {
+            const card = header.parentElement;
+            card.classList.toggle('open');
+        }
+
+        // Checklist
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('.checklist-item input[type="checkbox"]');
+            const checked = document.querySelectorAll('.checklist-item input[type="checkbox"]:checked');
+            const items = document.querySelectorAll('.checklist-item');
+
+            items.forEach(item => {
+                const checkbox = item.querySelector('input');
+                if (checkbox.checked) {
+                    item.classList.add('checked');
+                } else {
+                    item.classList.remove('checked');
+                }
+            });
+
+            const percentage = Math.round((checked.length / checkboxes.length) * 100);
+            document.getElementById('progress-text').textContent = percentage + '% complété';
+            document.getElementById('progress-fill').style.width = percentage + '%';
+
+            localStorage.setItem('checklist', JSON.stringify(
+                Array.from(checkboxes).map(cb => cb.id + ':' + cb.checked)
+            ));
+        }
+
+        function resetChecklist() {
+            const checkboxes = document.querySelectorAll('.checklist-item input[type="checkbox"]');
+            checkboxes.forEach(cb => cb.checked = false);
+            updateProgress();
+        }
+
+        // Load saved state
+        function loadChecklist() {
+            const saved = localStorage.getItem('checklist');
+            if (saved) {
+                const states = JSON.parse(saved);
+                states.forEach(state => {
+                    const [id, checked] = state.split(':');
+                    const checkbox = document.getElementById(id);
+                    if (checkbox) checkbox.checked = checked === 'true';
+                });
+                updateProgress();
+            }
+        }
+
+        // Nav active state
+        function updateNav() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Init
+        loadChecklist();
+        window.addEventListener('scroll', updateNav);
+    </script>
+</body>
+</html>
