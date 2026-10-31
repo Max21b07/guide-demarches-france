@@ -1654,5 +1654,2165 @@ window.QUESTIONS = [
 "explanation_vi": "Nhập quốc tịch cho phép có quốc tịch Pháp theo quyết định của cơ quan nhà nước, với các điều kiện (cư trú, hội nhập, ngôn ngữ...).",
 "source_type": "educational",
 "verified_at": "2026-01-01"
+},
+{
+"id": "VAL010",
+"category": "valeurs",
+"difficulty": "medium",
+"question_fr": "Que garantit la liberté d'expression en France ?",
+"question_vi": "Quyền tự do ngôn luận ở Pháp bảo đảm điều gì?",
+"answers_fr": [
+"Le droit d'insulter publiquement autrui",
+"Le droit d'exprimer ses opinions dans le respect de la loi",
+"Le droit de mentir devant un tribunal",
+"Le droit de ne jamais être contredit"
+],
+"answers_vi": [
+"Quyền lăng mạ người khác nơi công cộng",
+"Quyền bày tỏ ý kiến trong khuôn khổ pháp luật",
+"Quyền nói dối trước tòa",
+"Quyền không bao giờ bị phản bác"
+],
+"correct_answer": 1,
+"explanation_fr": "Chacun peut exprimer ses opinions, dans les limites fixées par la loi (interdiction de l'injure, de la diffamation, de l'incitation à la haine).",
+"explanation_vi": "Mọi người được bày tỏ ý kiến, trong giới hạn của pháp luật (cấm lăng mạ, vu khống, kích động thù hận).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VAL011",
+"category": "valeurs",
+"difficulty": "easy",
+"question_fr": "Sur quels bâtiments la devise de la République est-elle souvent inscrite ?",
+"question_vi": "Khẩu hiệu của nền Cộng hòa thường được khắc trên công trình nào?",
+"answers_fr": [
+"Les banques privées",
+"Les stades",
+"Les mairies et écoles publiques",
+"Les centres commerciaux"
+],
+"answers_vi": [
+"Ngân hàng tư nhân",
+"Sân vận động",
+"Tòa thị chính và trường công",
+"Trung tâm thương mại"
+],
+"correct_answer": 2,
+"explanation_fr": "« Liberté, Égalité, Fraternité » figure sur les frontons des mairies, des écoles et des bâtiments publics.",
+"explanation_vi": "« Tự do, Bình đẳng, Bác ái » được khắc trên mặt tiền tòa thị chính, trường học và công trình công.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VAL012",
+"category": "valeurs",
+"difficulty": "medium",
+"question_fr": "La laïcité impose à l'État d'être :",
+"question_vi": "Nguyên tắc thế tục buộc Nhà nước phải:",
+"answers_fr": [
+"Favorable à une religion",
+"Neutre vis-à-vis des religions",
+"Opposé à toute croyance",
+"Dirigé par une Église"
+],
+"answers_vi": [
+"Thiên vị một tôn giáo",
+"Trung lập với các tôn giáo",
+"Chống lại mọi tín ngưỡng",
+"Do một Giáo hội lãnh đạo"
+],
+"correct_answer": 1,
+"explanation_fr": "L'État laïque est neutre : il ne favorise ni ne combat aucune religion et garantit la liberté de conscience.",
+"explanation_vi": "Nhà nước thế tục giữ trung lập: không ưu ái cũng không chống tôn giáo nào, và bảo đảm tự do tín ngưỡng.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VAL013",
+"category": "valeurs",
+"difficulty": "easy",
+"question_fr": "Comment appelle-t-on le défilé militaire du 14 juillet à Paris ?",
+"question_vi": "Cuộc diễu binh ngày 14 tháng 7 ở Paris gọi là gì?",
+"answers_fr": [
+"Le défilé sur les Champs-Élysées",
+"La parade de Versailles",
+"La marche de la Bastille",
+"Le cortège de l'Élysée"
+],
+"answers_vi": [
+"Cuộc diễu hành trên đại lộ Champs-Élysées",
+"Lễ diễu hành Versailles",
+"Cuộc tuần hành Bastille",
+"Đoàn diễu hành Élysée"
+],
+"correct_answer": 0,
+"explanation_fr": "Chaque 14 juillet, un défilé militaire a lieu sur l'avenue des Champs-Élysées à Paris.",
+"explanation_vi": "Mỗi ngày 14/7, có cuộc diễu binh trên đại lộ Champs-Élysées ở Paris.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VAL014",
+"category": "valeurs",
+"difficulty": "medium",
+"question_fr": "Que signifie le principe de fraternité ?",
+"question_vi": "Nguyên tắc bác ái nghĩa là gì?",
+"answers_fr": [
+"La compétition entre citoyens",
+"La solidarité et l'entraide entre les personnes",
+"La supériorité d'un groupe",
+"L'indifférence envers autrui"
+],
+"answers_vi": [
+"Sự cạnh tranh giữa các công dân",
+"Tình đoàn kết và tương trợ giữa mọi người",
+"Sự vượt trội của một nhóm",
+"Sự thờ ơ với người khác"
+],
+"correct_answer": 1,
+"explanation_fr": "La fraternité, c'est la solidarité : s'entraider et vivre ensemble dans le respect de chacun.",
+"explanation_vi": "Bác ái là tinh thần đoàn kết: giúp đỡ lẫn nhau và chung sống trong sự tôn trọng.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VAL015",
+"category": "valeurs",
+"difficulty": "hard",
+"question_fr": "En France, la liberté de la presse permet :",
+"question_vi": "Ở Pháp, tự do báo chí cho phép:",
+"answers_fr": [
+"Au gouvernement de contrôler les journaux",
+"Aux journalistes d'informer librement dans le respect de la loi",
+"D'interdire les critiques des élus",
+"De publier sans aucune règle"
+],
+"answers_vi": [
+"Chính phủ kiểm soát báo chí",
+"Nhà báo đưa tin tự do trong khuôn khổ pháp luật",
+"Cấm chỉ trích người được bầu",
+"Đăng tin không theo quy tắc nào"
+],
+"correct_answer": 1,
+"explanation_fr": "La liberté de la presse permet aux médias d'informer et de critiquer, dans le respect des lois (pas de diffamation ni d'incitation à la haine).",
+"explanation_vi": "Tự do báo chí cho phép truyền thông đưa tin và phê bình, trong khuôn khổ pháp luật (không vu khống, không kích động thù hận).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VAL016",
+"category": "valeurs",
+"difficulty": "easy",
+"question_fr": "Quel symbole représente la liberté sur certains bustes de Marianne ?",
+"question_vi": "Biểu tượng nào tượng trưng cho tự do trên một số tượng bán thân Marianne?",
+"answers_fr": [
+"Une couronne royale",
+"Le bonnet phrygien",
+"Une épée",
+"Un sceptre"
+],
+"answers_vi": [
+"Vương miện hoàng gia",
+"Mũ Phrygien",
+"Thanh kiếm",
+"Vương trượng"
+],
+"correct_answer": 1,
+"explanation_fr": "Marianne porte souvent le bonnet phrygien, symbole de liberté hérité de la Révolution.",
+"explanation_vi": "Marianne thường đội mũ Phrygien, biểu tượng của tự do từ thời Cách mạng.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VAL017",
+"category": "valeurs",
+"difficulty": "medium",
+"question_fr": "Le respect de l'égalité interdit notamment :",
+"question_vi": "Tôn trọng bình đẳng đặc biệt cấm điều gì?",
+"answers_fr": [
+"Les discriminations fondées sur l'origine, le sexe ou la religion",
+"Le droit de vote des femmes",
+"L'accès de tous à l'école",
+"La liberté de travailler"
+],
+"answers_vi": [
+"Phân biệt đối xử theo nguồn gốc, giới tính hay tôn giáo",
+"Quyền bầu cử của phụ nữ",
+"Việc mọi người được đến trường",
+"Tự do làm việc"
+],
+"correct_answer": 0,
+"explanation_fr": "L'égalité interdit les discriminations : chacun a les mêmes droits quels que soient son origine, son sexe ou sa religion.",
+"explanation_vi": "Bình đẳng cấm phân biệt đối xử: ai cũng có quyền như nhau bất kể nguồn gốc, giới tính hay tôn giáo.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VAL018",
+"category": "valeurs",
+"difficulty": "easy",
+"question_fr": "La France est une démocratie, ce qui signifie que :",
+"question_vi": "Pháp là một nền dân chủ, nghĩa là:",
+"answers_fr": [
+"Le pouvoir appartient à une seule famille",
+"Le peuple choisit ses représentants par le vote",
+"L'armée dirige le pays",
+"Un roi décide de tout"
+],
+"answers_vi": [
+"Quyền lực thuộc về một gia đình",
+"Nhân dân chọn người đại diện qua bầu cử",
+"Quân đội điều hành đất nước",
+"Một nhà vua quyết định mọi việc"
+],
+"correct_answer": 1,
+"explanation_fr": "En démocratie, le pouvoir vient du peuple, qui élit ses représentants.",
+"explanation_vi": "Trong nền dân chủ, quyền lực đến từ nhân dân, những người bầu ra đại diện của mình.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VAL019",
+"category": "valeurs",
+"difficulty": "medium",
+"question_fr": "Quel texte affirme que les hommes naissent libres et égaux en droits ?",
+"question_vi": "Văn kiện nào khẳng định con người sinh ra tự do và bình đẳng về quyền?",
+"answers_fr": [
+"Le Code de la route",
+"La Déclaration des droits de l'homme et du citoyen de 1789",
+"Le règlement intérieur d'une école",
+"Le contrat de travail"
+],
+"answers_vi": [
+"Luật giao thông",
+"Tuyên ngôn Nhân quyền và Dân quyền 1789",
+"Nội quy trường học",
+"Hợp đồng lao động"
+],
+"correct_answer": 1,
+"explanation_fr": "La Déclaration de 1789 énonce : « Les hommes naissent et demeurent libres et égaux en droits. »",
+"explanation_vi": "Tuyên ngôn 1789 ghi: « Con người sinh ra và luôn tự do, bình đẳng về quyền. »",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "INS011",
+"category": "institutions",
+"difficulty": "medium",
+"question_fr": "Combien d'États membres compte l'Union européenne ?",
+"question_vi": "Liên minh châu Âu có bao nhiêu quốc gia thành viên?",
+"answers_fr": [
+"12",
+"27",
+"50",
+"15"
+],
+"answers_vi": [
+"12",
+"27",
+"50",
+"15"
+],
+"correct_answer": 1,
+"explanation_fr": "L'Union européenne compte 27 États membres. La France en est l'un des membres fondateurs.",
+"explanation_vi": "Liên minh châu Âu có 27 quốc gia thành viên. Pháp là một trong những nước sáng lập.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "INS012",
+"category": "institutions",
+"difficulty": "medium",
+"question_fr": "Qui est le chef des armées en France ?",
+"question_vi": "Ai là người đứng đầu quân đội ở Pháp?",
+"answers_fr": [
+"Le Premier ministre",
+"Le président de la République",
+"Le président du Sénat",
+"Le maire de Paris"
+],
+"answers_vi": [
+"Thủ tướng",
+"Tổng thống Cộng hòa",
+"Chủ tịch Thượng viện",
+"Thị trưởng Paris"
+],
+"correct_answer": 1,
+"explanation_fr": "Le président de la République est le chef des armées.",
+"explanation_vi": "Tổng thống Cộng hòa là tổng tư lệnh quân đội.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "INS013",
+"category": "institutions",
+"difficulty": "medium",
+"question_fr": "Pour combien d'années les conseillers municipaux sont-ils élus ?",
+"question_vi": "Các ủy viên hội đồng thành phố được bầu nhiệm kỳ bao nhiêu năm?",
+"answers_fr": [
+"6 ans",
+"2 ans",
+"10 ans",
+"4 ans"
+],
+"answers_vi": [
+"6 năm",
+"2 năm",
+"10 năm",
+"4 năm"
+],
+"correct_answer": 0,
+"explanation_fr": "Le conseil municipal est élu pour 6 ans ; il élit ensuite le maire.",
+"explanation_vi": "Hội đồng thành phố được bầu nhiệm kỳ 6 năm; sau đó bầu ra thị trưởng.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "INS014",
+"category": "institutions",
+"difficulty": "hard",
+"question_fr": "Quel est le rôle du Conseil constitutionnel ?",
+"question_vi": "Hội đồng Hiến pháp có vai trò gì?",
+"answers_fr": [
+"Nommer le président",
+"Vérifier la conformité des lois à la Constitution",
+"Diriger l'armée",
+"Gérer les impôts"
+],
+"answers_vi": [
+"Bổ nhiệm tổng thống",
+"Kiểm tra sự phù hợp của luật với Hiến pháp",
+"Chỉ huy quân đội",
+"Quản lý thuế"
+],
+"correct_answer": 1,
+"explanation_fr": "Le Conseil constitutionnel contrôle que les lois respectent la Constitution.",
+"explanation_vi": "Hội đồng Hiến pháp kiểm tra để luật tuân thủ Hiến pháp.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "INS015",
+"category": "institutions",
+"difficulty": "medium",
+"question_fr": "Qui représente l'État dans un département ?",
+"question_vi": "Ai đại diện cho Nhà nước ở một tỉnh (département)?",
+"answers_fr": [
+"Le maire",
+"Le préfet",
+"Le député",
+"Le juge"
+],
+"answers_vi": [
+"Thị trưởng",
+"Tỉnh trưởng (préfet)",
+"Dân biểu",
+"Thẩm phán"
+],
+"correct_answer": 1,
+"explanation_fr": "Le préfet représente l'État et le gouvernement dans le département.",
+"explanation_vi": "Tỉnh trưởng đại diện cho Nhà nước và Chính phủ ở tỉnh.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "INS016",
+"category": "institutions",
+"difficulty": "hard",
+"question_fr": "Selon le principe de séparation des pouvoirs, quels sont les trois pouvoirs ?",
+"question_vi": "Theo nguyên tắc tam quyền phân lập, ba quyền là gì?",
+"answers_fr": [
+"Militaire, religieux, économique",
+"Exécutif, législatif, judiciaire",
+"Local, régional, national",
+"Public, privé, associatif"
+],
+"answers_vi": [
+"Quân sự, tôn giáo, kinh tế",
+"Hành pháp, lập pháp, tư pháp",
+"Địa phương, vùng, quốc gia",
+"Công, tư, hội đoàn"
+],
+"correct_answer": 1,
+"explanation_fr": "Les trois pouvoirs sont séparés : exécutif (gouvernement), législatif (Parlement) et judiciaire (justice).",
+"explanation_vi": "Ba quyền tách biệt: hành pháp (chính phủ), lập pháp (nghị viện) và tư pháp (tòa án).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "INS017",
+"category": "institutions",
+"difficulty": "medium",
+"question_fr": "Quel est le drapeau de l'Union européenne ?",
+"question_vi": "Cờ của Liên minh châu Âu như thế nào?",
+"answers_fr": [
+"Un fond bleu avec douze étoiles dorées",
+"Trois bandes bleu-blanc-rouge",
+"Un fond rouge avec une étoile",
+"Un fond vert avec un croissant"
+],
+"answers_vi": [
+"Nền xanh với mười hai ngôi sao vàng",
+"Ba dải xanh-trắng-đỏ",
+"Nền đỏ với một ngôi sao",
+"Nền xanh lá với vầng trăng lưỡi liềm"
+],
+"correct_answer": 0,
+"explanation_fr": "Le drapeau européen est bleu avec un cercle de douze étoiles dorées.",
+"explanation_vi": "Cờ châu Âu màu xanh với vòng tròn mười hai ngôi sao vàng.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "INS018",
+"category": "institutions",
+"difficulty": "medium",
+"question_fr": "Qui promulgue les lois votées par le Parlement ?",
+"question_vi": "Ai ban hành các luật do Nghị viện thông qua?",
+"answers_fr": [
+"Le président de la République",
+"Le maire",
+"Le préfet",
+"Le président du Sénat"
+],
+"answers_vi": [
+"Tổng thống Cộng hòa",
+"Thị trưởng",
+"Tỉnh trưởng",
+"Chủ tịch Thượng viện"
+],
+"correct_answer": 0,
+"explanation_fr": "Une fois la loi votée, le président de la République la promulgue.",
+"explanation_vi": "Sau khi luật được thông qua, Tổng thống ban hành luật đó.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "INS019",
+"category": "institutions",
+"difficulty": "easy",
+"question_fr": "Où siège le Sénat français ?",
+"question_vi": "Thượng viện Pháp họp ở đâu?",
+"answers_fr": [
+"Au palais du Luxembourg",
+"Au palais de l'Élysée",
+"Au palais Bourbon",
+"À l'hôtel de Matignon"
+],
+"answers_vi": [
+"Điện Luxembourg",
+"Điện Élysée",
+"Điện Bourbon",
+"Dinh Matignon"
+],
+"correct_answer": 0,
+"explanation_fr": "Le Sénat siège au palais du Luxembourg ; l'Assemblée nationale au palais Bourbon.",
+"explanation_vi": "Thượng viện họp tại điện Luxembourg; Quốc hội tại điện Bourbon.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "INS020",
+"category": "institutions",
+"difficulty": "medium",
+"question_fr": "Comment les députés européens sont-ils désignés ?",
+"question_vi": "Các nghị sĩ châu Âu được chọn như thế nào?",
+"answers_fr": [
+"Par le président français",
+"Par élection au suffrage universel",
+"Par tirage au sort",
+"Par les maires"
+],
+"answers_vi": [
+"Do tổng thống Pháp chỉ định",
+"Qua bầu cử phổ thông",
+"Bằng bốc thăm",
+"Do các thị trưởng bầu"
+],
+"correct_answer": 1,
+"explanation_fr": "Les députés européens sont élus au suffrage universel direct par les citoyens de l'UE.",
+"explanation_vi": "Nghị sĩ châu Âu do công dân EU trực tiếp bầu theo phổ thông đầu phiếu.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "DRO009",
+"category": "droits",
+"difficulty": "medium",
+"question_fr": "Que doit faire un jeune Français vers 16-17 ans en matière de citoyenneté ?",
+"question_vi": "Một thanh niên Pháp khoảng 16-17 tuổi phải làm gì về mặt công dân?",
+"answers_fr": [
+"Participer à la Journée défense et citoyenneté",
+"Payer une taxe spéciale",
+"Rejoindre un parti politique",
+"Quitter l'école"
+],
+"answers_vi": [
+"Tham gia Ngày quốc phòng và công dân",
+"Nộp một loại thuế đặc biệt",
+"Gia nhập một đảng chính trị",
+"Nghỉ học"
+],
+"correct_answer": 0,
+"explanation_fr": "Les jeunes doivent se faire recenser puis participer à la Journée défense et citoyenneté (JDC).",
+"explanation_vi": "Thanh niên phải đăng ký và tham gia Ngày quốc phòng và công dân (JDC).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "DRO010",
+"category": "droits",
+"difficulty": "easy",
+"question_fr": "Quel document permet de voter le jour d'une élection ?",
+"question_vi": "Giấy tờ nào cho phép bỏ phiếu vào ngày bầu cử?",
+"answers_fr": [
+"Le permis de conduire seul",
+"Une pièce d'identité (et la carte électorale)",
+"La carte Vitale",
+"Un ticket de caisse"
+],
+"answers_vi": [
+"Chỉ bằng lái xe",
+"Giấy tờ tùy thân (và thẻ cử tri)",
+"Thẻ Vitale",
+"Hóa đơn mua hàng"
+],
+"correct_answer": 1,
+"explanation_fr": "Pour voter, il faut présenter une pièce d'identité ; la carte électorale est utile mais non obligatoire.",
+"explanation_vi": "Để bỏ phiếu, phải xuất trình giấy tờ tùy thân; thẻ cử tri hữu ích nhưng không bắt buộc.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "DRO011",
+"category": "droits",
+"difficulty": "medium",
+"question_fr": "Le droit de grève permet :",
+"question_vi": "Quyền đình công cho phép:",
+"answers_fr": [
+"De cesser le travail pour défendre ses revendications",
+"De ne jamais travailler",
+"D'empêcher les autres de travailler par la force",
+"De refuser de payer ses impôts"
+],
+"answers_vi": [
+"Ngừng làm việc để bảo vệ yêu sách",
+"Không bao giờ làm việc",
+"Dùng vũ lực ngăn người khác làm việc",
+"Từ chối nộp thuế"
+],
+"correct_answer": 0,
+"explanation_fr": "Le droit de grève permet aux salariés de cesser le travail pour défendre des revendications professionnelles.",
+"explanation_vi": "Quyền đình công cho phép người lao động ngừng việc để bảo vệ các yêu sách nghề nghiệp.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "DRO012",
+"category": "droits",
+"difficulty": "easy",
+"question_fr": "Quel numéro appeler en cas de violences faites aux femmes ?",
+"question_vi": "Gọi số nào khi có bạo lực đối với phụ nữ?",
+"answers_fr": [
+"Le 3919",
+"Le 118",
+"Le 3615",
+"Le 1000"
+],
+"answers_vi": [
+"3919",
+"118",
+"3615",
+"1000"
+],
+"correct_answer": 0,
+"explanation_fr": "Le 3919 est le numéro d'écoute pour les femmes victimes de violences (anonyme et gratuit).",
+"explanation_vi": "3919 là số tư vấn cho phụ nữ bị bạo hành (ẩn danh và miễn phí).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "DRO013",
+"category": "droits",
+"difficulty": "medium",
+"question_fr": "En France, toute personne accusée a le droit :",
+"question_vi": "Ở Pháp, người bị buộc tội có quyền:",
+"answers_fr": [
+"D'être défendue par un avocat",
+"D'être jugée sans procès",
+"D'échapper à la loi",
+"De choisir son juge"
+],
+"answers_vi": [
+"Được luật sư bào chữa",
+"Bị xử mà không cần phiên tòa",
+"Thoát khỏi pháp luật",
+"Tự chọn thẩm phán"
+],
+"correct_answer": 0,
+"explanation_fr": "Toute personne a droit à un procès équitable et à être défendue par un avocat.",
+"explanation_vi": "Mọi người có quyền được xét xử công bằng và được luật sư bào chữa.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "DRO014",
+"category": "droits",
+"difficulty": "medium",
+"question_fr": "Respecter la laïcité, pour un agent du service public, signifie :",
+"question_vi": "Đối với một viên chức nhà nước, tôn trọng nguyên tắc thế tục nghĩa là:",
+"answers_fr": [
+"Afficher ses convictions religieuses au travail",
+"Rester neutre et ne pas manifester ses croyances dans le service",
+"Refuser de servir certaines personnes",
+"Imposer sa religion aux usagers"
+],
+"answers_vi": [
+"Thể hiện tín ngưỡng tôn giáo tại nơi làm việc",
+"Giữ trung lập, không biểu lộ tín ngưỡng khi làm việc",
+"Từ chối phục vụ một số người",
+"Áp đặt tôn giáo cho người dân"
+],
+"correct_answer": 1,
+"explanation_fr": "Les agents publics doivent rester neutres : ils ne manifestent pas leurs convictions religieuses dans l'exercice de leurs fonctions.",
+"explanation_vi": "Viên chức nhà nước phải trung lập: không biểu lộ tín ngưỡng khi thi hành công vụ.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "DRO015",
+"category": "droits",
+"difficulty": "hard",
+"question_fr": "Qu'est-ce qu'un juré d'assises ?",
+"question_vi": "Hội thẩm đoàn (juré d'assises) là gì?",
+"answers_fr": [
+"Un juge professionnel",
+"Un citoyen tiré au sort pour juger certains crimes",
+"Un policier",
+"Un avocat de l'accusé"
+],
+"answers_vi": [
+"Thẩm phán chuyên nghiệp",
+"Công dân được bốc thăm để xét xử một số trọng tội",
+"Cảnh sát",
+"Luật sư của bị cáo"
+],
+"correct_answer": 1,
+"explanation_fr": "Des citoyens tirés au sort (jurés) participent, avec des magistrats, au jugement des crimes à la cour d'assises.",
+"explanation_vi": "Công dân được bốc thăm (hội thẩm) cùng thẩm phán tham gia xét xử trọng tội tại tòa đại hình.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "DRO016",
+"category": "droits",
+"difficulty": "easy",
+"question_fr": "Payer ses impôts sert principalement à :",
+"question_vi": "Việc nộp thuế chủ yếu dùng để:",
+"answers_fr": [
+"Enrichir les élus",
+"Financer les services publics",
+"Payer les commerces privés",
+"Rembourser les banques"
+],
+"answers_vi": [
+"Làm giàu cho người được bầu",
+"Tài trợ các dịch vụ công",
+"Trả cho cửa hàng tư nhân",
+"Hoàn tiền cho ngân hàng"
+],
+"correct_answer": 1,
+"explanation_fr": "Les impôts financent les services publics : écoles, hôpitaux, routes, sécurité, etc.",
+"explanation_vi": "Thuế tài trợ các dịch vụ công: trường học, bệnh viện, đường sá, an ninh, v.v.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "DRO017",
+"category": "droits",
+"difficulty": "medium",
+"question_fr": "La discrimination à l'embauche en raison de l'origine est :",
+"question_vi": "Phân biệt đối xử khi tuyển dụng vì nguồn gốc là:",
+"answers_fr": [
+"Autorisée",
+"Interdite par la loi",
+"Obligatoire",
+"Recommandée"
+],
+"answers_vi": [
+"Được phép",
+"Bị luật cấm",
+"Bắt buộc",
+"Được khuyến khích"
+],
+"correct_answer": 1,
+"explanation_fr": "La loi interdit toute discrimination à l'embauche, notamment selon l'origine, le sexe ou la religion.",
+"explanation_vi": "Luật cấm mọi phân biệt đối xử khi tuyển dụng, nhất là theo nguồn gốc, giới tính hay tôn giáo.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "DRO018",
+"category": "droits",
+"difficulty": "easy",
+"question_fr": "Un devoir de chacun envers la société est de :",
+"question_vi": "Nghĩa vụ của mỗi người đối với xã hội là:",
+"answers_fr": [
+"Respecter les biens publics et l'environnement",
+"Ignorer les règles communes",
+"Éviter de travailler",
+"Refuser d'aider autrui"
+],
+"answers_vi": [
+"Tôn trọng tài sản công và môi trường",
+"Phớt lờ các quy tắc chung",
+"Tránh làm việc",
+"Từ chối giúp đỡ người khác"
+],
+"correct_answer": 0,
+"explanation_fr": "Respecter les biens publics, l'environnement et les règles communes fait partie des devoirs du citoyen.",
+"explanation_vi": "Tôn trọng tài sản công, môi trường và quy tắc chung là một phần nghĩa vụ công dân.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "HIS009",
+"category": "histoire",
+"difficulty": "medium",
+"question_fr": "En quelle année les femmes ont-elles obtenu le droit de vote en France ?",
+"question_vi": "Phụ nữ Pháp giành được quyền bầu cử vào năm nào?",
+"answers_fr": [
+"1848",
+"1944",
+"1789",
+"1981"
+],
+"answers_vi": [
+"1848",
+"1944",
+"1789",
+"1981"
+],
+"correct_answer": 1,
+"explanation_fr": "Les femmes ont obtenu le droit de vote en 1944 et ont voté pour la première fois en 1945.",
+"explanation_vi": "Phụ nữ giành quyền bầu cử năm 1944 và lần đầu bỏ phiếu năm 1945.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "HIS010",
+"category": "histoire",
+"difficulty": "medium",
+"question_fr": "En quelle année la loi de séparation des Églises et de l'État a-t-elle été adoptée ?",
+"question_vi": "Luật tách Giáo hội khỏi Nhà nước được thông qua năm nào?",
+"answers_fr": [
+"1905",
+"1789",
+"1958",
+"2000"
+],
+"answers_vi": [
+"1905",
+"1789",
+"1958",
+"2000"
+],
+"correct_answer": 0,
+"explanation_fr": "La loi de 1905 établit la séparation des Églises et de l'État et fonde la laïcité.",
+"explanation_vi": "Luật năm 1905 thiết lập sự tách biệt Giáo hội và Nhà nước, đặt nền cho nguyên tắc thế tục.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "HIS011",
+"category": "histoire",
+"difficulty": "medium",
+"question_fr": "Qui a fait abolir l'esclavage dans les colonies françaises en 1848 ?",
+"question_vi": "Ai đã bãi bỏ chế độ nô lệ ở các thuộc địa Pháp năm 1848?",
+"answers_fr": [
+"Victor Hugo",
+"Victor Schœlcher",
+"Napoléon III",
+"Jules Ferry"
+],
+"answers_vi": [
+"Victor Hugo",
+"Victor Schœlcher",
+"Napoléon III",
+"Jules Ferry"
+],
+"correct_answer": 1,
+"explanation_fr": "L'abolition de l'esclavage de 1848 est associée à Victor Schœlcher.",
+"explanation_vi": "Việc bãi bỏ chế độ nô lệ năm 1848 gắn với tên Victor Schœlcher.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "HIS012",
+"category": "histoire",
+"difficulty": "easy",
+"question_fr": "Quelle scientifique française a reçu deux prix Nobel ?",
+"question_vi": "Nhà khoa học Pháp nào đã nhận hai giải Nobel?",
+"answers_fr": [
+"Marie Curie",
+"Simone Veil",
+"Jeanne d'Arc",
+"Édith Piaf"
+],
+"answers_vi": [
+"Marie Curie",
+"Simone Veil",
+"Jeanne d'Arc",
+"Édith Piaf"
+],
+"correct_answer": 0,
+"explanation_fr": "Marie Curie a reçu deux prix Nobel (physique puis chimie) pour ses travaux sur la radioactivité.",
+"explanation_vi": "Marie Curie nhận hai giải Nobel (vật lý rồi hóa học) nhờ công trình về phóng xạ.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "HIS013",
+"category": "histoire",
+"difficulty": "medium",
+"question_fr": "En quelle année les congés payés ont-ils été instaurés ?",
+"question_vi": "Chế độ nghỉ phép có lương được lập ra năm nào?",
+"answers_fr": [
+"1936",
+"1905",
+"1981",
+"1958"
+],
+"answers_vi": [
+"1936",
+"1905",
+"1981",
+"1958"
+],
+"correct_answer": 0,
+"explanation_fr": "Les premiers congés payés datent de 1936 (Front populaire).",
+"explanation_vi": "Chế độ nghỉ phép có lương đầu tiên có từ năm 1936 (Mặt trận Bình dân).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "HIS014",
+"category": "histoire",
+"difficulty": "hard",
+"question_fr": "Quel roi est surnommé le « Roi-Soleil » ?",
+"question_vi": "Vị vua nào có biệt danh « Vua Mặt Trời »?",
+"answers_fr": [
+"Louis XIV",
+"Henri IV",
+"François Ier",
+"Louis XVI"
+],
+"answers_vi": [
+"Louis XIV",
+"Henri IV",
+"François I",
+"Louis XVI"
+],
+"correct_answer": 0,
+"explanation_fr": "Louis XIV, le « Roi-Soleil », a fait construire le château de Versailles.",
+"explanation_vi": "Louis XIV, « Vua Mặt Trời », đã cho xây lâu đài Versailles.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "HIS015",
+"category": "histoire",
+"difficulty": "easy",
+"question_fr": "En quelle année la Première Guerre mondiale s'est-elle terminée ?",
+"question_vi": "Thế chiến thứ nhất kết thúc năm nào?",
+"answers_fr": [
+"1918",
+"1945",
+"1870",
+"1939"
+],
+"answers_vi": [
+"1918",
+"1945",
+"1870",
+"1939"
+],
+"correct_answer": 0,
+"explanation_fr": "La Première Guerre mondiale s'est terminée le 11 novembre 1918.",
+"explanation_vi": "Thế chiến thứ nhất kết thúc ngày 11 tháng 11 năm 1918.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "HIS016",
+"category": "histoire",
+"difficulty": "medium",
+"question_fr": "En quelle année la Sécurité sociale a-t-elle été créée ?",
+"question_vi": "Bảo hiểm xã hội được thành lập năm nào?",
+"answers_fr": [
+"1945",
+"1789",
+"1981",
+"2002"
+],
+"answers_vi": [
+"1945",
+"1789",
+"1981",
+"2002"
+],
+"correct_answer": 0,
+"explanation_fr": "La Sécurité sociale a été créée en 1945, après la Seconde Guerre mondiale.",
+"explanation_vi": "Bảo hiểm xã hội được lập năm 1945, sau Thế chiến thứ hai.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "HIS017",
+"category": "histoire",
+"difficulty": "medium",
+"question_fr": "Quel personnage a dirigé la Résistance et fondé la Ve République ?",
+"question_vi": "Nhân vật nào lãnh đạo Kháng chiến và lập nền Cộng hòa thứ Năm?",
+"answers_fr": [
+"Charles de Gaulle",
+"Napoléon Bonaparte",
+"Louis XIV",
+"Georges Clemenceau"
+],
+"answers_vi": [
+"Charles de Gaulle",
+"Napoléon Bonaparte",
+"Louis XIV",
+"Georges Clemenceau"
+],
+"correct_answer": 0,
+"explanation_fr": "Charles de Gaulle a dirigé la France libre pendant la guerre puis fondé la Ve République en 1958.",
+"explanation_vi": "Charles de Gaulle lãnh đạo nước Pháp Tự do trong chiến tranh rồi lập nền Cộng hòa thứ Năm năm 1958.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "HIS018",
+"category": "histoire",
+"difficulty": "hard",
+"question_fr": "En quelle année le mariage a-t-il été ouvert aux couples de même sexe ?",
+"question_vi": "Hôn nhân được mở cho các cặp cùng giới vào năm nào?",
+"answers_fr": [
+"2013",
+"1999",
+"2005",
+"2020"
+],
+"answers_vi": [
+"2013",
+"1999",
+"2005",
+"2020"
+],
+"correct_answer": 0,
+"explanation_fr": "La loi ouvrant le mariage aux couples de même sexe a été adoptée en 2013.",
+"explanation_vi": "Luật cho phép hôn nhân đồng giới được thông qua năm 2013.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "GEO009",
+"category": "geographie",
+"difficulty": "easy",
+"question_fr": "Comment surnomme-t-on la forme du territoire de la France métropolitaine ?",
+"question_vi": "Hình dạng lãnh thổ Pháp lục địa thường được gọi là gì?",
+"answers_fr": [
+"L'Hexagone",
+"Le Triangle",
+"Le Cercle",
+"Le Carré"
+],
+"answers_vi": [
+"Hình lục giác (Hexagone)",
+"Hình tam giác",
+"Hình tròn",
+"Hình vuông"
+],
+"correct_answer": 0,
+"explanation_fr": "La France métropolitaine est souvent appelée « l'Hexagone » en raison de sa forme à six côtés.",
+"explanation_vi": "Pháp lục địa thường được gọi là « Hexagone » vì có hình sáu cạnh.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "GEO010",
+"category": "geographie",
+"difficulty": "medium",
+"question_fr": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
+"question_vi": "Dãy núi nào ngăn cách Pháp với Tây Ban Nha?",
+"answers_fr": [
+"Les Alpes",
+"Les Pyrénées",
+"Le Jura",
+"Les Vosges"
+],
+"answers_vi": [
+"Dãy Alps",
+"Dãy Pyrénées",
+"Dãy Jura",
+"Dãy Vosges"
+],
+"correct_answer": 1,
+"explanation_fr": "Les Pyrénées forment une frontière naturelle entre la France et l'Espagne.",
+"explanation_vi": "Dãy Pyrénées là biên giới tự nhiên giữa Pháp và Tây Ban Nha.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "GEO011",
+"category": "geographie",
+"difficulty": "medium",
+"question_fr": "Quel océan borde l'ouest de la France ?",
+"question_vi": "Đại dương nào tiếp giáp phía tây nước Pháp?",
+"answers_fr": [
+"L'océan Atlantique",
+"L'océan Pacifique",
+"L'océan Indien",
+"L'océan Arctique"
+],
+"answers_vi": [
+"Đại Tây Dương",
+"Thái Bình Dương",
+"Ấn Độ Dương",
+"Bắc Băng Dương"
+],
+"correct_answer": 0,
+"explanation_fr": "L'océan Atlantique borde l'ouest de la France.",
+"explanation_vi": "Đại Tây Dương tiếp giáp phía tây nước Pháp.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "GEO012",
+"category": "geographie",
+"difficulty": "easy",
+"question_fr": "Dans quelle ville se trouve le siège du Parlement européen ?",
+"question_vi": "Trụ sở Nghị viện châu Âu nằm ở thành phố nào?",
+"answers_fr": [
+"Strasbourg",
+"Marseille",
+"Bordeaux",
+"Lille"
+],
+"answers_vi": [
+"Strasbourg",
+"Marseille",
+"Bordeaux",
+"Lille"
+],
+"correct_answer": 0,
+"explanation_fr": "Le Parlement européen siège à Strasbourg, en France.",
+"explanation_vi": "Nghị viện châu Âu đặt trụ sở tại Strasbourg, Pháp.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "GEO013",
+"category": "geographie",
+"difficulty": "medium",
+"question_fr": "Combien de départements compte la France (environ) ?",
+"question_vi": "Nước Pháp có khoảng bao nhiêu tỉnh (département)?",
+"answers_fr": [
+"Environ 101",
+"Environ 13",
+"Environ 50",
+"Environ 300"
+],
+"answers_vi": [
+"Khoảng 101",
+"Khoảng 13",
+"Khoảng 50",
+"Khoảng 300"
+],
+"correct_answer": 0,
+"explanation_fr": "La France compte 101 départements, dont 5 en outre-mer.",
+"explanation_vi": "Pháp có 101 tỉnh, trong đó 5 tỉnh hải ngoại.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "GEO014",
+"category": "geographie",
+"difficulty": "medium",
+"question_fr": "Laquelle de ces villes est traversée par le Rhône ?",
+"question_vi": "Thành phố nào sau đây có sông Rhône chảy qua?",
+"answers_fr": [
+"Lyon",
+"Brest",
+"Lille",
+"Rennes"
+],
+"answers_vi": [
+"Lyon",
+"Brest",
+"Lille",
+"Rennes"
+],
+"correct_answer": 0,
+"explanation_fr": "Le Rhône traverse notamment Lyon avant de rejoindre la Méditerranée.",
+"explanation_vi": "Sông Rhône chảy qua Lyon trước khi đổ ra Địa Trung Hải.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "GEO015",
+"category": "geographie",
+"difficulty": "hard",
+"question_fr": "Lequel de ces territoires d'outre-mer se situe dans l'océan Indien ?",
+"question_vi": "Lãnh thổ hải ngoại nào sau đây nằm ở Ấn Độ Dương?",
+"answers_fr": [
+"La Guadeloupe",
+"La Réunion",
+"La Martinique",
+"La Guyane"
+],
+"answers_vi": [
+"Guadeloupe",
+"La Réunion",
+"Martinique",
+"Guyane"
+],
+"correct_answer": 1,
+"explanation_fr": "La Réunion et Mayotte se trouvent dans l'océan Indien ; la Guadeloupe et la Martinique sont aux Caraïbes.",
+"explanation_vi": "La Réunion và Mayotte nằm ở Ấn Độ Dương; Guadeloupe và Martinique ở vùng Caribe.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "GEO016",
+"category": "geographie",
+"difficulty": "easy",
+"question_fr": "Quel pays, enclavé dans les Pyrénées, est frontalier de la France ?",
+"question_vi": "Quốc gia nhỏ nằm trong dãy Pyrénées, giáp với Pháp là nước nào?",
+"answers_fr": [
+"Andorre",
+"Le Portugal",
+"La Grèce",
+"Les Pays-Bas"
+],
+"answers_vi": [
+"Andorra",
+"Bồ Đào Nha",
+"Hy Lạp",
+"Hà Lan"
+],
+"correct_answer": 0,
+"explanation_fr": "Andorre est un petit État frontalier de la France, situé dans les Pyrénées.",
+"explanation_vi": "Andorra là một quốc gia nhỏ giáp Pháp, nằm trong dãy Pyrénées.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "GEO017",
+"category": "geographie",
+"difficulty": "medium",
+"question_fr": "Quelle mer sépare la France du Royaume-Uni ?",
+"question_vi": "Biển nào ngăn cách Pháp với Vương quốc Anh?",
+"answers_fr": [
+"La Manche",
+"La mer Méditerranée",
+"La mer Noire",
+"La mer Baltique"
+],
+"answers_vi": [
+"Biển Manche",
+"Biển Địa Trung Hải",
+"Biển Đen",
+"Biển Baltic"
+],
+"correct_answer": 0,
+"explanation_fr": "La Manche sépare le nord de la France du Royaume-Uni.",
+"explanation_vi": "Biển Manche ngăn cách miền bắc nước Pháp với Vương quốc Anh.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "GEO018",
+"category": "geographie",
+"difficulty": "hard",
+"question_fr": "Quel fleuve marque une partie de la frontière entre la France et l'Allemagne ?",
+"question_vi": "Con sông nào tạo một phần biên giới giữa Pháp và Đức?",
+"answers_fr": [
+"La Garonne",
+"Le Rhin",
+"La Loire",
+"La Seine"
+],
+"answers_vi": [
+"Sông Garonne",
+"Sông Rhin",
+"Sông Loire",
+"Sông Seine"
+],
+"correct_answer": 1,
+"explanation_fr": "Le Rhin marque une partie de la frontière entre la France et l'Allemagne.",
+"explanation_vi": "Sông Rhin tạo một phần biên giới giữa Pháp và Đức.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VIE008",
+"category": "vieQuotidienne",
+"difficulty": "easy",
+"question_fr": "Quel numéro gratuit joindre quand on est sans abri ou en grande précarité ?",
+"question_vi": "Gọi số miễn phí nào khi vô gia cư hoặc gặp khó khăn nghiêm trọng?",
+"answers_fr": [
+"Le 115",
+"Le 17",
+"Le 18",
+"Le 3919"
+],
+"answers_vi": [
+"115",
+"17",
+"18",
+"3919"
+],
+"correct_answer": 0,
+"explanation_fr": "Le 115 est le numéro d'urgence sociale (hébergement, aide aux personnes sans abri).",
+"explanation_vi": "115 là số khẩn cấp xã hội (chỗ ở, hỗ trợ người vô gia cư).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VIE009",
+"category": "vieQuotidienne",
+"difficulty": "medium",
+"question_fr": "Que doit-on faire avant de s'installer dans un logement loué ?",
+"question_vi": "Trước khi dọn vào một căn nhà thuê, cần làm gì?",
+"answers_fr": [
+"Signer un bail (contrat de location)",
+"Payer l'impôt foncier",
+"Obtenir un passeport",
+"Ouvrir un commerce"
+],
+"answers_vi": [
+"Ký hợp đồng thuê nhà (bail)",
+"Nộp thuế bất động sản",
+"Xin hộ chiếu",
+"Mở cửa hàng"
+],
+"correct_answer": 0,
+"explanation_fr": "La location d'un logement se fait avec un bail signé entre le locataire et le propriétaire.",
+"explanation_vi": "Việc thuê nhà được thực hiện qua hợp đồng (bail) ký giữa người thuê và chủ nhà.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VIE010",
+"category": "vieQuotidienne",
+"difficulty": "easy",
+"question_fr": "Quel organisme verse des aides au logement (APL) ?",
+"question_vi": "Cơ quan nào chi trả trợ cấp nhà ở (APL)?",
+"answers_fr": [
+"La CAF",
+"La préfecture",
+"La mairie",
+"La police"
+],
+"answers_vi": [
+"CAF (Quỹ trợ cấp gia đình)",
+"Tỉnh trưởng phủ",
+"Tòa thị chính",
+"Cảnh sát"
+],
+"correct_answer": 0,
+"explanation_fr": "La CAF (Caisse d'allocations familiales) verse notamment les aides au logement (APL).",
+"explanation_vi": "CAF (Quỹ trợ cấp gia đình) chi trả các trợ cấp nhà ở (APL).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VIE011",
+"category": "vieQuotidienne",
+"difficulty": "medium",
+"question_fr": "Comment circule-t-on légalement en voiture en France ?",
+"question_vi": "Lái xe hợp pháp ở Pháp như thế nào?",
+"answers_fr": [
+"En respectant le code de la route et avec une assurance",
+"Sans aucune règle",
+"Sans permis si on roule lentement",
+"Uniquement la nuit"
+],
+"answers_vi": [
+"Tuân thủ luật giao thông và có bảo hiểm",
+"Không theo quy tắc nào",
+"Không cần bằng nếu đi chậm",
+"Chỉ vào ban đêm"
+],
+"correct_answer": 0,
+"explanation_fr": "Conduire exige le permis, le respect du code de la route et une assurance obligatoire du véhicule.",
+"explanation_vi": "Lái xe đòi hỏi có bằng, tuân thủ luật giao thông và bảo hiểm xe bắt buộc.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VIE012",
+"category": "vieQuotidienne",
+"difficulty": "easy",
+"question_fr": "Le 1er mai est en France :",
+"question_vi": "Ngày 1 tháng 5 ở Pháp là:",
+"answers_fr": [
+"Un jour férié (fête du Travail)",
+"Un jour d'école obligatoire",
+"La fête nationale",
+"Un jour de vote"
+],
+"answers_vi": [
+"Ngày nghỉ lễ (Ngày Lao động)",
+"Ngày học bắt buộc",
+"Ngày quốc khánh",
+"Ngày bầu cử"
+],
+"correct_answer": 0,
+"explanation_fr": "Le 1er mai est la fête du Travail, jour férié en France.",
+"explanation_vi": "Ngày 1/5 là Ngày Lao động, một ngày nghỉ lễ ở Pháp.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VIE013",
+"category": "vieQuotidienne",
+"difficulty": "medium",
+"question_fr": "Pour trier le verre, on le dépose :",
+"question_vi": "Để phân loại thủy tinh, ta bỏ vào:",
+"answers_fr": [
+"Dans le conteneur à verre prévu à cet effet",
+"Avec les déchets alimentaires",
+"Dans la rue",
+"Dans les toilettes"
+],
+"answers_vi": [
+"Thùng dành riêng cho thủy tinh",
+"Chung với rác thực phẩm",
+"Ngoài đường",
+"Trong nhà vệ sinh"
+],
+"correct_answer": 0,
+"explanation_fr": "Le verre se dépose dans les conteneurs à verre dédiés, pour être recyclé.",
+"explanation_vi": "Thủy tinh được bỏ vào thùng chuyên dụng để tái chế.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VIE014",
+"category": "vieQuotidienne",
+"difficulty": "easy",
+"question_fr": "Où peut-on envoyer un courrier ou un colis ?",
+"question_vi": "Có thể gửi thư hoặc bưu kiện ở đâu?",
+"answers_fr": [
+"À La Poste",
+"À la préfecture",
+"Au commissariat",
+"À l'hôpital"
+],
+"answers_vi": [
+"Tại bưu điện (La Poste)",
+"Tại tỉnh trưởng phủ",
+"Tại đồn cảnh sát",
+"Tại bệnh viện"
+],
+"correct_answer": 0,
+"explanation_fr": "La Poste gère l'envoi du courrier et des colis.",
+"explanation_vi": "La Poste phụ trách việc gửi thư và bưu kiện.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VIE015",
+"category": "vieQuotidienne",
+"difficulty": "medium",
+"question_fr": "Pour déclarer ses revenus et payer l'impôt, on s'adresse :",
+"question_vi": "Để khai thu nhập và nộp thuế, ta liên hệ:",
+"answers_fr": [
+"À l'administration des impôts (service des finances publiques)",
+"À la CAF",
+"À la mairie",
+"À la Sécurité sociale"
+],
+"answers_vi": [
+"Cơ quan thuế (sở tài chính công)",
+"CAF",
+"Tòa thị chính",
+"Bảo hiểm xã hội"
+],
+"correct_answer": 0,
+"explanation_fr": "La déclaration de revenus et le paiement de l'impôt se font auprès de l'administration fiscale.",
+"explanation_vi": "Khai thu nhập và nộp thuế được thực hiện tại cơ quan thuế.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VIE016",
+"category": "vieQuotidienne",
+"difficulty": "easy",
+"question_fr": "Quel numéro d'urgence est accessible gratuitement partout en Europe ?",
+"question_vi": "Số khẩn cấp nào gọi miễn phí khắp châu Âu?",
+"answers_fr": [
+"Le 112",
+"Le 3615",
+"Le 118 712",
+"Le 1023"
+],
+"answers_vi": [
+"112",
+"3615",
+"118 712",
+"1023"
+],
+"correct_answer": 0,
+"explanation_fr": "Le 112 est le numéro d'urgence européen, gratuit, pour toute situation grave.",
+"explanation_vi": "112 là số khẩn cấp châu Âu, miễn phí, cho mọi tình huống nghiêm trọng.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "VIE017",
+"category": "vieQuotidienne",
+"difficulty": "medium",
+"question_fr": "Un numéro d'urgence spécial permet aux personnes sourdes ou malentendantes d'alerter les secours : lequel ?",
+"question_vi": "Số khẩn cấp đặc biệt nào giúp người điếc hoặc khiếm thính báo tin cho cứu hộ?",
+"answers_fr": [
+"Le 114",
+"Le 15",
+"Le 17",
+"Le 18"
+],
+"answers_vi": [
+"114",
+"15",
+"17",
+"18"
+],
+"correct_answer": 0,
+"explanation_fr": "Le 114 permet aux personnes sourdes ou malentendantes de contacter les secours par SMS ou message.",
+"explanation_vi": "114 cho phép người điếc hoặc khiếm thính liên hệ cứu hộ qua tin nhắn.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "EDU006",
+"category": "education",
+"difficulty": "easy",
+"question_fr": "À partir de quel âge l'instruction est-elle obligatoire en France ?",
+"question_vi": "Việc học bắt buộc ở Pháp bắt đầu từ mấy tuổi?",
+"answers_fr": [
+"3 ans",
+"7 ans",
+"6 ans",
+"5 ans"
+],
+"answers_vi": [
+"3 tuổi",
+"7 tuổi",
+"6 tuổi",
+"5 tuổi"
+],
+"correct_answer": 0,
+"explanation_fr": "Depuis 2019, l'instruction est obligatoire dès 3 ans et jusqu'à 16 ans.",
+"explanation_vi": "Từ năm 2019, việc học bắt buộc từ 3 tuổi đến 16 tuổi.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "EDU007",
+"category": "education",
+"difficulty": "easy",
+"question_fr": "Comment s'appelle la première école, avant l'école élémentaire ?",
+"question_vi": "Trường đầu tiên, trước tiểu học, gọi là gì?",
+"answers_fr": [
+"L'école maternelle",
+"Le collège",
+"Le lycée",
+"L'université"
+],
+"answers_vi": [
+"Trường mẫu giáo",
+"Trường trung học cơ sở",
+"Trường trung học phổ thông",
+"Đại học"
+],
+"correct_answer": 0,
+"explanation_fr": "L'école maternelle accueille les jeunes enfants avant l'école élémentaire.",
+"explanation_vi": "Trường mẫu giáo đón trẻ nhỏ trước khi vào tiểu học.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "EDU008",
+"category": "education",
+"difficulty": "medium",
+"question_fr": "Où inscrit-on son enfant à l'école primaire publique ?",
+"question_vi": "Ghi danh cho con vào trường tiểu học công ở đâu?",
+"answers_fr": [
+"À la mairie",
+"À la préfecture",
+"À l'hôpital",
+"Au tribunal"
+],
+"answers_vi": [
+"Tại tòa thị chính",
+"Tại tỉnh trưởng phủ",
+"Tại bệnh viện",
+"Tại tòa án"
+],
+"correct_answer": 0,
+"explanation_fr": "L'inscription à l'école primaire publique se fait d'abord à la mairie.",
+"explanation_vi": "Việc ghi danh vào trường tiểu học công trước tiên làm tại tòa thị chính.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "EDU009",
+"category": "education",
+"difficulty": "medium",
+"question_fr": "Quel diplôme obtient-on généralement à la fin du collège ?",
+"question_vi": "Thường nhận bằng gì khi kết thúc trung học cơ sở (collège)?",
+"answers_fr": [
+"Le diplôme national du brevet",
+"Le baccalauréat",
+"La licence",
+"Le doctorat"
+],
+"answers_vi": [
+"Bằng brevet quốc gia",
+"Bằng tú tài",
+"Bằng cử nhân",
+"Bằng tiến sĩ"
+],
+"correct_answer": 0,
+"explanation_fr": "À la fin du collège, les élèves passent le diplôme national du brevet.",
+"explanation_vi": "Khi kết thúc collège, học sinh thi lấy bằng brevet quốc gia.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "EDU010",
+"category": "education",
+"difficulty": "easy",
+"question_fr": "L'école publique en France est-elle payante ?",
+"question_vi": "Trường công ở Pháp có thu học phí không?",
+"answers_fr": [
+"Non, elle est gratuite",
+"Oui, pour tous",
+"Oui, sauf la maternelle",
+"Oui, seulement au collège"
+],
+"answers_vi": [
+"Không, miễn phí",
+"Có, cho tất cả",
+"Có, trừ mẫu giáo",
+"Có, chỉ ở collège"
+],
+"correct_answer": 0,
+"explanation_fr": "L'école publique est gratuite ; des aides existent pour les fournitures et la cantine.",
+"explanation_vi": "Trường công miễn phí; có trợ cấp cho dụng cụ học tập và bữa ăn.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "EDU011",
+"category": "education",
+"difficulty": "medium",
+"question_fr": "Après le baccalauréat, on peut poursuivre ses études :",
+"question_vi": "Sau khi có bằng tú tài, có thể học tiếp ở:",
+"answers_fr": [
+"À l'université ou en école supérieure",
+"Uniquement au collège",
+"À l'école maternelle",
+"Nulle part"
+],
+"answers_vi": [
+"Đại học hoặc trường cao đẳng/đại học khác",
+"Chỉ ở collège",
+"Ở mẫu giáo",
+"Không ở đâu"
+],
+"correct_answer": 0,
+"explanation_fr": "Le baccalauréat ouvre l'accès à l'université et aux études supérieures.",
+"explanation_vi": "Bằng tú tài mở đường vào đại học và các bậc học cao hơn.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "EDU012",
+"category": "education",
+"difficulty": "hard",
+"question_fr": "À l'école publique, les enseignants doivent :",
+"question_vi": "Ở trường công, giáo viên phải:",
+"answers_fr": [
+"Respecter la neutralité et la laïcité",
+"Enseigner une religion",
+"Afficher leurs opinions politiques",
+"Favoriser certains élèves"
+],
+"answers_vi": [
+"Tôn trọng tính trung lập và nguyên tắc thế tục",
+"Dạy một tôn giáo",
+"Thể hiện quan điểm chính trị",
+"Thiên vị một số học sinh"
+],
+"correct_answer": 0,
+"explanation_fr": "Les enseignants du public respectent la laïcité et la neutralité : pas de prosélytisme religieux ou politique.",
+"explanation_vi": "Giáo viên trường công tôn trọng nguyên tắc thế tục và trung lập: không truyền bá tôn giáo hay chính trị.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "EDU013",
+"category": "education",
+"difficulty": "medium",
+"question_fr": "Quelle aide financière peut être accordée aux familles pour la scolarité ?",
+"question_vi": "Khoản hỗ trợ tài chính nào có thể cấp cho gia đình để con đi học?",
+"answers_fr": [
+"Une bourse scolaire",
+"Un titre de séjour",
+"Un permis de conduire",
+"Une carte Vitale"
+],
+"answers_vi": [
+"Học bổng",
+"Thẻ cư trú",
+"Bằng lái xe",
+"Thẻ Vitale"
+],
+"correct_answer": 0,
+"explanation_fr": "Des bourses scolaires peuvent aider les familles aux revenus modestes.",
+"explanation_vi": "Học bổng có thể hỗ trợ các gia đình có thu nhập khiêm tốn.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SAN005",
+"category": "sante",
+"difficulty": "easy",
+"question_fr": "Qu'est-ce qu'une mutuelle (complémentaire santé) ?",
+"question_vi": "Bảo hiểm bổ sung (mutuelle) là gì?",
+"answers_fr": [
+"Une assurance qui complète les remboursements de la Sécurité sociale",
+"Un hôpital privé",
+"Un médicament",
+"Une carte de transport"
+],
+"answers_vi": [
+"Bảo hiểm bổ sung cho phần Bảo hiểm xã hội không hoàn",
+"Một bệnh viện tư",
+"Một loại thuốc",
+"Một thẻ giao thông"
+],
+"correct_answer": 0,
+"explanation_fr": "La mutuelle complète le remboursement des soins non pris en charge entièrement par la Sécurité sociale.",
+"explanation_vi": "Mutuelle bù phần chi phí khám chữa bệnh mà Bảo hiểm xã hội không hoàn hết.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SAN006",
+"category": "sante",
+"difficulty": "medium",
+"question_fr": "Avant de consulter un spécialiste, il est conseillé de passer d'abord par :",
+"question_vi": "Trước khi khám bác sĩ chuyên khoa, nên đến trước ở:",
+"answers_fr": [
+"Son médecin traitant",
+"La préfecture",
+"La mairie",
+"La pharmacie de garde"
+],
+"answers_vi": [
+"Bác sĩ điều trị của mình",
+"Tỉnh trưởng phủ",
+"Tòa thị chính",
+"Nhà thuốc trực"
+],
+"correct_answer": 0,
+"explanation_fr": "Le parcours de soins coordonné passe d'abord par le médecin traitant, qui oriente si besoin vers un spécialiste.",
+"explanation_vi": "Lộ trình khám bệnh phối hợp bắt đầu từ bác sĩ điều trị, người sẽ giới thiệu đến chuyên khoa nếu cần.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SAN007",
+"category": "sante",
+"difficulty": "easy",
+"question_fr": "Quelle administration gère l'Assurance maladie au niveau local ?",
+"question_vi": "Cơ quan nào quản lý Bảo hiểm y tế ở cấp địa phương?",
+"answers_fr": [
+"La CPAM",
+"La CAF",
+"La préfecture",
+"Pôle emploi"
+],
+"answers_vi": [
+"CPAM",
+"CAF",
+"Tỉnh trưởng phủ",
+"Pôle emploi"
+],
+"correct_answer": 0,
+"explanation_fr": "La CPAM (Caisse primaire d'assurance maladie) gère les droits et remboursements de santé localement.",
+"explanation_vi": "CPAM (Quỹ bảo hiểm y tế cơ sở) quản lý quyền lợi và hoàn trả y tế tại địa phương.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SAN008",
+"category": "sante",
+"difficulty": "medium",
+"question_fr": "Où s'adresser pour le suivi médical d'un jeune enfant (vaccins, croissance) ?",
+"question_vi": "Theo dõi y tế cho trẻ nhỏ (tiêm chủng, phát triển) thì đến đâu?",
+"answers_fr": [
+"À la PMI (protection maternelle et infantile) ou chez le médecin",
+"À la préfecture",
+"Au commissariat",
+"À Pôle emploi"
+],
+"answers_vi": [
+"PMI (bảo vệ bà mẹ và trẻ em) hoặc bác sĩ",
+"Tỉnh trưởng phủ",
+"Đồn cảnh sát",
+"Pôle emploi"
+],
+"correct_answer": 0,
+"explanation_fr": "La PMI assure gratuitement le suivi des jeunes enfants et des femmes enceintes.",
+"explanation_vi": "PMI theo dõi miễn phí sức khỏe trẻ nhỏ và phụ nữ mang thai.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SAN009",
+"category": "sante",
+"difficulty": "easy",
+"question_fr": "Que doit-on présenter chez le médecin pour être remboursé facilement ?",
+"question_vi": "Khi đi khám bác sĩ, cần xuất trình gì để được hoàn tiền dễ dàng?",
+"answers_fr": [
+"La carte Vitale",
+"Le passeport",
+"La carte électorale",
+"Le permis de conduire"
+],
+"answers_vi": [
+"Thẻ Vitale",
+"Hộ chiếu",
+"Thẻ cử tri",
+"Bằng lái xe"
+],
+"correct_answer": 0,
+"explanation_fr": "La carte Vitale permet la prise en charge et le remboursement des soins.",
+"explanation_vi": "Thẻ Vitale giúp được chi trả và hoàn tiền khám chữa bệnh.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SAN010",
+"category": "sante",
+"difficulty": "medium",
+"question_fr": "En cas d'urgence vitale, quel numéro peut-on appeler ?",
+"question_vi": "Trong trường hợp nguy kịch, có thể gọi số nào?",
+"answers_fr": [
+"Le 15 ou le 112",
+"Le 3919",
+"Le 118",
+"Le 36 36"
+],
+"answers_vi": [
+"15 hoặc 112",
+"3919",
+"118",
+"36 36"
+],
+"correct_answer": 0,
+"explanation_fr": "Le 15 (SAMU) et le 112 (numéro européen) permettent d'alerter les secours médicaux.",
+"explanation_vi": "15 (SAMU) và 112 (số châu Âu) dùng để gọi cứu hộ y tế.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SAN011",
+"category": "sante",
+"difficulty": "medium",
+"question_fr": "Les soins à l'hôpital public sont-ils accessibles à tous ?",
+"question_vi": "Khám chữa bệnh tại bệnh viện công có dành cho mọi người không?",
+"answers_fr": [
+"Oui, l'hôpital public accueille toute personne, y compris en urgence",
+"Non, uniquement les riches",
+"Non, uniquement les Français",
+"Seulement sur rendez-vous payant"
+],
+"answers_vi": [
+"Có, bệnh viện công tiếp nhận mọi người, kể cả cấp cứu",
+"Không, chỉ người giàu",
+"Không, chỉ người Pháp",
+"Chỉ khi có hẹn trả phí"
+],
+"correct_answer": 0,
+"explanation_fr": "L'hôpital public accueille toute personne, notamment en cas d'urgence, quelle que soit sa situation.",
+"explanation_vi": "Bệnh viện công tiếp nhận mọi người, nhất là khi cấp cứu, bất kể hoàn cảnh.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "TRA006",
+"category": "travail",
+"difficulty": "easy",
+"question_fr": "Quel organisme accompagne les demandeurs d'emploi en France ?",
+"question_vi": "Cơ quan nào hỗ trợ người tìm việc ở Pháp?",
+"answers_fr": [
+"France Travail (ex-Pôle emploi)",
+"La CAF",
+"La préfecture",
+"La CPAM"
+],
+"answers_vi": [
+"France Travail (trước là Pôle emploi)",
+"CAF",
+"Tỉnh trưởng phủ",
+"CPAM"
+],
+"correct_answer": 0,
+"explanation_fr": "France Travail (anciennement Pôle emploi) aide à la recherche d'emploi et verse certaines allocations.",
+"explanation_vi": "France Travail (trước là Pôle emploi) hỗ trợ tìm việc và chi trả một số trợ cấp.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "TRA007",
+"category": "travail",
+"difficulty": "medium",
+"question_fr": "Que remet l'employeur chaque mois pour prouver le salaire versé ?",
+"question_vi": "Mỗi tháng chủ lao động cấp gì để chứng minh đã trả lương?",
+"answers_fr": [
+"Un bulletin de paie",
+"Un titre de séjour",
+"Une carte Vitale",
+"Un passeport"
+],
+"answers_vi": [
+"Phiếu lương",
+"Thẻ cư trú",
+"Thẻ Vitale",
+"Hộ chiếu"
+],
+"correct_answer": 0,
+"explanation_fr": "Le bulletin de paie (fiche de paie) détaille le salaire et les cotisations ; il doit être conservé.",
+"explanation_vi": "Phiếu lương ghi chi tiết tiền lương và các khoản đóng; cần giữ lại.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "TRA008",
+"category": "travail",
+"difficulty": "medium",
+"question_fr": "Que signifie le sigle CDD ?",
+"question_vi": "Chữ viết tắt CDD nghĩa là gì?",
+"answers_fr": [
+"Contrat à durée déterminée",
+"Contrat de droit divers",
+"Contrat des demandeurs",
+"Contrat de disponibilité"
+],
+"answers_vi": [
+"Hợp đồng có thời hạn",
+"Hợp đồng luật hỗn hợp",
+"Hợp đồng người tìm việc",
+"Hợp đồng sẵn sàng"
+],
+"correct_answer": 0,
+"explanation_fr": "Le CDD est un contrat à durée déterminée, avec une date de fin ; le CDI est sans date de fin.",
+"explanation_vi": "CDD là hợp đồng có thời hạn, có ngày kết thúc; CDI không có ngày kết thúc.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "TRA009",
+"category": "travail",
+"difficulty": "hard",
+"question_fr": "Quelle administration contrôle le respect du droit du travail dans les entreprises ?",
+"question_vi": "Cơ quan nào kiểm tra việc tuân thủ luật lao động trong doanh nghiệp?",
+"answers_fr": [
+"L'inspection du travail",
+"La CAF",
+"La préfecture de police",
+"Le Conseil constitutionnel"
+],
+"answers_vi": [
+"Thanh tra lao động",
+"CAF",
+"Sở cảnh sát",
+"Hội đồng Hiến pháp"
+],
+"correct_answer": 0,
+"explanation_fr": "L'inspection du travail veille au respect du droit du travail (sécurité, contrats, horaires).",
+"explanation_vi": "Thanh tra lao động giám sát việc tuân thủ luật lao động (an toàn, hợp đồng, giờ giấc).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "TRA010",
+"category": "travail",
+"difficulty": "easy",
+"question_fr": "Le harcèlement au travail est :",
+"question_vi": "Quấy rối tại nơi làm việc là:",
+"answers_fr": [
+"Interdit et puni par la loi",
+"Autorisé entre collègues",
+"Toléré par l'employeur",
+"Sans conséquence"
+],
+"answers_vi": [
+"Bị cấm và bị luật trừng phạt",
+"Được phép giữa đồng nghiệp",
+"Được chủ dung túng",
+"Không có hậu quả"
+],
+"correct_answer": 0,
+"explanation_fr": "Le harcèlement moral ou sexuel au travail est interdit et puni par la loi.",
+"explanation_vi": "Quấy rối tinh thần hoặc tình dục tại nơi làm việc bị cấm và bị luật trừng phạt.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "TRA011",
+"category": "travail",
+"difficulty": "medium",
+"question_fr": "À travail égal, la loi impose entre femmes et hommes :",
+"question_vi": "Với công việc như nhau, luật yêu cầu giữa nam và nữ:",
+"answers_fr": [
+"Une égalité de salaire",
+"Un salaire plus élevé pour les hommes",
+"Aucune règle",
+"Un salaire fixé par l'employeur sans limite"
+],
+"answers_vi": [
+"Trả lương bình đẳng",
+"Lương cao hơn cho nam",
+"Không có quy tắc",
+"Lương do chủ định không giới hạn"
+],
+"correct_answer": 0,
+"explanation_fr": "La loi impose l'égalité de rémunération entre les femmes et les hommes pour un travail de valeur égale.",
+"explanation_vi": "Luật yêu cầu trả lương bình đẳng giữa nam và nữ cho công việc có giá trị ngang nhau.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "TRA012",
+"category": "travail",
+"difficulty": "medium",
+"question_fr": "Pour travailler légalement en France, une personne étrangère doit généralement avoir :",
+"question_vi": "Để làm việc hợp pháp ở Pháp, người nước ngoài thường phải có:",
+"answers_fr": [
+"Un titre de séjour autorisant le travail",
+"Seulement un passeport touristique",
+"Aucune autorisation",
+"Une carte Vitale uniquement"
+],
+"answers_vi": [
+"Thẻ cư trú cho phép làm việc",
+"Chỉ hộ chiếu du lịch",
+"Không cần giấy phép",
+"Chỉ cần thẻ Vitale"
+],
+"correct_answer": 0,
+"explanation_fr": "Une personne étrangère doit disposer d'un titre de séjour l'autorisant à travailler.",
+"explanation_vi": "Người nước ngoài phải có thẻ cư trú cho phép làm việc.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "FAM006",
+"category": "famille",
+"difficulty": "medium",
+"question_fr": "Quel document officiel recense les événements d'une famille (mariage, naissances) ?",
+"question_vi": "Giấy tờ chính thức nào ghi các sự kiện của gia đình (kết hôn, sinh con)?",
+"answers_fr": [
+"Le livret de famille",
+"Le passeport",
+"La carte Vitale",
+"Le permis de conduire"
+],
+"answers_vi": [
+"Sổ gia đình (livret de famille)",
+"Hộ chiếu",
+"Thẻ Vitale",
+"Bằng lái xe"
+],
+"correct_answer": 0,
+"explanation_fr": "Le livret de famille recense les mariages, naissances et autres événements d'état civil.",
+"explanation_vi": "Sổ gia đình ghi lại việc kết hôn, sinh con và các sự kiện hộ tịch khác.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "FAM007",
+"category": "famille",
+"difficulty": "hard",
+"question_fr": "Parmi ces conditions, laquelle est généralement demandée pour la naturalisation ?",
+"question_vi": "Trong các điều kiện sau, điều nào thường được yêu cầu để nhập quốc tịch?",
+"answers_fr": [
+"Une connaissance suffisante du français et des valeurs de la République",
+"Posséder une entreprise",
+"Être né à Paris",
+"Avoir plus de 50 ans"
+],
+"answers_vi": [
+"Biết tiếng Pháp đủ và hiểu các giá trị của nền Cộng hòa",
+"Sở hữu một doanh nghiệp",
+"Sinh ra ở Paris",
+"Trên 50 tuổi"
+],
+"correct_answer": 0,
+"explanation_fr": "La naturalisation suppose notamment une résidence stable, l'intégration, la connaissance du français et des valeurs de la République.",
+"explanation_vi": "Nhập quốc tịch đòi hỏi cư trú ổn định, hội nhập, biết tiếng Pháp và hiểu các giá trị của nền Cộng hòa.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "FAM008",
+"category": "famille",
+"difficulty": "easy",
+"question_fr": "Où demande-t-on une carte nationale d'identité ?",
+"question_vi": "Xin thẻ căn cước quốc gia ở đâu?",
+"answers_fr": [
+"À la mairie",
+"À la Sécurité sociale",
+"À Pôle emploi",
+"À l'hôpital"
+],
+"answers_vi": [
+"Tại tòa thị chính",
+"Tại Bảo hiểm xã hội",
+"Tại Pôle emploi",
+"Tại bệnh viện"
+],
+"correct_answer": 0,
+"explanation_fr": "La carte nationale d'identité se demande en mairie (dans les communes équipées).",
+"explanation_vi": "Thẻ căn cước quốc gia được xin tại tòa thị chính (ở các xã có trang bị).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "FAM009",
+"category": "famille",
+"difficulty": "medium",
+"question_fr": "Que peut faire un couple qui ne souhaite ni se marier ni rester sans cadre juridique ?",
+"question_vi": "Một cặp đôi không muốn kết hôn nhưng cũng muốn có khung pháp lý có thể làm gì?",
+"answers_fr": [
+"Conclure un PACS",
+"Ouvrir un commerce ensemble",
+"Demander un passeport commun",
+"Signer un bail obligatoire"
+],
+"answers_vi": [
+"Ký PACS",
+"Cùng mở cửa hàng",
+"Xin hộ chiếu chung",
+"Ký hợp đồng thuê bắt buộc"
+],
+"correct_answer": 0,
+"explanation_fr": "Le PACS organise la vie commune de deux personnes sans mariage, avec des droits et devoirs.",
+"explanation_vi": "PACS tổ chức cuộc sống chung của hai người mà không kết hôn, kèm quyền và nghĩa vụ.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "FAM010",
+"category": "famille",
+"difficulty": "medium",
+"question_fr": "Quel organisme verse les allocations familiales ?",
+"question_vi": "Cơ quan nào chi trả trợ cấp gia đình?",
+"answers_fr": [
+"La CAF",
+"La CPAM",
+"La préfecture",
+"L'inspection du travail"
+],
+"answers_vi": [
+"CAF",
+"CPAM",
+"Tỉnh trưởng phủ",
+"Thanh tra lao động"
+],
+"correct_answer": 0,
+"explanation_fr": "La CAF verse les allocations familiales aux familles ayant des enfants à charge.",
+"explanation_vi": "CAF chi trả trợ cấp gia đình cho các gia đình có con phụ thuộc.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "FAM011",
+"category": "famille",
+"difficulty": "easy",
+"question_fr": "Après une naissance, quel document est délivré par la mairie ?",
+"question_vi": "Sau khi sinh, tòa thị chính cấp giấy tờ nào?",
+"answers_fr": [
+"Un acte de naissance",
+"Un titre de séjour",
+"Un permis de conduire",
+"Une carte bancaire"
+],
+"answers_vi": [
+"Giấy khai sinh",
+"Thẻ cư trú",
+"Bằng lái xe",
+"Thẻ ngân hàng"
+],
+"correct_answer": 0,
+"explanation_fr": "La mairie établit l'acte de naissance, document officiel d'état civil.",
+"explanation_vi": "Tòa thị chính lập giấy khai sinh, một giấy tờ hộ tịch chính thức.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "FAM012",
+"category": "famille",
+"difficulty": "hard",
+"question_fr": "Les parents ont, vis-à-vis de leurs enfants mineurs, un devoir :",
+"question_vi": "Cha mẹ có nghĩa vụ gì đối với con chưa thành niên?",
+"answers_fr": [
+"D'éducation, de protection et d'entretien",
+"Uniquement financier",
+"Aucun devoir légal",
+"De les faire travailler"
+],
+"answers_vi": [
+"Giáo dục, bảo vệ và nuôi dưỡng",
+"Chỉ về tài chính",
+"Không có nghĩa vụ pháp lý",
+"Bắt chúng đi làm"
+],
+"correct_answer": 0,
+"explanation_fr": "L'autorité parentale implique des devoirs d'éducation, de protection, de santé et d'entretien de l'enfant.",
+"explanation_vi": "Quyền làm cha mẹ bao gồm nghĩa vụ giáo dục, bảo vệ, chăm sóc sức khỏe và nuôi dưỡng con.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "FAM013",
+"category": "famille",
+"difficulty": "medium",
+"question_fr": "Le renouvellement d'un titre de séjour se fait généralement :",
+"question_vi": "Việc gia hạn thẻ cư trú thường được thực hiện:",
+"answers_fr": [
+"Avant son expiration, à la préfecture",
+"Après plusieurs années d'oubli",
+"À la mairie uniquement",
+"Jamais nécessaire"
+],
+"answers_vi": [
+"Trước khi hết hạn, tại tỉnh trưởng phủ",
+"Sau nhiều năm quên lãng",
+"Chỉ tại tòa thị chính",
+"Không bao giờ cần"
+],
+"correct_answer": 0,
+"explanation_fr": "Le titre de séjour doit être renouvelé avant son expiration, en préfecture, pour rester en situation régulière.",
+"explanation_vi": "Thẻ cư trú phải được gia hạn trước khi hết hạn, tại tỉnh trưởng phủ, để giữ tình trạng hợp pháp.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
 }
 ];

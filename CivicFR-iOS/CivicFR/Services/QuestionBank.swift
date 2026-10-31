@@ -17,8 +17,41 @@ final class QuestionBank: ObservableObject {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         let decoded = (try? decoder.decode([Question].self, from: raw)) ?? []
-        // On ignore les questions mal formées pour ne pas casser l'app.
-        questions = decoded.filter { $0.isValid }
+        // On ignore les questions mal formées, puis on mélange les réponses
+        // (déterministe par identifiant) pour que la bonne réponse ne soit pas
+        // toujours en première position.
+        questions = decoded.filter { $0.isValid }.map { Self.shuffledAnswers($0) }
+    }
+
+    /// Permutation déterministe des réponses d'une question, stable d'un lancement
+    /// à l'autre (reprise d'examen cohérente).
+    static func shuffledAnswers(_ q: Question) -> Question {
+        var seed = UInt64(fnv1a(q.id))
+        func next() -> UInt64 { seed &+= 0x9E3779B97F4A7C15
+            var z = seed
+            z = (z ^ (z >> 30)) &* 0xBF58476D1CE4E5B9
+            z = (z ^ (z >> 27)) &* 0x94D049BB133111EB
+            return z ^ (z >> 31) }
+        var order = Array(q.answersFr.indices)
+        var i = order.count - 1
+        while i > 0 {
+            let j = Int(next() % UInt64(i + 1))
+            order.swapAt(i, j); i -= 1
+        }
+        let fr = order.map { q.answersFr[$0] }
+        let vi = order.map { q.answersVi[$0] }
+        let newCorrect = order.firstIndex(of: q.correctAnswer) ?? q.correctAnswer
+        return Question(id: q.id, category: q.category, subcategory: q.subcategory,
+                        difficulty: q.difficulty, questionFr: q.questionFr, questionVi: q.questionVi,
+                        answersFr: fr, answersVi: vi, correctAnswer: newCorrect,
+                        explanationFr: q.explanationFr, explanationVi: q.explanationVi,
+                        sourceUrl: q.sourceUrl, sourceType: q.sourceType, verifiedAt: q.verifiedAt)
+    }
+
+    private static func fnv1a(_ s: String) -> UInt32 {
+        var h: UInt32 = 2166136261
+        for b in s.utf8 { h ^= UInt32(b); h = h &* 16777619 }
+        return h
     }
 
     var count: Int { questions.count }
