@@ -23,6 +23,16 @@ Ce guide couvre l'ensemble des procédures administratives nécessaires :
 Le site est déployé sur GitHub Pages :
 **https://max21b07.github.io/guide-demarches-france**
 
+## 📱 CIVIC FR — Réussir l'examen civique
+
+Application d'entraînement à l'examen civique français (QCM, simulations
+40 q / 45 min, aide en vietnamien, gamification, hors ligne).
+
+- **Version Web / PWA** (testable depuis l'iPhone, « Ajouter à l'écran
+  d'accueil ») : **https://max21b07.github.io/guide-demarches-france/web/**
+- **Version iOS native** (Swift/SwiftUI, à ouvrir dans Xcode 16+) :
+  dossier [`CivicFR-iOS/`](CivicFR-iOS/).
+
 ## ✏️ Contribuer
 
 Les contributions sont les bienvenues ! Si vous souhaitez ajouter des informations ou corriger des erreurs, n'hésitez pas à ouvrir une issue ou une pull request.
