@@ -223,7 +223,7 @@ function catName(c){return CATS[c] ? CATS[c][D.lang]||CATS[c].fr : c}
 
 /* ----- persistance ----- */
 function defaults(){return{lang:"fr",sound:true,strict:false,onboarded:false,
-  fontScale:1,highContrast:false,reminderOn:false,reminderHour:19,lastNudge:null,examDate:null,
+  name:"",fontScale:1,highContrast:false,reminderOn:false,reminderHour:19,lastNudge:null,examDate:null,
   xp:0,streakDays:0,longestStreak:0,lastStudyDate:null,totalAnswered:0,totalCorrect:0,
   qstats:{},catstats:{},badges:[],exams:[]};}
 let D=load();
@@ -401,7 +401,9 @@ function tabbar(){
 function bindCommon(){}
 
 /* ----- Onboarding ----- */
-function onboarding(){return `
+let onbStep=0;
+function onboarding(){
+  if(onbStep===0) return `
   <div style="min-height:70dvh;display:flex;flex-direction:column;justify-content:center;gap:18px">
     <div class="center"><div style="font-size:60px">🇫🇷</div><h1 class="big">CIVIC FR</h1><p class="muted">Réussir l'examen civique</p></div>
     <div class="card">
@@ -410,18 +412,30 @@ function onboarding(){return `
       <p>🔥 Entraînement quotidien et progression</p>
     </div>
     <p class="center muted">Langue de l'interface (les exercices restent en français)</p>
-    <button class="btn" onclick="setLang('fr')">🇫🇷 Français</button>
-    <button class="btn ghost" onclick="setLang('vi')">🇻🇳 Tiếng Việt</button>
-  </div>`;}
+    <button class="btn" onclick="chooseLang('fr')">🇫🇷 Français</button>
+    <button class="btn ghost" onclick="chooseLang('vi')">🇻🇳 Tiếng Việt</button>
+  </div>`;
+  return `
+  <div style="min-height:70dvh;display:flex;flex-direction:column;justify-content:center;gap:16px">
+    <div class="center"><div style="font-size:60px">👋</div>
+      <h2>${D.lang==='vi'?"Bạn tên là gì?":"Comment t'appelles-tu ?"}</h2>
+      <p class="muted">${D.lang==='vi'?"Biệt danh cho ứng dụng (được lưu lại)":"Ton pseudo pour l'app (gardé en mémoire)"}</p></div>
+    <input id="nameInput" type="text" maxlength="20" value="${(D.name||'').replace(/"/g,'&quot;')}" placeholder="${D.lang==='vi'?'Tên hoặc biệt danh':'Prénom ou pseudo'}"
+      style="width:100%;padding:14px;font-size:17px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--text)">
+    <button class="btn" onclick="finishOnboarding()">${D.lang==='vi'?"Bắt đầu!":"C'est parti !"}</button>
+    <button class="link" style="background:none;border:none" onclick="D.name='';finishOnboarding()">${D.lang==='vi'?"Bỏ qua":"Passer"}</button>
+  </div>`;
+}
 function bindOnboarding(){}
-function setLang(l){D.lang=l;D.onboarded=true;save();render()}
+function chooseLang(l){ D.lang=l; sfx('tap'); onbStep=1; render(); }
+function finishOnboarding(){ try{ const el=document.getElementById('nameInput'); if(el) D.name=(el.value||'').trim().slice(0,20); }catch(e){} D.onboarded=true; save(); render(); }
 
 /* ----- Accueil ----- */
 function viewHome(){
   const lv=levelOf(D.xp), last=D.exams.length?D.exams[D.exams.length-1].score:0, best=D.exams.reduce((m,e)=>Math.max(m,e.score),0);
   return `
   <div class="topbar"><div style="font-size:40px">👤</div>
-    <div><h2>${tr('welcome')}</h2><div class="muted">${tr('level')} · ${lv.n[D.lang]}</div></div><div class="sp"></div>
+    <div><h2>${tr('welcome')}${D.name?' '+D.name:''}</h2><div class="muted">${tr('level')} · ${lv.n[D.lang]}</div></div><div class="sp"></div>
     <div class="center"><div style="font-size:22px">🔥</div><b>${D.streakDays}</b><div class="muted" style="font-size:11px">${tr('days')}</div></div>
   </div>
   ${examCountdownCard()}
@@ -753,6 +767,12 @@ function ScreenProgram(){return {render(){
 /* ----- Paramètres ----- */
 function ScreenSettings(){return {render(){
   return head(tr('settings'))+`
+    <div class="card"><b>Pseudo</b>
+      <div class="row" style="margin-top:8px"><input type="text" maxlength="20" value="${(D.name||'').replace(/"/g,'&quot;')}" placeholder="Ton pseudo"
+        onchange="D.name=this.value.trim().slice(0,20);save();"
+        style="flex:1;padding:10px;font-size:16px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--text)"></div>
+      <p class="muted" style="font-size:12px;margin:8px 0 0">Gardé en mémoire pour les prochaines parties.</p>
+    </div>
     <div class="card"><div class="row"><b>${tr('lang')}</b><div class="sp"></div>
       <select onchange="D.lang=this.value;save();render()">
         <option value="fr" ${D.lang==='fr'?'selected':''}>🇫🇷 Français</option>
@@ -793,7 +813,7 @@ function ScreenSettings(){return {render(){
       <label class="btn ghost" style="display:block;text-align:center;cursor:pointer">⬆️ Importer une sauvegarde<input type="file" accept="application/json,.json" style="display:none" onchange="importData(this)"></label>
     </div>
     <div class="card"><div class="muted" style="font-size:13px">Banque : ${QUESTIONS.length} questions. Données stockées uniquement sur cet appareil.</div></div>
-    <button class="btn" style="background:var(--red)" onclick="if(confirm('Réinitialiser XP, badges, séries et statistiques ?')){D=defaults();D.onboarded=true;clearExam();save();go('profile')}">${tr('reset')}</button>`;
+    <button class="btn" style="background:var(--red)" onclick="if(confirm('Réinitialiser XP, badges, séries et statistiques ?')){var kn=D.name,kl=D.lang,kf=D.fontScale,kh=D.highContrast;D=defaults();D.name=kn;D.lang=kl;D.fontScale=kf;D.highContrast=kh;D.onboarded=true;clearExam();save();go('profile')}">${tr('reset')}</button>`;
 }}}
 function toggle(key,label,val){return `<div class="row" style="margin:6px 0"><b>${label}</b><div class="sp"></div>
   <span class="switch"><input type="checkbox" id="sw_${key}" ${val?'checked':''} onchange="D.${key}=this.checked;save()"><label for="sw_${key}"></label></span></div>`}
