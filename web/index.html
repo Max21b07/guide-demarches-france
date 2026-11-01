@@ -630,7 +630,8 @@ function ScreenExam(resume){
       <div class="bar" style="flex:1"><i style="width:${Math.round(x.rate*100)}%;background:${CATS[x.c].c}"></i></div>
       <b style="width:42px;text-align:right">${Math.round(x.rate*100)}%</b></div>`).join('')}</div>
     <button class="btn" onclick="showCorrection()">${tr('correction')}</button>
-    <button class="btn ghost" onclick="shareResult(${r.score},${r.total},${r.pct})">📤 Partager mon résultat</button>
+    <button class="btn" style="background:#25D366" onclick="shareCardWhatsApp(${r.score},${r.total},${r.pct},${r.pass})">📲 Partager sur WhatsApp</button>
+    <button class="btn ghost" onclick="shareResult(${r.score},${r.total},${r.pct})">📤 Autre partage</button>
     ${!r.pass&&cats.length?`<button class="btn ghost" onclick="startTraining('cat','${cats[0].c}')">Séance ciblée : ${catName(cats[0].c)}</button>`:''}
     <button class="btn ghost" onclick="go('home')">Accueil</button>`;
   }
@@ -794,6 +795,40 @@ function shareResult(score,total,pct){
   try{ if(navigator.share){ navigator.share({title:'CIVIC FR',text:txt}).catch(()=>{}); return; } }catch(e){}
   try{ if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(()=>alert('Résultat copié ✅'),()=>alert(txt)); return; } }catch(e){}
   alert(txt);
+}
+// Coins arrondis pour le canvas
+function roundRect(x,X,Y,W,H,r){ x.beginPath(); x.moveTo(X+r,Y); x.arcTo(X+W,Y,X+W,Y+H,r); x.arcTo(X+W,Y+H,X,Y+H,r); x.arcTo(X,Y+H,X,Y,r); x.arcTo(X,Y,X+W,Y,r); x.closePath(); }
+// Génère une carte image (PNG 1080×1080) du résultat
+function buildResultCard(score,total,pct,pass){ return new Promise(res=>{ try{
+  const c=document.createElement('canvas'); c.width=1080; c.height=1080; const x=c.getContext('2d');
+  const g=x.createLinearGradient(0,0,0,1080); g.addColorStop(0,'#1a388c'); g.addColorStop(1,'#438fff');
+  x.fillStyle=g; x.fillRect(0,0,1080,1080);
+  x.fillStyle='#ffffff'; roundRect(x,90,150,900,800,44); x.fill();
+  x.textAlign='center';
+  x.fillStyle='#1a388c'; x.font='bold 60px Arial,sans-serif'; x.fillText('CIVIC FR',540,290);
+  x.fillStyle='#6b7280'; x.font='34px Arial,sans-serif'; x.fillText('Examen civique blanc',540,345);
+  x.fillStyle=pass?'#33bd73':'#fba029'; x.font='bold 190px Arial,sans-serif'; x.fillText(score+'/'+total,540,570);
+  x.fillStyle='#14161c'; x.font='bold 84px Arial,sans-serif'; x.fillText(pct+' %',540,680);
+  x.fillStyle=pass?'#33bd73':'#fba029'; roundRect(x,330,720,420,96,48); x.fill();
+  x.fillStyle='#ffffff'; x.font='bold 46px Arial,sans-serif'; x.fillText(pass?'RÉUSSI':'À RETRAVAILLER',540,784);
+  x.fillStyle='#6b7280'; x.font='30px Arial,sans-serif'; x.fillText("Objectif : réussir l'examen civique français",540,890);
+  x.fillStyle='#438fff'; x.font='26px Arial,sans-serif'; x.fillText('max21b07.github.io/guide-demarches-france/web',540,930);
+  c.toBlob(b=>res(b),'image/png');
+ }catch(e){ res(null); } }); }
+// Partage d'une carte image vers WhatsApp (ou autre), avec replis
+async function shareCardWhatsApp(score,total,pct,pass){
+  const blob=await buildResultCard(score,total,pct,pass);
+  const text=`Examen civique blanc : ${score}/${total} (${pct} %)${pass?' — RÉUSSI ✅':''}\nEntraîne-toi : https://max21b07.github.io/guide-demarches-france/web/`;
+  try{
+    if(blob && navigator.canShare){
+      const file=new File([blob],'resultat-civic-fr.png',{type:'image/png'});
+      if(navigator.canShare({files:[file]})){ await navigator.share({files:[file],text,title:'CIVIC FR'}); return; }
+    }
+    if(navigator.share){ await navigator.share({text,title:'CIVIC FR'}); return; }
+  }catch(e){ if(e&&e.name==='AbortError') return; }
+  // Repli : télécharger l'image puis ouvrir WhatsApp avec le texte
+  try{ if(blob){ const u=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=u; a.download='resultat-civic-fr.png'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(u),1500); } }catch(e){}
+  try{ window.open('https://wa.me/?text='+encodeURIComponent(text),'_blank'); }catch(e){}
 }
 function studiedToday(){ return D.lastStudyDate===new Date().toISOString().slice(0,10); }
 function reminderDue(){ if(!D.reminderOn||studiedToday())return false; return new Date().getHours()>=(D.reminderHour||19); }
