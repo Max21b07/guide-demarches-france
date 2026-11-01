@@ -50,6 +50,10 @@ struct ExamIntroView: View {
                 }
                 .cardStyle()
 
+                Text("Format conforme à l'examen civique officiel (40 q · 45 min · 80 %). Questions pédagogiques, non officielles — référence : Livret du citoyen.")
+                    .font(.caption).foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+
                 if bank.count < AppConfig.examQuestionCount {
                     Text("⚠️ La banque contient \(bank.count) questions. L'examen en utilisera \(min(bank.count, AppConfig.examQuestionCount)).")
                         .font(.caption).foregroundStyle(.secondary)

@@ -184,6 +184,40 @@ let D=load();
 function load(){try{return Object.assign(defaults(),JSON.parse(localStorage.getItem(KEY)||"{}"))}catch(e){return defaults()}}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(D))}catch(e){}}
 
+// Bandeau d'information (questions pédagogiques, non officielles)
+function noticeDismissed(){try{return localStorage.getItem('civicfr_notice')==='1'}catch(e){return false}}
+function dismissNotice(){try{localStorage.setItem('civicfr_notice','1')}catch(e){};render()}
+function noticeCard(){ if(noticeDismissed())return '';
+  return `<div class="card" style="border-left:4px solid var(--orange)"><b>ℹ️ À savoir</b>
+    <p style="margin:6px 0 10px">Questions <b>pédagogiques</b> (non officielles), au format de l'examen civique 2026 :
+    40 questions, 45 min, 80 % pour réussir. Référence : <b>Livret du citoyen</b> (ministère de l'Intérieur).</p>
+    <button class="btn" style="padding:10px" onclick="dismissNotice()">Compris</button></div>`; }
+
+// Sauvegarde : export / import de la progression (JSON)
+function exportData(){ const json=JSON.stringify(D,null,2);
+  // 1) téléchargement d'un fichier (fonctionne sur un hébergement web classique)
+  try{
+    const blob=new Blob([json],{type:'application/json'});
+    const url=URL.createObjectURL(blob); const a=document.createElement('a');
+    a.href=url; a.download='civicfr-sauvegarde.json'; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),1000);
+  }catch(e){}
+  // 2) copie dans le presse-papier (secours universel)
+  try{ if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(json).then(
+        ()=>alert('Sauvegarde téléchargée et copiée dans le presse-papier ✅'),
+        ()=>alert('Sauvegarde téléchargée. (Copie presse-papier indisponible.)'));
+    } else { alert('Sauvegarde téléchargée ✅'); }
+  }catch(e){ alert('Sauvegarde téléchargée ✅'); } }
+function importData(input){ const f=input.files&&input.files[0]; if(!f)return;
+  const r=new FileReader();
+  r.onload=()=>{ try{ const obj=JSON.parse(r.result);
+      if(typeof obj!=='object'||obj===null||Array.isArray(obj)) throw new Error('fichier non reconnu');
+      D=Object.assign(defaults(),obj); D.onboarded=true; save();
+      alert('Sauvegarde importée ✅'); go('profile');
+    }catch(e){ alert('Import impossible : '+e.message); } };
+  r.readAsText(f); }
+
 /* ----- logique ----- */
 function levelOf(xp){let l=LEVELS[0];for(const x of LEVELS)if(xp>=x.xp)l=x;return l}
 function nextLevel(xp){return LEVELS.find(x=>x.xp>xp)||null}
@@ -306,6 +340,7 @@ function viewHome(){
     </div>
   </div>
   <button class="btn" onclick="go('exam')">${tr('start')}</button>
+  ${noticeCard()}
   ${access('⚡',tr('daily'),'var(--orange)',"go('learn')")}
   ${access('🔁',tr('rev'),'var(--red)',"startTraining('review')")}
   ${access('📊',tr('stats'),'var(--blue-light)',"nav(ScreenStats())")}
@@ -395,6 +430,7 @@ function viewExam(){
       <p>🙈 Aucun indice pendant l'épreuve</p>
       <p>🌐 ${D.strict?'Mode strict : traduction désactivée':'Traduction 🇻🇳 à la demande'}</p>
     </div>
+    <p class="muted center" style="font-size:12px">Format conforme à l'examen civique officiel (40 q · 45 min · 80 %). Questions pédagogiques, non officielles.</p>
     ${QUESTIONS.length<CFG.q?`<p class="muted center">La banque contient ${QUESTIONS.length} questions ; l'examen en utilisera ${Math.min(QUESTIONS.length,CFG.q)}.</p>`:''}
     ${saved?`<button class="btn orange" onclick="nav(ScreenExam(true))">${tr('resume')}</button>`:''}
     <button class="btn" onclick="nav(ScreenExam(false))">${tr('startExam')}</button>`;
@@ -588,6 +624,11 @@ function ScreenSettings(){return {render(){
       ${toggle('sound',tr('sound'),D.sound)}
       ${toggle('strict',tr('strict'),D.strict)}
       <p class="muted" style="font-size:12px;margin:8px 0 0">En mode strict, la traduction est désactivée pendant les simulations.</p>
+    </div>
+    <div class="card"><b>Sauvegarde</b>
+      <p class="muted" style="font-size:12px;margin:6px 0 10px">Tes données sont stockées uniquement sur cet appareil. Exporte-les pour les conserver ou les transférer.</p>
+      <button class="btn ghost" onclick="exportData()">⬇️ Exporter ma progression</button>
+      <label class="btn ghost" style="display:block;text-align:center;cursor:pointer">⬆️ Importer une sauvegarde<input type="file" accept="application/json,.json" style="display:none" onchange="importData(this)"></label>
     </div>
     <div class="card"><div class="muted" style="font-size:13px">Banque : ${QUESTIONS.length} questions. Données stockées uniquement sur cet appareil.</div></div>
     <button class="btn" style="background:var(--red)" onclick="if(confirm('Réinitialiser XP, badges, séries et statistiques ?')){D=defaults();D.onboarded=true;clearExam();save();go('profile')}">${tr('reset')}</button>`;
