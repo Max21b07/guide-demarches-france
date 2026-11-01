@@ -234,6 +234,7 @@ function catName(c){return CATS[c] ? CATS[c][D.lang]||CATS[c].fr : c}
 /* ----- persistance ----- */
 function defaults(){return{lang:"fr",sound:true,strict:false,onboarded:false,
   name:"",fontScale:1,highContrast:false,autoSpeakErr:false,showTrad:false,reminderOn:false,reminderHour:19,lastNudge:null,examDate:null,
+  dailyGoal:20,todayXP:0,todayDate:null,goalCelebrated:null,freezes:2,usedFreeze:null,
   xp:0,streakDays:0,longestStreak:0,lastStudyDate:null,totalAnswered:0,totalCorrect:0,
   qstats:{},catstats:{},badges:[],exams:[]};}
 let D=load();
@@ -293,7 +294,12 @@ function mastered(id){const s=D.qstats[id];return s&&s.correct>=2&&s.lastCorrect
 function masteredCount(){return Object.keys(D.qstats).filter(mastered).length}
 function toReviewCount(){return Object.keys(D.qstats).filter(id=>{const s=D.qstats[id];return s&&s.seen>0&&!mastered(id)}).length}
 function catRate(c){const s=D.catstats[c];return s&&s.seen?s.correct/s.seen:0}
-function addXP(n){if(n>0)D.xp+=n}
+function addXP(n){ if(n<=0)return; D.xp+=n;
+  const today=new Date().toISOString().slice(0,10);
+  if(D.todayDate!==today){ D.todayDate=today; D.todayXP=0; }
+  const before=D.todayXP||0; D.todayXP=before+n; const g=D.dailyGoal||20;
+  if(before<g && D.todayXP>=g && D.goalCelebrated!==today){ D.goalCelebrated=today; try{confetti(30);sfx('win');}catch(e){} }
+}
 function recordAnswer(q,ok){
   D.totalAnswered++; if(ok)D.totalCorrect++;
   const s=D.qstats[q.id]||{seen:0,correct:0,lastCorrect:false};
@@ -307,13 +313,14 @@ function recordAnswer(q,ok){
 }
 function dailyActivity(){
   const today=new Date().toISOString().slice(0,10);
-  if(D.lastStudyDate===today){}
-  else{
-    if(D.lastStudyDate){const diff=(new Date(today)-new Date(D.lastStudyDate))/86400000;
-      D.streakDays = diff===1 ? D.streakDays+1 : 1;}
-    else D.streakDays=1;
-    D.lastStudyDate=today; D.longestStreak=Math.max(D.longestStreak,D.streakDays); addXP(25);
-  }
+  if(D.lastStudyDate===today){ checkBadges(); return; }
+  if(D.lastStudyDate){
+    const diff=Math.round((new Date(today)-new Date(D.lastStudyDate))/86400000);
+    if(diff===1){ D.streakDays++; }
+    else if(diff===2 && (D.freezes||0)>0){ D.freezes--; D.streakDays++; D.usedFreeze=today; } // gel : 1 jour manqué sauvé
+    else { D.streakDays=1; }
+  } else D.streakDays=1;
+  D.lastStudyDate=today; D.longestStreak=Math.max(D.longestStreak,D.streakDays); addXP(25);
   checkBadges();
 }
 function checkBadges(){for(const b of BADGES){if(!D.badges.includes(b.id)&&b.ok(D)){D.badges.push(b.id);queueToast(b)}}}
@@ -464,6 +471,7 @@ function viewHome(){
   </div>
   ${examCountdownCard()}
   ${reminderCard()}
+  ${dailyGoalCard()}
   <div class="card">
     <div class="row"><span class="pill" style="background:rgba(26,56,140,.12);color:var(--blue-deep)">🎯 Mon objectif</span></div>
     <h3 style="margin:8px 0">« ${tr('goal')} »</h3>
@@ -645,7 +653,13 @@ function ScreenExam(resume){
     finish(){ if(finished)return; finished=true; gridOpen=false; if(s._t){clearInterval(s._t);s._t=null}
       let score=0; const per={};
       qs.forEach((q,k)=>{const ok=st.ans[k]===q.correct_answer; if(ok)score++;
-        per[q.category]=per[q.category]||[0,0]; per[q.category][1]++; if(ok)per[q.category][0]++;});
+        per[q.category]=per[q.category]||[0,0]; per[q.category][1]++; if(ok)per[q.category][0]++;
+        // alimente les stats par question + répétition espacée (les ratés reviendront en révision)
+        const s2=D.qstats[q.id]||{seen:0,correct:0,lastCorrect:false};
+        s2.seen++; if(ok)s2.correct++; s2.lastCorrect=ok;
+        s2.box = ok?Math.min((s2.box||0)+1,5):1;
+        s2.due = Date.now()+([0,1,2,4,7,15][s2.box]||1)*86400000;
+        D.qstats[q.id]=s2;});
       const timeUsed=Math.min(st.dur,Math.floor((Date.now()-st.start)/1000));
       const pct=Math.round(score/qs.length*100);
       result={score,total:qs.length,pct,timeUsed,per,answers:st.ans.slice(),ids:st.ids.slice(),pass:score>=passThreshold(qs.length)};
@@ -916,6 +930,20 @@ function daysUntilExam(){ if(!D.examDate)return null;
 function examCountdownCard(){ const n=daysUntilExam(); if(n===null)return '';
   const txt = n>1?`Examen dans ${n} jours` : n===1?'Examen demain !' : n===0?"Examen aujourd'hui ! 🍀" : 'Date d\'examen passée';
   return `<div class="card" style="border-left:4px solid var(--green)"><b>📅 ${txt}</b>${n>0?`<p class="muted" style="margin:6px 0 0">Entraîne-toi un peu chaque jour pour être prête 💪</p>`:''}</div>`; }
+function dailyGoalCard(){
+  const g=D.dailyGoal||20, x=Math.min(D.todayXP||0,g), frac=g?x/g:0, done=(D.todayXP||0)>=g;
+  const R=26,C=2*Math.PI*R,off=C*(1-frac);
+  return `<div class="card"><div class="row">
+    <svg width="72" height="72" viewBox="0 0 72 72" aria-hidden="true">
+      <circle cx="36" cy="36" r="${R}" fill="none" stroke="rgba(120,120,120,.18)" stroke-width="8"/>
+      <circle cx="36" cy="36" r="${R}" fill="none" stroke="${done?'var(--green)':'var(--orange)'}" stroke-width="8" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${off}" transform="rotate(-90 36 36)" style="transition:stroke-dashoffset .7s ease-out"/>
+      <text x="36" y="41" text-anchor="middle" font-size="17" font-weight="800" fill="var(--text)">${D.todayXP||0}</text></svg>
+    <div style="flex:1;margin-left:14px">
+      <b>Objectif du jour ${done?'✅':''}</b>
+      <div class="muted" style="font-size:13px;margin-top:2px">${D.todayXP||0}/${g} XP ${done?"— bravo, objectif atteint !":""}</div>
+      <div style="font-size:13px;margin-top:4px">🔥 ${D.streakDays} j · ❄️ ${D.freezes||0} gel${(D.freezes||0)>1?'s':''} de série</div>
+    </div></div></div>`;
+}
 function enableNotif(){ try{ if('Notification' in window){
       Notification.requestPermission().then(pp=>{ alert(pp==='granted'?'Notifications autorisées ✅':'Notifications non autorisées.'); });
     } else { alert('Notifications non disponibles sur ce navigateur.'); } }catch(e){} }
