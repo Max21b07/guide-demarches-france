@@ -21,7 +21,8 @@ window.QUESTIONS = [
 "explanation_fr": "La devise de la République française est « Liberté, Égalité, Fraternité ». Elle est inscrite sur les bâtiments publics.",
 "explanation_vi": "Khẩu hiệu của Cộng hòa Pháp là « Tự do, Bình đẳng, Bác ái », được khắc trên các công trình công cộng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL002",
@@ -45,7 +46,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le drapeau tricolore français est composé de trois bandes verticales : bleu, blanc et rouge.",
 "explanation_vi": "Quốc kỳ ba màu của Pháp gồm ba dải dọc: xanh, trắng và đỏ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL003",
@@ -69,7 +71,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'hymne national français est « La Marseillaise », écrit par Rouget de Lisle en 1792.",
 "explanation_vi": "Quốc ca Pháp là « La Marseillaise », do Rouget de Lisle sáng tác năm 1792.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL004",
@@ -93,7 +96,8 @@ window.QUESTIONS = [
 "explanation_fr": "La fête nationale est le 14 juillet, en mémoire de la prise de la Bastille (1789) et de la Fête de la Fédération (1790).",
 "explanation_vi": "Quốc khánh là ngày 14 tháng 7, kỷ niệm việc chiếm ngục Bastille (1789) và Lễ Liên bang (1790).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL005",
@@ -117,7 +121,8 @@ window.QUESTIONS = [
 "explanation_fr": "La laïcité garantit la liberté de conscience et la séparation des Églises et de l'État (loi de 1905). L'État reste neutre.",
 "explanation_vi": "Laïcité bảo đảm tự do tín ngưỡng và sự tách biệt giữa Giáo hội và Nhà nước (luật năm 1905). Nhà nước giữ trung lập.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL006",
@@ -141,7 +146,8 @@ window.QUESTIONS = [
 "explanation_fr": "Marianne est la figure allégorique de la République française. On la retrouve notamment sur les mairies et les timbres.",
 "explanation_vi": "Marianne là hình tượng tượng trưng cho nền Cộng hòa Pháp, xuất hiện trên tòa thị chính và tem thư.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL007",
@@ -165,7 +171,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'article 1 de la Constitution de 1958 dispose que la France est une République indivisible, laïque, démocratique et sociale.",
 "explanation_vi": "Điều 1 Hiến pháp năm 1958 quy định nước Pháp là nền Cộng hòa không thể chia cắt, thế tục, dân chủ và xã hội.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL008",
@@ -189,7 +196,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'égalité entre les femmes et les hommes est un principe fondamental de la République, garanti par la Constitution.",
 "explanation_vi": "Bình đẳng nam nữ là nguyên tắc cơ bản của nền Cộng hòa, được Hiến pháp bảo đảm.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL009",
@@ -213,7 +221,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le coq gaulois est un emblème traditionnel de la France, souvent associé aux équipes sportives.",
 "explanation_vi": "Gà trống xứ Gaule là biểu tượng truyền thống của Pháp, thường gắn với các đội thể thao.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS001",
@@ -237,7 +246,8 @@ window.QUESTIONS = [
 "explanation_fr": "Depuis 2000, le président de la République est élu pour 5 ans (quinquennat), au suffrage universel direct.",
 "explanation_vi": "Từ năm 2000, Tổng thống được bầu nhiệm kỳ 5 năm, theo phổ thông đầu phiếu trực tiếp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS002",
@@ -261,7 +271,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le président est élu directement par les citoyens français au suffrage universel direct.",
 "explanation_vi": "Tổng thống do công dân Pháp trực tiếp bầu theo phổ thông đầu phiếu.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS003",
@@ -285,7 +296,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Parlement comprend deux chambres : l'Assemblée nationale (députés) et le Sénat (sénateurs).",
 "explanation_vi": "Nghị viện gồm hai viện: Quốc hội (dân biểu) và Thượng viện (thượng nghị sĩ).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS004",
@@ -309,7 +321,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Parlement (Assemblée nationale et Sénat) discute et vote les lois.",
 "explanation_vi": "Nghị viện (Quốc hội và Thượng viện) thảo luận và biểu quyết luật.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS005",
@@ -333,7 +346,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le président de la République nomme le Premier ministre, qui dirige le gouvernement.",
 "explanation_vi": "Tổng thống bổ nhiệm Thủ tướng, người đứng đầu Chính phủ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS006",
@@ -357,7 +371,8 @@ window.QUESTIONS = [
 "explanation_fr": "Paris est la capitale de la France. C'est le siège des principales institutions.",
 "explanation_vi": "Paris là thủ đô của Pháp, nơi đặt các cơ quan chính của nhà nước.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS007",
@@ -381,7 +396,8 @@ window.QUESTIONS = [
 "explanation_fr": "La France utilise l'euro depuis 2002. C'est la monnaie commune de la zone euro.",
 "explanation_vi": "Pháp dùng đồng euro từ năm 2002, là đồng tiền chung của khu vực đồng euro.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS008",
@@ -405,7 +421,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'Assemblée nationale compte 577 députés, élus pour 5 ans au suffrage universel direct.",
 "explanation_vi": "Quốc hội có 577 dân biểu, được bầu nhiệm kỳ 5 năm theo phổ thông đầu phiếu trực tiếp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS009",
@@ -429,7 +446,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le maire est élu par le conseil municipal, lui-même élu par les habitants de la commune.",
 "explanation_vi": "Thị trưởng do hội đồng thành phố bầu, hội đồng này lại do cư dân bầu ra.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS010",
@@ -453,7 +471,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le président réside au palais de l'Élysée à Paris. Le palais Bourbon abrite l'Assemblée nationale et le Luxembourg le Sénat.",
 "explanation_vi": "Tổng thống làm việc tại điện Élysée ở Paris. Điện Bourbon là trụ sở Quốc hội, điện Luxembourg là Thượng viện.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO001",
@@ -477,7 +496,8 @@ window.QUESTIONS = [
 "explanation_fr": "La majorité est fixée à 18 ans. On peut alors voter et être pleinement responsable de ses actes.",
 "explanation_vi": "Tuổi thành niên là 18. Khi đó công dân có quyền bầu cử và chịu trách nhiệm đầy đủ về hành vi của mình.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO002",
@@ -501,7 +521,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le droit de vote aux élections nationales est réservé aux citoyens français majeurs inscrits sur les listes électorales.",
 "explanation_vi": "Quyền bầu cử quốc gia dành cho công dân Pháp đã thành niên và có tên trong danh sách cử tri.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO003",
@@ -525,7 +546,8 @@ window.QUESTIONS = [
 "explanation_fr": "Toute personne vivant en France doit respecter les lois de la République.",
 "explanation_vi": "Mọi người sống ở Pháp phải tôn trọng luật pháp của nền Cộng hòa.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO004",
@@ -549,7 +571,8 @@ window.QUESTIONS = [
 "explanation_fr": "La liberté de culte garantit à chacun le droit de croire ou non et de pratiquer sa religion dans le respect des lois.",
 "explanation_vi": "Tự do tín ngưỡng bảo đảm quyền tin hay không tin và thực hành tôn giáo trong khuôn khổ pháp luật.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO005",
@@ -573,7 +596,8 @@ window.QUESTIONS = [
 "explanation_fr": "Tous les citoyens sont égaux devant la loi, sans distinction d'origine, de religion ou de sexe.",
 "explanation_vi": "Mọi công dân bình đẳng trước pháp luật, không phân biệt nguồn gốc, tôn giáo hay giới tính.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO006",
@@ -597,7 +621,8 @@ window.QUESTIONS = [
 "explanation_fr": "Payer ses impôts est un devoir qui permet de financer les services publics (écoles, hôpitaux, routes...).",
 "explanation_vi": "Nộp thuế là nghĩa vụ giúp tài trợ các dịch vụ công (trường học, bệnh viện, đường sá...).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO007",
@@ -621,7 +646,8 @@ window.QUESTIONS = [
 "explanation_fr": "Toute personne est présumée innocente jusqu'à ce que sa culpabilité soit établie par un tribunal.",
 "explanation_vi": "Mọi người được suy đoán vô tội cho đến khi tòa án xác định có tội.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO008",
@@ -645,7 +671,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 112 est le numéro d'urgence commun à toute l'Union européenne, accessible gratuitement.",
 "explanation_vi": "112 là số khẩn cấp chung cho toàn Liên minh châu Âu, gọi miễn phí.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS001",
@@ -669,7 +696,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Révolution française commence en 1789. Elle marque la fin de la monarchie absolue.",
 "explanation_vi": "Cách mạng Pháp bắt đầu năm 1789, đánh dấu chấm hết chế độ quân chủ chuyên chế.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS002",
@@ -693,7 +721,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Déclaration des droits de l'homme et du citoyen de 1789 proclame des principes comme la liberté et l'égalité.",
 "explanation_vi": "Tuyên ngôn Nhân quyền và Dân quyền năm 1789 nêu các nguyên tắc như tự do và bình đẳng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS003",
@@ -717,7 +746,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 14 juillet 1789, le peuple de Paris prend la prison de la Bastille, symbole de l'arbitraire royal.",
 "explanation_vi": "Ngày 14/7/1789, người dân Paris chiếm ngục Bastille, biểu tượng của sự chuyên quyền của nhà vua.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS004",
@@ -741,7 +771,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le général Charles de Gaulle lance depuis Londres l'appel du 18 juin 1940 à poursuivre la lutte contre l'occupant.",
 "explanation_vi": "Tướng Charles de Gaulle từ Luân Đôn phát lời kêu gọi ngày 18/6/1940 tiếp tục chống quân chiếm đóng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS005",
@@ -765,7 +796,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Ve République a été instaurée en 1958, avec une nouvelle Constitution portée par Charles de Gaulle.",
 "explanation_vi": "Nền Cộng hòa thứ Năm được lập năm 1958 với Hiến pháp mới do Charles de Gaulle khởi xướng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS006",
@@ -789,7 +821,8 @@ window.QUESTIONS = [
 "explanation_fr": "La peine de mort a été abolie en 1981, à l'initiative du garde des Sceaux Robert Badinter.",
 "explanation_vi": "Án tử hình được bãi bỏ năm 1981, theo đề xuất của Bộ trưởng Tư pháp Robert Badinter.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS007",
@@ -813,7 +846,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Seconde Guerre mondiale s'achève en Europe le 8 mai 1945, jour de la capitulation allemande.",
 "explanation_vi": "Thế chiến thứ hai ở châu Âu kết thúc ngày 8/5/1945, ngày Đức đầu hàng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS008",
@@ -837,7 +871,8 @@ window.QUESTIONS = [
 "explanation_fr": "Jeanne d'Arc a joué un rôle durant la guerre de Cent Ans et est devenue une figure historique majeure.",
 "explanation_vi": "Jeanne d'Arc có vai trò trong Chiến tranh Trăm Năm và trở thành nhân vật lịch sử quan trọng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO001",
@@ -861,7 +896,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Loire est le plus long fleuve de France, avec environ 1 000 km.",
 "explanation_vi": "Sông Loire là con sông dài nhất nước Pháp, khoảng 1 000 km.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO002",
@@ -885,7 +921,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Seine traverse Paris d'est en ouest.",
 "explanation_vi": "Sông Seine chảy qua Paris từ đông sang tây.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO003",
@@ -909,7 +946,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Mont Blanc, dans les Alpes, culmine à environ 4 800 mètres. C'est le plus haut sommet de France.",
 "explanation_vi": "Mont Blanc ở dãy Alps cao khoảng 4 800 mét, là đỉnh cao nhất nước Pháp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO004",
@@ -933,7 +971,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le sud de la France est bordé par la mer Méditerranée (villes comme Marseille ou Nice).",
 "explanation_vi": "Phía nam nước Pháp giáp Biển Địa Trung Hải (các thành phố như Marseille, Nice).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO005",
@@ -957,7 +996,8 @@ window.QUESTIONS = [
 "explanation_fr": "Marseille, sur la côte méditerranéenne, est la deuxième ville de France par sa population.",
 "explanation_vi": "Marseille, bên bờ Địa Trung Hải, là thành phố đông dân thứ hai của Pháp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO006",
@@ -981,7 +1021,8 @@ window.QUESTIONS = [
 "explanation_fr": "Depuis 2016, la France métropolitaine compte 13 régions.",
 "explanation_vi": "Từ năm 2016, nước Pháp lục địa có 13 vùng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO007",
@@ -1005,7 +1046,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Martinique est un département et région d'outre-mer, située dans les Caraïbes.",
 "explanation_vi": "Martinique là một tỉnh và vùng hải ngoại, nằm ở vùng Caribe.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO008",
@@ -1029,7 +1071,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Portugal ne partage pas de frontière avec la France. L'Espagne, l'Allemagne et l'Italie, oui.",
 "explanation_vi": "Bồ Đào Nha không có biên giới với Pháp. Tây Ban Nha, Đức và Ý thì có.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE001",
@@ -1053,7 +1096,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 15 est le numéro du SAMU pour les urgences médicales. Le 112 fonctionne aussi partout en Europe.",
 "explanation_vi": "Số 15 là SAMU cho cấp cứu y tế. Số 112 cũng dùng được khắp châu Âu.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE002",
@@ -1077,7 +1121,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 17 permet de joindre la police ou la gendarmerie.",
 "explanation_vi": "Số 17 để gọi cảnh sát hoặc hiến binh.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE003",
@@ -1101,7 +1146,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 18 permet d'appeler les pompiers (incendie, accident, secours).",
 "explanation_vi": "Số 18 để gọi lính cứu hỏa (cháy, tai nạn, cứu hộ).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE004",
@@ -1125,7 +1171,8 @@ window.QUESTIONS = [
 "explanation_fr": "La carte Vitale atteste des droits à l'Assurance maladie et permet le remboursement des soins.",
 "explanation_vi": "Thẻ Vitale chứng nhận quyền bảo hiểm y tế và cho phép hoàn trả chi phí khám chữa bệnh.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE005",
@@ -1149,7 +1196,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le tri sélectif consiste à séparer les déchets recyclables (papier, plastique, verre) des autres ordures.",
 "explanation_vi": "Phân loại rác là tách rác tái chế (giấy, nhựa, thủy tinh) khỏi rác khác.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE006",
@@ -1173,7 +1221,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le permis de conduire est obligatoire pour conduire. Il s'obtient après un examen.",
 "explanation_vi": "Giấy phép lái xe là bắt buộc để lái xe, có được sau khi thi đỗ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE007",
@@ -1197,7 +1246,8 @@ window.QUESTIONS = [
 "explanation_fr": "La mairie est le premier interlocuteur pour de nombreuses démarches : état civil, inscription sur les listes électorales, etc.",
 "explanation_vi": "Tòa thị chính là nơi đầu tiên để làm nhiều thủ tục: hộ tịch, ghi danh cử tri, v.v.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU001",
@@ -1221,7 +1271,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'instruction est obligatoire de 3 à 16 ans. Une formation est ensuite obligatoire jusqu'à 18 ans.",
 "explanation_vi": "Việc học bắt buộc từ 3 đến 16 tuổi. Sau đó phải tiếp tục đào tạo đến 18 tuổi.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU002",
@@ -1245,7 +1296,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'école publique est gratuite, laïque et ouverte à tous les enfants vivant en France.",
 "explanation_vi": "Trường công miễn phí, thế tục và mở cho mọi trẻ em sống ở Pháp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU003",
@@ -1269,7 +1321,8 @@ window.QUESTIONS = [
 "explanation_fr": "Après l'école primaire, les élèves vont au collège, puis au lycée.",
 "explanation_vi": "Sau tiểu học, học sinh vào collège, rồi đến lycée.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU004",
@@ -1293,7 +1346,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le baccalauréat (le « bac ») sanctionne la fin des études au lycée et ouvre l'accès à l'université.",
 "explanation_vi": "Baccalauréat (gọi tắt « bac ») là bằng tốt nghiệp lycée và mở đường vào đại học.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU005",
@@ -1317,7 +1371,8 @@ window.QUESTIONS = [
 "explanation_fr": "La loi de 2004 interdit le port de signes religieux ostensibles dans les écoles publiques, au nom de la laïcité.",
 "explanation_vi": "Luật năm 2004 cấm mang biểu tượng tôn giáo phô trương trong trường công, nhân danh nguyên tắc thế tục.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN001",
@@ -1341,7 +1396,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Sécurité sociale, via l'Assurance maladie, rembourse une partie des frais médicaux.",
 "explanation_vi": "Bảo hiểm xã hội, qua Bảo hiểm y tế, hoàn trả một phần chi phí khám chữa bệnh.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN002",
@@ -1365,7 +1421,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le médecin traitant est le médecin que l'on déclare à l'Assurance maladie pour suivre et coordonner ses soins.",
 "explanation_vi": "Bác sĩ điều trị là bác sĩ mà ta khai báo với Bảo hiểm y tế để theo dõi và điều phối việc chữa bệnh.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN003",
@@ -1389,7 +1446,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les médicaments sur ordonnance s'achètent à la pharmacie, reconnaissable à sa croix verte.",
 "explanation_vi": "Thuốc theo đơn được mua ở nhà thuốc, nhận biết bằng dấu chữ thập xanh lá.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN004",
@@ -1413,7 +1471,8 @@ window.QUESTIONS = [
 "explanation_fr": "La protection sociale repose sur la solidarité : elle couvre les risques de la vie (maladie, famille, chômage, retraite).",
 "explanation_vi": "An sinh xã hội dựa trên tinh thần tương trợ: bảo vệ trước các rủi ro trong đời (bệnh, gia đình, thất nghiệp, hưu trí).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA001",
@@ -1437,7 +1496,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le SMIC est le salaire minimum interprofessionnel de croissance : le salaire horaire minimum légal.",
 "explanation_vi": "SMIC là mức lương tối thiểu theo luật (tính theo giờ) mà người lao động phải được trả.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA002",
@@ -1461,7 +1521,8 @@ window.QUESTIONS = [
 "explanation_fr": "La durée légale du travail est de 35 heures par semaine. Au-delà, ce sont des heures supplémentaires.",
 "explanation_vi": "Thời gian làm việc hợp pháp là 35 giờ/tuần. Vượt quá sẽ tính là giờ làm thêm.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA003",
@@ -1485,7 +1546,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le CDI est un contrat à durée indéterminée, sans date de fin prévue. Le CDD, lui, a une durée limitée.",
 "explanation_vi": "CDI là hợp đồng không xác định thời hạn, không có ngày kết thúc. Còn CDD là hợp đồng có thời hạn.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA004",
@@ -1509,7 +1571,8 @@ window.QUESTIONS = [
 "explanation_fr": "Un salarié à temps plein a droit à 5 semaines de congés payés par an (2,5 jours par mois travaillé).",
 "explanation_vi": "Người làm toàn thời gian được 5 tuần nghỉ phép có lương mỗi năm (2,5 ngày cho mỗi tháng làm việc).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA005",
@@ -1533,7 +1596,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'âge minimum légal pour travailler est de 16 ans, avec des règles particulières pour les mineurs.",
 "explanation_vi": "Tuổi tối thiểu hợp pháp để làm việc là 16, với những quy định riêng cho người vị thành niên.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM001",
@@ -1557,7 +1621,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le mariage civil est célébré à la mairie par le maire ou un adjoint. Seul ce mariage a une valeur légale.",
 "explanation_vi": "Kết hôn dân sự được tổ chức tại tòa thị chính do thị trưởng hoặc phó thị trưởng chủ trì. Chỉ hôn lễ này có giá trị pháp lý.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM002",
@@ -1581,7 +1646,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le PACS (pacte civil de solidarité) est un contrat entre deux personnes majeures pour organiser leur vie commune.",
 "explanation_vi": "PACS (giao ước dân sự tương trợ) là hợp đồng giữa hai người trưởng thành để tổ chức cuộc sống chung.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM003",
@@ -1605,7 +1671,8 @@ window.QUESTIONS = [
 "explanation_fr": "La naissance se déclare à la mairie du lieu de naissance, en général dans les 5 jours.",
 "explanation_vi": "Việc sinh được khai tại tòa thị chính nơi sinh, thường trong vòng 5 ngày.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM004",
@@ -1629,7 +1696,8 @@ window.QUESTIONS = [
 "explanation_fr": "La préfecture est l'administration compétente pour les titres de séjour des personnes étrangères.",
 "explanation_vi": "Préfecture là cơ quan có thẩm quyền cấp thẻ cư trú cho người nước ngoài.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM005",
@@ -1653,7 +1721,8 @@ window.QUESTIONS = [
 "explanation_fr": "La naturalisation permet d'acquérir la nationalité française par décision de l'autorité publique, sous conditions (résidence, intégration, langue...).",
 "explanation_vi": "Nhập quốc tịch cho phép có quốc tịch Pháp theo quyết định của cơ quan nhà nước, với các điều kiện (cư trú, hội nhập, ngôn ngữ...).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL010",
@@ -1677,7 +1746,8 @@ window.QUESTIONS = [
 "explanation_fr": "Chacun peut exprimer ses opinions, dans les limites fixées par la loi (interdiction de l'injure, de la diffamation, de l'incitation à la haine).",
 "explanation_vi": "Mọi người được bày tỏ ý kiến, trong giới hạn của pháp luật (cấm lăng mạ, vu khống, kích động thù hận).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL011",
@@ -1701,7 +1771,8 @@ window.QUESTIONS = [
 "explanation_fr": "« Liberté, Égalité, Fraternité » figure sur les frontons des mairies, des écoles et des bâtiments publics.",
 "explanation_vi": "« Tự do, Bình đẳng, Bác ái » được khắc trên mặt tiền tòa thị chính, trường học và công trình công.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL012",
@@ -1725,7 +1796,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'État laïque est neutre : il ne favorise ni ne combat aucune religion et garantit la liberté de conscience.",
 "explanation_vi": "Nhà nước thế tục giữ trung lập: không ưu ái cũng không chống tôn giáo nào, và bảo đảm tự do tín ngưỡng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL013",
@@ -1749,7 +1821,8 @@ window.QUESTIONS = [
 "explanation_fr": "Chaque 14 juillet, un défilé militaire a lieu sur l'avenue des Champs-Élysées à Paris.",
 "explanation_vi": "Mỗi ngày 14/7, có cuộc diễu binh trên đại lộ Champs-Élysées ở Paris.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL014",
@@ -1773,7 +1846,8 @@ window.QUESTIONS = [
 "explanation_fr": "La fraternité, c'est la solidarité : s'entraider et vivre ensemble dans le respect de chacun.",
 "explanation_vi": "Bác ái là tinh thần đoàn kết: giúp đỡ lẫn nhau và chung sống trong sự tôn trọng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL015",
@@ -1797,7 +1871,8 @@ window.QUESTIONS = [
 "explanation_fr": "La liberté de la presse permet aux médias d'informer et de critiquer, dans le respect des lois (pas de diffamation ni d'incitation à la haine).",
 "explanation_vi": "Tự do báo chí cho phép truyền thông đưa tin và phê bình, trong khuôn khổ pháp luật (không vu khống, không kích động thù hận).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL016",
@@ -1821,7 +1896,8 @@ window.QUESTIONS = [
 "explanation_fr": "Marianne porte souvent le bonnet phrygien, symbole de liberté hérité de la Révolution.",
 "explanation_vi": "Marianne thường đội mũ Phrygien, biểu tượng của tự do từ thời Cách mạng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL017",
@@ -1845,7 +1921,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'égalité interdit les discriminations : chacun a les mêmes droits quels que soient son origine, son sexe ou sa religion.",
 "explanation_vi": "Bình đẳng cấm phân biệt đối xử: ai cũng có quyền như nhau bất kể nguồn gốc, giới tính hay tôn giáo.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL018",
@@ -1869,7 +1946,8 @@ window.QUESTIONS = [
 "explanation_fr": "En démocratie, le pouvoir vient du peuple, qui élit ses représentants.",
 "explanation_vi": "Trong nền dân chủ, quyền lực đến từ nhân dân, những người bầu ra đại diện của mình.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL019",
@@ -1893,7 +1971,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Déclaration de 1789 énonce : « Les hommes naissent et demeurent libres et égaux en droits. »",
 "explanation_vi": "Tuyên ngôn 1789 ghi: « Con người sinh ra và luôn tự do, bình đẳng về quyền. »",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS011",
@@ -1917,7 +1996,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'Union européenne compte 27 États membres. La France en est l'un des membres fondateurs.",
 "explanation_vi": "Liên minh châu Âu có 27 quốc gia thành viên. Pháp là một trong những nước sáng lập.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS012",
@@ -1941,7 +2021,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le président de la République est le chef des armées.",
 "explanation_vi": "Tổng thống Cộng hòa là tổng tư lệnh quân đội.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS013",
@@ -1965,7 +2046,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le conseil municipal est élu pour 6 ans ; il élit ensuite le maire.",
 "explanation_vi": "Hội đồng thành phố được bầu nhiệm kỳ 6 năm; sau đó bầu ra thị trưởng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS014",
@@ -1989,7 +2071,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Conseil constitutionnel contrôle que les lois respectent la Constitution.",
 "explanation_vi": "Hội đồng Hiến pháp kiểm tra để luật tuân thủ Hiến pháp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS015",
@@ -2013,7 +2096,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le préfet représente l'État et le gouvernement dans le département.",
 "explanation_vi": "Tỉnh trưởng đại diện cho Nhà nước và Chính phủ ở tỉnh.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS016",
@@ -2037,7 +2121,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les trois pouvoirs sont séparés : exécutif (gouvernement), législatif (Parlement) et judiciaire (justice).",
 "explanation_vi": "Ba quyền tách biệt: hành pháp (chính phủ), lập pháp (nghị viện) và tư pháp (tòa án).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS017",
@@ -2061,7 +2146,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le drapeau européen est bleu avec un cercle de douze étoiles dorées.",
 "explanation_vi": "Cờ châu Âu màu xanh với vòng tròn mười hai ngôi sao vàng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS018",
@@ -2085,7 +2171,8 @@ window.QUESTIONS = [
 "explanation_fr": "Une fois la loi votée, le président de la République la promulgue.",
 "explanation_vi": "Sau khi luật được thông qua, Tổng thống ban hành luật đó.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS019",
@@ -2109,7 +2196,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Sénat siège au palais du Luxembourg ; l'Assemblée nationale au palais Bourbon.",
 "explanation_vi": "Thượng viện họp tại điện Luxembourg; Quốc hội tại điện Bourbon.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS020",
@@ -2133,7 +2221,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les députés européens sont élus au suffrage universel direct par les citoyens de l'UE.",
 "explanation_vi": "Nghị sĩ châu Âu do công dân EU trực tiếp bầu theo phổ thông đầu phiếu.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO009",
@@ -2157,7 +2246,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les jeunes doivent se faire recenser puis participer à la Journée défense et citoyenneté (JDC).",
 "explanation_vi": "Thanh niên phải đăng ký và tham gia Ngày quốc phòng và công dân (JDC).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO010",
@@ -2181,7 +2271,8 @@ window.QUESTIONS = [
 "explanation_fr": "Pour voter, il faut présenter une pièce d'identité ; la carte électorale est utile mais non obligatoire.",
 "explanation_vi": "Để bỏ phiếu, phải xuất trình giấy tờ tùy thân; thẻ cử tri hữu ích nhưng không bắt buộc.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO011",
@@ -2205,7 +2296,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le droit de grève permet aux salariés de cesser le travail pour défendre des revendications professionnelles.",
 "explanation_vi": "Quyền đình công cho phép người lao động ngừng việc để bảo vệ các yêu sách nghề nghiệp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO012",
@@ -2229,7 +2321,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 3919 est le numéro d'écoute pour les femmes victimes de violences (anonyme et gratuit).",
 "explanation_vi": "3919 là số tư vấn cho phụ nữ bị bạo hành (ẩn danh và miễn phí).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO013",
@@ -2253,7 +2346,8 @@ window.QUESTIONS = [
 "explanation_fr": "Toute personne a droit à un procès équitable et à être défendue par un avocat.",
 "explanation_vi": "Mọi người có quyền được xét xử công bằng và được luật sư bào chữa.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO014",
@@ -2277,7 +2371,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les agents publics doivent rester neutres : ils ne manifestent pas leurs convictions religieuses dans l'exercice de leurs fonctions.",
 "explanation_vi": "Viên chức nhà nước phải trung lập: không biểu lộ tín ngưỡng khi thi hành công vụ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO015",
@@ -2301,7 +2396,8 @@ window.QUESTIONS = [
 "explanation_fr": "Des citoyens tirés au sort (jurés) participent, avec des magistrats, au jugement des crimes à la cour d'assises.",
 "explanation_vi": "Công dân được bốc thăm (hội thẩm) cùng thẩm phán tham gia xét xử trọng tội tại tòa đại hình.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO016",
@@ -2325,7 +2421,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les impôts financent les services publics : écoles, hôpitaux, routes, sécurité, etc.",
 "explanation_vi": "Thuế tài trợ các dịch vụ công: trường học, bệnh viện, đường sá, an ninh, v.v.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO017",
@@ -2349,7 +2446,8 @@ window.QUESTIONS = [
 "explanation_fr": "La loi interdit toute discrimination à l'embauche, notamment selon l'origine, le sexe ou la religion.",
 "explanation_vi": "Luật cấm mọi phân biệt đối xử khi tuyển dụng, nhất là theo nguồn gốc, giới tính hay tôn giáo.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO018",
@@ -2373,7 +2471,8 @@ window.QUESTIONS = [
 "explanation_fr": "Respecter les biens publics, l'environnement et les règles communes fait partie des devoirs du citoyen.",
 "explanation_vi": "Tôn trọng tài sản công, môi trường và quy tắc chung là một phần nghĩa vụ công dân.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS009",
@@ -2397,7 +2496,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les femmes ont obtenu le droit de vote en 1944 et ont voté pour la première fois en 1945.",
 "explanation_vi": "Phụ nữ giành quyền bầu cử năm 1944 và lần đầu bỏ phiếu năm 1945.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS010",
@@ -2421,7 +2521,8 @@ window.QUESTIONS = [
 "explanation_fr": "La loi de 1905 établit la séparation des Églises et de l'État et fonde la laïcité.",
 "explanation_vi": "Luật năm 1905 thiết lập sự tách biệt Giáo hội và Nhà nước, đặt nền cho nguyên tắc thế tục.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS011",
@@ -2445,7 +2546,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'abolition de l'esclavage de 1848 est associée à Victor Schœlcher.",
 "explanation_vi": "Việc bãi bỏ chế độ nô lệ năm 1848 gắn với tên Victor Schœlcher.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS012",
@@ -2469,7 +2571,8 @@ window.QUESTIONS = [
 "explanation_fr": "Marie Curie a reçu deux prix Nobel (physique puis chimie) pour ses travaux sur la radioactivité.",
 "explanation_vi": "Marie Curie nhận hai giải Nobel (vật lý rồi hóa học) nhờ công trình về phóng xạ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS013",
@@ -2493,7 +2596,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les premiers congés payés datent de 1936 (Front populaire).",
 "explanation_vi": "Chế độ nghỉ phép có lương đầu tiên có từ năm 1936 (Mặt trận Bình dân).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS014",
@@ -2517,7 +2621,8 @@ window.QUESTIONS = [
 "explanation_fr": "Louis XIV, le « Roi-Soleil », a fait construire le château de Versailles.",
 "explanation_vi": "Louis XIV, « Vua Mặt Trời », đã cho xây lâu đài Versailles.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS015",
@@ -2541,7 +2646,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Première Guerre mondiale s'est terminée le 11 novembre 1918.",
 "explanation_vi": "Thế chiến thứ nhất kết thúc ngày 11 tháng 11 năm 1918.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS016",
@@ -2565,7 +2671,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Sécurité sociale a été créée en 1945, après la Seconde Guerre mondiale.",
 "explanation_vi": "Bảo hiểm xã hội được lập năm 1945, sau Thế chiến thứ hai.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS017",
@@ -2589,7 +2696,8 @@ window.QUESTIONS = [
 "explanation_fr": "Charles de Gaulle a dirigé la France libre pendant la guerre puis fondé la Ve République en 1958.",
 "explanation_vi": "Charles de Gaulle lãnh đạo nước Pháp Tự do trong chiến tranh rồi lập nền Cộng hòa thứ Năm năm 1958.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS018",
@@ -2613,7 +2721,8 @@ window.QUESTIONS = [
 "explanation_fr": "La loi ouvrant le mariage aux couples de même sexe a été adoptée en 2013.",
 "explanation_vi": "Luật cho phép hôn nhân đồng giới được thông qua năm 2013.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO009",
@@ -2637,7 +2746,8 @@ window.QUESTIONS = [
 "explanation_fr": "La France métropolitaine est souvent appelée « l'Hexagone » en raison de sa forme à six côtés.",
 "explanation_vi": "Pháp lục địa thường được gọi là « Hexagone » vì có hình sáu cạnh.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO010",
@@ -2661,7 +2771,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les Pyrénées forment une frontière naturelle entre la France et l'Espagne.",
 "explanation_vi": "Dãy Pyrénées là biên giới tự nhiên giữa Pháp và Tây Ban Nha.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO011",
@@ -2685,7 +2796,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'océan Atlantique borde l'ouest de la France.",
 "explanation_vi": "Đại Tây Dương tiếp giáp phía tây nước Pháp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO012",
@@ -2709,7 +2821,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Parlement européen siège à Strasbourg, en France.",
 "explanation_vi": "Nghị viện châu Âu đặt trụ sở tại Strasbourg, Pháp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO013",
@@ -2733,7 +2846,8 @@ window.QUESTIONS = [
 "explanation_fr": "La France compte 101 départements, dont 5 en outre-mer.",
 "explanation_vi": "Pháp có 101 tỉnh, trong đó 5 tỉnh hải ngoại.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO014",
@@ -2757,7 +2871,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Rhône traverse notamment Lyon avant de rejoindre la Méditerranée.",
 "explanation_vi": "Sông Rhône chảy qua Lyon trước khi đổ ra Địa Trung Hải.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO015",
@@ -2781,7 +2896,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Réunion et Mayotte se trouvent dans l'océan Indien ; la Guadeloupe et la Martinique sont aux Caraïbes.",
 "explanation_vi": "La Réunion và Mayotte nằm ở Ấn Độ Dương; Guadeloupe và Martinique ở vùng Caribe.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO016",
@@ -2805,7 +2921,8 @@ window.QUESTIONS = [
 "explanation_fr": "Andorre est un petit État frontalier de la France, situé dans les Pyrénées.",
 "explanation_vi": "Andorra là một quốc gia nhỏ giáp Pháp, nằm trong dãy Pyrénées.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO017",
@@ -2829,7 +2946,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Manche sépare le nord de la France du Royaume-Uni.",
 "explanation_vi": "Biển Manche ngăn cách miền bắc nước Pháp với Vương quốc Anh.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO018",
@@ -2853,7 +2971,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Rhin marque une partie de la frontière entre la France et l'Allemagne.",
 "explanation_vi": "Sông Rhin tạo một phần biên giới giữa Pháp và Đức.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE008",
@@ -2877,7 +2996,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 115 est le numéro d'urgence sociale (hébergement, aide aux personnes sans abri).",
 "explanation_vi": "115 là số khẩn cấp xã hội (chỗ ở, hỗ trợ người vô gia cư).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE009",
@@ -2901,7 +3021,8 @@ window.QUESTIONS = [
 "explanation_fr": "La location d'un logement se fait avec un bail signé entre le locataire et le propriétaire.",
 "explanation_vi": "Việc thuê nhà được thực hiện qua hợp đồng (bail) ký giữa người thuê và chủ nhà.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE010",
@@ -2925,7 +3046,8 @@ window.QUESTIONS = [
 "explanation_fr": "La CAF (Caisse d'allocations familiales) verse notamment les aides au logement (APL).",
 "explanation_vi": "CAF (Quỹ trợ cấp gia đình) chi trả các trợ cấp nhà ở (APL).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE011",
@@ -2949,7 +3071,8 @@ window.QUESTIONS = [
 "explanation_fr": "Conduire exige le permis, le respect du code de la route et une assurance obligatoire du véhicule.",
 "explanation_vi": "Lái xe đòi hỏi có bằng, tuân thủ luật giao thông và bảo hiểm xe bắt buộc.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE012",
@@ -2973,7 +3096,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 1er mai est la fête du Travail, jour férié en France.",
 "explanation_vi": "Ngày 1/5 là Ngày Lao động, một ngày nghỉ lễ ở Pháp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE013",
@@ -2997,7 +3121,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le verre se dépose dans les conteneurs à verre dédiés, pour être recyclé.",
 "explanation_vi": "Thủy tinh được bỏ vào thùng chuyên dụng để tái chế.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE014",
@@ -3021,7 +3146,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Poste gère l'envoi du courrier et des colis.",
 "explanation_vi": "La Poste phụ trách việc gửi thư và bưu kiện.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE015",
@@ -3045,7 +3171,8 @@ window.QUESTIONS = [
 "explanation_fr": "La déclaration de revenus et le paiement de l'impôt se font auprès de l'administration fiscale.",
 "explanation_vi": "Khai thu nhập và nộp thuế được thực hiện tại cơ quan thuế.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE016",
@@ -3069,7 +3196,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 112 est le numéro d'urgence européen, gratuit, pour toute situation grave.",
 "explanation_vi": "112 là số khẩn cấp châu Âu, miễn phí, cho mọi tình huống nghiêm trọng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE017",
@@ -3093,7 +3221,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 114 permet aux personnes sourdes ou malentendantes de contacter les secours par SMS ou message.",
 "explanation_vi": "114 cho phép người điếc hoặc khiếm thính liên hệ cứu hộ qua tin nhắn.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU006",
@@ -3117,7 +3246,8 @@ window.QUESTIONS = [
 "explanation_fr": "Depuis 2019, l'instruction est obligatoire dès 3 ans et jusqu'à 16 ans.",
 "explanation_vi": "Từ năm 2019, việc học bắt buộc từ 3 tuổi đến 16 tuổi.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU007",
@@ -3141,7 +3271,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'école maternelle accueille les jeunes enfants avant l'école élémentaire.",
 "explanation_vi": "Trường mẫu giáo đón trẻ nhỏ trước khi vào tiểu học.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU008",
@@ -3165,7 +3296,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'inscription à l'école primaire publique se fait d'abord à la mairie.",
 "explanation_vi": "Việc ghi danh vào trường tiểu học công trước tiên làm tại tòa thị chính.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU009",
@@ -3189,7 +3321,8 @@ window.QUESTIONS = [
 "explanation_fr": "À la fin du collège, les élèves passent le diplôme national du brevet.",
 "explanation_vi": "Khi kết thúc collège, học sinh thi lấy bằng brevet quốc gia.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU010",
@@ -3213,7 +3346,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'école publique est gratuite ; des aides existent pour les fournitures et la cantine.",
 "explanation_vi": "Trường công miễn phí; có trợ cấp cho dụng cụ học tập và bữa ăn.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU011",
@@ -3237,7 +3371,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le baccalauréat ouvre l'accès à l'université et aux études supérieures.",
 "explanation_vi": "Bằng tú tài mở đường vào đại học và các bậc học cao hơn.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU012",
@@ -3261,7 +3396,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les enseignants du public respectent la laïcité et la neutralité : pas de prosélytisme religieux ou politique.",
 "explanation_vi": "Giáo viên trường công tôn trọng nguyên tắc thế tục và trung lập: không truyền bá tôn giáo hay chính trị.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU013",
@@ -3285,7 +3421,8 @@ window.QUESTIONS = [
 "explanation_fr": "Des bourses scolaires peuvent aider les familles aux revenus modestes.",
 "explanation_vi": "Học bổng có thể hỗ trợ các gia đình có thu nhập khiêm tốn.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN005",
@@ -3309,7 +3446,8 @@ window.QUESTIONS = [
 "explanation_fr": "La mutuelle complète le remboursement des soins non pris en charge entièrement par la Sécurité sociale.",
 "explanation_vi": "Mutuelle bù phần chi phí khám chữa bệnh mà Bảo hiểm xã hội không hoàn hết.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN006",
@@ -3333,7 +3471,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le parcours de soins coordonné passe d'abord par le médecin traitant, qui oriente si besoin vers un spécialiste.",
 "explanation_vi": "Lộ trình khám bệnh phối hợp bắt đầu từ bác sĩ điều trị, người sẽ giới thiệu đến chuyên khoa nếu cần.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN007",
@@ -3357,7 +3496,8 @@ window.QUESTIONS = [
 "explanation_fr": "La CPAM (Caisse primaire d'assurance maladie) gère les droits et remboursements de santé localement.",
 "explanation_vi": "CPAM (Quỹ bảo hiểm y tế cơ sở) quản lý quyền lợi và hoàn trả y tế tại địa phương.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN008",
@@ -3381,7 +3521,8 @@ window.QUESTIONS = [
 "explanation_fr": "La PMI assure gratuitement le suivi des jeunes enfants et des femmes enceintes.",
 "explanation_vi": "PMI theo dõi miễn phí sức khỏe trẻ nhỏ và phụ nữ mang thai.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN009",
@@ -3405,7 +3546,8 @@ window.QUESTIONS = [
 "explanation_fr": "La carte Vitale permet la prise en charge et le remboursement des soins.",
 "explanation_vi": "Thẻ Vitale giúp được chi trả và hoàn tiền khám chữa bệnh.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN010",
@@ -3429,7 +3571,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 15 (SAMU) et le 112 (numéro européen) permettent d'alerter les secours médicaux.",
 "explanation_vi": "15 (SAMU) và 112 (số châu Âu) dùng để gọi cứu hộ y tế.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN011",
@@ -3453,7 +3596,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'hôpital public accueille toute personne, notamment en cas d'urgence, quelle que soit sa situation.",
 "explanation_vi": "Bệnh viện công tiếp nhận mọi người, nhất là khi cấp cứu, bất kể hoàn cảnh.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA006",
@@ -3477,7 +3621,8 @@ window.QUESTIONS = [
 "explanation_fr": "France Travail (anciennement Pôle emploi) aide à la recherche d'emploi et verse certaines allocations.",
 "explanation_vi": "France Travail (trước là Pôle emploi) hỗ trợ tìm việc và chi trả một số trợ cấp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA007",
@@ -3501,7 +3646,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le bulletin de paie (fiche de paie) détaille le salaire et les cotisations ; il doit être conservé.",
 "explanation_vi": "Phiếu lương ghi chi tiết tiền lương và các khoản đóng; cần giữ lại.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA008",
@@ -3525,7 +3671,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le CDD est un contrat à durée déterminée, avec une date de fin ; le CDI est sans date de fin.",
 "explanation_vi": "CDD là hợp đồng có thời hạn, có ngày kết thúc; CDI không có ngày kết thúc.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA009",
@@ -3549,7 +3696,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'inspection du travail veille au respect du droit du travail (sécurité, contrats, horaires).",
 "explanation_vi": "Thanh tra lao động giám sát việc tuân thủ luật lao động (an toàn, hợp đồng, giờ giấc).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA010",
@@ -3573,7 +3721,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le harcèlement moral ou sexuel au travail est interdit et puni par la loi.",
 "explanation_vi": "Quấy rối tinh thần hoặc tình dục tại nơi làm việc bị cấm và bị luật trừng phạt.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA011",
@@ -3597,7 +3746,8 @@ window.QUESTIONS = [
 "explanation_fr": "La loi impose l'égalité de rémunération entre les femmes et les hommes pour un travail de valeur égale.",
 "explanation_vi": "Luật yêu cầu trả lương bình đẳng giữa nam và nữ cho công việc có giá trị ngang nhau.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA012",
@@ -3621,7 +3771,8 @@ window.QUESTIONS = [
 "explanation_fr": "Une personne étrangère doit disposer d'un titre de séjour l'autorisant à travailler.",
 "explanation_vi": "Người nước ngoài phải có thẻ cư trú cho phép làm việc.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM006",
@@ -3645,7 +3796,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le livret de famille recense les mariages, naissances et autres événements d'état civil.",
 "explanation_vi": "Sổ gia đình ghi lại việc kết hôn, sinh con và các sự kiện hộ tịch khác.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM007",
@@ -3669,7 +3821,8 @@ window.QUESTIONS = [
 "explanation_fr": "La naturalisation suppose notamment une résidence stable, l'intégration, la connaissance du français et des valeurs de la République.",
 "explanation_vi": "Nhập quốc tịch đòi hỏi cư trú ổn định, hội nhập, biết tiếng Pháp và hiểu các giá trị của nền Cộng hòa.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM008",
@@ -3693,7 +3846,8 @@ window.QUESTIONS = [
 "explanation_fr": "La carte nationale d'identité se demande en mairie (dans les communes équipées).",
 "explanation_vi": "Thẻ căn cước quốc gia được xin tại tòa thị chính (ở các xã có trang bị).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM009",
@@ -3717,7 +3871,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le PACS organise la vie commune de deux personnes sans mariage, avec des droits et devoirs.",
 "explanation_vi": "PACS tổ chức cuộc sống chung của hai người mà không kết hôn, kèm quyền và nghĩa vụ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM010",
@@ -3741,7 +3896,8 @@ window.QUESTIONS = [
 "explanation_fr": "La CAF verse les allocations familiales aux familles ayant des enfants à charge.",
 "explanation_vi": "CAF chi trả trợ cấp gia đình cho các gia đình có con phụ thuộc.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM011",
@@ -3765,7 +3921,8 @@ window.QUESTIONS = [
 "explanation_fr": "La mairie établit l'acte de naissance, document officiel d'état civil.",
 "explanation_vi": "Tòa thị chính lập giấy khai sinh, một giấy tờ hộ tịch chính thức.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM012",
@@ -3789,7 +3946,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'autorité parentale implique des devoirs d'éducation, de protection, de santé et d'entretien de l'enfant.",
 "explanation_vi": "Quyền làm cha mẹ bao gồm nghĩa vụ giáo dục, bảo vệ, chăm sóc sức khỏe và nuôi dưỡng con.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM013",
@@ -3813,7 +3971,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le titre de séjour doit être renouvelé avant son expiration, en préfecture, pour rester en situation régulière.",
 "explanation_vi": "Thẻ cư trú phải được gia hạn trước khi hết hạn, tại tỉnh trưởng phủ, để giữ tình trạng hợp pháp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL020",
@@ -3837,7 +3996,8 @@ window.QUESTIONS = [
 "explanation_fr": "La loi de 1901 garantit la liberté de créer une association sans autorisation préalable.",
 "explanation_vi": "Luật năm 1901 bảo đảm quyền lập hội mà không cần xin phép trước.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL021",
@@ -3861,7 +4021,8 @@ window.QUESTIONS = [
 "explanation_fr": "La souveraineté nationale appartient au peuple, qui l'exerce par ses représentants et par le référendum.",
 "explanation_vi": "Chủ quyền quốc gia thuộc về nhân dân, được thực hiện qua đại diện và trưng cầu dân ý.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL022",
@@ -3885,7 +4046,8 @@ window.QUESTIONS = [
 "explanation_fr": "La liberté de conscience, c'est pouvoir penser, croire ou ne pas croire librement.",
 "explanation_vi": "Tự do tư tưởng là quyền suy nghĩ, tin hay không tin một cách tự do.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL023",
@@ -3909,7 +4071,8 @@ window.QUESTIONS = [
 "explanation_fr": "Chacun est libre de ses opinions, y compris religieuses, tant qu'il ne trouble pas l'ordre public établi par la loi.",
 "explanation_vi": "Mọi người tự do về ý kiến, kể cả tôn giáo, miễn là không gây rối trật tự công do luật định.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL024",
@@ -3933,7 +4096,8 @@ window.QUESTIONS = [
 "explanation_fr": "La République sociale repose sur la solidarité : protection sociale, aide aux plus fragiles, services publics.",
 "explanation_vi": "Nền Cộng hòa xã hội dựa trên tình đoàn kết: an sinh xã hội, hỗ trợ người yếu thế, dịch vụ công.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL025",
@@ -3957,7 +4121,8 @@ window.QUESTIONS = [
 "explanation_fr": "Manifester est une liberté liée à l'expression et à la réunion ; une manifestation se déclare en préfecture.",
 "explanation_vi": "Biểu tình là quyền tự do gắn với ngôn luận và hội họp; cuộc biểu tình phải khai báo ở tỉnh trưởng phủ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL026",
@@ -3981,7 +4146,8 @@ window.QUESTIONS = [
 "explanation_fr": "La devise de l'Union européenne est « Unie dans la diversité ».",
 "explanation_vi": "Khẩu hiệu của Liên minh châu Âu là « Thống nhất trong đa dạng ».",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL027",
@@ -4005,7 +4171,8 @@ window.QUESTIONS = [
 "explanation_fr": "La dignité humaine est protégée : la torture et les traitements inhumains ou dégradants sont interdits.",
 "explanation_vi": "Nhân phẩm được bảo vệ: cấm tra tấn và đối xử vô nhân đạo hay hạ nhục.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL028",
@@ -4029,7 +4196,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le pluralisme garantit l'existence de plusieurs partis politiques et la libre expression des opinions.",
 "explanation_vi": "Đa nguyên bảo đảm sự tồn tại của nhiều đảng và quyền tự do bày tỏ ý kiến.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL029",
@@ -4053,7 +4221,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'esclavage est aboli et interdit ; il est considéré comme un crime contre l'humanité.",
 "explanation_vi": "Chế độ nô lệ đã bị bãi bỏ và cấm; được coi là tội ác chống nhân loại.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL030",
@@ -4077,7 +4246,8 @@ window.QUESTIONS = [
 "explanation_fr": "La loi, votée par les représentants du peuple, est la même pour tous.",
 "explanation_vi": "Luật, do đại diện của nhân dân thông qua, như nhau cho mọi người.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL031",
@@ -4101,7 +4271,8 @@ window.QUESTIONS = [
 "explanation_fr": "La tolérance, c'est respecter les différences et vivre ensemble dans le respect mutuel.",
 "explanation_vi": "Khoan dung là tôn trọng sự khác biệt và chung sống trong sự tôn trọng lẫn nhau.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL032",
@@ -4125,7 +4296,8 @@ window.QUESTIONS = [
 "explanation_fr": "La devise républicaine s'est imposée avec la Révolution française.",
 "explanation_vi": "Khẩu hiệu cộng hòa được khẳng định cùng Cách mạng Pháp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL033",
@@ -4149,7 +4321,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'impôt est réparti selon les facultés de chacun, en application de règles identiques pour tous.",
 "explanation_vi": "Thuế được phân bổ theo khả năng của mỗi người, áp dụng quy tắc như nhau cho mọi người.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL034",
@@ -4173,7 +4346,8 @@ window.QUESTIONS = [
 "explanation_fr": "La protection de l'environnement est un devoir partagé, inscrit dans la Charte de l'environnement.",
 "explanation_vi": "Bảo vệ môi trường là nghĩa vụ chung, được ghi trong Hiến chương môi trường.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VAL035",
@@ -4197,7 +4371,8 @@ window.QUESTIONS = [
 "explanation_fr": "La liberté d'aller et venir permet de se déplacer et de choisir son domicile, dans le respect des lois.",
 "explanation_vi": "Tự do đi lại cho phép di chuyển và chọn nơi cư trú, trong khuôn khổ pháp luật.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS021",
@@ -4221,7 +4396,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Premier ministre dirige l'action du gouvernement.",
 "explanation_vi": "Thủ tướng điều hành hoạt động của Chính phủ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS022",
@@ -4245,7 +4421,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Premier ministre réside à l'hôtel de Matignon.",
 "explanation_vi": "Thủ tướng làm việc tại dinh Matignon.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS023",
@@ -4269,7 +4446,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les sénateurs sont élus au suffrage universel indirect par des « grands électeurs » (élus locaux).",
 "explanation_vi": "Thượng nghị sĩ được bầu theo phổ thông gián tiếp qua « đại cử tri » (những người được bầu ở địa phương).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS024",
@@ -4293,7 +4471,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le département gère les collèges ; la région les lycées ; la commune les écoles primaires.",
 "explanation_vi": "Tỉnh quản lý collège; vùng quản lý lycée; xã quản lý trường tiểu học.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS025",
@@ -4317,7 +4496,8 @@ window.QUESTIONS = [
 "explanation_fr": "La région a la charge des lycées et des transports régionaux.",
 "explanation_vi": "Vùng phụ trách các trường lycée và giao thông vùng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS026",
@@ -4341,7 +4521,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le maire est officier d'état civil : il célèbre les mariages et enregistre les actes.",
 "explanation_vi": "Thị trưởng là viên chức hộ tịch: chủ trì hôn lễ và ghi các giấy tờ hộ tịch.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS027",
@@ -4365,7 +4546,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le président de la République peut dissoudre l'Assemblée nationale, provoquant de nouvelles élections.",
 "explanation_vi": "Tổng thống có thể giải tán Quốc hội, dẫn đến bầu cử mới.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS028",
@@ -4389,7 +4571,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Conseil des ministres est présidé par le président de la République.",
 "explanation_vi": "Hội đồng Bộ trưởng do Tổng thống chủ trì.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS029",
@@ -4413,7 +4596,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'hymne européen est « L'Hymne à la joie », extrait de la 9e symphonie de Beethoven.",
 "explanation_vi": "Bài ca châu Âu là « Ode to Joy », trích từ Giao hưởng số 9 của Beethoven.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS030",
@@ -4437,7 +4621,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le référendum consulte directement les citoyens, qui répondent par « oui » ou « non ».",
 "explanation_vi": "Trưng cầu dân ý hỏi trực tiếp công dân, họ trả lời « có » hoặc « không ».",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS031",
@@ -4461,7 +4646,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le vote n'est pas obligatoire en France, mais il est considéré comme un devoir civique.",
 "explanation_vi": "Bỏ phiếu không bắt buộc ở Pháp, nhưng được coi là nghĩa vụ công dân.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS032",
@@ -4485,7 +4671,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Défenseur des droits protège les droits des usagers face aux services publics et lutte contre les discriminations.",
 "explanation_vi": "Défenseur des droits bảo vệ quyền của người dân trước dịch vụ công và chống phân biệt đối xử.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS033",
@@ -4509,7 +4696,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Sénat compte environ 348 sénateurs, élus pour 6 ans.",
 "explanation_vi": "Thượng viện có khoảng 348 thượng nghị sĩ, nhiệm kỳ 6 năm.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS034",
@@ -4533,7 +4721,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'élection présidentielle a lieu tous les 5 ans.",
 "explanation_vi": "Bầu cử tổng thống diễn ra 5 năm một lần.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS035",
@@ -4557,7 +4746,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Commission européenne a son siège à Bruxelles, en Belgique.",
 "explanation_vi": "Ủy ban châu Âu đặt trụ sở tại Brussels, Bỉ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS036",
@@ -4581,7 +4771,8 @@ window.QUESTIONS = [
 "explanation_fr": "La justice est rendue au nom du peuple français par des juges indépendants.",
 "explanation_vi": "Công lý được thực thi nhân danh nhân dân Pháp bởi các thẩm phán độc lập.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS037",
@@ -4605,7 +4796,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les citoyens de l'UE résidant en France peuvent voter aux élections municipales et européennes.",
 "explanation_vi": "Công dân EU cư trú ở Pháp có thể bỏ phiếu bầu cử địa phương và châu Âu.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "INS038",
@@ -4629,7 +4821,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Parlement vote chaque année le budget de l'État (loi de finances).",
 "explanation_vi": "Nghị viện hằng năm biểu quyết ngân sách Nhà nước (luật tài chính).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO019",
@@ -4653,7 +4846,8 @@ window.QUESTIONS = [
 "explanation_fr": "Tout enfant présent sur le territoire a droit à l'instruction, quelle que soit sa nationalité.",
 "explanation_vi": "Mọi trẻ em trên lãnh thổ có quyền được học, bất kể quốc tịch.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO020",
@@ -4677,7 +4871,8 @@ window.QUESTIONS = [
 "explanation_fr": "La non-assistance à personne en danger est punie par la loi.",
 "explanation_vi": "Không cứu giúp người gặp nguy hiểm bị luật trừng phạt.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO021",
@@ -4701,7 +4896,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le droit d'asile protège les personnes persécutées en raison de leurs opinions, de leur religion, etc.",
 "explanation_vi": "Quyền tị nạn bảo vệ người bị bức hại vì quan điểm, tôn giáo, v.v.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO022",
@@ -4725,7 +4921,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le travail des enfants est interdit ; le travail est possible dès 16 ans avec des règles protectrices.",
 "explanation_vi": "Lao động trẻ em bị cấm; có thể làm việc từ 16 tuổi với các quy định bảo vệ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO023",
@@ -4749,7 +4946,8 @@ window.QUESTIONS = [
 "explanation_fr": "Dans les écoles publiques, le port de signes religieux ostensibles par les élèves est interdit (loi de 2004).",
 "explanation_vi": "Ở trường công, học sinh không được mang biểu tượng tôn giáo phô trương (luật 2004).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO024",
@@ -4773,7 +4971,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les emplois publics sont accessibles à tous selon le mérite, généralement par concours.",
 "explanation_vi": "Công việc nhà nước mở cho mọi người theo năng lực, thường qua thi tuyển.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO025",
@@ -4797,7 +4996,8 @@ window.QUESTIONS = [
 "explanation_fr": "Chacun est libre d'adhérer ou non au syndicat de son choix.",
 "explanation_vi": "Mỗi người tự do gia nhập hay không công đoàn mình chọn.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO026",
@@ -4821,7 +5021,8 @@ window.QUESTIONS = [
 "explanation_fr": "La vie privée (domicile, correspondances, données personnelles) est protégée par la loi.",
 "explanation_vi": "Đời tư (nơi ở, thư từ, dữ liệu cá nhân) được luật bảo vệ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO027",
@@ -4845,7 +5046,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les violences conjugales sont des délits sévèrement punis ; le 3919 est le numéro d'écoute.",
 "explanation_vi": "Bạo lực vợ chồng là tội bị trừng phạt nghiêm khắc; 3919 là số tư vấn.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO028",
@@ -4869,7 +5071,8 @@ window.QUESTIONS = [
 "explanation_fr": "La citoyenneté européenne permet de circuler et de s'installer librement dans les pays de l'UE.",
 "explanation_vi": "Quyền công dân châu Âu cho phép đi lại và định cư tự do trong các nước EU.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO029",
@@ -4893,7 +5096,8 @@ window.QUESTIONS = [
 "explanation_fr": "Respecter le code de la route est un devoir qui protège la sécurité de chacun.",
 "explanation_vi": "Tuân thủ luật giao thông là nghĩa vụ bảo vệ an toàn của mọi người.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO030",
@@ -4917,7 +5121,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le droit de propriété permet de posséder des biens, dans les limites fixées par la loi.",
 "explanation_vi": "Quyền sở hữu cho phép có tài sản, trong giới hạn luật định.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO031",
@@ -4941,7 +5146,8 @@ window.QUESTIONS = [
 "explanation_fr": "Une manifestation sur la voie publique doit être déclarée à l'avance aux autorités.",
 "explanation_vi": "Biểu tình nơi công cộng phải được khai báo trước với chính quyền.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO032",
@@ -4965,7 +5171,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le droit à la protection de la santé est garanti, notamment par la Sécurité sociale.",
 "explanation_vi": "Quyền được bảo vệ sức khỏe được bảo đảm, nhất là qua Bảo hiểm xã hội.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO033",
@@ -4989,7 +5196,8 @@ window.QUESTIONS = [
 "explanation_fr": "C'est à l'accusation de prouver la culpabilité ; l'accusé est présumé innocent.",
 "explanation_vi": "Bên buộc tội phải chứng minh có tội; bị cáo được coi là vô tội.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO034",
@@ -5013,7 +5221,8 @@ window.QUESTIONS = [
 "explanation_fr": "La liberté de réunion permet de se rassembler pacifiquement, dans le respect de la loi.",
 "explanation_vi": "Quyền tự do hội họp cho phép tụ họp ôn hòa, trong khuôn khổ pháp luật.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "DRO035",
@@ -5037,7 +5246,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les personnes étrangères en situation régulière ont des droits et des devoirs, dont le respect des lois.",
 "explanation_vi": "Người nước ngoài cư trú hợp pháp có quyền và nghĩa vụ, trong đó có tôn trọng pháp luật.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS019",
@@ -5061,7 +5271,8 @@ window.QUESTIONS = [
 "explanation_fr": "Napoléon Bonaparte est devenu empereur des Français en 1804.",
 "explanation_vi": "Napoléon Bonaparte trở thành hoàng đế của người Pháp năm 1804.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS020",
@@ -5085,7 +5296,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Première République est proclamée en 1792, après l'abolition de la monarchie.",
 "explanation_vi": "Nền Cộng hòa thứ nhất được tuyên bố năm 1792, sau khi bãi bỏ chế độ quân chủ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS021",
@@ -5109,7 +5321,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le traité de Rome (1957) a créé la Communauté économique européenne, ancêtre de l'UE.",
 "explanation_vi": "Hiệp ước Roma (1957) lập ra Cộng đồng Kinh tế châu Âu, tiền thân của EU.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS022",
@@ -5133,7 +5346,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le traité de Maastricht (1992) a institué l'Union européenne.",
 "explanation_vi": "Hiệp ước Maastricht (1992) thành lập Liên minh châu Âu.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS023",
@@ -5157,7 +5371,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les pièces et billets en euros sont entrés en circulation en 2002.",
 "explanation_vi": "Tiền xu và tiền giấy euro bắt đầu lưu hành năm 2002.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS024",
@@ -5181,7 +5396,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 11 novembre commémore l'armistice de 1918, fin de la Première Guerre mondiale.",
 "explanation_vi": "Ngày 11/11 kỷ niệm đình chiến 1918, kết thúc Thế chiến thứ nhất.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS025",
@@ -5205,7 +5421,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 8 mai 1945 marque la victoire des Alliés et la fin de la guerre en Europe.",
 "explanation_vi": "Ngày 8/5/1945 đánh dấu chiến thắng của quân Đồng minh và kết thúc chiến tranh ở châu Âu.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS026",
@@ -5229,7 +5446,8 @@ window.QUESTIONS = [
 "explanation_fr": "Victor Hugo, grand écrivain du XIXe siècle, est l'auteur des « Misérables ».",
 "explanation_vi": "Victor Hugo, đại văn hào thế kỷ 19, là tác giả « Những người khốn khổ ».",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS027",
@@ -5253,7 +5471,8 @@ window.QUESTIONS = [
 "explanation_fr": "Louis Pasteur a mis au point le vaccin contre la rage et développé la pasteurisation.",
 "explanation_vi": "Louis Pasteur phát minh vắc-xin dại và phương pháp tiệt trùng Pasteur.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS028",
@@ -5277,7 +5496,8 @@ window.QUESTIONS = [
 "explanation_fr": "Molière est un célèbre dramaturge français, auteur de nombreuses comédies.",
 "explanation_vi": "Molière là nhà soạn kịch nổi tiếng của Pháp, tác giả nhiều vở hài kịch.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS029",
@@ -5301,7 +5521,8 @@ window.QUESTIONS = [
 "explanation_fr": "La tour Eiffel a été construite en 1889 pour l'Exposition universelle de Paris.",
 "explanation_vi": "Tháp Eiffel được xây năm 1889 cho Hội chợ Thế giới ở Paris.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS030",
@@ -5325,7 +5546,8 @@ window.QUESTIONS = [
 "explanation_fr": "Simone Veil a porté la loi de 1975 autorisant l'interruption volontaire de grossesse.",
 "explanation_vi": "Simone Veil đã đề xuất luật 1975 cho phép phá thai tự nguyện.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS031",
@@ -5349,7 +5571,8 @@ window.QUESTIONS = [
 "explanation_fr": "Robert Badinter, garde des Sceaux, a porté l'abolition de la peine de mort en 1981.",
 "explanation_vi": "Robert Badinter, Bộ trưởng Tư pháp, đã đề xuất bãi bỏ án tử hình năm 1981.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS032",
@@ -5373,7 +5596,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Front populaire (1936) a instauré les congés payés et la semaine de 40 heures.",
 "explanation_vi": "Mặt trận Bình dân (1936) lập ra chế độ nghỉ phép có lương và tuần làm 40 giờ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS033",
@@ -5397,7 +5621,8 @@ window.QUESTIONS = [
 "explanation_fr": "Louis XVI a été jugé puis exécuté en 1793, pendant la Révolution.",
 "explanation_vi": "Louis XVI bị xét xử rồi hành quyết năm 1793, trong thời Cách mạng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "HIS034",
@@ -5421,7 +5646,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 14 juillet a été institué fête nationale par une loi de 1880.",
 "explanation_vi": "Ngày 14/7 được quy định là quốc khánh qua một đạo luật năm 1880.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO019",
@@ -5445,7 +5671,8 @@ window.QUESTIONS = [
 "explanation_fr": "Après Paris et Marseille, Lyon est la troisième plus grande ville de France.",
 "explanation_vi": "Sau Paris và Marseille, Lyon là thành phố đông dân thứ ba của Pháp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO020",
@@ -5469,7 +5696,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Garonne arrose le sud-ouest, notamment Toulouse et la région de Bordeaux.",
 "explanation_vi": "Sông Garonne chảy qua vùng tây nam, nhất là Toulouse và vùng Bordeaux.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO021",
@@ -5493,7 +5721,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Belgique est frontalière de la France au nord.",
 "explanation_vi": "Bỉ giáp Pháp ở phía bắc.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO022",
@@ -5517,7 +5746,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Suisse, frontalière à l'est, ne fait pas partie de l'Union européenne.",
 "explanation_vi": "Thụy Sĩ, giáp phía đông, không thuộc Liên minh châu Âu.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO023",
@@ -5541,7 +5771,8 @@ window.QUESTIONS = [
 "explanation_fr": "La principauté de Monaco est frontalière de la France, sur la côte méditerranéenne.",
 "explanation_vi": "Công quốc Monaco giáp với Pháp, trên bờ Địa Trung Hải.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO024",
@@ -5565,7 +5796,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Guyane française est située en Amérique du Sud.",
 "explanation_vi": "Guyane thuộc Pháp nằm ở Nam Mỹ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO025",
@@ -5589,7 +5821,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Corse est une île française située en mer Méditerranée.",
 "explanation_vi": "Corse là một hòn đảo của Pháp nằm ở Biển Địa Trung Hải.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO026",
@@ -5613,7 +5846,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le Massif central est une grande région montagneuse au centre de la France.",
 "explanation_vi": "Massif central là vùng núi lớn ở trung tâm nước Pháp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO027",
@@ -5637,7 +5871,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le mont Blanc se situe dans les Alpes, à l'est de la France.",
 "explanation_vi": "Mont Blanc nằm trong dãy Alps, phía đông nước Pháp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO028",
@@ -5661,7 +5896,8 @@ window.QUESTIONS = [
 "explanation_fr": "Nice est située sur la Côte d'Azur, au bord de la Méditerranée.",
 "explanation_vi": "Nice nằm trên Côte d'Azur, bên bờ Địa Trung Hải.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO029",
@@ -5685,7 +5921,8 @@ window.QUESTIONS = [
 "explanation_fr": "La France compte environ 68 millions d'habitants (métropole et outre-mer).",
 "explanation_vi": "Nước Pháp có khoảng 68 triệu dân (lục địa và hải ngoại).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO030",
@@ -5709,7 +5946,8 @@ window.QUESTIONS = [
 "explanation_fr": "Paris est la capitale de la région Île-de-France et de la France.",
 "explanation_vi": "Paris là thủ phủ của vùng Île-de-France và là thủ đô nước Pháp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO031",
@@ -5733,7 +5971,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'Autriche n'a pas de frontière avec la France. L'Italie, la Belgique et le Luxembourg, oui.",
 "explanation_vi": "Áo không có biên giới với Pháp. Ý, Bỉ và Luxembourg thì có.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO032",
@@ -5757,7 +5996,8 @@ window.QUESTIONS = [
 "explanation_fr": "Mayotte et La Réunion sont des territoires français de l'océan Indien.",
 "explanation_vi": "Mayotte và La Réunion là lãnh thổ Pháp ở Ấn Độ Dương.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "GEO033",
@@ -5781,7 +6021,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Guadeloupe et la Martinique sont des territoires français des Caraïbes.",
 "explanation_vi": "Guadeloupe và Martinique là lãnh thổ Pháp ở vùng Caribe.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE018",
@@ -5805,7 +6046,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le RIB permet à l'employeur de verser le salaire sur le compte bancaire du salarié.",
 "explanation_vi": "RIB giúp chủ chuyển lương vào tài khoản ngân hàng của người lao động.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE019",
@@ -5829,7 +6071,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 119 est le numéro « Allô Enfance en danger », gratuit et disponible en continu.",
 "explanation_vi": "119 là số « Allô Enfance en danger », miễn phí và hoạt động liên tục.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE020",
@@ -5853,7 +6096,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le 25 décembre (Noël) est un jour férié en France.",
 "explanation_vi": "Ngày 25/12 (Giáng sinh) là một ngày nghỉ lễ ở Pháp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE021",
@@ -5877,7 +6121,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le locataire doit souscrire une assurance habitation (risques locatifs : incendie, dégât des eaux...).",
 "explanation_vi": "Người thuê phải mua bảo hiểm nhà ở (rủi ro: cháy, ngập nước...).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE022",
@@ -5901,7 +6146,8 @@ window.QUESTIONS = [
 "explanation_fr": "La carte grise (certificat d'immatriculation) est obligatoire pour circuler avec un véhicule.",
 "explanation_vi": "Carte grise (giấy đăng ký xe) bắt buộc để lưu thông bằng xe.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE023",
@@ -5925,7 +6171,8 @@ window.QUESTIONS = [
 "explanation_fr": "Service-Public.fr est le site officiel d'information sur les démarches administratives.",
 "explanation_vi": "Service-Public.fr là trang chính thức thông tin về các thủ tục hành chính.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE024",
@@ -5949,7 +6196,8 @@ window.QUESTIONS = [
 "explanation_fr": "À 16 ans, le recensement citoyen en mairie est obligatoire ; il est utile pour la JDC et les examens.",
 "explanation_vi": "Năm 16 tuổi, phải đăng ký công dân tại tòa thị chính; cần cho JDC và các kỳ thi.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE025",
@@ -5973,7 +6221,8 @@ window.QUESTIONS = [
 "explanation_fr": "On vote dans un bureau de vote, souvent installé à la mairie ou dans une école.",
 "explanation_vi": "Người dân bỏ phiếu tại phòng phiếu, thường đặt ở tòa thị chính hoặc trường học.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE026",
@@ -5997,7 +6246,8 @@ window.QUESTIONS = [
 "explanation_fr": "La quittance de loyer atteste que le locataire a payé son loyer.",
 "explanation_vi": "Biên nhận tiền thuê chứng nhận người thuê đã trả tiền nhà.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE027",
@@ -6021,7 +6271,8 @@ window.QUESTIONS = [
 "explanation_fr": "Il faut souscrire un contrat d'électricité auprès d'un fournisseur pour être raccordé.",
 "explanation_vi": "Phải ký hợp đồng điện với nhà cung cấp để được cấp điện.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE028",
@@ -6045,7 +6296,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les encombrants se déposent en déchetterie ou lors des collectes organisées par la commune.",
 "explanation_vi": "Đồ cồng kềnh được bỏ ở déchetterie hoặc trong các đợt thu gom của xã.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE029",
@@ -6069,7 +6321,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les médicaments se vendent en pharmacie ; certains nécessitent une ordonnance.",
 "explanation_vi": "Thuốc được bán tại nhà thuốc; một số loại cần đơn.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE030",
@@ -6093,7 +6346,8 @@ window.QUESTIONS = [
 "explanation_fr": "Une pharmacie de garde assure le service en dehors des horaires habituels.",
 "explanation_vi": "Nhà thuốc trực phục vụ ngoài giờ thông thường.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "VIE031",
@@ -6117,7 +6371,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les emballages recyclables se jettent dans la poubelle de tri (souvent jaune), selon les règles locales.",
 "explanation_vi": "Bao bì tái chế bỏ vào thùng phân loại (thường màu vàng), theo quy định địa phương.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU014",
@@ -6141,7 +6396,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le collège va de la classe de 6e à la classe de 3e.",
 "explanation_vi": "Collège gồm các lớp từ 6e đến 3e.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU015",
@@ -6165,7 +6421,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le lycée comprend la seconde, la première et la terminale, qui mène au baccalauréat.",
 "explanation_vi": "Lycée gồm lớp seconde, première và terminale, dẫn tới kỳ thi tú tài.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU016",
@@ -6189,7 +6446,8 @@ window.QUESTIONS = [
 "explanation_fr": "La cantine est payante, mais des aides (tarifs sociaux) existent selon les revenus de la famille.",
 "explanation_vi": "Căng tin có phí, nhưng có hỗ trợ (giá ưu đãi) tùy thu nhập gia đình.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU017",
@@ -6213,7 +6471,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'assiduité est obligatoire : les absences doivent être justifiées.",
 "explanation_vi": "Việc đi học đều đặn là bắt buộc: vắng mặt phải có lý do chính đáng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU018",
@@ -6237,7 +6496,8 @@ window.QUESTIONS = [
 "explanation_fr": "La licence s'obtient en général en trois ans à l'université ; viennent ensuite le master et le doctorat.",
 "explanation_vi": "Cử nhân thường đạt sau ba năm ở đại học; tiếp theo là thạc sĩ và tiến sĩ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU019",
@@ -6261,7 +6521,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'apprentissage combine formation en entreprise et préparation d'un diplôme professionnel.",
 "explanation_vi": "Học nghề kết hợp đào tạo tại doanh nghiệp và học lấy bằng nghề.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU020",
@@ -6285,7 +6546,8 @@ window.QUESTIONS = [
 "explanation_fr": "La rentrée scolaire a lieu en septembre.",
 "explanation_vi": "Khai giảng diễn ra vào tháng 9.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU021",
@@ -6309,7 +6571,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'EMC (enseignement moral et civique) transmet les valeurs de la République et la citoyenneté.",
 "explanation_vi": "EMC (giáo dục đạo đức và công dân) truyền đạt các giá trị của nền Cộng hòa và quyền công dân.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU022",
@@ -6333,7 +6596,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le collège est dirigé par un principal ; le lycée par un proviseur et l'école primaire par un directeur.",
 "explanation_vi": "Collège do principal điều hành; lycée do proviseur và trường tiểu học do directeur.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU023",
@@ -6357,7 +6621,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les enseignants du public sont des fonctionnaires, recrutés notamment par concours.",
 "explanation_vi": "Giáo viên trường công là viên chức, được tuyển chủ yếu qua thi tuyển.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU024",
@@ -6381,7 +6646,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'école inclusive accueille tous les enfants, y compris en situation de handicap, avec des aménagements.",
 "explanation_vi": "Trường hòa nhập tiếp nhận mọi trẻ, kể cả trẻ khuyết tật, với các điều chỉnh phù hợp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU025",
@@ -6405,7 +6671,8 @@ window.QUESTIONS = [
 "explanation_fr": "Après la 3e, l'élève choisit une voie générale, technologique ou professionnelle.",
 "explanation_vi": "Sau lớp 3e, học sinh chọn hướng phổ thông, công nghệ hoặc nghề.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU026",
@@ -6429,7 +6696,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le CAP (certificat d'aptitude professionnelle) forme à un métier.",
 "explanation_vi": "CAP (chứng chỉ năng lực nghề) đào tạo một nghề.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU027",
@@ -6453,7 +6721,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'école publique, laïque, accueille tous les enfants sans distinction.",
 "explanation_vi": "Trường công, thế tục, tiếp nhận mọi trẻ không phân biệt.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "EDU028",
@@ -6477,7 +6746,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les parents doivent faire instruire leurs enfants de 3 à 16 ans (école ou instruction encadrée).",
 "explanation_vi": "Cha mẹ phải cho con được học từ 3 đến 16 tuổi (ở trường hoặc hình thức được quản lý).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN012",
@@ -6501,7 +6771,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le médecin généraliste est le premier recours ; il oriente si besoin vers un spécialiste.",
 "explanation_vi": "Bác sĩ đa khoa là nơi khám đầu tiên; sẽ giới thiệu đến chuyên khoa nếu cần.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN013",
@@ -6525,7 +6796,8 @@ window.QUESTIONS = [
 "explanation_fr": "Certains médicaments ne sont délivrés que sur ordonnance (prescription du médecin).",
 "explanation_vi": "Một số thuốc chỉ được cấp khi có đơn (chỉ định của bác sĩ).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN014",
@@ -6549,7 +6821,8 @@ window.QUESTIONS = [
 "explanation_fr": "Plusieurs vaccins sont obligatoires pour les nourrissons afin de les protéger de maladies graves.",
 "explanation_vi": "Nhiều loại vắc-xin là bắt buộc cho trẻ sơ sinh để bảo vệ khỏi bệnh nặng.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN015",
@@ -6573,7 +6846,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les urgences hospitalières accueillent les patients 24 h/24.",
 "explanation_vi": "Khoa cấp cứu bệnh viện tiếp nhận bệnh nhân 24/24.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN016",
@@ -6597,7 +6871,8 @@ window.QUESTIONS = [
 "explanation_fr": "La Complémentaire santé solidaire (CSS) aide les personnes aux revenus modestes à se couvrir.",
 "explanation_vi": "CSS giúp người thu nhập khiêm tốn có bảo hiểm y tế bổ sung.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN017",
@@ -6621,7 +6896,8 @@ window.QUESTIONS = [
 "explanation_fr": "La médecine du travail prévient les risques et veille à la santé des salariés.",
 "explanation_vi": "Y tế lao động phòng ngừa rủi ro và chăm lo sức khỏe người lao động.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN018",
@@ -6645,7 +6921,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'arrêt de travail justifie l'absence et peut ouvrir droit à des indemnités.",
 "explanation_vi": "Giấy nghỉ ốm chứng minh việc vắng mặt và có thể cho hưởng trợ cấp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN019",
@@ -6669,7 +6946,8 @@ window.QUESTIONS = [
 "explanation_fr": "La carte européenne d'assurance maladie facilite la prise en charge des soins dans l'UE.",
 "explanation_vi": "Thẻ bảo hiểm y tế châu Âu giúp được chi trả khám chữa bệnh trong EU.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN020",
@@ -6693,7 +6971,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le don du sang repose sur le volontariat et le bénévolat.",
 "explanation_vi": "Hiến máu dựa trên tinh thần tự nguyện và không nhận thù lao.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN021",
@@ -6717,7 +6996,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le secret médical protège la confidentialité des informations de santé du patient.",
 "explanation_vi": "Bí mật y tế bảo vệ tính riêng tư của thông tin sức khỏe bệnh nhân.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "SAN022",
@@ -6741,7 +7021,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les soins dentaires sont assurés par le chirurgien-dentiste ; ils sont en partie remboursés.",
 "explanation_vi": "Việc chữa răng do nha sĩ đảm nhiệm; được hoàn trả một phần.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA013",
@@ -6765,7 +7046,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le CDD doit être écrit et préciser son motif et sa durée.",
 "explanation_vi": "CDD phải lập bằng văn bản và nêu rõ lý do và thời hạn.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA014",
@@ -6789,7 +7071,8 @@ window.QUESTIONS = [
 "explanation_fr": "La période d'essai permet à chacun de vérifier que l'emploi convient ; elle est rémunérée.",
 "explanation_vi": "Thời gian thử việc giúp hai bên kiểm tra sự phù hợp; vẫn được trả lương.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA015",
@@ -6813,7 +7096,8 @@ window.QUESTIONS = [
 "explanation_fr": "Un licenciement doit être justifié par un motif réel et sérieux ; sinon il est abusif.",
 "explanation_vi": "Sa thải phải có lý do thực sự và chính đáng; nếu không là lạm quyền.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA016",
@@ -6837,7 +7121,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'allocation chômage est versée sous conditions aux personnes ayant perdu involontairement leur emploi.",
 "explanation_vi": "Trợ cấp thất nghiệp được cấp có điều kiện cho người mất việc ngoài ý muốn.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA017",
@@ -6861,7 +7146,8 @@ window.QUESTIONS = [
 "explanation_fr": "La loi prévoit un congé maternité et un congé paternité à la naissance d'un enfant.",
 "explanation_vi": "Luật quy định nghỉ thai sản và nghỉ cho người cha khi sinh con.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA018",
@@ -6885,7 +7171,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le travail dissimulé est illégal : il prive le salarié de droits et de protection sociale.",
 "explanation_vi": "Làm việc chui là bất hợp pháp: khiến người lao động mất quyền lợi và an sinh xã hội.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA019",
@@ -6909,7 +7196,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'intérim est un travail temporaire effectué par l'intermédiaire d'une agence.",
 "explanation_vi": "Intérim là công việc tạm thời làm qua trung gian một công ty.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA020",
@@ -6933,7 +7221,8 @@ window.QUESTIONS = [
 "explanation_fr": "La loi impose un repos hebdomadaire, en principe le dimanche.",
 "explanation_vi": "Luật quy định nghỉ hằng tuần, về nguyên tắc là chủ nhật.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA021",
@@ -6957,7 +7246,8 @@ window.QUESTIONS = [
 "explanation_fr": "Au-delà de 35 heures, les heures supplémentaires sont en principe majorées.",
 "explanation_vi": "Vượt quá 35 giờ, giờ làm thêm về nguyên tắc được trả cao hơn.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA022",
@@ -6981,7 +7271,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le RSA est une aide versée (par la CAF) aux personnes disposant de faibles ressources.",
 "explanation_vi": "RSA là khoản trợ cấp (do CAF chi trả) cho người có thu nhập thấp.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA023",
@@ -7005,7 +7296,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le système de retraite repose sur les cotisations prélevées sur les salaires (solidarité entre générations).",
 "explanation_vi": "Hệ thống hưu trí dựa trên các khoản đóng trừ từ lương (đoàn kết giữa các thế hệ).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "TRA024",
@@ -7029,7 +7321,8 @@ window.QUESTIONS = [
 "explanation_fr": "Les salariés élisent des représentants du personnel qui défendent leurs intérêts.",
 "explanation_vi": "Người lao động bầu ra đại diện để bảo vệ quyền lợi của họ.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM014",
@@ -7053,7 +7346,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le divorce met fin légalement au mariage ; il suit une procédure encadrée.",
 "explanation_vi": "Ly hôn chấm dứt hôn nhân về mặt pháp lý; theo một thủ tục được quy định.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM015",
@@ -7077,7 +7371,8 @@ window.QUESTIONS = [
 "explanation_fr": "La demande de passeport se fait en mairie (dans les communes équipées du dispositif).",
 "explanation_vi": "Việc xin hộ chiếu làm tại tòa thị chính (ở các xã có trang bị).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM016",
@@ -7101,7 +7396,8 @@ window.QUESTIONS = [
 "explanation_fr": "Hors mariage, la filiation s'établit par une reconnaissance, souvent faite en mairie.",
 "explanation_vi": "Ngoài hôn nhân, quan hệ cha mẹ - con được xác lập bằng việc nhận con, thường làm tại tòa thị chính.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM017",
@@ -7125,7 +7421,8 @@ window.QUESTIONS = [
 "explanation_fr": "La publication des bans annonce publiquement le mariage avant sa célébration.",
 "explanation_vi": "Việc niêm yết thông báo kết hôn công bố công khai trước khi cử hành.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM018",
@@ -7149,7 +7446,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le droit du sol permet, sous conditions de résidence, de devenir français à la majorité.",
 "explanation_vi": "Quyền nơi sinh cho phép, với điều kiện cư trú, trở thành người Pháp khi đủ tuổi thành niên.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM019",
@@ -7173,7 +7471,8 @@ window.QUESTIONS = [
 "explanation_fr": "La pension alimentaire contribue à l'entretien et à l'éducation des enfants après une séparation.",
 "explanation_vi": "Tiền cấp dưỡng góp phần nuôi dưỡng và giáo dục con sau khi chia tay.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM020",
@@ -7197,7 +7496,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le concubinage, ou union libre, est la vie commune d'un couple sans mariage ni PACS.",
 "explanation_vi": "Concubinage, hay union libre, là việc sống chung không kết hôn và không PACS.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM021",
@@ -7221,7 +7521,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le regroupement familial permet, sous conditions, de faire venir son conjoint et ses enfants.",
 "explanation_vi": "Đoàn tụ gia đình cho phép, với điều kiện, đưa vợ/chồng và con sang.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM022",
@@ -7245,7 +7546,8 @@ window.QUESTIONS = [
 "explanation_fr": "Le décès se déclare à la mairie du lieu où il est survenu.",
 "explanation_vi": "Việc khai tử được làm tại tòa thị chính nơi xảy ra.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM023",
@@ -7269,7 +7571,8 @@ window.QUESTIONS = [
 "explanation_fr": "La crèche accueille les jeunes enfants pendant que les parents travaillent.",
 "explanation_vi": "Nhà trẻ giữ trẻ nhỏ trong khi cha mẹ đi làm.",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM024",
@@ -7293,7 +7596,8 @@ window.QUESTIONS = [
 "explanation_fr": "L'acquisition par mariage se fait par déclaration, après un délai et sous conditions (vie commune, langue).",
 "explanation_vi": "Nhập quốc tịch qua hôn nhân thực hiện bằng khai báo, sau một thời gian và có điều kiện (chung sống, ngôn ngữ).",
 "source_type": "educational",
-"verified_at": "2026-01-01"
+"verified_at": "2026-01-01",
+"type": "connaissance"
 },
 {
 "id": "FAM025",
@@ -7316,6 +7620,907 @@ window.QUESTIONS = [
 "correct_answer": 0,
 "explanation_fr": "Un changement d'adresse doit être signalé aux administrations (impôts, Sécurité sociale, CAF...).",
 "explanation_vi": "Việc thay đổi địa chỉ phải báo cho các cơ quan (thuế, Bảo hiểm xã hội, CAF...).",
+"source_type": "educational",
+"verified_at": "2026-01-01",
+"type": "connaissance"
+},
+{
+"id": "SIT001",
+"type": "situation",
+"category": "vieQuotidienne",
+"difficulty": "easy",
+"question_fr": "Dans la rue, une personne s'effondre et ne répond plus. Que faites-vous en priorité ?",
+"question_vi": "Trên đường, một người ngã gục và không phản ứng. Việc đầu tiên bạn làm là gì?",
+"answers_fr": [
+"J'appelle les secours (15 ou 112)",
+"Je continue mon chemin",
+"Je prends une photo",
+"J'attends que quelqu'un d'autre agisse"
+],
+"answers_vi": [
+"Gọi cấp cứu (15 hoặc 112)",
+"Tiếp tục đi",
+"Chụp ảnh",
+"Chờ người khác xử lý"
+],
+"correct_answer": 0,
+"explanation_fr": "Face à une personne en danger, on alerte immédiatement les secours (15 SAMU ou 112). Ne pas porter assistance est un délit.",
+"explanation_vi": "Khi gặp người gặp nguy hiểm, phải gọi cấp cứu ngay (15 SAMU hoặc 112). Không cứu giúp là phạm pháp.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT002",
+"type": "situation",
+"category": "droits",
+"difficulty": "medium",
+"question_fr": "Au travail, un collègue se moque d'une personne à cause de sa religion. Quelle est la bonne attitude ?",
+"question_vi": "Tại nơi làm việc, một đồng nghiệp chế giễu người khác vì tôn giáo. Thái độ đúng là gì?",
+"answers_fr": [
+"Ne pas participer et, si besoin, le signaler : c'est une discrimination",
+"Rire avec lui",
+"Faire comme si de rien n'était pour toujours",
+"Me moquer aussi"
+],
+"answers_vi": [
+"Không tham gia, và nếu cần thì báo cáo: đó là phân biệt đối xử",
+"Cười theo",
+"Mãi mãi làm ngơ",
+"Cũng chế giễu theo"
+],
+"correct_answer": 0,
+"explanation_fr": "Les moqueries fondées sur la religion sont une discrimination, interdite par la loi. On ne participe pas et on peut le signaler.",
+"explanation_vi": "Chế giễu vì tôn giáo là phân biệt đối xử, bị luật cấm. Không tham gia và có thể báo cáo.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT003",
+"type": "situation",
+"category": "travail",
+"difficulty": "medium",
+"question_fr": "Un employeur vous propose de travailler payé « au noir », sans contrat ni déclaration. Que faites-vous ?",
+"question_vi": "Một người chủ đề nghị bạn làm việc « chui », không hợp đồng, không khai báo. Bạn làm gì?",
+"answers_fr": [
+"Je refuse : c'est illégal et je perds mes droits",
+"J'accepte sans hésiter",
+"J'accepte si c'est bien payé",
+"Je préviens mes amis d'en faire autant"
+],
+"answers_vi": [
+"Từ chối: đó là bất hợp pháp và mất quyền lợi",
+"Nhận ngay không ngần ngại",
+"Nhận nếu lương cao",
+"Rủ bạn bè cùng làm"
+],
+"correct_answer": 0,
+"explanation_fr": "Le travail dissimulé est illégal : pas de protection sociale, pas de droits à la retraite ni au chômage.",
+"explanation_vi": "Làm việc chui là bất hợp pháp: không có an sinh xã hội, không có quyền hưu trí hay thất nghiệp.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT004",
+"type": "situation",
+"category": "famille",
+"difficulty": "easy",
+"question_fr": "Votre enfant est trop malade pour aller à l'école un matin. Que devez-vous faire ?",
+"question_vi": "Một buổi sáng con bạn ốm không đi học được. Bạn phải làm gì?",
+"answers_fr": [
+"Prévenir l'école et justifier l'absence",
+"Ne rien dire à l'école",
+"Envoyer l'enfant quand même",
+"Changer d'école"
+],
+"answers_vi": [
+"Báo cho trường và giải trình việc vắng mặt",
+"Không nói gì với trường",
+"Vẫn bắt con đi học",
+"Đổi trường"
+],
+"correct_answer": 0,
+"explanation_fr": "L'assiduité est obligatoire : toute absence doit être signalée et justifiée auprès de l'école.",
+"explanation_vi": "Việc đi học đều là bắt buộc: mọi vắng mặt phải được báo và giải trình với trường.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT005",
+"type": "situation",
+"category": "vieQuotidienne",
+"difficulty": "medium",
+"question_fr": "Vous recevez un courrier de l'administration que vous ne comprenez pas. Que faites-vous ?",
+"question_vi": "Bạn nhận một thư hành chính mà không hiểu. Bạn làm gì?",
+"answers_fr": [
+"Je demande de l'aide (proche, mairie, service-public.fr) sans l'ignorer",
+"Je le jette",
+"Je l'ignore",
+"J'attends qu'on vienne me voir"
+],
+"answers_vi": [
+"Nhờ giúp đỡ (người thân, tòa thị chính, service-public.fr), không bỏ qua",
+"Vứt đi",
+"Phớt lờ",
+"Chờ có người đến gặp"
+],
+"correct_answer": 0,
+"explanation_fr": "Un courrier administratif ne doit pas être ignoré : on cherche de l'aide pour le comprendre et répondre dans les délais.",
+"explanation_vi": "Không nên bỏ qua thư hành chính: hãy tìm người giúp hiểu và trả lời đúng hạn.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT006",
+"type": "situation",
+"category": "droits",
+"difficulty": "medium",
+"question_fr": "Vous êtes victime d'un vol. Quelle démarche entreprenez-vous ?",
+"question_vi": "Bạn bị trộm. Bạn thực hiện thủ tục gì?",
+"answers_fr": [
+"Je porte plainte au commissariat ou à la gendarmerie (17)",
+"Je me fais justice moi-même",
+"Je ne fais rien",
+"Je publie sur les réseaux sociaux uniquement"
+],
+"answers_vi": [
+"Trình báo tại đồn cảnh sát hoặc hiến binh (17)",
+"Tự xử lý",
+"Không làm gì",
+"Chỉ đăng lên mạng xã hội"
+],
+"correct_answer": 0,
+"explanation_fr": "En cas de vol, on porte plainte auprès de la police ou de la gendarmerie (numéro 17).",
+"explanation_vi": "Khi bị trộm, hãy trình báo với cảnh sát hoặc hiến binh (số 17).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT007",
+"type": "situation",
+"category": "valeurs",
+"difficulty": "hard",
+"question_fr": "Avant une élection, une personne vous propose de l'argent pour voter comme elle le souhaite. Que faites-vous ?",
+"question_vi": "Trước một cuộc bầu cử, có người đưa tiền để bạn bỏ phiếu theo ý họ. Bạn làm gì?",
+"answers_fr": [
+"Je refuse : l'achat de vote est illégal et le vote est libre et secret",
+"J'accepte l'argent",
+"Je négocie un meilleur prix",
+"Je demande à voter deux fois"
+],
+"answers_vi": [
+"Từ chối: mua phiếu là bất hợp pháp, lá phiếu là tự do và bí mật",
+"Nhận tiền",
+"Mặc cả giá cao hơn",
+"Xin bỏ phiếu hai lần"
+],
+"correct_answer": 0,
+"explanation_fr": "Le vote est libre, égal et secret. Acheter ou vendre un vote est un délit.",
+"explanation_vi": "Bỏ phiếu là tự do, bình đẳng và bí mật. Mua hoặc bán phiếu là tội.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT008",
+"type": "situation",
+"category": "vieQuotidienne",
+"difficulty": "easy",
+"question_fr": "Un début d'incendie se déclare dans votre immeuble. Quel numéro appelez-vous ?",
+"question_vi": "Một đám cháy bắt đầu trong tòa nhà của bạn. Bạn gọi số nào?",
+"answers_fr": [
+"Les pompiers, le 18 (ou le 112)",
+"Le 15",
+"La mairie",
+"Le 3919"
+],
+"answers_vi": [
+"Lính cứu hỏa, số 18 (hoặc 112)",
+"Số 15",
+"Tòa thị chính",
+"Số 3919"
+],
+"correct_answer": 0,
+"explanation_fr": "En cas d'incendie, on appelle les pompiers au 18, ou le 112 (numéro européen).",
+"explanation_vi": "Khi có cháy, gọi lính cứu hỏa số 18, hoặc 112 (số châu Âu).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT009",
+"type": "situation",
+"category": "famille",
+"difficulty": "medium",
+"question_fr": "Vous souhaitez vous marier civilement. Quelle est la première démarche ?",
+"question_vi": "Bạn muốn kết hôn dân sự. Thủ tục đầu tiên là gì?",
+"answers_fr": [
+"Constituer un dossier et prendre rendez-vous à la mairie",
+"Aller directement à l'église",
+"Déposer un dossier à la préfecture",
+"Prévenir les impôts"
+],
+"answers_vi": [
+"Chuẩn bị hồ sơ và hẹn tại tòa thị chính",
+"Đến thẳng nhà thờ",
+"Nộp hồ sơ ở tỉnh trưởng phủ",
+"Báo cho cơ quan thuế"
+],
+"correct_answer": 0,
+"explanation_fr": "Le mariage civil se prépare à la mairie : constitution d'un dossier, publication des bans, puis célébration.",
+"explanation_vi": "Kết hôn dân sự được chuẩn bị tại tòa thị chính: lập hồ sơ, niêm yết thông báo, rồi cử hành.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT010",
+"type": "situation",
+"category": "vieQuotidienne",
+"difficulty": "medium",
+"question_fr": "Vous ne pouvez pas payer vos impôts dans les délais. Que faites-vous ?",
+"question_vi": "Bạn không thể nộp thuế đúng hạn. Bạn làm gì?",
+"answers_fr": [
+"Je contacte l'administration fiscale pour demander un délai",
+"Je ne paie jamais",
+"J'ignore les relances",
+"Je change de ville"
+],
+"answers_vi": [
+"Liên hệ cơ quan thuế để xin gia hạn",
+"Không bao giờ nộp",
+"Phớt lờ nhắc nhở",
+"Chuyển thành phố"
+],
+"correct_answer": 0,
+"explanation_fr": "En cas de difficulté, on contacte l'administration fiscale, qui peut accorder un délai ou un échéancier.",
+"explanation_vi": "Khi gặp khó khăn, hãy liên hệ cơ quan thuế để được gia hạn hoặc trả góp.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT011",
+"type": "situation",
+"category": "sante",
+"difficulty": "easy",
+"question_fr": "Vous êtes malade et devez consulter. Qui voyez-vous en premier ?",
+"question_vi": "Bạn bị bệnh và cần khám. Bạn gặp ai trước?",
+"answers_fr": [
+"Mon médecin traitant",
+"Directement un chirurgien",
+"Le maire",
+"La préfecture"
+],
+"answers_vi": [
+"Bác sĩ điều trị của tôi",
+"Trực tiếp bác sĩ phẫu thuật",
+"Thị trưởng",
+"Tỉnh trưởng phủ"
+],
+"correct_answer": 0,
+"explanation_fr": "On consulte d'abord son médecin traitant, qui oriente vers un spécialiste si nécessaire.",
+"explanation_vi": "Trước tiên khám bác sĩ điều trị, người sẽ giới thiệu đến chuyên khoa nếu cần.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT012",
+"type": "situation",
+"category": "droits",
+"difficulty": "hard",
+"question_fr": "Un voisin vous dit que les femmes ne devraient pas travailler. Que répondez-vous selon les valeurs de la République ?",
+"question_vi": "Một người hàng xóm nói phụ nữ không nên đi làm. Theo giá trị của nền Cộng hòa, bạn đáp thế nào?",
+"answers_fr": [
+"En France, femmes et hommes sont égaux et libres de travailler",
+"Il a raison",
+"C'est à l'État de décider",
+"Cela dépend des familles"
+],
+"answers_vi": [
+"Ở Pháp, nam nữ bình đẳng và tự do làm việc",
+"Ông ấy đúng",
+"Để Nhà nước quyết định",
+"Tùy từng gia đình"
+],
+"correct_answer": 0,
+"explanation_fr": "L'égalité entre les femmes et les hommes est un principe fondamental : chacun est libre de travailler.",
+"explanation_vi": "Bình đẳng nam nữ là nguyên tắc cơ bản: ai cũng tự do làm việc.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT013",
+"type": "situation",
+"category": "vieQuotidienne",
+"difficulty": "easy",
+"question_fr": "Vous emménagez dans un logement loué. Quelle assurance devez-vous prendre ?",
+"question_vi": "Bạn dọn vào một căn nhà thuê. Bạn phải mua bảo hiểm nào?",
+"answers_fr": [
+"Une assurance habitation",
+"Aucune",
+"Une assurance pour animaux",
+"Une assurance voyage"
+],
+"answers_vi": [
+"Bảo hiểm nhà ở",
+"Không cần",
+"Bảo hiểm thú cưng",
+"Bảo hiểm du lịch"
+],
+"correct_answer": 0,
+"explanation_fr": "Le locataire doit souscrire une assurance habitation (incendie, dégâts des eaux…).",
+"explanation_vi": "Người thuê phải mua bảo hiểm nhà ở (cháy, ngập nước…).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT014",
+"type": "situation",
+"category": "education",
+"difficulty": "medium",
+"question_fr": "Vous arrivez en France avec un enfant de 7 ans. Que devez-vous faire ?",
+"question_vi": "Bạn đến Pháp cùng con 7 tuổi. Bạn phải làm gì?",
+"answers_fr": [
+"L'inscrire à l'école : l'instruction est obligatoire de 3 à 16 ans",
+"Attendre ses 16 ans",
+"Rien, c'est facultatif",
+"Lui faire chercher un travail"
+],
+"answers_vi": [
+"Ghi danh con vào trường: học bắt buộc từ 3 đến 16 tuổi",
+"Chờ con 16 tuổi",
+"Không cần, đó là tùy chọn",
+"Cho con đi tìm việc"
+],
+"correct_answer": 0,
+"explanation_fr": "L'instruction est obligatoire de 3 à 16 ans. On inscrit l'enfant à l'école (d'abord en mairie).",
+"explanation_vi": "Học bắt buộc từ 3 đến 16 tuổi. Phải ghi danh con vào trường (trước tiên ở tòa thị chính).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT015",
+"type": "situation",
+"category": "vieQuotidienne",
+"difficulty": "medium",
+"question_fr": "Vous voulez jeter un vieux canapé. Où le déposez-vous ?",
+"question_vi": "Bạn muốn bỏ một chiếc ghế sofa cũ. Bạn để nó ở đâu?",
+"answers_fr": [
+"À la déchetterie (ou lors d'une collecte d'encombrants)",
+"Sur le trottoir n'importe quand",
+"Dans la poubelle jaune",
+"Dans la rue du voisin"
+],
+"answers_vi": [
+"Tại điểm thu gom rác (hoặc đợt thu gom đồ cồng kềnh)",
+"Trên vỉa hè bất cứ lúc nào",
+"Vào thùng rác vàng",
+"Ngoài đường nhà hàng xóm"
+],
+"correct_answer": 0,
+"explanation_fr": "Les encombrants se déposent en déchetterie ou lors des collectes prévues par la commune.",
+"explanation_vi": "Đồ cồng kềnh được bỏ ở điểm thu gom rác hoặc theo đợt thu gom của xã.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT016",
+"type": "situation",
+"category": "droits",
+"difficulty": "medium",
+"question_fr": "Dans un service public, un agent refuse de vous aider à cause de votre origine. Que pouvez-vous faire ?",
+"question_vi": "Tại một cơ quan công, một viên chức từ chối giúp bạn vì nguồn gốc của bạn. Bạn có thể làm gì?",
+"answers_fr": [
+"Signaler cette discrimination (ex. Défenseur des droits)",
+"Rien, c'est normal",
+"Payer pour être servi",
+"Renoncer définitivement"
+],
+"answers_vi": [
+"Báo cáo sự phân biệt này (ví dụ: Défenseur des droits)",
+"Không làm gì, đó là bình thường",
+"Trả tiền để được phục vụ",
+"Từ bỏ hẳn"
+],
+"correct_answer": 0,
+"explanation_fr": "La discrimination est interdite. On peut la signaler, notamment au Défenseur des droits.",
+"explanation_vi": "Phân biệt đối xử bị cấm. Có thể báo cáo, nhất là tới Défenseur des droits.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT017",
+"type": "situation",
+"category": "vieQuotidienne",
+"difficulty": "easy",
+"question_fr": "Vous conduisez une voiture en France. Quels documents devez-vous avoir ?",
+"question_vi": "Bạn lái xe ở Pháp. Bạn phải có giấy tờ gì?",
+"answers_fr": [
+"Le permis de conduire, la carte grise et l'assurance",
+"Seulement la carte Vitale",
+"Un passeport uniquement",
+"Aucun document"
+],
+"answers_vi": [
+"Bằng lái, giấy đăng ký xe và bảo hiểm",
+"Chỉ thẻ Vitale",
+"Chỉ hộ chiếu",
+"Không cần giấy tờ"
+],
+"correct_answer": 0,
+"explanation_fr": "Pour conduire, il faut le permis, la carte grise du véhicule et une assurance valide.",
+"explanation_vi": "Để lái xe cần bằng lái, giấy đăng ký xe và bảo hiểm còn hiệu lực.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT018",
+"type": "situation",
+"category": "famille",
+"difficulty": "easy",
+"question_fr": "Votre enfant vient de naître. Quelle démarche faites-vous rapidement ?",
+"question_vi": "Con bạn vừa chào đời. Bạn làm thủ tục gì sớm?",
+"answers_fr": [
+"Déclarer la naissance à la mairie",
+"Attendre un an",
+"Aller à la préfecture",
+"Prévenir Pôle emploi"
+],
+"answers_vi": [
+"Khai sinh tại tòa thị chính",
+"Chờ một năm",
+"Đến tỉnh trưởng phủ",
+"Báo Pôle emploi"
+],
+"correct_answer": 0,
+"explanation_fr": "La naissance se déclare à la mairie, en général dans les cinq jours.",
+"explanation_vi": "Việc sinh được khai tại tòa thị chính, thường trong vòng năm ngày.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT019",
+"type": "situation",
+"category": "valeurs",
+"difficulty": "medium",
+"question_fr": "À l'école publique, votre enfant demande à porter un signe religieux très visible. Que dit la règle ?",
+"question_vi": "Ở trường công, con bạn muốn mang một biểu tượng tôn giáo rất dễ thấy. Quy định nói gì?",
+"answers_fr": [
+"Les signes religieux ostensibles sont interdits à l'école publique",
+"C'est autorisé partout",
+"C'est obligatoire",
+"Cela dépend du professeur"
+],
+"answers_vi": [
+"Biểu tượng tôn giáo phô trương bị cấm ở trường công",
+"Được phép ở mọi nơi",
+"Là bắt buộc",
+"Tùy giáo viên"
+],
+"correct_answer": 0,
+"explanation_fr": "Au nom de la laïcité, le port de signes religieux ostensibles est interdit dans les écoles publiques (loi de 2004).",
+"explanation_vi": "Nhân danh nguyên tắc thế tục, cấm mang biểu tượng tôn giáo phô trương ở trường công (luật 2004).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT020",
+"type": "situation",
+"category": "sante",
+"difficulty": "medium",
+"question_fr": "Vous commencez un emploi. Pour vos soins, quelle démarche est utile ?",
+"question_vi": "Bạn bắt đầu một công việc. Để khám chữa bệnh, thủ tục nào hữu ích?",
+"answers_fr": [
+"Déclarer un médecin traitant et avoir sa carte Vitale",
+"Rien du tout",
+"Aller à la préfecture",
+"Acheter une voiture"
+],
+"answers_vi": [
+"Khai báo bác sĩ điều trị và có thẻ Vitale",
+"Không cần gì",
+"Đến tỉnh trưởng phủ",
+"Mua xe hơi"
+],
+"correct_answer": 0,
+"explanation_fr": "On déclare un médecin traitant à l'Assurance maladie et on utilise sa carte Vitale pour être remboursé.",
+"explanation_vi": "Hãy khai báo bác sĩ điều trị với Bảo hiểm y tế và dùng thẻ Vitale để được hoàn tiền.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT021",
+"type": "situation",
+"category": "travail",
+"difficulty": "medium",
+"question_fr": "Votre employeur vous demande de travailler 50 heures par semaine sans heures supplémentaires payées. Est-ce normal ?",
+"question_vi": "Chủ yêu cầu bạn làm 50 giờ/tuần mà không trả giờ làm thêm. Điều này có bình thường không?",
+"answers_fr": [
+"Non : au-delà de 35 h, les heures supplémentaires doivent être majorées",
+"Oui, c'est normal",
+"Oui, si on ne dit rien",
+"Cela ne concerne que les étrangers"
+],
+"answers_vi": [
+"Không: vượt 35 giờ, giờ làm thêm phải được trả cao hơn",
+"Có, bình thường",
+"Có, nếu không ai nói gì",
+"Chỉ liên quan đến người nước ngoài"
+],
+"correct_answer": 0,
+"explanation_fr": "La durée légale est de 35 h ; au-delà, les heures supplémentaires sont en principe majorées.",
+"explanation_vi": "Thời gian hợp pháp là 35 giờ; vượt quá, giờ làm thêm về nguyên tắc được trả cao hơn.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT022",
+"type": "situation",
+"category": "droits",
+"difficulty": "easy",
+"question_fr": "Un ami étranger pense qu'il n'a aucun droit en France. Que lui dites-vous ?",
+"question_vi": "Một người bạn nước ngoài nghĩ rằng mình không có quyền gì ở Pháp. Bạn nói gì?",
+"answers_fr": [
+"En situation régulière, il a des droits et des devoirs",
+"Il a raison",
+"Seuls les Français ont des droits",
+"Les droits se paient"
+],
+"answers_vi": [
+"Nếu cư trú hợp pháp, anh ấy có quyền và nghĩa vụ",
+"Anh ấy đúng",
+"Chỉ người Pháp có quyền",
+"Quyền phải mua"
+],
+"correct_answer": 0,
+"explanation_fr": "Toute personne en situation régulière a des droits (santé, école, justice…) et des devoirs (respecter les lois).",
+"explanation_vi": "Mọi người cư trú hợp pháp đều có quyền (y tế, trường học, tư pháp…) và nghĩa vụ (tôn trọng pháp luật).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT023",
+"type": "situation",
+"category": "vieQuotidienne",
+"difficulty": "medium",
+"question_fr": "Vous devez voter dimanche pour la première fois. Où allez-vous ?",
+"question_vi": "Chủ nhật bạn đi bỏ phiếu lần đầu. Bạn đến đâu?",
+"answers_fr": [
+"À mon bureau de vote (indiqué sur ma carte électorale)",
+"À la préfecture",
+"À la banque",
+"À l'hôpital"
+],
+"answers_vi": [
+"Đến phòng phiếu của tôi (ghi trên thẻ cử tri)",
+"Tỉnh trưởng phủ",
+"Ngân hàng",
+"Bệnh viện"
+],
+"correct_answer": 0,
+"explanation_fr": "On vote dans le bureau de vote indiqué sur sa carte électorale, muni d'une pièce d'identité.",
+"explanation_vi": "Bỏ phiếu tại phòng phiếu ghi trên thẻ cử tri, mang theo giấy tờ tùy thân.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT024",
+"type": "situation",
+"category": "valeurs",
+"difficulty": "hard",
+"question_fr": "Une personne critique le gouvernement sur internet. Est-ce autorisé ?",
+"question_vi": "Một người chỉ trích chính phủ trên internet. Điều đó có được phép không?",
+"answers_fr": [
+"Oui, dans le respect de la loi (liberté d'expression)",
+"Non, c'est interdit",
+"Seulement pour les journalistes",
+"Seulement en privé"
+],
+"answers_vi": [
+"Có, trong khuôn khổ pháp luật (tự do ngôn luận)",
+"Không, bị cấm",
+"Chỉ dành cho nhà báo",
+"Chỉ khi riêng tư"
+],
+"correct_answer": 0,
+"explanation_fr": "La liberté d'expression permet de critiquer les responsables politiques, dans les limites de la loi (pas d'injure ni d'incitation à la haine).",
+"explanation_vi": "Tự do ngôn luận cho phép chỉ trích người lãnh đạo, trong giới hạn pháp luật (không lăng mạ, không kích động thù hận).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT025",
+"type": "situation",
+"category": "vieQuotidienne",
+"difficulty": "easy",
+"question_fr": "Un enfant seul semble perdu et en danger dans la rue. Quel numéro peut aider ?",
+"question_vi": "Một đứa trẻ một mình có vẻ lạc và gặp nguy trên đường. Số nào có thể giúp?",
+"answers_fr": [
+"Le 119 (Allô Enfance en danger) ou les secours",
+"Le 3919",
+"Le 118",
+"La mairie fermée"
+],
+"answers_vi": [
+"Số 119 (Allô Enfance en danger) hoặc cấp cứu",
+"Số 3919",
+"Số 118",
+"Tòa thị chính đã đóng cửa"
+],
+"correct_answer": 0,
+"explanation_fr": "Le 119 recueille les situations d'enfants en danger ; en cas d'urgence immédiate, on appelle aussi les secours.",
+"explanation_vi": "Số 119 tiếp nhận các trường hợp trẻ em gặp nguy; nếu khẩn cấp ngay, cũng gọi cấp cứu.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT026",
+"type": "situation",
+"category": "famille",
+"difficulty": "medium",
+"question_fr": "Votre titre de séjour expire dans deux mois. Que faites-vous ?",
+"question_vi": "Thẻ cư trú của bạn hết hạn trong hai tháng. Bạn làm gì?",
+"answers_fr": [
+"Je demande son renouvellement à la préfecture avant l'expiration",
+"J'attends qu'il expire",
+"Je vais à la mairie",
+"Je ne fais rien"
+],
+"answers_vi": [
+"Xin gia hạn tại tỉnh trưởng phủ trước khi hết hạn",
+"Chờ cho hết hạn",
+"Đến tòa thị chính",
+"Không làm gì"
+],
+"correct_answer": 0,
+"explanation_fr": "Le titre de séjour se renouvelle à la préfecture avant son expiration, pour rester en situation régulière.",
+"explanation_vi": "Thẻ cư trú được gia hạn tại tỉnh trưởng phủ trước khi hết hạn, để giữ tình trạng hợp pháp.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT027",
+"type": "situation",
+"category": "droits",
+"difficulty": "medium",
+"question_fr": "On vous demande de participer à un jury d'assises. Pouvez-vous être concerné ?",
+"question_vi": "Bạn được yêu cầu tham gia hội thẩm đoàn tòa đại hình. Bạn có thể thuộc diện này không?",
+"answers_fr": [
+"Oui : un citoyen peut être tiré au sort comme juré",
+"Non, jamais",
+"Seulement les avocats",
+"Seulement les policiers"
+],
+"answers_vi": [
+"Có: một công dân có thể được bốc thăm làm hội thẩm",
+"Không bao giờ",
+"Chỉ luật sư",
+"Chỉ cảnh sát"
+],
+"correct_answer": 0,
+"explanation_fr": "Participer à un jury d'assises, quand on est tiré au sort, est un devoir citoyen.",
+"explanation_vi": "Tham gia hội thẩm đoàn khi được bốc thăm là một nghĩa vụ công dân.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT028",
+"type": "situation",
+"category": "vieQuotidienne",
+"difficulty": "easy",
+"question_fr": "Vous avez besoin d'un acte de naissance pour un dossier. Où le demandez-vous ?",
+"question_vi": "Bạn cần giấy khai sinh cho một hồ sơ. Bạn xin ở đâu?",
+"answers_fr": [
+"À la mairie du lieu de naissance",
+"À la préfecture",
+"À Pôle emploi",
+"À la pharmacie"
+],
+"answers_vi": [
+"Tòa thị chính nơi sinh",
+"Tỉnh trưởng phủ",
+"Pôle emploi",
+"Nhà thuốc"
+],
+"correct_answer": 0,
+"explanation_fr": "L'acte de naissance se demande à la mairie du lieu de naissance (ou en ligne).",
+"explanation_vi": "Giấy khai sinh được xin tại tòa thị chính nơi sinh (hoặc trực tuyến).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT029",
+"type": "situation",
+"category": "sante",
+"difficulty": "easy",
+"question_fr": "Il est 23 h et vous avez besoin d'un médicament urgent prescrit. Que cherchez-vous ?",
+"question_vi": "Lúc 23 giờ bạn cần một loại thuốc kê đơn gấp. Bạn tìm gì?",
+"answers_fr": [
+"Une pharmacie de garde",
+"La mairie",
+"Un supermarché",
+"La préfecture"
+],
+"answers_vi": [
+"Nhà thuốc trực",
+"Tòa thị chính",
+"Siêu thị",
+"Tỉnh trưởng phủ"
+],
+"correct_answer": 0,
+"explanation_fr": "La nuit ou le dimanche, une pharmacie de garde assure la délivrance des médicaments.",
+"explanation_vi": "Ban đêm hoặc chủ nhật, nhà thuốc trực đảm bảo việc cấp thuốc.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT030",
+"type": "situation",
+"category": "travail",
+"difficulty": "medium",
+"question_fr": "Vous perdez votre emploi de façon involontaire. Quel organisme contacter ?",
+"question_vi": "Bạn mất việc ngoài ý muốn. Bạn liên hệ cơ quan nào?",
+"answers_fr": [
+"France Travail (ex-Pôle emploi)",
+"La préfecture",
+"La CPAM",
+"La mairie"
+],
+"answers_vi": [
+"France Travail (trước là Pôle emploi)",
+"Tỉnh trưởng phủ",
+"CPAM",
+"Tòa thị chính"
+],
+"correct_answer": 0,
+"explanation_fr": "France Travail accompagne la recherche d'emploi et étudie les droits à l'allocation chômage.",
+"explanation_vi": "France Travail hỗ trợ tìm việc và xét quyền hưởng trợ cấp thất nghiệp.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT031",
+"type": "situation",
+"category": "valeurs",
+"difficulty": "medium",
+"question_fr": "Un proche affirme qu'une religion devrait être imposée à tous. Que rappelle la laïcité ?",
+"question_vi": "Một người thân khẳng định nên áp đặt một tôn giáo cho tất cả. Nguyên tắc thế tục nhắc điều gì?",
+"answers_fr": [
+"Chacun est libre de croire ou non ; l'État reste neutre",
+"Il a raison",
+"L'État choisit la religion",
+"La religion est interdite"
+],
+"answers_vi": [
+"Mỗi người tự do tin hay không; Nhà nước trung lập",
+"Người ấy đúng",
+"Nhà nước chọn tôn giáo",
+"Tôn giáo bị cấm"
+],
+"correct_answer": 0,
+"explanation_fr": "La laïcité garantit la liberté de conscience : personne ne peut imposer une religion ; l'État est neutre.",
+"explanation_vi": "Nguyên tắc thế tục bảo đảm tự do tín ngưỡng: không ai được áp đặt tôn giáo; Nhà nước trung lập.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT032",
+"type": "situation",
+"category": "vieQuotidienne",
+"difficulty": "easy",
+"question_fr": "Vous voulez trier vos déchets correctement. Que faites-vous du verre ?",
+"question_vi": "Bạn muốn phân loại rác đúng cách. Bạn làm gì với thủy tinh?",
+"answers_fr": [
+"Je le mets dans le conteneur à verre",
+"Avec les ordures ménagères",
+"Dans la poubelle jaune",
+"Je le jette dehors"
+],
+"answers_vi": [
+"Bỏ vào thùng thủy tinh",
+"Chung với rác sinh hoạt",
+"Vào thùng vàng",
+"Vứt ra ngoài"
+],
+"correct_answer": 0,
+"explanation_fr": "Le verre se dépose dans le conteneur à verre dédié, pour être recyclé.",
+"explanation_vi": "Thủy tinh được bỏ vào thùng thủy tinh chuyên dụng để tái chế.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT033",
+"type": "situation",
+"category": "droits",
+"difficulty": "hard",
+"question_fr": "Votre employeur veut vous licencier sans raison. Est-ce permis ?",
+"question_vi": "Chủ muốn sa thải bạn không lý do. Điều đó có được phép không?",
+"answers_fr": [
+"Non : un licenciement doit avoir un motif réel et sérieux",
+"Oui, quand il veut",
+"Oui, si vous êtes étranger",
+"Oui, sans explication"
+],
+"answers_vi": [
+"Không: sa thải phải có lý do thực sự và chính đáng",
+"Có, khi nào ông ấy muốn",
+"Có, nếu bạn là người nước ngoài",
+"Có, không cần giải thích"
+],
+"correct_answer": 0,
+"explanation_fr": "Un licenciement doit reposer sur un motif réel et sérieux ; sinon, il est abusif et contestable.",
+"explanation_vi": "Sa thải phải dựa trên lý do thực sự và chính đáng; nếu không là lạm quyền và có thể khiếu nại.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT034",
+"type": "situation",
+"category": "famille",
+"difficulty": "medium",
+"question_fr": "Vous déménagez dans une autre ville. Que faut-il penser à faire ?",
+"question_vi": "Bạn chuyển đến một thành phố khác. Bạn cần nhớ làm gì?",
+"answers_fr": [
+"Signaler mon changement d'adresse aux administrations",
+"Rien",
+"Changer de nom",
+"Fermer mon compte bancaire"
+],
+"answers_vi": [
+"Báo thay đổi địa chỉ cho các cơ quan",
+"Không cần gì",
+"Đổi tên",
+"Đóng tài khoản ngân hàng"
+],
+"correct_answer": 0,
+"explanation_fr": "Un déménagement doit être signalé aux administrations (impôts, CAF, Sécurité sociale, etc.).",
+"explanation_vi": "Việc chuyển nhà phải báo cho các cơ quan (thuế, CAF, Bảo hiểm xã hội, v.v.).",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT035",
+"type": "situation",
+"category": "valeurs",
+"difficulty": "easy",
+"question_fr": "Deux personnes de religions différentes vivent dans votre immeuble. Quelle attitude est juste ?",
+"question_vi": "Hai người khác tôn giáo sống trong tòa nhà của bạn. Thái độ đúng là gì?",
+"answers_fr": [
+"Les respecter : chacun est libre de sa religion",
+"Les éviter",
+"Leur demander de partir",
+"Choisir un camp"
+],
+"answers_vi": [
+"Tôn trọng họ: mỗi người tự do về tôn giáo",
+"Tránh họ",
+"Yêu cầu họ rời đi",
+"Chọn một phe"
+],
+"correct_answer": 0,
+"explanation_fr": "La liberté de religion et la tolérance permettent à chacun de vivre ensemble dans le respect.",
+"explanation_vi": "Tự do tôn giáo và lòng khoan dung giúp mọi người chung sống trong sự tôn trọng.",
+"source_type": "educational",
+"verified_at": "2026-01-01"
+},
+{
+"id": "SIT036",
+"type": "situation",
+"category": "institutions",
+"difficulty": "medium",
+"question_fr": "Vous voulez signaler un problème de voirie (trottoir cassé) dans votre quartier. À qui vous adressez-vous ?",
+"question_vi": "Bạn muốn báo một vấn đề đường sá (vỉa hè hỏng) trong khu phố. Bạn liên hệ ai?",
+"answers_fr": [
+"À la mairie",
+"À la préfecture",
+"Au président",
+"Au Sénat"
+],
+"answers_vi": [
+"Tòa thị chính",
+"Tỉnh trưởng phủ",
+"Tổng thống",
+"Thượng viện"
+],
+"correct_answer": 0,
+"explanation_fr": "La commune (mairie) gère la voirie locale ; c'est l'interlocuteur pour ce type de problème.",
+"explanation_vi": "Xã (tòa thị chính) quản lý đường sá địa phương; đó là nơi liên hệ cho vấn đề này.",
 "source_type": "educational",
 "verified_at": "2026-01-01"
 }

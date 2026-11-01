@@ -17,6 +17,10 @@ struct Question: Codable, Identifiable, Hashable {
     var sourceUrl: String?
     let sourceType: SourceType
     var verifiedAt: String?
+    /// "connaissance" (défaut) ou "situation" (mise en situation).
+    var type: String? = "connaissance"
+
+    var isSituation: Bool { type == "situation" }
 
     /// Énoncé selon la langue d'interface.
     func question(_ lang: InterfaceLanguage) -> String {

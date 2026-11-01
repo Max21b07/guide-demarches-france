@@ -57,6 +57,9 @@ struct ExamView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 VStack(alignment: .leading, spacing: 8) {
+                    if q.isSituation {
+                        Text("📘 Mise en situation").font(.caption.bold()).foregroundStyle(Theme.orange)
+                    }
                     Text(q.questionFr).font(.title3.bold())
                     if showTranslation && canTranslate {
                         Text(q.questionVi).font(.body).foregroundStyle(.secondary)

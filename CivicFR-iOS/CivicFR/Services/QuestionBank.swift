@@ -45,7 +45,8 @@ final class QuestionBank: ObservableObject {
                         difficulty: q.difficulty, questionFr: q.questionFr, questionVi: q.questionVi,
                         answersFr: fr, answersVi: vi, correctAnswer: newCorrect,
                         explanationFr: q.explanationFr, explanationVi: q.explanationVi,
-                        sourceUrl: q.sourceUrl, sourceType: q.sourceType, verifiedAt: q.verifiedAt)
+                        sourceUrl: q.sourceUrl, sourceType: q.sourceType, verifiedAt: q.verifiedAt,
+                        type: q.type)
     }
 
     private static func fnv1a(_ s: String) -> UInt32 {
@@ -110,31 +111,19 @@ final class QuestionBank: ObservableObject {
 
     // MARK: - Examen
 
-    /// Compose une épreuve de `AppConfig.examQuestionCount` questions,
-    /// réparties au mieux sur les catégories disponibles, sans doublon.
+    /// Compose une épreuve au format officiel : 28 questions de connaissances
+    /// + 12 mises en situation (complété si la banque manque d'un type).
     func examSet() -> [Question] {
         let target = AppConfig.examQuestionCount
-        let cats = categoriesAvailable()
-        guard !cats.isEmpty else { return [] }
-        if questions.count <= target { return questions.shuffled() }
-
-        var result: [Question] = []
-        var pools: [Category: [Question]] = [:]
-        for c in cats { pools[c] = questions(in: c).shuffled() }
-
-        // Répartition équilibrée en « tourniquet ».
-        outer: while result.count < target {
-            var progressed = false
-            for c in cats {
-                if var p = pools[c], !p.isEmpty {
-                    result.append(p.removeFirst())
-                    pools[c] = p
-                    progressed = true
-                    if result.count >= target { break outer }
-                }
-            }
-            if !progressed { break }
+        let nK = 28, nS = 12
+        let know = questions.filter { !$0.isSituation }.shuffled()
+        let situ = questions.filter { $0.isSituation }.shuffled()
+        var result = Array(know.prefix(nK)) + Array(situ.prefix(nS))
+        if result.count < target {
+            let used = Set(result.map(\.id))
+            let rest = questions.filter { !used.contains($0.id) }.shuffled()
+            result += rest.prefix(target - result.count)
         }
-        return result.shuffled()
+        return Array(result.prefix(target)).shuffled()
     }
 }
