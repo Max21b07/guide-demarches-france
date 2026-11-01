@@ -182,12 +182,46 @@ const T={
   nodata:{fr:"Pas encore de données",vi:"Chưa có dữ liệu"},byCat:{fr:"Par catégorie",vi:"Theo chủ đề"},weak:{fr:"À retravailler en priorité",vi:"Cần cải thiện"},
   reset:{fr:"Réinitialiser ma progression",vi:"Đặt lại tiến trình"},welcome:{fr:"Bonjour 👋",vi:"Xin chào 👋"},level:{fr:"Niveau",vi:"Cấp độ"},days:{fr:"jours",vi:"ngày"}
 };
+// Fiches de révision (résumés fondés sur le Livret du citoyen)
+const FICHES=[
+  {em:"🏛️",fr:"Valeurs et principes de la République",vi:"Giá trị và nguyên tắc của nền Cộng hòa",points:[
+    "Devise : Liberté, Égalité, Fraternité.",
+    "République indivisible, laïque, démocratique et sociale.",
+    "Laïcité (loi de 1905) : liberté de conscience, neutralité de l'État, séparation des religions et de l'État.",
+    "Symboles : drapeau bleu-blanc-rouge, La Marseillaise, 14 juillet, Marianne, le coq.",
+    "Égalité femmes-hommes, non-discrimination ; libertés d'expression, de la presse, de réunion et d'association."]},
+  {em:"⚖️",fr:"Les institutions françaises et européennes",vi:"Thể chế Pháp và châu Âu",points:[
+    "Président : élu pour 5 ans au suffrage universel direct ; chef de l'État et des armées ; nomme le Premier ministre.",
+    "Gouvernement dirigé par le Premier ministre (hôtel de Matignon).",
+    "Parlement = Assemblée nationale (577 députés, 5 ans) + Sénat (≈348 sénateurs, 6 ans) ; vote les lois et le budget.",
+    "Commune : maire élu par le conseil municipal (6 ans), officier d'état civil.",
+    "Union européenne : 27 États membres, monnaie l'euro, Parlement européen (Strasbourg)."]},
+  {em:"✅",fr:"Droits et devoirs",vi:"Quyền và nghĩa vụ",points:[
+    "Majorité à 18 ans ; droit de vote pour les citoyens français inscrits.",
+    "Droits : liberté, égalité, protection de la santé, éducation, justice, vie privée.",
+    "Devoirs : respecter les lois, payer ses impôts, respecter autrui et la laïcité.",
+    "Vers 16-17 ans : recensement puis Journée défense et citoyenneté (JDC).",
+    "Urgences : 15 (SAMU), 17 (police), 18 (pompiers), 112 (Europe), 119 (enfance), 3919 (violences femmes)."]},
+  {em:"🕰️",fr:"Histoire, géographie et culture",vi:"Lịch sử, địa lý và văn hóa",points:[
+    "Dates clés : 1789 (Révolution, DDHC), 1792 (Ire République), 1905 (laïcité), 1944 (vote des femmes), 1958 (Ve République), 1981 (abolition de la peine de mort).",
+    "Forme du territoire : l'Hexagone. Fleuves : Loire, Seine, Rhône, Garonne.",
+    "Montagnes : Alpes (mont Blanc), Pyrénées. Mers : Méditerranée, Atlantique, Manche.",
+    "13 régions, 101 départements ; outre-mer : Guadeloupe, Martinique, Guyane, Réunion, Mayotte.",
+    "Capitale : Paris. Grandes villes : Marseille, Lyon."]},
+  {em:"🏠",fr:"La vie en société",vi:"Đời sống trong xã hội",points:[
+    "École obligatoire de 3 à 16 ans, gratuite et laïque ; inscription en mairie.",
+    "Santé : Sécurité sociale, carte Vitale, médecin traitant, CPAM.",
+    "Travail : SMIC, 35 heures, CDI/CDD, 5 semaines de congés payés, France Travail.",
+    "Famille : mariage ou PACS en mairie, acte de naissance ; titre de séjour en préfecture ; naturalisation.",
+    "Au quotidien : tri des déchets, assurance habitation, impôts, respect du voisinage et de l'environnement."]}
+];
+
 function tr(k){return (T[k]||{})[D.lang]||(T[k]||{}).fr||k}
 function catName(c){return CATS[c] ? CATS[c][D.lang]||CATS[c].fr : c}
 
 /* ----- persistance ----- */
 function defaults(){return{lang:"fr",sound:true,strict:false,onboarded:false,
-  fontScale:1,reminderOn:false,reminderHour:19,lastNudge:null,
+  fontScale:1,reminderOn:false,reminderHour:19,lastNudge:null,examDate:null,
   xp:0,streakDays:0,longestStreak:0,lastStudyDate:null,totalAnswered:0,totalCorrect:0,
   qstats:{},catstats:{},badges:[],exams:[]};}
 let D=load();
@@ -240,7 +274,11 @@ function addXP(n){if(n>0)D.xp+=n}
 function recordAnswer(q,ok){
   D.totalAnswered++; if(ok)D.totalCorrect++;
   const s=D.qstats[q.id]||{seen:0,correct:0,lastCorrect:false};
-  s.seen++; if(ok)s.correct++; s.lastCorrect=ok; D.qstats[q.id]=s;
+  s.seen++; if(ok)s.correct++; s.lastCorrect=ok;
+  // Répétition espacée (Leitner) : prochaine révision selon la réussite.
+  s.box = ok ? Math.min((s.box||0)+1,5) : 1;
+  s.due = Date.now() + ([0,1,2,4,7,15][s.box]||1)*86400000;
+  D.qstats[q.id]=s;
   const cs=D.catstats[q.category]||{seen:0,correct:0}; cs.seen++; if(ok)cs.correct++; D.catstats[q.category]=cs;
   if(ok)addXP(10); checkBadges();
 }
@@ -264,6 +302,14 @@ function weighted(n,cat){let rem=pool(cat).slice(),out=[];
     for(let k=0;k<w.length;k++){r-=w[k];if(r<0){i=k;break}}out.push(rem.splice(i,1)[0])}
   return out}
 function toReviewList(n){return shuffle(QUESTIONS.filter(q=>{const s=D.qstats[q.id];return s&&s.seen>0&&!mastered(q.id)})).slice(0,n)}
+// Répétition espacée : questions dont la date de révision est atteinte
+function dueList(){ const now=Date.now(); return QUESTIONS.filter(q=>{const s=D.qstats[q.id];return s&&s.seen>0&&(s.due||0)<=now;}); }
+function dueCount(){ return dueList().length; }
+function reviewList(n){ const seen=new Set(), out=[];
+  for(const q of shuffle(dueList()).concat(shuffle(QUESTIONS.filter(q=>{const s=D.qstats[q.id];return s&&s.seen>0&&!mastered(q.id);})))){
+    if(out.length>=n)break; if(!seen.has(q.id)){seen.add(q.id);out.push(q);}
+  }
+  return out; }
 function examSet(){
   // Format officiel : 28 questions de connaissances + 12 mises en situation.
   const nK=28, nS=12;
@@ -288,6 +334,10 @@ function beep(ok){if(!D.sound)return;try{AC=AC||new (window.AudioContext||window
   g.gain.exponentialRampToValueAtTime(.2,AC.currentTime+.02);g.gain.exponentialRampToValueAtTime(.001,AC.currentTime+.25);
   o.start();o.stop(AC.currentTime+.26)}catch(e){}}
 function haptic(){if(navigator.vibrate)navigator.vibrate(10)}
+// Lecture audio en français (aide à la prononciation / compréhension)
+function speak(text){ try{ if('speechSynthesis' in window){ window.speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text); u.lang='fr-FR'; u.rate=0.95; window.speechSynthesis.speak(u);} }catch(e){} }
+function speakQ(id){ const q=QUESTIONS.find(x=>x.id===id); if(!q)return; speak(q.question_fr+'. '+q.answers_fr.join('. ')); }
 let toastQ=[],toasting=false;
 function queueToast(b){toastQ.push(b);if(!toasting)nextToast()}
 function nextToast(){if(!toastQ.length){toasting=false;return}toasting=true;const b=toastQ.shift();
@@ -348,6 +398,7 @@ function viewHome(){
     <div><h2>${tr('welcome')}</h2><div class="muted">${tr('level')} · ${lv.n[D.lang]}</div></div><div class="sp"></div>
     <div class="center"><div style="font-size:22px">🔥</div><b>${D.streakDays}</b><div class="muted" style="font-size:11px">${tr('days')}</div></div>
   </div>
+  ${examCountdownCard()}
   ${reminderCard()}
   <div class="card">
     <div class="row"><span class="pill" style="background:rgba(26,56,140,.12);color:var(--blue-deep)">🎯 Mon objectif</span></div>
@@ -362,7 +413,8 @@ function viewHome(){
   <button class="btn" onclick="go('exam')">${tr('start')}</button>
   ${noticeCard()}
   ${access('⚡',tr('daily'),'var(--orange)',"go('learn')")}
-  ${access('🔁',tr('rev'),'var(--red)',"startTraining('review')")}
+  ${access('🔁',tr('rev')+(dueCount()?' ('+dueCount()+' à réviser)':''),'var(--red)',"startTraining('review')")}
+  ${access('📖','Fiches de révision','var(--blue-deep)',"nav(ScreenFiches())")}
   ${access('📊',tr('stats'),'var(--blue-light)',"nav(ScreenStats())")}
   ${access('🏅',tr('badges'),'var(--yellow)',"nav(ScreenBadges())")}
   ${access('🗓️',tr('prog'),'var(--green)',"nav(ScreenProgram())")}
@@ -389,7 +441,7 @@ function viewLearn(){
 
 /* ----- Entraînement (plein écran) ----- */
 function startTraining(kind,cat,n){
-  let qs = kind==='quick'?weighted(n,null) : kind==='cat'?weighted(10,cat) : toReviewList(20);
+  let qs = kind==='quick'?weighted(n,null) : kind==='cat'?weighted(10,cat) : reviewList(20);
   if(!qs.length){alert(D.lang==='vi'?'Chưa có câu nào để ôn. Hãy luyện tập thêm!':"Rien à revoir pour le moment ! Entraîne-toi d'abord.");return}
   nav(ScreenTraining(qs));
 }
@@ -404,7 +456,11 @@ function ScreenTraining(qs){
         <span class="link" style="margin-left:14px" onclick="S.quit()">✕</span></div>
       <div class="bar" style="margin-bottom:14px"><i style="width:${Math.round(i/qs.length*100)}%"></i></div>
       <div class="card">${situPill(q)}<h3>${q.question_fr}</h3>${trsh?`<p class="muted">${q.question_vi}</p>`:''}</div>
-      <div class="link" onclick="S.tr()" style="margin:0 2px 8px">${trsh?tr('hide'):tr('translate')}</div>
+      <div class="row" style="margin:0 2px 8px">
+        <button class="link" style="background:none;border:none;font:inherit" onclick="S.tr()">${trsh?tr('hide'):tr('translate')}</button>
+        <div class="sp"></div>
+        <button class="link" style="background:none;border:none;font:inherit" onclick="speakQ('${q.id}')" aria-label="Écouter la question">🔊 Écouter</button>
+      </div>
       <div id="opts">${opts(q)}</div>
       ${revealed?expl(q):''}
       ${revealed
@@ -482,7 +538,11 @@ function ScreenExam(resume){
       <div class="row" style="margin:2px"><span class="muted">Question ${st.idx+1}/${qs.length}</span><div class="sp"></div>
         <button class="link" style="background:none;border:none;font:inherit" onclick="E.flag()" aria-pressed="${flagged}">${flagged?'🚩 Marquée':'🏳️ Marquer à revoir'}</button></div>
       <div class="card">${situPill(q)}<h3>${q.question_fr}</h3>${(trsh&&!strict)?`<p class="muted">${q.question_vi}</p>`:''}</div>
-      ${strict?'':`<button class="link" style="background:none;border:none;font:inherit;margin:0 2px 8px" onclick="E.tr()">${trsh?tr('hide'):tr('translate')}</button>`}
+      ${strict?'':`<div class="row" style="margin:0 2px 8px">
+        <button class="link" style="background:none;border:none;font:inherit" onclick="E.tr()">${trsh?tr('hide'):tr('translate')}</button>
+        <div class="sp"></div>
+        <button class="link" style="background:none;border:none;font:inherit" onclick="speakQ('${q.id}')" aria-label="Écouter la question">🔊 Écouter</button>
+      </div>`}
       <div role="radiogroup" aria-label="Réponses">
       ${q.answers_fr.map((a,k)=>`<div class="opt ${st.ans[st.idx]===k?'sel':''}" role="radio" tabindex="0" aria-checked="${st.ans[st.idx]===k}" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}" onclick="E.pick(${k})"><span class="mk"></span>
         <div>${a}${(trsh&&!strict)?`<span class="tr">${q.answers_vi[k]}</span>`:''}</div></div>`).join('')}
@@ -640,6 +700,15 @@ function ScreenBadges(){return {render(){
       ${u?'':'<div class="muted" style="font-size:11px">🔒 à débloquer</div>'}</div>`}).join('')}</div>`;
 }}}
 
+/* ----- Fiches de révision ----- */
+function ScreenFiches(){return {render(){
+  return head('Fiches de révision')+
+    `<p class="muted" style="margin:-6px 2px 12px">Les points essentiels à connaître, par thème.</p>`+
+    FICHES.map(f=>`<div class="card"><b>${f.em} ${D.lang==='vi'?f.vi:f.fr}</b>
+      <ul style="margin:8px 0 0;padding-left:18px">${f.points.map(pt=>`<li style="margin:6px 0">${pt}</li>`).join('')}</ul></div>`).join('')+
+    `<p class="muted center" style="font-size:12px">Référence : Livret du citoyen — ministère de l'Intérieur.</p>`;
+}}}
+
 /* ----- Programme 30 jours ----- */
 function ScreenProgram(){return {render(){
   const weeks=[
@@ -673,6 +742,11 @@ function ScreenSettings(){return {render(){
         <button class="${(D.fontScale||1)==1.3?'on':''}" onclick="setFontScale(1.3)">Très grand</button>
       </div>
     </div>
+    <div class="card"><b>Date de l'examen</b>
+      <div class="row" style="margin-top:8px"><span>Mon examen le</span><div class="sp"></div>
+        <input type="date" value="${D.examDate||''}" onchange="D.examDate=this.value||null;save();render()"></div>
+      <p class="muted" style="font-size:12px;margin:8px 0 0">Un compteur « Examen dans X jours » s'affichera sur l'accueil.</p>
+    </div>
     <div class="card"><b>Rappel quotidien</b>
       ${toggle('reminderOn','Activer le rappel',D.reminderOn)}
       <div class="row" style="margin-top:4px"><span>Heure</span><div class="sp"></div>
@@ -702,6 +776,13 @@ function reminderDue(){ if(!D.reminderOn||studiedToday())return false; return ne
 function reminderCard(){ if(!reminderDue())return '';
   return `<div class="card" style="border-left:4px solid var(--blue-light)"><b>⏰ Rappel du jour</b>
     <p style="margin:6px 0 0">Tu n'as pas encore révisé aujourd'hui. 5 minutes suffisent pour progresser 💪</p></div>`; }
+function daysUntilExam(){ if(!D.examDate)return null;
+  const d=new Date(D.examDate+'T00:00:00'); if(isNaN(d))return null;
+  const today=new Date(); today.setHours(0,0,0,0);
+  return Math.ceil((d-today)/86400000); }
+function examCountdownCard(){ const n=daysUntilExam(); if(n===null)return '';
+  const txt = n>1?`Examen dans ${n} jours` : n===1?'Examen demain !' : n===0?"Examen aujourd'hui ! 🍀" : 'Date d\'examen passée';
+  return `<div class="card" style="border-left:4px solid var(--green)"><b>📅 ${txt}</b>${n>0?`<p class="muted" style="margin:6px 0 0">Entraîne-toi un peu chaque jour pour être prête 💪</p>`:''}</div>`; }
 function enableNotif(){ try{ if('Notification' in window){
       Notification.requestPermission().then(pp=>{ alert(pp==='granted'?'Notifications autorisées ✅':'Notifications non autorisées.'); });
     } else { alert('Notifications non disponibles sur ce navigateur.'); } }catch(e){} }
