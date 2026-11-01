@@ -341,11 +341,24 @@ function passThreshold(total){return total===CFG.q?CFG.threshold:Math.ceil(total
 
 /* ============================= Sons & toasts ============================= */
 let AC=null;
-function beep(ok){if(!D.sound)return;try{AC=AC||new (window.AudioContext||window.webkitAudioContext)();
-  const o=AC.createOscillator(),g=AC.createGain();o.connect(g);g.connect(AC.destination);
-  o.frequency.value=ok?880:230;o.type="sine";g.gain.setValueAtTime(.001,AC.currentTime);
-  g.gain.exponentialRampToValueAtTime(.2,AC.currentTime+.02);g.gain.exponentialRampToValueAtTime(.001,AC.currentTime+.25);
-  o.start();o.stop(AC.currentTime+.26)}catch(e){}}
+function ac(){ try{ if(!AC) AC=new (window.AudioContext||window.webkitAudioContext)(); if(AC.state==='suspended') AC.resume(); return AC; }catch(e){ return null; } }
+function tone(freq,dur,type,vol,when){ const a=ac(); if(!a)return;
+  const o=a.createOscillator(),g=a.createGain(); o.type=type||'sine'; o.frequency.value=freq;
+  o.connect(g); g.connect(a.destination); const t0=a.currentTime+(when||0);
+  g.gain.setValueAtTime(0.0001,t0); g.gain.exponentialRampToValueAtTime(vol||0.15,t0+0.012);
+  g.gain.exponentialRampToValueAtTime(0.0001,t0+dur); o.start(t0); o.stop(t0+dur+0.03); }
+// Petits effets sonores synthétisés (gamification). Désactivables via Sons.
+function sfx(name){ if(!D.sound) return; try{ switch(name){
+  case 'tap':    tone(380,0.05,'triangle',0.05); break;
+  case 'select': tone(560,0.06,'triangle',0.10); break;
+  case 'correct':tone(660,0.10,'sine',0.16,0); tone(880,0.12,'sine',0.16,0.09); tone(1175,0.16,'sine',0.14,0.19); break;
+  case 'wrong':  tone(300,0.14,'sine',0.13,0); tone(196,0.20,'sine',0.11,0.11); break;
+  case 'finish': [523,659,784].forEach((f,i)=>tone(f,0.14,'sine',0.16,i*0.11)); break;
+  case 'win':    [523,659,784,1047,1319].forEach((f,i)=>tone(f,0.17,'sine',0.18,i*0.12)); break;
+  case 'badge':  [784,1047,1319].forEach((f,i)=>tone(f,0.13,'triangle',0.16,i*0.09)); break;
+  case 'levelup':[440,587,784].forEach((f,i)=>tone(f,0.14,'square',0.09,i*0.10)); break;
+} }catch(e){} }
+function beep(ok){ sfx(ok?'correct':'wrong'); } // compat
 function haptic(){if(navigator.vibrate)navigator.vibrate(10)}
 // Lecture audio en français (aide à la prononciation / compréhension)
 function speak(text){ try{ if('speechSynthesis' in window){ window.speechSynthesis.cancel();
@@ -356,7 +369,7 @@ function queueToast(b){toastQ.push(b);if(!toasting)nextToast()}
 function nextToast(){if(!toastQ.length){toasting=false;return}toasting=true;const b=toastQ.shift();
   document.getElementById('toastIc').textContent=b.em;
   document.getElementById('toastTxt').textContent=b[D.lang]||b.fr;
-  const el=document.getElementById('toast');el.classList.add('show');beep(true);
+  const el=document.getElementById('toast');el.classList.add('show');sfx('badge');
   setTimeout(()=>{el.classList.remove('show');setTimeout(nextToast,400)},2400)}
 
 /* ============================= Routeur / vues ============================= */
@@ -482,12 +495,12 @@ function ScreenTraining(qs){
       `;
     },
     bind(){window.S=s;},
-    pick(k){ if(revealed)return; sel=k; haptic(); render(); },
+    pick(k){ if(revealed)return; sel=k; sfx('select'); haptic(); render(); },
     tr(){ trsh=!trsh; render(); },
     val(){ if(sel===null)return; revealed=true; const q=qs[i],ok=sel===q.correct_answer;
       if(ok){correct++;streak++;if(streak===5)addXP(15)}else streak=0;
       recordAnswer(q,ok); save(); beep(ok); haptic(); render(); },
-    adv(){ sel=null; revealed=false; if(i<qs.length-1){i++;render()}else{i++;render()} },
+    adv(){ sel=null; revealed=false; if(i<qs.length-1){i++;render()}else{i++;sfx('finish');render()} },
     quit(){ back(); }
   };
   function opts(q){return q.answers_fr.map((a,k)=>{
@@ -573,7 +586,7 @@ function ScreenExam(resume){
     bind(){ window.E=s;
       if(!s._t){ s._t=setInterval(()=>{ if(finished||scr!==s){clearInterval(s._t);s._t=null;return} if(remaining()<=0){s.finish()}else tick() },1000); }
       if(!s._vis){ s._vis=true; document.addEventListener('visibilitychange',vis); } },
-    pick(k){ st.ans[st.idx]=k; saveExam(st); haptic(); render(); },
+    pick(k){ st.ans[st.idx]=k; saveExam(st); sfx('select'); haptic(); render(); },
     tr(){ trsh=!trsh; render(); },
     next(){ if(st.idx<qs.length-1)st.idx++; saveExam(st); render(); },
     prev(){ if(st.idx>0)st.idx--; saveExam(st); render(); },
@@ -593,7 +606,7 @@ function ScreenExam(resume){
       D.totalAnswered+=qs.length; D.totalCorrect+=score; addXP(20);
       D.exams.push({date:Date.now(),score,total:qs.length,pct,pass:result.pass});
       dailyActivity(); checkBadges(); save(); clearExam();
-      beep(result.pass); render();
+      sfx(result.pass?'win':'wrong'); render();
     }
   };
   function gridView(){
@@ -856,6 +869,11 @@ applyFontScale();
 applyContrast();
 render();
 maybeNotify();
+// Son discret au toucher des boutons et éléments interactifs (gamification)
+document.addEventListener('click',function(ev){ if(!D.sound)return;
+  const t=ev.target.closest&&ev.target.closest('button,.btn,.access,.tabbar button,.link,select');
+  if(t) sfx('tap');
+},true);
 // Récupération depuis IndexedDB si le localStorage a été effacé
 try{ if(!localStorage.getItem(KEY)){ idbLoad(function(d){ if(d&&d.onboarded){ D=Object.assign(defaults(),d); applyFontScale(); applyContrast(); save(); render(); } }); } }catch(e){}
 if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{})); }
