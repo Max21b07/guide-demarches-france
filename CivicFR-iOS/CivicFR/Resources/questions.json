@@ -8523,5 +8523,1655 @@
     "explanation_vi": "Xã (tòa thị chính) quản lý đường sá địa phương; đó là nơi liên hệ cho vấn đề này.",
     "source_type": "educational",
     "verified_at": "2026-01-01"
+  },
+  {
+    "id": "VAL036",
+    "category": "valeurs",
+    "difficulty": "medium",
+    "question_fr": "Selon l'article 1 de la Constitution, la France assure l'égalité devant la loi :",
+    "question_vi": "Theo Điều 1 Hiến pháp, nước Pháp bảo đảm bình đẳng trước pháp luật:",
+    "answers_fr": [
+      "De tous les citoyens sans distinction d'origine ou de religion",
+      "Des seuls citoyens riches",
+      "Des hommes uniquement",
+      "Des personnes nées en France seulement"
+    ],
+    "answers_vi": [
+      "Cho mọi công dân không phân biệt nguồn gốc hay tôn giáo",
+      "Chỉ công dân giàu",
+      "Chỉ nam giới",
+      "Chỉ người sinh ở Pháp"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La Constitution assure l'égalité devant la loi de tous les citoyens sans distinction d'origine, de race ou de religion.",
+    "explanation_vi": "Hiến pháp bảo đảm bình đẳng trước pháp luật cho mọi công dân không phân biệt nguồn gốc, chủng tộc hay tôn giáo.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "VAL037",
+    "category": "valeurs",
+    "difficulty": "easy",
+    "question_fr": "La laïcité :",
+    "question_vi": "Nguyên tắc thế tục:",
+    "answers_fr": [
+      "Sépare les religions de l'État sans les combattre",
+      "Interdit toutes les religions",
+      "Impose une religion d'État",
+      "Oblige à être croyant"
+    ],
+    "answers_vi": [
+      "Tách tôn giáo khỏi Nhà nước nhưng không chống lại",
+      "Cấm mọi tôn giáo",
+      "Áp đặt một tôn giáo nhà nước",
+      "Buộc phải có tín ngưỡng"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La laïcité sépare les religions et l'État et garantit la liberté de croire ou non, sans combattre les religions.",
+    "explanation_vi": "Nguyên tắc thế tục tách tôn giáo và Nhà nước, bảo đảm tự do tin hay không, không chống tôn giáo.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "VAL038",
+    "category": "valeurs",
+    "difficulty": "medium",
+    "question_fr": "Nul n'est censé ignorer la loi signifie que :",
+    "question_vi": "« Không ai được coi là không biết luật » nghĩa là:",
+    "answers_fr": [
+      "Chacun doit respecter la loi, même s'il dit ne pas la connaître",
+      "La loi ne s'applique pas aux étrangers",
+      "On peut choisir les lois à suivre",
+      "Seuls les juristes respectent la loi"
+    ],
+    "answers_vi": [
+      "Mọi người phải tuân thủ luật, dù nói không biết",
+      "Luật không áp dụng cho người nước ngoài",
+      "Có thể chọn luật để tuân theo",
+      "Chỉ luật sư mới tuân thủ luật"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La loi s'applique à tous : on ne peut pas s'y soustraire en prétendant l'ignorer.",
+    "explanation_vi": "Luật áp dụng cho tất cả: không thể trốn tránh bằng cách nói là không biết.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "VAL039",
+    "category": "valeurs",
+    "difficulty": "easy",
+    "question_fr": "La fraternité se manifeste notamment par :",
+    "question_vi": "Tình bác ái thể hiện đặc biệt qua:",
+    "answers_fr": [
+      "La solidarité envers les plus démunis",
+      "L'indifférence",
+      "La compétition",
+      "Le rejet des autres"
+    ],
+    "answers_vi": [
+      "Sự đoàn kết với người khó khăn",
+      "Sự thờ ơ",
+      "Cạnh tranh",
+      "Chối bỏ người khác"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La fraternité, c'est la solidarité : aide et entraide, notamment envers les plus fragiles.",
+    "explanation_vi": "Bác ái là đoàn kết: giúp đỡ và tương trợ, nhất là với người yếu thế.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "VAL040",
+    "category": "valeurs",
+    "difficulty": "medium",
+    "question_fr": "Quelle devise est inscrite sur les pièces d'euro françaises ?",
+    "question_vi": "Khẩu hiệu nào được khắc trên đồng xu euro của Pháp?",
+    "answers_fr": [
+      "Liberté, Égalité, Fraternité",
+      "Travail, Famille, Patrie",
+      "Union, Force, Paix",
+      "Dieu et mon droit"
+    ],
+    "answers_vi": [
+      "Tự do, Bình đẳng, Bác ái",
+      "Lao động, Gia đình, Tổ quốc",
+      "Đoàn kết, Sức mạnh, Hòa bình",
+      "Chúa và quyền của tôi"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Les pièces d'euro françaises portent la devise « Liberté, Égalité, Fraternité ».",
+    "explanation_vi": "Đồng xu euro của Pháp mang khẩu hiệu « Tự do, Bình đẳng, Bác ái ».",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "INS039",
+    "category": "institutions",
+    "difficulty": "hard",
+    "question_fr": "Comment l'Assemblée nationale peut-elle renverser le gouvernement ?",
+    "question_vi": "Quốc hội có thể lật đổ Chính phủ bằng cách nào?",
+    "answers_fr": [
+      "En votant une motion de censure",
+      "En changeant la Constitution",
+      "En appelant le préfet",
+      "En supprimant le Sénat"
+    ],
+    "answers_vi": [
+      "Bằng cách bỏ phiếu bất tín nhiệm",
+      "Bằng cách sửa Hiến pháp",
+      "Bằng cách gọi tỉnh trưởng",
+      "Bằng cách bỏ Thượng viện"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le gouvernement est responsable devant l'Assemblée, qui peut le renverser par une motion de censure.",
+    "explanation_vi": "Chính phủ chịu trách nhiệm trước Quốc hội, Quốc hội có thể lật đổ bằng kiến nghị bất tín nhiệm.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "INS040",
+    "category": "institutions",
+    "difficulty": "hard",
+    "question_fr": "Quelle est la plus haute juridiction de l'ordre judiciaire ?",
+    "question_vi": "Tòa án cao nhất của ngành tư pháp là gì?",
+    "answers_fr": [
+      "La Cour de cassation",
+      "Le Conseil constitutionnel",
+      "Le tribunal de proximité",
+      "La mairie"
+    ],
+    "answers_vi": [
+      "Tòa Phá án (Cour de cassation)",
+      "Hội đồng Hiến pháp",
+      "Tòa án địa phương",
+      "Tòa thị chính"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La Cour de cassation est la plus haute juridiction de l'ordre judiciaire.",
+    "explanation_vi": "Tòa Phá án là tòa án cao nhất của ngành tư pháp.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "INS041",
+    "category": "institutions",
+    "difficulty": "medium",
+    "question_fr": "Qui propose un « projet de loi » ?",
+    "question_vi": "Ai đề xuất một « dự án luật » (projet de loi)?",
+    "answers_fr": [
+      "Le gouvernement",
+      "Un simple citoyen",
+      "Un juge",
+      "Un maire"
+    ],
+    "answers_vi": [
+      "Chính phủ",
+      "Một công dân bình thường",
+      "Một thẩm phán",
+      "Một thị trưởng"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Un projet de loi émane du gouvernement ; une proposition de loi émane des parlementaires.",
+    "explanation_vi": "« Projet de loi » do Chính phủ đưa ra; « proposition de loi » do nghị sĩ đưa ra.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "INS042",
+    "category": "institutions",
+    "difficulty": "medium",
+    "question_fr": "Tous les combien d'années ont lieu les élections européennes ?",
+    "question_vi": "Bầu cử châu Âu diễn ra mấy năm một lần?",
+    "answers_fr": [
+      "Tous les 5 ans",
+      "Tous les 2 ans",
+      "Tous les 7 ans",
+      "Tous les ans"
+    ],
+    "answers_vi": [
+      "5 năm một lần",
+      "2 năm một lần",
+      "7 năm một lần",
+      "Mỗi năm"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Les députés européens sont élus tous les 5 ans.",
+    "explanation_vi": "Nghị sĩ châu Âu được bầu 5 năm một lần.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "INS043",
+    "category": "institutions",
+    "difficulty": "medium",
+    "question_fr": "En France, le juge est :",
+    "question_vi": "Ở Pháp, thẩm phán:",
+    "answers_fr": [
+      "Indépendant du pouvoir politique",
+      "Nommé par les électeurs",
+      "Sous les ordres du maire",
+      "Choisi par la police"
+    ],
+    "answers_vi": [
+      "Độc lập với quyền lực chính trị",
+      "Do cử tri bầu",
+      "Dưới quyền thị trưởng",
+      "Do cảnh sát chọn"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La justice est indépendante : le juge n'est pas soumis au pouvoir politique.",
+    "explanation_vi": "Tư pháp độc lập: thẩm phán không chịu sự chi phối của quyền lực chính trị.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "DRO036",
+    "category": "droits",
+    "difficulty": "medium",
+    "question_fr": "Le vote en France est :",
+    "question_vi": "Bỏ phiếu ở Pháp là:",
+    "answers_fr": [
+      "Secret",
+      "Public et affiché",
+      "Réservé aux élus",
+      "Obligatoirement collectif"
+    ],
+    "answers_vi": [
+      "Bí mật",
+      "Công khai và niêm yết",
+      "Chỉ dành cho người được bầu",
+      "Bắt buộc theo nhóm"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le vote est personnel, libre et secret.",
+    "explanation_vi": "Bỏ phiếu là cá nhân, tự do và bí mật.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "DRO037",
+    "category": "droits",
+    "difficulty": "hard",
+    "question_fr": "Le droit à la vie implique en France :",
+    "question_vi": "Quyền được sống ở Pháp hàm ý:",
+    "answers_fr": [
+      "L'abolition de la peine de mort",
+      "Le rétablissement de la peine de mort",
+      "L'absence de justice",
+      "La fin des hôpitaux"
+    ],
+    "answers_vi": [
+      "Bãi bỏ án tử hình",
+      "Khôi phục án tử hình",
+      "Không có tư pháp",
+      "Chấm dứt bệnh viện"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La peine de mort est abolie depuis 1981 et interdite par la Constitution.",
+    "explanation_vi": "Án tử hình đã bị bãi bỏ từ 1981 và bị Hiến pháp cấm.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "DRO038",
+    "category": "droits",
+    "difficulty": "easy",
+    "question_fr": "Chacun a le droit d'adhérer au syndicat de son choix. C'est :",
+    "question_vi": "Mỗi người có quyền gia nhập công đoàn mình chọn. Đó là:",
+    "answers_fr": [
+      "La liberté syndicale",
+      "Une obligation",
+      "Un privilège des chefs",
+      "Interdit"
+    ],
+    "answers_vi": [
+      "Quyền tự do công đoàn",
+      "Một nghĩa vụ",
+      "Đặc quyền của sếp",
+      "Bị cấm"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La liberté syndicale permet d'adhérer, ou non, à un syndicat.",
+    "explanation_vi": "Tự do công đoàn cho phép gia nhập hay không một công đoàn.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "DRO039",
+    "category": "droits",
+    "difficulty": "medium",
+    "question_fr": "Toute personne a droit à un procès :",
+    "question_vi": "Mọi người có quyền được xét xử:",
+    "answers_fr": [
+      "Équitable et dans un délai raisonnable",
+      "Secret et sans avocat",
+      "Décidé par la police",
+      "Sans jugement"
+    ],
+    "answers_vi": [
+      "Công bằng và trong thời hạn hợp lý",
+      "Bí mật và không luật sư",
+      "Do cảnh sát quyết định",
+      "Không cần xét xử"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le droit à un procès équitable, public et dans un délai raisonnable est garanti.",
+    "explanation_vi": "Quyền được xét xử công bằng, công khai và trong thời hạn hợp lý được bảo đảm.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "DRO040",
+    "category": "droits",
+    "difficulty": "easy",
+    "question_fr": "Un devoir du citoyen lors d'une convocation à la Journée défense et citoyenneté est de :",
+    "question_vi": "Khi được triệu tập dự Ngày quốc phòng và công dân, nghĩa vụ của công dân là:",
+    "answers_fr": [
+      "S'y présenter",
+      "L'ignorer",
+      "Payer une amende à la place",
+      "Envoyer un ami"
+    ],
+    "answers_vi": [
+      "Có mặt",
+      "Phớt lờ",
+      "Nộp phạt thay thế",
+      "Gửi một người bạn đi thay"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Les jeunes recensés doivent participer à la Journée défense et citoyenneté (JDC).",
+    "explanation_vi": "Thanh niên đã đăng ký phải tham dự Ngày quốc phòng và công dân (JDC).",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "HIS035",
+    "category": "histoire",
+    "difficulty": "medium",
+    "question_fr": "Quel événement a eu lieu le 6 juin 1944 ?",
+    "question_vi": "Sự kiện nào diễn ra ngày 6 tháng 6 năm 1944?",
+    "answers_fr": [
+      "Le débarquement de Normandie",
+      "La prise de la Bastille",
+      "La chute de Napoléon",
+      "Le sacre de Charlemagne"
+    ],
+    "answers_vi": [
+      "Cuộc đổ bộ Normandie",
+      "Việc chiếm ngục Bastille",
+      "Napoléon sụp đổ",
+      "Lễ đăng quang của Charlemagne"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le 6 juin 1944, les Alliés débarquent en Normandie pour libérer l'Europe.",
+    "explanation_vi": "Ngày 6/6/1944, quân Đồng minh đổ bộ Normandie để giải phóng châu Âu.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "HIS036",
+    "category": "histoire",
+    "difficulty": "hard",
+    "question_fr": "En quelle année le suffrage universel masculin a-t-il été instauré ?",
+    "question_vi": "Phổ thông đầu phiếu cho nam giới được lập năm nào?",
+    "answers_fr": [
+      "1848",
+      "1789",
+      "1944",
+      "1958"
+    ],
+    "answers_vi": [
+      "1848",
+      "1789",
+      "1944",
+      "1958"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le suffrage universel masculin est instauré en 1848, sous la IIe République.",
+    "explanation_vi": "Phổ thông đầu phiếu cho nam được lập năm 1848, dưới nền Cộng hòa thứ hai.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "HIS037",
+    "category": "histoire",
+    "difficulty": "medium",
+    "question_fr": "Qui fut une grande figure de la Résistance, unificateur des mouvements résistants ?",
+    "question_vi": "Ai là nhân vật lớn của Kháng chiến, người thống nhất các phong trào kháng chiến?",
+    "answers_fr": [
+      "Jean Moulin",
+      "Louis XIV",
+      "Napoléon III",
+      "Jules Ferry"
+    ],
+    "answers_vi": [
+      "Jean Moulin",
+      "Louis XIV",
+      "Napoléon III",
+      "Jules Ferry"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Jean Moulin a unifié la Résistance intérieure pendant la Seconde Guerre mondiale.",
+    "explanation_vi": "Jean Moulin đã thống nhất lực lượng Kháng chiến trong nước thời Thế chiến thứ hai.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "HIS038",
+    "category": "histoire",
+    "difficulty": "hard",
+    "question_fr": "Dans la nuit du 4 août 1789, l'Assemblée a aboli :",
+    "question_vi": "Trong đêm 4 tháng 8 năm 1789, Quốc hội đã bãi bỏ:",
+    "answers_fr": [
+      "Les privilèges",
+      "La République",
+      "Le drapeau",
+      "L'école"
+    ],
+    "answers_vi": [
+      "Các đặc quyền",
+      "Nền Cộng hòa",
+      "Quốc kỳ",
+      "Trường học"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La nuit du 4 août 1789 marque l'abolition des privilèges de la noblesse et du clergé.",
+    "explanation_vi": "Đêm 4/8/1789 đánh dấu việc bãi bỏ đặc quyền của quý tộc và giáo sĩ.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "HIS039",
+    "category": "histoire",
+    "difficulty": "medium",
+    "question_fr": "Qui fut le premier président de la Ve République ?",
+    "question_vi": "Ai là tổng thống đầu tiên của nền Cộng hòa thứ Năm?",
+    "answers_fr": [
+      "Charles de Gaulle",
+      "Georges Pompidou",
+      "François Mitterrand",
+      "Jacques Chirac"
+    ],
+    "answers_vi": [
+      "Charles de Gaulle",
+      "Georges Pompidou",
+      "François Mitterrand",
+      "Jacques Chirac"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Charles de Gaulle est le premier président de la Ve République (à partir de 1958-1959).",
+    "explanation_vi": "Charles de Gaulle là tổng thống đầu tiên của nền Cộng hòa thứ Năm (từ 1958-1959).",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "GEO034",
+    "category": "geographie",
+    "difficulty": "medium",
+    "question_fr": "Dans quelle mer la Seine se jette-t-elle (vers Le Havre) ?",
+    "question_vi": "Sông Seine đổ ra biển nào (phía Le Havre)?",
+    "answers_fr": [
+      "La Manche",
+      "La Méditerranée",
+      "La mer Noire",
+      "La Baltique"
+    ],
+    "answers_vi": [
+      "Biển Manche",
+      "Địa Trung Hải",
+      "Biển Đen",
+      "Biển Baltic"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La Seine se jette dans la Manche, près du Havre.",
+    "explanation_vi": "Sông Seine đổ ra Biển Manche, gần Le Havre.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "GEO035",
+    "category": "geographie",
+    "difficulty": "hard",
+    "question_fr": "Quel territoire français se situe dans l'océan Pacifique ?",
+    "question_vi": "Lãnh thổ Pháp nào nằm ở Thái Bình Dương?",
+    "answers_fr": [
+      "La Nouvelle-Calédonie",
+      "La Martinique",
+      "La Réunion",
+      "La Guyane"
+    ],
+    "answers_vi": [
+      "Nouvelle-Calédonie",
+      "Martinique",
+      "La Réunion",
+      "Guyane"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La Nouvelle-Calédonie et la Polynésie française se trouvent dans l'océan Pacifique.",
+    "explanation_vi": "Nouvelle-Calédonie và Polynésie thuộc Pháp nằm ở Thái Bình Dương.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "GEO036",
+    "category": "geographie",
+    "difficulty": "easy",
+    "question_fr": "Le Luxembourg, petit État voisin, se situe par rapport à la France :",
+    "question_vi": "Luxembourg, một nước láng giềng nhỏ, nằm ở phía nào so với Pháp?",
+    "answers_fr": [
+      "Au nord-est",
+      "Au sud",
+      "Sur une île",
+      "En Afrique"
+    ],
+    "answers_vi": [
+      "Phía đông bắc",
+      "Phía nam",
+      "Trên một hòn đảo",
+      "Ở châu Phi"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le Luxembourg est un petit État voisin situé au nord-est de la France.",
+    "explanation_vi": "Luxembourg là một nước nhỏ láng giềng nằm ở phía đông bắc nước Pháp.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "GEO037",
+    "category": "geographie",
+    "difficulty": "medium",
+    "question_fr": "Quel climat domine le sud de la France (Provence) ?",
+    "question_vi": "Khí hậu nào chiếm ưu thế ở miền nam nước Pháp (Provence)?",
+    "answers_fr": [
+      "Le climat méditerranéen",
+      "Le climat polaire",
+      "Le climat désertique",
+      "Le climat tropical"
+    ],
+    "answers_vi": [
+      "Khí hậu Địa Trung Hải",
+      "Khí hậu vùng cực",
+      "Khí hậu sa mạc",
+      "Khí hậu nhiệt đới"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le sud de la France a un climat méditerranéen : étés chauds et secs, hivers doux.",
+    "explanation_vi": "Miền nam nước Pháp có khí hậu Địa Trung Hải: hè nóng khô, đông ôn hòa.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "GEO038",
+    "category": "geographie",
+    "difficulty": "easy",
+    "question_fr": "Quelle grande ville de l'ouest se trouve près de l'embouchure de la Loire ?",
+    "question_vi": "Thành phố lớn nào ở miền tây nằm gần cửa sông Loire?",
+    "answers_fr": [
+      "Nantes",
+      "Strasbourg",
+      "Lille",
+      "Nice"
+    ],
+    "answers_vi": [
+      "Nantes",
+      "Strasbourg",
+      "Lille",
+      "Nice"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Nantes, dans l'ouest de la France, est proche de l'embouchure de la Loire.",
+    "explanation_vi": "Nantes, ở miền tây nước Pháp, gần cửa sông Loire.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "VIE032",
+    "category": "vieQuotidienne",
+    "difficulty": "easy",
+    "question_fr": "En voiture, le port de la ceinture de sécurité est :",
+    "question_vi": "Trên xe hơi, việc thắt dây an toàn là:",
+    "answers_fr": [
+      "Obligatoire pour tous",
+      "Facultatif",
+      "Interdit",
+      "Réservé au conducteur"
+    ],
+    "answers_vi": [
+      "Bắt buộc cho tất cả",
+      "Tùy chọn",
+      "Bị cấm",
+      "Chỉ cho tài xế"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La ceinture de sécurité est obligatoire pour le conducteur et tous les passagers.",
+    "explanation_vi": "Dây an toàn là bắt buộc với tài xế và mọi hành khách.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "VIE033",
+    "category": "vieQuotidienne",
+    "difficulty": "medium",
+    "question_fr": "Au volant, utiliser son téléphone tenu en main est :",
+    "question_vi": "Khi lái xe, cầm điện thoại trên tay là:",
+    "answers_fr": [
+      "Interdit et sanctionné",
+      "Autorisé en ville",
+      "Autorisé à l'arrêt au feu rouge",
+      "Sans règle"
+    ],
+    "answers_vi": [
+      "Bị cấm và bị phạt",
+      "Được phép trong thành phố",
+      "Được phép khi dừng đèn đỏ",
+      "Không có quy tắc"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Téléphoner en tenant son portable en main au volant est interdit et sanctionné.",
+    "explanation_vi": "Cầm điện thoại khi lái xe bị cấm và bị phạt.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "VIE034",
+    "category": "vieQuotidienne",
+    "difficulty": "medium",
+    "question_fr": "Comment demande-t-on un logement social (HLM) ?",
+    "question_vi": "Xin nhà ở xã hội (HLM) như thế nào?",
+    "answers_fr": [
+      "En déposant une demande (souvent en ligne) et en obtenant un numéro unique",
+      "En achetant directement",
+      "Auprès de la police",
+      "Ce n'est pas possible"
+    ],
+    "answers_vi": [
+      "Nộp đơn (thường trực tuyến) và nhận một mã số duy nhất",
+      "Mua trực tiếp",
+      "Tại cảnh sát",
+      "Không thể được"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La demande de logement social se fait via un dossier et un numéro unique d'enregistrement.",
+    "explanation_vi": "Việc xin nhà ở xã hội được thực hiện qua hồ sơ và một mã đăng ký duy nhất.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "VIE035",
+    "category": "vieQuotidienne",
+    "difficulty": "easy",
+    "question_fr": "Dans les transports en commun, voyager sans titre de transport valable :",
+    "question_vi": "Trên phương tiện công cộng, đi mà không có vé hợp lệ:",
+    "answers_fr": [
+      "Expose à une amende",
+      "Est autorisé",
+      "Est recommandé",
+      "Est gratuit le week-end"
+    ],
+    "answers_vi": [
+      "Có thể bị phạt",
+      "Được phép",
+      "Được khuyến khích",
+      "Miễn phí cuối tuần"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Voyager sans ticket valable expose à une amende.",
+    "explanation_vi": "Đi xe không có vé hợp lệ có thể bị phạt.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "VIE036",
+    "category": "vieQuotidienne",
+    "difficulty": "medium",
+    "question_fr": "Quel impôt local le propriétaire d'un logement doit-il généralement payer ?",
+    "question_vi": "Chủ sở hữu nhà thường phải nộp loại thuế địa phương nào?",
+    "answers_fr": [
+      "La taxe foncière",
+      "La TVA",
+      "L'impôt sur les sociétés",
+      "Les droits de douane"
+    ],
+    "answers_vi": [
+      "Thuế bất động sản (taxe foncière)",
+      "Thuế VAT",
+      "Thuế doanh nghiệp",
+      "Thuế hải quan"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le propriétaire d'un bien immobilier paie la taxe foncière.",
+    "explanation_vi": "Chủ bất động sản nộp thuế bất động sản (taxe foncière).",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "EDU029",
+    "category": "education",
+    "difficulty": "easy",
+    "question_fr": "Quel numéro permet de signaler le harcèlement scolaire ?",
+    "question_vi": "Số nào dùng để báo bắt nạt học đường?",
+    "answers_fr": [
+      "Le 3018",
+      "Le 15",
+      "Le 17",
+      "Le 112"
+    ],
+    "answers_vi": [
+      "3018",
+      "15",
+      "17",
+      "112"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le 3018 est le numéro contre le harcèlement scolaire (et en ligne).",
+    "explanation_vi": "3018 là số chống bắt nạt học đường (và trên mạng).",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "EDU030",
+    "category": "education",
+    "difficulty": "medium",
+    "question_fr": "L'instruction d'un enfant à la maison :",
+    "question_vi": "Việc dạy con tại nhà:",
+    "answers_fr": [
+      "Est possible mais encadrée et soumise à autorisation/déclaration",
+      "Est totalement interdite",
+      "Est obligatoire pour tous",
+      "Se fait sans aucune règle"
+    ],
+    "answers_vi": [
+      "Có thể nhưng được quản lý và phải xin phép/khai báo",
+      "Bị cấm hoàn toàn",
+      "Bắt buộc cho tất cả",
+      "Làm mà không có quy tắc"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "L'instruction en famille est possible, mais encadrée (autorisation, contrôles).",
+    "explanation_vi": "Dạy con tại nhà là có thể, nhưng được quản lý (xin phép, kiểm tra).",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "EDU031",
+    "category": "education",
+    "difficulty": "medium",
+    "question_fr": "À l'université publique, les frais d'inscription sont :",
+    "question_vi": "Ở đại học công, học phí ghi danh:",
+    "answers_fr": [
+      "Modérés (l'enseignement est largement financé par l'État)",
+      "Très élevés",
+      "Interdits",
+      "Payés par l'employeur"
+    ],
+    "answers_vi": [
+      "Vừa phải (Nhà nước tài trợ phần lớn)",
+      "Rất cao",
+      "Bị cấm",
+      "Do chủ lao động trả"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "L'université publique est largement financée par l'État ; les frais d'inscription restent modérés.",
+    "explanation_vi": "Đại học công được Nhà nước tài trợ phần lớn; học phí ghi danh ở mức vừa phải.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "EDU032",
+    "category": "education",
+    "difficulty": "easy",
+    "question_fr": "À l'école publique, filles et garçons :",
+    "question_vi": "Ở trường công, nữ và nam:",
+    "answers_fr": [
+      "Apprennent ensemble (mixité)",
+      "Sont séparés obligatoirement",
+      "Ne se croisent jamais",
+      "Suivent des programmes différents"
+    ],
+    "answers_vi": [
+      "Học chung (nam nữ cùng lớp)",
+      "Bắt buộc tách riêng",
+      "Không bao giờ gặp nhau",
+      "Theo chương trình khác nhau"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La mixité est la règle à l'école publique : filles et garçons apprennent ensemble.",
+    "explanation_vi": "Học chung là quy tắc ở trường công: nữ và nam học cùng nhau.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "SAN023",
+    "category": "sante",
+    "difficulty": "medium",
+    "question_fr": "Où obtenir des informations sur la contraception et la santé sexuelle ?",
+    "question_vi": "Lấy thông tin về tránh thai và sức khỏe sinh sản ở đâu?",
+    "answers_fr": [
+      "Au planning familial ou chez un médecin",
+      "À la préfecture",
+      "Au commissariat",
+      "À Pôle emploi"
+    ],
+    "answers_vi": [
+      "Trung tâm kế hoạch hóa gia đình hoặc bác sĩ",
+      "Tỉnh trưởng phủ",
+      "Đồn cảnh sát",
+      "Pôle emploi"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le planning familial informe sur la contraception, la santé sexuelle et les droits.",
+    "explanation_vi": "Trung tâm kế hoạch hóa gia đình thông tin về tránh thai, sức khỏe sinh sản và quyền.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "SAN024",
+    "category": "sante",
+    "difficulty": "hard",
+    "question_fr": "En France, concernant le don d'organes, la loi prévoit :",
+    "question_vi": "Ở Pháp, về hiến tạng, luật quy định:",
+    "answers_fr": [
+      "Le consentement présumé (on est donneur sauf refus exprimé)",
+      "L'interdiction totale",
+      "Le don obligatoire payé",
+      "Le don réservé aux Français"
+    ],
+    "answers_vi": [
+      "Đồng ý mặc định (là người hiến trừ khi từ chối)",
+      "Cấm hoàn toàn",
+      "Hiến bắt buộc có trả tiền",
+      "Chỉ người Pháp được hiến"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La France applique le consentement présumé : chacun est donneur, sauf s'il s'y est opposé.",
+    "explanation_vi": "Pháp áp dụng đồng ý mặc định: ai cũng là người hiến, trừ khi đã từ chối.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "SAN025",
+    "category": "sante",
+    "difficulty": "medium",
+    "question_fr": "Le « tiers payant » signifie que :",
+    "question_vi": "« Tiers payant » nghĩa là:",
+    "answers_fr": [
+      "On n'avance pas (ou peu) les frais pris en charge",
+      "On paie tout soi-même",
+      "Les soins sont gratuits pour les riches",
+      "On paie une amende"
+    ],
+    "answers_vi": [
+      "Không phải (hoặc ít phải) trả trước phần được bảo hiểm",
+      "Tự trả hết",
+      "Khám miễn phí cho người giàu",
+      "Phải nộp phạt"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Avec le tiers payant, on n'avance pas la part prise en charge par l'Assurance maladie.",
+    "explanation_vi": "Với tiers payant, ta không phải trả trước phần do Bảo hiểm y tế chi trả.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "SAN026",
+    "category": "sante",
+    "difficulty": "easy",
+    "question_fr": "Face à une personne inconsciente qui respire, un geste de premiers secours est :",
+    "question_vi": "Với người bất tỉnh nhưng còn thở, một động tác sơ cứu là:",
+    "answers_fr": [
+      "La mettre en position latérale de sécurité et appeler les secours",
+      "La laisser sur le dos sans rien faire",
+      "Lui donner à boire",
+      "Attendre sans appeler"
+    ],
+    "answers_vi": [
+      "Đặt nằm nghiêng an toàn và gọi cấp cứu",
+      "Để nằm ngửa và không làm gì",
+      "Cho uống nước",
+      "Chờ mà không gọi"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "On place la personne en position latérale de sécurité (PLS) et on appelle les secours (15/112).",
+    "explanation_vi": "Đặt nạn nhân ở tư thế nằm nghiêng an toàn (PLS) và gọi cấp cứu (15/112).",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "TRA025",
+    "category": "travail",
+    "difficulty": "medium",
+    "question_fr": "Quel conseil règle les litiges entre un salarié et son employeur ?",
+    "question_vi": "Hội đồng nào giải quyết tranh chấp giữa người lao động và chủ?",
+    "answers_fr": [
+      "Le conseil de prud'hommes",
+      "Le conseil municipal",
+      "Le Conseil constitutionnel",
+      "Le conseil d'école"
+    ],
+    "answers_vi": [
+      "Hội đồng lao động (prud'hommes)",
+      "Hội đồng thành phố",
+      "Hội đồng Hiến pháp",
+      "Hội đồng trường"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le conseil de prud'hommes tranche les litiges individuels entre salariés et employeurs.",
+    "explanation_vi": "Hội đồng prud'hommes xử các tranh chấp cá nhân giữa người lao động và chủ.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "TRA026",
+    "category": "travail",
+    "difficulty": "medium",
+    "question_fr": "Comment appelle-t-on la fin d'un CDI décidée d'un commun accord ?",
+    "question_vi": "Việc chấm dứt hợp đồng CDI theo thỏa thuận chung gọi là gì?",
+    "answers_fr": [
+      "Une rupture conventionnelle",
+      "Un licenciement",
+      "Une démission",
+      "Une mise à pied"
+    ],
+    "answers_vi": [
+      "Chấm dứt theo thỏa thuận (rupture conventionnelle)",
+      "Sa thải",
+      "Từ chức",
+      "Đình chỉ"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La rupture conventionnelle met fin au CDI d'un commun accord entre salarié et employeur.",
+    "explanation_vi": "Rupture conventionnelle chấm dứt CDI theo thỏa thuận chung giữa hai bên.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "TRA027",
+    "category": "travail",
+    "difficulty": "easy",
+    "question_fr": "Sur un bulletin de paie, le salaire « net » est :",
+    "question_vi": "Trên phiếu lương, lương « net » (thực nhận) là:",
+    "answers_fr": [
+      "Ce qui est réellement versé au salarié",
+      "Le salaire avant cotisations",
+      "Le salaire de l'employeur",
+      "Un impôt"
+    ],
+    "answers_vi": [
+      "Số thực sự trả cho người lao động",
+      "Lương trước khi trừ đóng góp",
+      "Lương của chủ",
+      "Một loại thuế"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le salaire net est la somme réellement perçue, après déduction des cotisations.",
+    "explanation_vi": "Lương net là số thực nhận, sau khi trừ các khoản đóng góp.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "TRA028",
+    "category": "travail",
+    "difficulty": "medium",
+    "question_fr": "Le CPF (compte personnel de formation) sert à :",
+    "question_vi": "CPF (tài khoản đào tạo cá nhân) dùng để:",
+    "answers_fr": [
+      "Financer des formations tout au long de la vie professionnelle",
+      "Payer ses impôts",
+      "Acheter un logement",
+      "Obtenir un passeport"
+    ],
+    "answers_vi": [
+      "Tài trợ đào tạo trong suốt cuộc đời nghề nghiệp",
+      "Nộp thuế",
+      "Mua nhà",
+      "Xin hộ chiếu"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le CPF permet de financer des formations professionnelles tout au long de la carrière.",
+    "explanation_vi": "CPF giúp tài trợ các khóa đào tạo nghề trong suốt sự nghiệp.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "FAM026",
+    "category": "famille",
+    "difficulty": "easy",
+    "question_fr": "Quel est l'âge minimum légal pour se marier en France ?",
+    "question_vi": "Tuổi tối thiểu hợp pháp để kết hôn ở Pháp là bao nhiêu?",
+    "answers_fr": [
+      "18 ans",
+      "15 ans",
+      "16 ans",
+      "21 ans"
+    ],
+    "answers_vi": [
+      "18 tuổi",
+      "15 tuổi",
+      "16 tuổi",
+      "21 tuổi"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "En France, l'âge minimum légal pour se marier est 18 ans.",
+    "explanation_vi": "Ở Pháp, tuổi tối thiểu hợp pháp để kết hôn là 18.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "FAM027",
+    "category": "famille",
+    "difficulty": "medium",
+    "question_fr": "Quel congé permet à un parent d'interrompre ou réduire son travail après une naissance ?",
+    "question_vi": "Loại nghỉ nào cho phép cha/mẹ ngừng hoặc giảm làm việc sau khi sinh?",
+    "answers_fr": [
+      "Le congé parental",
+      "Le congé sans solde obligatoire",
+      "Le congé maladie",
+      "Le congé examen"
+    ],
+    "answers_vi": [
+      "Nghỉ nuôi con (congé parental)",
+      "Nghỉ không lương bắt buộc",
+      "Nghỉ ốm",
+      "Nghỉ thi"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le congé parental permet d'interrompre ou de réduire son activité pour s'occuper de son enfant.",
+    "explanation_vi": "Nghỉ nuôi con cho phép ngừng hoặc giảm làm việc để chăm con.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "FAM028",
+    "category": "famille",
+    "difficulty": "medium",
+    "question_fr": "En France, un enfant peut porter :",
+    "question_vi": "Ở Pháp, một đứa trẻ có thể mang:",
+    "answers_fr": [
+      "Le nom de sa mère, de son père, ou les deux",
+      "Uniquement le nom du père",
+      "Uniquement le nom de la mère",
+      "Aucun nom"
+    ],
+    "answers_vi": [
+      "Họ của mẹ, của cha, hoặc cả hai",
+      "Chỉ họ của cha",
+      "Chỉ họ của mẹ",
+      "Không họ nào"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Les parents peuvent choisir de donner le nom du père, de la mère, ou les deux accolés.",
+    "explanation_vi": "Cha mẹ có thể chọn cho con họ của cha, của mẹ, hoặc ghép cả hai.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "FAM029",
+    "category": "famille",
+    "difficulty": "hard",
+    "question_fr": "L'autorité parentale est en principe exercée :",
+    "question_vi": "Quyền làm cha mẹ về nguyên tắc do:",
+    "answers_fr": [
+      "Par les deux parents conjointement",
+      "Par le père seul",
+      "Par la mère seule",
+      "Par les grands-parents"
+    ],
+    "answers_vi": [
+      "Cả hai cha mẹ cùng thực hiện",
+      "Chỉ người cha",
+      "Chỉ người mẹ",
+      "Ông bà"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "L'autorité parentale est en principe exercée en commun par les deux parents.",
+    "explanation_vi": "Quyền làm cha mẹ về nguyên tắc do cả hai cha mẹ cùng thực hiện.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01",
+    "type": "connaissance"
+  },
+  {
+    "id": "SIT037",
+    "type": "situation",
+    "category": "vieQuotidienne",
+    "difficulty": "medium",
+    "question_fr": "Vous avez bu de l'alcool et devez rentrer en voiture. Que faites-vous ?",
+    "question_vi": "Bạn đã uống rượu và phải lái xe về. Bạn làm gì?",
+    "answers_fr": [
+      "Je ne conduis pas : taxi, transport, ou un conducteur sobre",
+      "Je conduis doucement",
+      "Je conduis si c'est court",
+      "J'attends 10 minutes puis je conduis"
+    ],
+    "answers_vi": [
+      "Không lái: đi taxi, phương tiện công cộng, hoặc nhờ người tỉnh táo",
+      "Lái chậm",
+      "Lái nếu gần",
+      "Chờ 10 phút rồi lái"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Conduire avec un taux d'alcool au-dessus de la limite est dangereux et interdit. On ne conduit pas.",
+    "explanation_vi": "Lái xe khi nồng độ cồn vượt mức là nguy hiểm và bị cấm. Không lái.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT038",
+    "type": "situation",
+    "category": "droits",
+    "difficulty": "medium",
+    "question_fr": "Un propriétaire refuse de vous louer un logement à cause de votre origine. Que faites-vous ?",
+    "question_vi": "Một chủ nhà từ chối cho bạn thuê vì nguồn gốc của bạn. Bạn làm gì?",
+    "answers_fr": [
+      "Je peux signaler cette discrimination, qui est interdite",
+      "Rien, c'est son droit",
+      "Je paie plus cher pour l'obtenir",
+      "Je renonce à me loger"
+    ],
+    "answers_vi": [
+      "Tôi có thể báo cáo sự phân biệt này, điều bị cấm",
+      "Không làm gì, đó là quyền của ông ấy",
+      "Trả thêm tiền để thuê được",
+      "Từ bỏ việc thuê nhà"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Refuser un logement à cause de l'origine est une discrimination interdite et punie par la loi.",
+    "explanation_vi": "Từ chối cho thuê nhà vì nguồn gốc là phân biệt đối xử, bị luật cấm và trừng phạt.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT039",
+    "type": "situation",
+    "category": "vieQuotidienne",
+    "difficulty": "easy",
+    "question_fr": "Vous trouvez un portefeuille perdu dans la rue. Que faites-vous ?",
+    "question_vi": "Bạn nhặt được một chiếc ví bị rơi trên đường. Bạn làm gì?",
+    "answers_fr": [
+      "Je le rapporte à la police ou aux objets trouvés",
+      "Je garde l'argent",
+      "Je le jette",
+      "Je le laisse par terre"
+    ],
+    "answers_vi": [
+      "Mang đến cảnh sát hoặc nơi nhận đồ thất lạc",
+      "Giữ lấy tiền",
+      "Vứt đi",
+      "Để yên dưới đất"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "On rapporte un objet trouvé à la police ou au service des objets trouvés ; garder le bien d'autrui est un vol.",
+    "explanation_vi": "Hãy mang đồ nhặt được đến cảnh sát hoặc nơi nhận đồ thất lạc; giữ của người khác là trộm cắp.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT040",
+    "type": "situation",
+    "category": "droits",
+    "difficulty": "hard",
+    "question_fr": "Vous recevez une amende que vous jugez injustifiée. Que faites-vous ?",
+    "question_vi": "Bạn nhận một khoản phạt mà bạn cho là không đúng. Bạn làm gì?",
+    "answers_fr": [
+      "Je la conteste par les voies prévues, dans les délais",
+      "Je l'ignore totalement",
+      "Je refuse de payer sans rien dire",
+      "Je menace l'agent"
+    ],
+    "answers_vi": [
+      "Khiếu nại theo đúng thủ tục, trong thời hạn",
+      "Phớt lờ hoàn toàn",
+      "Từ chối trả mà không nói gì",
+      "Đe dọa nhân viên"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "On peut contester une amende par les voies de recours prévues, dans les délais ; l'ignorer aggrave la situation.",
+    "explanation_vi": "Có thể khiếu nại khoản phạt theo thủ tục quy định, trong thời hạn; phớt lờ sẽ làm tình hình tệ hơn.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT041",
+    "type": "situation",
+    "category": "education",
+    "difficulty": "medium",
+    "question_fr": "Votre enfant est harcelé à l'école. Que pouvez-vous faire ?",
+    "question_vi": "Con bạn bị bắt nạt ở trường. Bạn có thể làm gì?",
+    "answers_fr": [
+      "En parler à l'école et appeler le 3018",
+      "Dire à l'enfant de se taire",
+      "Changer de pays",
+      "Ne rien faire"
+    ],
+    "answers_vi": [
+      "Nói với nhà trường và gọi 3018",
+      "Bảo con im lặng",
+      "Đổi quốc gia",
+      "Không làm gì"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le harcèlement scolaire se signale à l'école et au 3018, numéro dédié.",
+    "explanation_vi": "Bắt nạt học đường được báo cho nhà trường và số 3018.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT042",
+    "type": "situation",
+    "category": "sante",
+    "difficulty": "medium",
+    "question_fr": "Vous avez besoin de soins mais peu de ressources. Que pouvez-vous demander ?",
+    "question_vi": "Bạn cần khám chữa bệnh nhưng ít tiền. Bạn có thể xin gì?",
+    "answers_fr": [
+      "La Complémentaire santé solidaire (CSS)",
+      "Un passeport",
+      "Un permis de conduire",
+      "Une carte grise"
+    ],
+    "answers_vi": [
+      "Bảo hiểm y tế bổ sung đoàn kết (CSS)",
+      "Hộ chiếu",
+      "Bằng lái",
+      "Carte grise"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La CSS aide les personnes à faibles revenus à accéder aux soins ; l'hôpital accueille aussi les urgences.",
+    "explanation_vi": "CSS giúp người thu nhập thấp được khám chữa bệnh; bệnh viện cũng tiếp nhận cấp cứu.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT043",
+    "type": "situation",
+    "category": "famille",
+    "difficulty": "medium",
+    "question_fr": "Vous perdez votre carte nationale d'identité. Que faites-vous ?",
+    "question_vi": "Bạn mất thẻ căn cước quốc gia. Bạn làm gì?",
+    "answers_fr": [
+      "Je le déclare et demande un nouveau titre (mairie)",
+      "Rien",
+      "J'en achète une à un inconnu",
+      "J'utilise celle d'un ami"
+    ],
+    "answers_vi": [
+      "Khai báo và xin cấp lại (tòa thị chính)",
+      "Không làm gì",
+      "Mua một thẻ từ người lạ",
+      "Dùng thẻ của bạn"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "En cas de perte, on déclare la perte et on demande un nouveau titre d'identité en mairie.",
+    "explanation_vi": "Khi mất, hãy khai báo và xin cấp lại giấy tờ tùy thân tại tòa thị chính.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT044",
+    "type": "situation",
+    "category": "travail",
+    "difficulty": "medium",
+    "question_fr": "Votre employeur vous demande d'utiliser une machine dangereuse sans protection. Que faites-vous ?",
+    "question_vi": "Chủ yêu cầu bạn dùng một máy nguy hiểm mà không có bảo hộ. Bạn làm gì?",
+    "answers_fr": [
+      "Je demande les équipements de sécurité : la sécurité est obligatoire",
+      "J'obéis sans rien dire",
+      "Je démissionne aussitôt",
+      "Je casse la machine"
+    ],
+    "answers_vi": [
+      "Yêu cầu thiết bị bảo hộ: an toàn là bắt buộc",
+      "Tuân lệnh không nói gì",
+      "Nghỉ việc ngay",
+      "Phá máy"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "L'employeur doit garantir la sécurité ; le salarié peut demander les protections nécessaires.",
+    "explanation_vi": "Chủ phải bảo đảm an toàn; người lao động có thể yêu cầu các thiết bị bảo hộ cần thiết.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT045",
+    "type": "situation",
+    "category": "valeurs",
+    "difficulty": "hard",
+    "question_fr": "Quelqu'un vous pousse à porter (ou retirer) un signe religieux contre votre volonté. Que dit la loi ?",
+    "question_vi": "Có người ép bạn mang (hoặc bỏ) một biểu tượng tôn giáo trái ý muốn. Luật nói gì?",
+    "answers_fr": [
+      "Chacun est libre de ses convictions ; nul ne peut vous y contraindre",
+      "Vous devez obéir",
+      "C'est l'État qui décide pour vous",
+      "C'est interdit partout"
+    ],
+    "answers_vi": [
+      "Mỗi người tự do về tín ngưỡng; không ai được ép buộc",
+      "Bạn phải tuân theo",
+      "Nhà nước quyết định thay bạn",
+      "Bị cấm ở mọi nơi"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La liberté de conscience protège chacun : personne ne peut vous contraindre dans vos convictions (dans le respect des lois, ex. laïcité à l'école).",
+    "explanation_vi": "Tự do tư tưởng bảo vệ mỗi người: không ai được ép buộc bạn về tín ngưỡng (trong khuôn khổ pháp luật, ví dụ thế tục ở trường).",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT046",
+    "type": "situation",
+    "category": "famille",
+    "difficulty": "medium",
+    "question_fr": "Vous êtes enceinte et venez d'arriver en France. Quelle démarche est utile ?",
+    "question_vi": "Bạn đang mang thai và vừa đến Pháp. Thủ tục nào hữu ích?",
+    "answers_fr": [
+      "Un suivi médical (médecin, PMI) et déclarer la grossesse",
+      "Attendre l'accouchement sans suivi",
+      "Aller au commissariat",
+      "Ne rien faire"
+    ],
+    "answers_vi": [
+      "Theo dõi y tế (bác sĩ, PMI) và khai báo thai kỳ",
+      "Chờ sinh mà không theo dõi",
+      "Đến đồn cảnh sát",
+      "Không làm gì"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "La grossesse se déclare et bénéficie d'un suivi (médecin, PMI), avec une prise en charge par l'Assurance maladie.",
+    "explanation_vi": "Thai kỳ được khai báo và theo dõi (bác sĩ, PMI), được Bảo hiểm y tế chi trả.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT047",
+    "type": "situation",
+    "category": "vieQuotidienne",
+    "difficulty": "easy",
+    "question_fr": "Dans le bus, une personne âgée ou enceinte cherche une place assise. Quelle est la bonne attitude ?",
+    "question_vi": "Trên xe buýt, một người già hoặc mang thai cần chỗ ngồi. Thái độ đúng là gì?",
+    "answers_fr": [
+      "Lui céder ma place",
+      "Faire semblant de dormir",
+      "Lui demander de payer",
+      "L'ignorer"
+    ],
+    "answers_vi": [
+      "Nhường chỗ cho họ",
+      "Giả vờ ngủ",
+      "Yêu cầu họ trả tiền",
+      "Phớt lờ"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le civisme et la fraternité invitent à céder sa place aux personnes qui en ont besoin.",
+    "explanation_vi": "Tinh thần công dân và bác ái khuyến khích nhường chỗ cho người cần.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT048",
+    "type": "situation",
+    "category": "droits",
+    "difficulty": "medium",
+    "question_fr": "Un commerçant refuse de vous servir uniquement à cause de votre religion. Est-ce légal ?",
+    "question_vi": "Một người bán hàng từ chối phục vụ bạn chỉ vì tôn giáo. Điều đó có hợp pháp không?",
+    "answers_fr": [
+      "Non, c'est une discrimination interdite",
+      "Oui, c'est son droit",
+      "Oui, s'il est fatigué",
+      "Cela dépend du magasin"
+    ],
+    "answers_vi": [
+      "Không, đó là phân biệt đối xử bị cấm",
+      "Có, đó là quyền của ông ấy",
+      "Có, nếu ông ấy mệt",
+      "Tùy cửa hàng"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Refuser un service en raison de la religion est une discrimination interdite par la loi.",
+    "explanation_vi": "Từ chối phục vụ vì tôn giáo là phân biệt đối xử bị luật cấm.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT049",
+    "type": "situation",
+    "category": "vieQuotidienne",
+    "difficulty": "medium",
+    "question_fr": "Vous emménagez : il faut l'eau, l'électricité et internet. Comment procéder ?",
+    "question_vi": "Bạn dọn nhà: cần nước, điện và internet. Làm thế nào?",
+    "answers_fr": [
+      "Souscrire des contrats auprès des fournisseurs",
+      "Attendre que ça s'active seul",
+      "Aller à la préfecture",
+      "Demander à la police"
+    ],
+    "answers_vi": [
+      "Ký hợp đồng với các nhà cung cấp",
+      "Chờ tự kích hoạt",
+      "Đến tỉnh trưởng phủ",
+      "Hỏi cảnh sát"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Pour l'eau, l'électricité, le gaz ou internet, on souscrit des contrats auprès des fournisseurs.",
+    "explanation_vi": "Để có nước, điện, gas hay internet, hãy ký hợp đồng với các nhà cung cấp.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT050",
+    "type": "situation",
+    "category": "droits",
+    "difficulty": "hard",
+    "question_fr": "On vous propose de voter deux fois ou à la place d'un absent. Que faites-vous ?",
+    "question_vi": "Có người đề nghị bạn bỏ phiếu hai lần hoặc thay cho người vắng. Bạn làm gì?",
+    "answers_fr": [
+      "Je refuse : c'est une fraude électorale interdite",
+      "J'accepte discrètement",
+      "Je le fais si personne ne voit",
+      "Je demande de l'argent pour le faire"
+    ],
+    "answers_vi": [
+      "Từ chối: đó là gian lận bầu cử bị cấm",
+      "Chấp nhận kín đáo",
+      "Làm nếu không ai thấy",
+      "Đòi tiền để làm"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Voter plusieurs fois ou à la place d'autrui est une fraude électorale, interdite et punie.",
+    "explanation_vi": "Bỏ phiếu nhiều lần hoặc thay người khác là gian lận bầu cử, bị cấm và trừng phạt.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT051",
+    "type": "situation",
+    "category": "travail",
+    "difficulty": "medium",
+    "question_fr": "Vous avez un litige avec votre employeur qui n'est pas résolu à l'amiable. Où pouvez-vous aller ?",
+    "question_vi": "Bạn có tranh chấp với chủ không giải quyết được êm thấm. Bạn có thể đến đâu?",
+    "answers_fr": [
+      "Au conseil de prud'hommes",
+      "À la mairie",
+      "À l'école",
+      "À la CAF"
+    ],
+    "answers_vi": [
+      "Hội đồng lao động (prud'hommes)",
+      "Tòa thị chính",
+      "Trường học",
+      "CAF"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Les prud'hommes règlent les litiges entre salariés et employeurs.",
+    "explanation_vi": "Hội đồng prud'hommes giải quyết tranh chấp giữa người lao động và chủ.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT052",
+    "type": "situation",
+    "category": "sante",
+    "difficulty": "easy",
+    "question_fr": "Un proche fait un malaise grave devant vous. Quel réflexe adopter ?",
+    "question_vi": "Một người thân bị ngất nặng trước mặt bạn. Phản xạ đúng là gì?",
+    "answers_fr": [
+      "Appeler le 15 (ou 112) et suivre les consignes",
+      "Lui donner des médicaments au hasard",
+      "Attendre sans rien faire",
+      "Le laisser seul"
+    ],
+    "answers_vi": [
+      "Gọi 15 (hoặc 112) và làm theo hướng dẫn",
+      "Cho uống thuốc bừa",
+      "Chờ mà không làm gì",
+      "Để một mình"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "On appelle le 15 (SAMU) ou le 112 et on suit les instructions des secours.",
+    "explanation_vi": "Hãy gọi 15 (SAMU) hoặc 112 và làm theo hướng dẫn của cấp cứu.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT053",
+    "type": "situation",
+    "category": "famille",
+    "difficulty": "hard",
+    "question_fr": "Vous voulez faire venir votre conjoint et vos enfants de l'étranger. Quelle procédure existe ?",
+    "question_vi": "Bạn muốn đưa vợ/chồng và con từ nước ngoài sang. Có thủ tục nào?",
+    "answers_fr": [
+      "Le regroupement familial, sous conditions",
+      "C'est automatique sans condition",
+      "Il faut acheter un logement",
+      "C'est impossible"
+    ],
+    "answers_vi": [
+      "Đoàn tụ gia đình, có điều kiện",
+      "Tự động không điều kiện",
+      "Phải mua nhà",
+      "Không thể được"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le regroupement familial permet, sous conditions (ressources, logement), de faire venir sa famille proche.",
+    "explanation_vi": "Đoàn tụ gia đình cho phép, với điều kiện (thu nhập, nhà ở), đưa gia đình gần sang.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT054",
+    "type": "situation",
+    "category": "vieQuotidienne",
+    "difficulty": "medium",
+    "question_fr": "Vous devez contacter une administration mais ne savez pas comment. Où trouver l'information officielle ?",
+    "question_vi": "Bạn cần liên hệ một cơ quan nhưng không biết cách. Tìm thông tin chính thức ở đâu?",
+    "answers_fr": [
+      "Sur service-public.fr ou à la mairie",
+      "Sur un forum anonyme",
+      "En ne faisant rien",
+      "Auprès d'un inconnu dans la rue"
+    ],
+    "answers_vi": [
+      "Trên service-public.fr hoặc tòa thị chính",
+      "Trên một diễn đàn ẩn danh",
+      "Không làm gì",
+      "Hỏi người lạ ngoài đường"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Service-public.fr et la mairie donnent les informations officielles sur les démarches.",
+    "explanation_vi": "Service-public.fr và tòa thị chính cung cấp thông tin chính thức về thủ tục.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT055",
+    "type": "situation",
+    "category": "valeurs",
+    "difficulty": "medium",
+    "question_fr": "Un groupe se moque d'une personne handicapée dans la rue. Quelle attitude est juste ?",
+    "question_vi": "Một nhóm người chế giễu một người khuyết tật ngoài đường. Thái độ đúng là gì?",
+    "answers_fr": [
+      "Ne pas participer et, si possible, soutenir la personne",
+      "Rire avec le groupe",
+      "Filmer pour s'amuser",
+      "Partir sans réfléchir"
+    ],
+    "answers_vi": [
+      "Không tham gia, và nếu được thì giúp đỡ người đó",
+      "Cười theo nhóm",
+      "Quay phim để vui",
+      "Bỏ đi không suy nghĩ"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "Le respect de la dignité et l'égalité interdisent de se moquer d'une personne ; on ne participe pas et on peut la soutenir.",
+    "explanation_vi": "Tôn trọng nhân phẩm và bình đẳng cấm chế giễu người khác; không tham gia và có thể giúp đỡ họ.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
+  },
+  {
+    "id": "SIT056",
+    "type": "situation",
+    "category": "travail",
+    "difficulty": "easy",
+    "question_fr": "Vous commencez un emploi. Que devez-vous recevoir de votre employeur ?",
+    "question_vi": "Bạn bắt đầu một công việc. Bạn phải nhận gì từ chủ?",
+    "answers_fr": [
+      "Un contrat et des bulletins de paie",
+      "Rien du tout",
+      "Seulement un badge",
+      "Une carte d'identité"
+    ],
+    "answers_vi": [
+      "Hợp đồng và phiếu lương",
+      "Không gì cả",
+      "Chỉ một thẻ ra vào",
+      "Một thẻ căn cước"
+    ],
+    "correct_answer": 0,
+    "explanation_fr": "L'employeur remet un contrat (selon le cas) et un bulletin de paie à chaque versement de salaire.",
+    "explanation_vi": "Chủ cung cấp hợp đồng (tùy trường hợp) và phiếu lương mỗi khi trả lương.",
+    "source_type": "educational",
+    "verified_at": "2026-01-01"
   }
 ]
