@@ -233,7 +233,7 @@ function catName(c){return CATS[c] ? CATS[c][D.lang]||CATS[c].fr : c}
 
 /* ----- persistance ----- */
 function defaults(){return{lang:"fr",sound:true,strict:false,onboarded:false,
-  name:"",fontScale:1,highContrast:false,autoSpeakErr:false,reminderOn:false,reminderHour:19,lastNudge:null,examDate:null,
+  name:"",fontScale:1,highContrast:false,autoSpeakErr:false,showTrad:false,reminderOn:false,reminderHour:19,lastNudge:null,examDate:null,
   xp:0,streakDays:0,longestStreak:0,lastStudyDate:null,totalAnswered:0,totalCorrect:0,
   qstats:{},catstats:{},badges:[],exams:[]};}
 let D=load();
@@ -510,7 +510,7 @@ function startTraining(kind,cat,n){
   nav(ScreenTraining(qs));
 }
 function ScreenTraining(qs){
-  let i=0,sel=null,revealed=false,correct=0,streak=0,trsh=false,startT=Date.now();
+  let i=0,sel=null,revealed=false,correct=0,streak=0,trsh=!!D.showTrad,startT=Date.now();
   const s={
     render(){
       const q=qs[i];
@@ -534,7 +534,7 @@ function ScreenTraining(qs){
     },
     bind(){window.S=s;},
     pick(k){ if(revealed)return; sel=k; sfx('select'); haptic(); render(); },
-    tr(){ trsh=!trsh; render(); },
+    tr(){ trsh=!trsh; D.showTrad=trsh; save(); render(); },
     val(){ if(sel===null)return; revealed=true; const q=qs[i],ok=sel===q.correct_answer;
       if(ok){correct++;streak++;if(streak===5)addXP(15)}else streak=0;
       recordAnswer(q,ok); save(); beep(ok); haptic(); render();
@@ -591,7 +591,7 @@ function saveExam(st){try{localStorage.setItem(EKEY,JSON.stringify(st))}catch(e)
 function clearExam(){localStorage.removeItem(EKEY)}
 
 function ScreenExam(resume){
-  let st, qs, timer=null, finished=false, result=null, trsh=false, gridOpen=false;
+  let st, qs, timer=null, finished=false, result=null, trsh=!!D.showTrad, gridOpen=false;
   if(resume){ st=loadExam(); qs=st.ids.map(id=>QUESTIONS.find(q=>q.id===id)).filter(Boolean);
     if(qs.length!==st.ids.length){clearExam();resume=false} }
   if(!resume){ qs=examSet(); st={ids:qs.map(q=>q.id),ans:qs.map(()=>null),flags:qs.map(()=>false),idx:0,start:Date.now(),dur:CFG.mins*60,strict:D.strict}; saveExam(st); }
@@ -636,7 +636,7 @@ function ScreenExam(resume){
       if(!s._t){ s._t=setInterval(()=>{ if(finished||scr!==s){clearInterval(s._t);s._t=null;return} if(remaining()<=0){s.finish()}else tick() },1000); }
       if(!s._vis){ s._vis=true; document.addEventListener('visibilitychange',vis); } },
     pick(k){ st.ans[st.idx]=k; saveExam(st); sfx('select'); haptic(); render(); },
-    tr(){ trsh=!trsh; render(); },
+    tr(){ trsh=!trsh; D.showTrad=trsh; save(); render(); },
     next(){ if(st.idx<qs.length-1)st.idx++; saveExam(st); render(); },
     prev(){ if(st.idx>0)st.idx--; saveExam(st); render(); },
     flag(){ st.flags[st.idx]=!st.flags[st.idx]; saveExam(st); haptic(); render(); },
@@ -821,7 +821,8 @@ function ScreenSettings(){return {render(){
       ${toggle('sound',tr('sound'),D.sound)}
       ${toggle('strict',tr('strict'),D.strict)}
       ${toggle('autoSpeakErr',"Lire l'explication à voix haute si erreur",D.autoSpeakErr)}
-      <p class="muted" style="font-size:12px;margin:8px 0 0">En mode strict, la traduction est désactivée pendant les simulations.</p>
+      ${toggle('showTrad',"Traduction 🇻🇳 affichée par défaut",D.showTrad)}
+      <p class="muted" style="font-size:12px;margin:8px 0 0">Par défaut les questions sont en français ; « Traduire » affiche le vietnamien (choix mémorisé). En mode strict, la traduction est désactivée pendant les simulations.</p>
     </div>
     <div class="card"><b>Accessibilité</b>
       <div class="muted" style="font-size:13px;margin:8px 0 4px">Taille du texte</div>
