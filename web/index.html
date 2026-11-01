@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+<meta name="color-scheme" content="light dark" />
+<meta name="google" content="notranslate" />
 <title>CIVIC FR — Réussir l'examen civique</title>
 <meta name="description" content="Entraînement à l'examen civique français, avec aide en vietnamien." />
 <meta name="theme-color" content="#1a388c" />
@@ -96,13 +98,20 @@
   .switch input:checked+label{background:var(--green)} .switch input:checked+label:after{left:23px}
   .catbars i{display:block}
   .fade{animation:fade .25s}
+  @media (prefers-reduced-motion: reduce){ .fade{animation:none} *{transition:none!important} }
+  .opt:focus-visible,.access:focus-visible,.btn:focus-visible,.tabbar button:focus-visible,.cell:focus-visible,.link:focus-visible{outline:3px solid var(--blue-light);outline-offset:2px}
+  .gridwrap{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+  .cell{aspect-ratio:1;border:2px solid var(--line);border-radius:10px;background:var(--card);color:var(--text);font-weight:700;cursor:pointer;display:grid;place-items:center;font-size:15px}
+  .cell.done{background:var(--blue-deep);color:#fff;border-color:var(--blue-deep)}
+  .cell.flag{box-shadow:inset 0 0 0 3px var(--orange)}
+  .cell.cur{outline:3px solid var(--blue-light);outline-offset:1px}
   @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
   .big{font-size:26px;font-weight:800}
   select,input[type=time]{font-size:16px;padding:8px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--text)}
 </style>
 </head>
 <body>
-<div id="app"></div>
+<div id="app" translate="no" class="notranslate"></div>
 <div class="toast" id="toast"><div class="in"><span id="toastIc" class="em">🏅</span><div><div class="muted" style="font-size:12px" id="toastSub">Badge débloqué</div><b id="toastTxt"></b></div></div></div>
 <script src="questions.js"></script>
 <script>
@@ -178,6 +187,7 @@ function catName(c){return CATS[c] ? CATS[c][D.lang]||CATS[c].fr : c}
 
 /* ----- persistance ----- */
 function defaults(){return{lang:"fr",sound:true,strict:false,onboarded:false,
+  fontScale:1,reminderOn:false,reminderHour:19,lastNudge:null,
   xp:0,streakDays:0,longestStreak:0,lastStudyDate:null,totalAnswered:0,totalCorrect:0,
   qstats:{},catstats:{},badges:[],exams:[]};}
 let D=load();
@@ -329,6 +339,7 @@ function viewHome(){
     <div><h2>${tr('welcome')}</h2><div class="muted">${tr('level')} · ${lv.n[D.lang]}</div></div><div class="sp"></div>
     <div class="center"><div style="font-size:22px">🔥</div><b>${D.streakDays}</b><div class="muted" style="font-size:11px">${tr('days')}</div></div>
   </div>
+  ${reminderCard()}
   <div class="card">
     <div class="row"><span class="pill" style="background:rgba(26,56,140,.12);color:var(--blue-deep)">🎯 Mon objectif</span></div>
     <h3 style="margin:8px 0">« ${tr('goal')} »</h3>
@@ -440,36 +451,41 @@ function saveExam(st){try{localStorage.setItem(EKEY,JSON.stringify(st))}catch(e)
 function clearExam(){localStorage.removeItem(EKEY)}
 
 function ScreenExam(resume){
-  let st, qs, timer=null, finished=false, result=null, trsh=false;
+  let st, qs, timer=null, finished=false, result=null, trsh=false, gridOpen=false;
   if(resume){ st=loadExam(); qs=st.ids.map(id=>QUESTIONS.find(q=>q.id===id)).filter(Boolean);
     if(qs.length!==st.ids.length){clearExam();resume=false} }
-  if(!resume){ qs=examSet(); st={ids:qs.map(q=>q.id),ans:qs.map(()=>null),idx:0,start:Date.now(),dur:CFG.mins*60,strict:D.strict}; saveExam(st); }
+  if(!resume){ qs=examSet(); st={ids:qs.map(q=>q.id),ans:qs.map(()=>null),flags:qs.map(()=>false),idx:0,start:Date.now(),dur:CFG.mins*60,strict:D.strict}; saveExam(st); }
+  if(!st.flags||st.flags.length!==qs.length) st.flags=qs.map(()=>false);
   const strict=st.strict;
   function remaining(){return Math.max(0,st.dur-Math.floor((Date.now()-st.start)/1000))}
   function fmt(s){return String(s/60|0).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
   const s={
     render(){
       if(finished) return results();
-      const q=qs[st.idx], rem=remaining(), answered=st.ans.filter(a=>a!==null).length;
+      if(gridOpen) return gridView();
+      const q=qs[st.idx], rem=remaining(), answered=st.ans.filter(a=>a!==null).length, flagged=st.flags[st.idx];
       return `
       <div class="card" style="margin-top:4px">
         <div class="row"><b class="mono" style="font-size:20px;color:${rem<300?'var(--red)':'var(--blue-deep)'}">⏱️ ${fmt(rem)}</b>
           <div class="sp"></div><span class="muted">${answered}/${qs.length}</span></div>
         <div class="bar" style="margin-top:8px"><i style="width:${Math.round((st.idx+1)/qs.length*100)}%"></i></div>
       </div>
-      <div class="muted" style="margin:2px">Question ${st.idx+1}/${qs.length}</div>
+      <div class="row" style="margin:2px"><span class="muted">Question ${st.idx+1}/${qs.length}</span><div class="sp"></div>
+        <button class="link" style="background:none;border:none;font:inherit" onclick="E.flag()" aria-pressed="${flagged}">${flagged?'🚩 Marquée':'🏳️ Marquer à revoir'}</button></div>
       <div class="card"><h3>${q.question_fr}</h3>${(trsh&&!strict)?`<p class="muted">${q.question_vi}</p>`:''}</div>
-      ${strict?'':`<div class="link" onclick="E.tr()" style="margin:0 2px 8px">${trsh?tr('hide'):tr('translate')}</div>`}
-      ${q.answers_fr.map((a,k)=>`<div class="opt ${st.ans[st.idx]===k?'sel':''}" onclick="E.pick(${k})"><span class="mk"></span>
+      ${strict?'':`<button class="link" style="background:none;border:none;font:inherit;margin:0 2px 8px" onclick="E.tr()">${trsh?tr('hide'):tr('translate')}</button>`}
+      <div role="radiogroup" aria-label="Réponses">
+      ${q.answers_fr.map((a,k)=>`<div class="opt ${st.ans[st.idx]===k?'sel':''}" role="radio" tabindex="0" aria-checked="${st.ans[st.idx]===k}" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();this.click()}" onclick="E.pick(${k})"><span class="mk"></span>
         <div>${a}${(trsh&&!strict)?`<span class="tr">${q.answers_vi[k]}</span>`:''}</div></div>`).join('')}
+      </div>
       <div class="row" style="margin-top:12px">
         <button class="btn ghost" style="width:auto;padding:12px 18px;margin:0" ${st.idx===0?'disabled':''} onclick="E.prev()">‹ ${tr('prev')}</button>
         <div class="sp"></div>
         ${st.idx===qs.length-1
-          ? `<button class="btn green" style="width:auto;padding:12px 20px;margin:0" onclick="E.finish()">${tr('finish')}</button>`
+          ? `<button class="btn green" style="width:auto;padding:12px 20px;margin:0" onclick="E.grid()">${tr('finish')}</button>`
           : `<button class="btn" style="width:auto;padding:12px 20px;margin:0" onclick="E.next()">${tr('next')} ›</button>`}
       </div>
-      <div class="link center" style="margin-top:14px" onclick="E.summary()">Voir les questions non répondues</div>
+      <button class="btn ghost" style="margin-top:14px" onclick="E.grid()">Récapitulatif / Terminer</button>
       `;
     },
     bind(){ window.E=s;
@@ -479,9 +495,10 @@ function ScreenExam(resume){
     tr(){ trsh=!trsh; render(); },
     next(){ if(st.idx<qs.length-1)st.idx++; saveExam(st); render(); },
     prev(){ if(st.idx>0)st.idx--; saveExam(st); render(); },
-    summary(){ const un=st.ans.map((a,k)=>a===null?k+1:null).filter(x=>x);
-      alert(un.length?('Non répondues : '+un.join(', ')):'Toutes les questions sont répondues ✅'); },
-    finish(){ if(finished)return; finished=true; if(s._t){clearInterval(s._t);s._t=null}
+    flag(){ st.flags[st.idx]=!st.flags[st.idx]; saveExam(st); haptic(); render(); },
+    grid(){ gridOpen=!gridOpen; render(); },
+    gotoFromGrid(i){ if(qs[i])st.idx=i; gridOpen=false; saveExam(st); render(); },
+    finish(){ if(finished)return; finished=true; gridOpen=false; if(s._t){clearInterval(s._t);s._t=null}
       let score=0; const per={};
       qs.forEach((q,k)=>{const ok=st.ans[k]===q.correct_answer; if(ok)score++;
         per[q.category]=per[q.category]||[0,0]; per[q.category][1]++; if(ok)per[q.category][0]++;});
@@ -497,6 +514,21 @@ function ScreenExam(resume){
       beep(result.pass); render();
     }
   };
+  function gridView(){
+    const answered=st.ans.filter(a=>a!==null).length, flagged=st.flags.filter(Boolean).length;
+    return `
+    <div class="row" style="margin:4px 0 10px"><h2>Récapitulatif</h2><div class="sp"></div>
+      <button class="link" style="background:none;border:none;font:inherit" onclick="E.grid()">Fermer</button></div>
+    <p class="muted">Répondues : ${answered}/${qs.length} · Marquées 🚩 : ${flagged}</p>
+    <p class="muted" style="font-size:12px">Touche un numéro pour y aller. Bleu = répondue, contour orange = marquée.</p>
+    <div class="gridwrap" style="margin:12px 0">
+      ${qs.map((q,i)=>`<button class="cell ${st.ans[i]!==null?'done':''} ${st.flags[i]?'flag':''} ${i===st.idx?'cur':''}"
+        aria-label="Question ${i+1}${st.ans[i]!==null?', répondue':', non répondue'}${st.flags[i]?', marquée':''}" onclick="E.gotoFromGrid(${i})">${i+1}</button>`).join('')}
+    </div>
+    <button class="btn green" onclick="E.finish()">Terminer l'examen (${answered}/${qs.length} répondues)</button>
+    <button class="btn ghost" onclick="E.grid()">Continuer l'examen</button>
+    `;
+  }
   function tick(){ const el=document.querySelector('.mono'); if(el){const r=remaining();el.textContent='⏱️ '+fmt(r);el.style.color=r<300?'var(--red)':'';} }
   function vis(){ if(document.visibilityState==='visible'&&!finished) render(); }
   function results(){
@@ -625,6 +657,22 @@ function ScreenSettings(){return {render(){
       ${toggle('strict',tr('strict'),D.strict)}
       <p class="muted" style="font-size:12px;margin:8px 0 0">En mode strict, la traduction est désactivée pendant les simulations.</p>
     </div>
+    <div class="card"><b>Accessibilité — taille du texte</b>
+      <div class="seg" style="margin-top:8px">
+        <button class="${(D.fontScale||1)==1?'on':''}" onclick="setFontScale(1)">Normal</button>
+        <button class="${(D.fontScale||1)==1.15?'on':''}" onclick="setFontScale(1.15)">Grand</button>
+        <button class="${(D.fontScale||1)==1.3?'on':''}" onclick="setFontScale(1.3)">Très grand</button>
+      </div>
+    </div>
+    <div class="card"><b>Rappel quotidien</b>
+      ${toggle('reminderOn','Activer le rappel',D.reminderOn)}
+      <div class="row" style="margin-top:4px"><span>Heure</span><div class="sp"></div>
+        <select onchange="D.reminderHour=parseInt(this.value,10);save();render()">
+          ${[7,8,9,12,17,18,19,20,21].map(h=>`<option value="${h}" ${D.reminderHour===h?'selected':''}>${h}h</option>`).join('')}
+        </select></div>
+      <p class="muted" style="font-size:12px;margin:8px 0 10px">Un rappel s'affiche à l'ouverture de l'app si tu n'as pas révisé après cette heure. Pour une notification même app fermée, utilise l'app iOS.</p>
+      <button class="btn ghost" onclick="enableNotif()">🔔 Autoriser les notifications (optionnel)</button>
+    </div>
     <div class="card"><b>Sauvegarde</b>
       <p class="muted" style="font-size:12px;margin:6px 0 10px">Tes données sont stockées uniquement sur cet appareil. Exporte-les pour les conserver ou les transférer.</p>
       <button class="btn ghost" onclick="exportData()">⬇️ Exporter ma progression</button>
@@ -637,8 +685,27 @@ function toggle(key,label,val){return `<div class="row" style="margin:6px 0"><b>
   <span class="switch"><input type="checkbox" id="sw_${key}" ${val?'checked':''} onchange="D.${key}=this.checked;save()"><label for="sw_${key}"></label></span></div>`}
 function head(t){return `<div class="row" style="margin:4px 0 12px"><span class="link" onclick="back()">‹</span><h2>${t}</h2></div>`}
 
+/* ----- Accessibilité & rappels ----- */
+function applyFontScale(){ try{ document.body.style.zoom=String(D.fontScale||1); }catch(e){} }
+function setFontScale(v){ D.fontScale=v; save(); applyFontScale(); render(); }
+function studiedToday(){ return D.lastStudyDate===new Date().toISOString().slice(0,10); }
+function reminderDue(){ if(!D.reminderOn||studiedToday())return false; return new Date().getHours()>=(D.reminderHour||19); }
+function reminderCard(){ if(!reminderDue())return '';
+  return `<div class="card" style="border-left:4px solid var(--blue-light)"><b>⏰ Rappel du jour</b>
+    <p style="margin:6px 0 0">Tu n'as pas encore révisé aujourd'hui. 5 minutes suffisent pour progresser 💪</p></div>`; }
+function enableNotif(){ try{ if('Notification' in window){
+      Notification.requestPermission().then(pp=>{ alert(pp==='granted'?'Notifications autorisées ✅':'Notifications non autorisées.'); });
+    } else { alert('Notifications non disponibles sur ce navigateur.'); } }catch(e){} }
+function maybeNotify(){ try{
+    if(D.reminderOn && reminderDue() && 'Notification' in window && Notification.permission==='granted'){
+      const today=new Date().toISOString().slice(0,10);
+      if(D.lastNudge!==today){ D.lastNudge=today; save(); new Notification('CIVIC FR',{body:'Il est temps de réviser ! 5 minutes suffisent.'}); }
+    } }catch(e){} }
+
 /* ============================= Démarrage ============================= */
+applyFontScale();
 render();
+maybeNotify();
 if('serviceWorker' in navigator){ window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{})); }
 </script>
 </body>
