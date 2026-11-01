@@ -70,6 +70,9 @@ struct TrainingSessionView: View {
 
                     // Énoncé
                     VStack(alignment: .leading, spacing: 8) {
+                        if q.isSituation {
+                            Text("📘 Mise en situation").font(.caption.bold()).foregroundStyle(Theme.orange)
+                        }
                         Text(q.questionFr).font(.title3.bold())
                         if showTranslation {
                             Text(q.questionVi).font(.body).foregroundStyle(.secondary)
